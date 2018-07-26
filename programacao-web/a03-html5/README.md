@@ -1,4 +1,4 @@
-# HTML5 Parte 1
+# HTML5
 
 Seguem os exemplos para estudo:
 
@@ -14,3 +14,5 @@ Seguem os exemplos para estudo:
 | https://diogocezar.github.io/sandybox/#/html-example-8  | Formulários - Parte 1 em HTML5             |
 | https://diogocezar.github.io/sandybox/#/html-example-9  | Formulários - Parte 2 em HTML5             |
 | https://diogocezar.github.io/sandybox/#/html-example-10 | Estruturas de Blocos em HTML5              |
+| https://diogocezar.github.io/sandybox/#/html-example-11 | MetaTags em HTML5                          |
+| https://diogocezar.github.io/sandybox/#/html-example-12 | DataSets em HTML5                          |
