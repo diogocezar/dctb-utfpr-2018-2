@@ -4,8 +4,6 @@ Olá, este repositório é para organizar as principais informações, recados e
 
 ## Intruções Gerais para Escrita dos Textos;
 
-Com base nos primeiros textos escritos pela turma, tenho algumas dicas!
-
 1. Cuidado com a utilização da palavra "onde";
 2. Sempre tenham em mente uma linha de construção. Todo texto deve ter um título, introdução, desenvolvimento e conclusão;
 3. A formalidade é muito importante;
@@ -50,7 +48,7 @@ Pessoal, vamos começar uma Jornada, que durará até o final do nosso semestre.
 
 É de extrema importância que nós façamos todas as seguintes atividades com o máximo de dedicação, pois através destas atividades nós poderemos iniciar no aprendizado básico de como: coletar as informações do cliente, entender estas informações e documentá-las.
 
-A primeira atividade prática será a do dia __07/05/2018__ que deverá avaliar as habilidades dos alunos em entender e identificar:
+A primeira atividade prática será a do dia ??? que deverá avaliar as habilidades dos alunos em entender e identificar:
 
 + O que são requisitos de usuário;
 + O que são requisitos de sistema;
