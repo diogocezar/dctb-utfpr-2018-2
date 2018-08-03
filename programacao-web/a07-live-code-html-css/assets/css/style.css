@@ -1,3 +1,11 @@
+/* 
+    Importando a fonte a ser utilizada
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* 
+    Reset HTML
+*/
 *{
     margin: 0;
     padding: 0;
@@ -6,23 +14,37 @@
     box-sizing: border-box;
 }
 
+/*
+    Definindo o tamanho de fonte padrão
+    Definindo a fonte padrão para toda a página
+*/
 html{
     font-size: 14px;
     font-family: "Poppins", sans-serif;
 }
 
+/*
+    Definindo um container pai
+    Terá no maximo 980px de largura
+    alinhado ao centro
+*/
 .container {
     width: 980px;
     margin: 0 auto;
 }
 
+/*
+    Definindo posicionamento relativo;
+    Alinhado a esqueda
+*/
 .row{
     position: relative;
     float: left;
 }
 
-/* Menu */
-
+/*
+    Menu
+*/
 #menu{
     position: fixed;
     z-index: 999;
@@ -71,8 +93,9 @@ html{
     font-weight: 400;
 }
 
-/* Defaults */
-
+/*
+    Definições Compartilhadas
+*/
 section{
     position: relative;
     float: left;
@@ -232,7 +255,9 @@ section{
     transform: translatex(-6.42rem) !important;
 }
 
-/* Forms */
+/*
+    Definições dos Formulários
+*/
 
 input,
 textarea,
@@ -287,7 +312,9 @@ textarea {
     resize: none;
 }
 
-/* Home */
+/*
+    Ajustes da Home
+*/
 
 #home{
     margin-top: 70px;
@@ -310,7 +337,9 @@ textarea {
     margin-bottom: 2rem;
 }
 
-/* CTAs */
+/*
+    CTA's
+*/
 
 .cta {
     margin-top: 4.2em;
@@ -337,7 +366,9 @@ textarea {
     url('../images/hbs-cambio-bg-cta-1.jpg');
 }
 
-/* Contato */
+/*
+    Ajustes Contato
+*/
 
 #contato .row button {
     border: none;
@@ -354,7 +385,9 @@ textarea {
     color: #BE9B47;
 }
 
-/* Footer */
+/*
+    Rodapé
+*/
 
 footer {
     position: relative;
