@@ -18,9 +18,9 @@ Quais são as disciplinas?
     * 4N2 : P205;
     * 4N3 : P205;
 * IF62B - Linguagem de Programação - A21 - Horários e Salas:
-    * 3T1 : A040;
-    * 3T2 : A040;
-    * 3T3 : A040;
+    * 3T1 : I201;
+    * 3T2 : I201;
+    * 3T3 : I201;
 * IF66H - Programação Web 1 - ES61 - Horários e Salas:
     * 5N4 : A040;
     * 5N5 : A040;
