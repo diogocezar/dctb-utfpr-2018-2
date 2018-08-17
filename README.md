@@ -57,3 +57,19 @@ Caso não seja possível o atendimento no dia, deve-se enviar um email e agendar
 Se você deja obter alguma orientação, por favor siga este repositório:
 
 https://github.com/utfpr-cp/prof-diogo-tcc
+
+## Como manter o fork atualizado?
+
+### 1. Clone your fork:
+
+    git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
+
+### 2. Add remote from original repository in your forked repository: 
+
+    cd into/cloned/fork-repo
+    git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+    git fetch upstream
+
+### 3. Updating your fork from original repo to keep up with their changes:
+
+    git pull upstream master
