@@ -4,6 +4,8 @@ body {
 
 .titulo {
     text-align: center;
+    background-color: #6048fa;
+    color: white;
 }
 .img-perfil {
     height: 200px;
