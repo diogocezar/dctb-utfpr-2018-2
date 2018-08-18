@@ -1,0 +1,51 @@
+nav {
+	height: 65px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section>* {
+	text-align: center;
+	margin: 50px 100px 0px 100px;
+	padding: 20px 0px 40px 0px;
+}
+
+div#SobreDiv {
+	border-bottom: 1px solid black;
+}
+
+div#SkillsDiv {
+	padding-top: 45px;
+	border-bottom: 1px solid black;
+}
+
+#minha_foto {
+	margin: 10px;
+	width: 500px;
+	height: 500px;
+	border-radius: 500px;
+}
+
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table.bordasimples {
+	border-collapse: collapse;
+}
+
+table.bordasimples th {
+	border: 1px solid black;
+}
+
+table.bordasimples tr td {
+	border: 1px solid black;
+}
+
+h6 {
+	margin-top: 30px;
+	margin-bottom: -25px;
+}
