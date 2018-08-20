@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 850px;
+	margin: 0px auto ;
+}
+
+
+
+#menu{
+	background-color: black;
+	color: #fff;
+	position: fixed;
+	box-shadow: -2px -3px 20px 3px rgba(0, 0, 0, 1);
+	width: 100%;
+	float: left;
+	height: 50px;
+	z-index: 999;
+}
+
+#menu .nome{
+    height: 50px;
+    position: relative;
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+
+#menu ul{
+	position: relative;
+    float: right;    
+    display: flex;
+    justify-content: space-between;    
+    width: 30%;
+    list-style: none;
+    margin-top: 15px;
+
+
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+
+    
+}
+
+#menu ul li a:hover{
+    text-decoration: none;
+    position: relative;    
+    color: black;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 0px;
+
+    
+}
+
+#home{
+	padding-top: 83px;
+	height: 540px;
+	background-color: #A9A9A9;
+	color: #fff;
+	font-size: 20px;	
+	text-indent: 30px;
+
+}
+
+#sobre{
+	padding-top: 83px;
+	height: 540px;
+	background-color: #808080;
+	color: #fff;
+	font-size: 20px;	
+	text-indent: 30px;
+
+}
+
+h1{
+	font-size: 30px;
+	box-shadow: -2px -3px 20px 3px rgba(0, 0, 0, 1);
+}
+
+#foto-sobre{
+	margin:  30px;
+	border-radius: 30px;
+
+}
+
+.sobre-mim{
+	text-shadow:  3px 2px 5px #000000;
+}
+
+#contato{
+	padding-top: 83px;
+	height: 540px;
+	background-color: #A9A9A9;
+	color: #fff;
+	font-size: 20px;	
+	text-indent: 30px;
+
+}
