@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(234, 234, 234);
+}
+h1 {
+    font-family: "DejaVu Sans Mono", monospace;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(47, 54, 50);
+}
+img {
+    box-shadow: gray 0px 0px 1em;
+    max-width: 50%;
+    margin-left: 80px;
+    border-radius: 8px;
+}
+p {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+}
+section {
+    margin: auto;
+}
+#apresentacao {
+    width: 80%;
+    height: 100%;
+}
+
+.conteudo {
+    background-color: white;
+    box-shadow: gray 0px 0px 1em;
+    overflow: auto;
+    margin: auto;
+}
+
+.tituloH1 {
+    color: rgb(165, 185, 204);
+}
+.curriculoImage {
+    float: left;
+    margin: auto;
+}
+
+.alinhaMeio {
+    text-align: center;
+}
+
+.textoResumo {
+    margin-right: 50px;
+}
+.bgFace {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 10px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+.bgLink {
+    background-color: rgb(51, 113, 183);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 10px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+.bgGit {
+    background-color: rgb(34, 30, 27);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 10px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+}
+#habilidades {
+    width: 80%;
+    height: 100%;
+    background: yellow;
+}
+#experiencias {
+    width: 80%;
+    height: 100%;
+    background: green;
+}
+#horarios {
+    width: 80%;
+    height: 100%;
+    background: blue;
+}
