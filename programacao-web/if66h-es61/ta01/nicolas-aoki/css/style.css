@@ -12,13 +12,15 @@ img {
     max-width: 50%;
     margin-left: 80px;
     border-radius: 8px;
+    margin-bottom:70px;
 }
 p {
     font-family: "Courier New", monospace;
     font-size: 13px;
 }
 section {
-    margin: auto;
+    margin:100px auto 0 auto;
+
 }
 #apresentacao {
     width: 80%;
