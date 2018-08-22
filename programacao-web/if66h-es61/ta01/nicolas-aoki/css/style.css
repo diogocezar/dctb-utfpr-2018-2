@@ -17,16 +17,19 @@ img {
 p {
     font-family: "Courier New", monospace;
     font-size: 13px;
+    line-height: 1.6;
 }
 section {
     margin:100px auto 0 auto;
 
 }
+ul{
+    list-style: none;
+}
 #apresentacao {
     width: 80%;
     height: 100%;
 }
-
 .conteudo {
     background-color: white;
     box-shadow: gray 0px 0px 1em;
@@ -44,6 +47,7 @@ section {
 
 .alinhaMeio {
     text-align: center;
+    color:gray;
 }
 
 .textoResumo {
@@ -103,6 +107,13 @@ section {
     margin-left:180px;
     margin-top: 30px;
   }
+  .listainfo{
+      margin-right: 130px;
+  }
+.listaResume{
+    float: right;
+    font-weight: bold;
+}
 #habilidades {
     width: 80%;
     height: 100%;
@@ -116,6 +127,5 @@ section {
 #horarios {
     width: 80%;
     height: 100%;
-    background: blue;
 }
 
