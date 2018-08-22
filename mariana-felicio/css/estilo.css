@@ -1,0 +1,19 @@
+body{
+	background-color: #DA70D6;
+}
+
+table {
+	width:70vw;
+    border-collapse: collapse;
+}
+table, th, td {
+	border: 2px solid purple;
+	padding: 10px;
+}
+td{
+	text-align: center;
+}
+
+#foto{
+	width: 200px;
+}
