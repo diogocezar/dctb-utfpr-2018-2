@@ -26,6 +26,7 @@ body{
     border-radius: 10px;
     width: 255px;
     color:gray;
+    box-shadow: 5px 5px #b4eddd;
 }
 .page-content{
     width: 100%;
@@ -64,11 +65,18 @@ h4{
 .text-container{
     display: flex;
     color:gray;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .text-container>h2{
+    font-size: 45px;
+    margin: 0 0;
     transform: rotate(90deg);
 }
 .estudos{
     text-align: center;
     color: gray;
+}
+.conhecimentos{
+    text-align: start;
 }
