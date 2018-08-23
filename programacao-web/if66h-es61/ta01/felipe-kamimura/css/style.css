@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1{
+    color: #e6e8ec;
+    background-color: #363537;
+    text-align: center;
+    width: 100%;
+}
+.about-me-desc{
+    padding-left: 170px;
+    background-color: #e6e8ec;
+    border: 50px;
+    padding-bottom: 1px;
+}
+
+h2{
+    background-color: #7f7e7f;
+    color:#e6e8ec;
+    padding-left: 2.5%;
+
+}
+.en{
+    font-size: 80%; 
+    color: #131213;
+    padding-left: 1%;
+    
+
+}
+#languages{
+    background-color: #7f7e7f;
+}
