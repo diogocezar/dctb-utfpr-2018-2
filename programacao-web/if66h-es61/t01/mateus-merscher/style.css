@@ -9,7 +9,7 @@ html, body, div {
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background: #FFF;
+    background:  #f2f2f2   ;
     margin: 0;
     margin-top: 0;
 }
@@ -22,16 +22,14 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     background: #FFF;
-    border: solid 1px;
     border-radius: 10px;
     width: 255px;
     color:gray;
-    box-shadow: 5px 5px #b4eddd;
+    box-shadow: 0px 5px 5px lightgray;
 }
 .page-content{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 #header{
     display: flex;
@@ -40,7 +38,7 @@ body{
     width: 100%;
     height: 60px;
     text-align: center;
-    background: #b4eddd;
+    background: #000000;
     color:gray;
 }
 #header>h1{
@@ -62,6 +60,10 @@ h4{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
+.medium>img{
+    width: 45px;
+    height: 45px;
+}
 .text-container{
     display: flex;
     color:gray;
@@ -78,5 +80,20 @@ h4{
     color: gray;
 }
 .conhecimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: start;
+}
+.baixo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around
+}
+.exp{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
