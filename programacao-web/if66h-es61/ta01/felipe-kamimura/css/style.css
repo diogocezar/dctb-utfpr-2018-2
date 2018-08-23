@@ -11,6 +11,9 @@ h1{
     text-align: center;
     width: 100%;
 }
+.about-me{
+    width: 100%;
+}
 .about-me-desc{
     padding-left: 170px;
     background-color: #e6e8ec;
@@ -31,6 +34,57 @@ h2{
     
 
 }
-#languages{
-    background-color: #7f7e7f;
+
+.return{
+    width: 40px;
+    height: 40px;
 }
+
+.findmeitem{
+    width: 30px;
+    height: 30px;
+    padding-left: 115px;
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+}
+
+#skills, #education, #other{
+    background-color: #f0f6fb;
+    padding-bottom: 0.5%;
+}
+
+
+footer{
+    background-color: #363537;
+}
+
+table{
+    width: 40vws;
+    border-collapse: collapse;
+    align-content: space-between;
+}
+
+table, tr, th{
+    border: 1px solid #363537;
+    padding:1px;
+    text-align: center;
+}
+
+a{
+    color: #131213;
+    text-decoration: underline;
+}
+
+#findme p{
+    color: #e6e8ec;
+    margin-left: 10px;
+}
+#findme a{
+    color: #f0f6fb;
+    font-style: inherit;
+    font-weight: bolder;
+}
+
