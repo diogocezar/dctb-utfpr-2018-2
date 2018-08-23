@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+    color:black;
+}
+
+body img#perfil{
+    border-radius: 300px;
+}
+
+ul {
+    list-style-type: none;
+}
+

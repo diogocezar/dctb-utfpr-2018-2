@@ -1,0 +1,65 @@
+body{
+	background-image: url("../images/woodBackground.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: courier;
+	font-weight: bolder;
+}
+
+h1{
+	font-size: 3vw;
+}
+
+h3{
+	font-size: 2vw;
+}
+
+h5{
+	font-size: 1.5vw;
+}
+
+p{
+	font-size: 1.5vw;
+}
+
+ul{
+	font-size: 1.5vw;
+}
+
+a{
+	color: blue;
+}
+.perfil{
+	border-color: black;
+	border-style: solid;
+	width: 30vw;
+}
+
+.header{
+	display: inline-block;
+}
+
+.logo1 img{
+	float: right;
+	width: 2%;
+}
+
+.logo2 img{
+	float: right;
+	width: 2%;
+}
+
+.logo3 img{
+	float: right;
+	width: 2%;
+}
+
+td, th{
+	size: 1vw;
+	text-align: center;
+	border: solid;
+}
+
+table{
+	size: 5vw;
+}
