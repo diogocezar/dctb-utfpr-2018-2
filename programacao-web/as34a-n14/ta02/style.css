@@ -1,37 +1,64 @@
 /* Flex */
 .flex {
-	display: flex;
+	display: flex; //Torna Flex
 }
 
 .flex-wrap {
-	flex-wrap: wrap;
+	flex-wrap: wrap; //Faz com que quebre a linha se necessário
 }
 
-.flex-item-1 {
-	flex: 1;
+.flex-start {
+	justify-content: flex-start;
+}
+
+.column {
+	flex-direction: column;
 }
 
 /* Flex Item */
 .item {
 	margin: 5px;
-	background: #333;
+	background: green;
 	text-align: center;
-    font-size: 1.5em;
+	font-size: 1.5em;
+}
+
+.flex-item-1 {
+	
+	flex: 1;
+	background-color: #333;
+}
+
+.flex-item-2 {
+	
+	flex: 1;
+	background-color: blue;
+	color: white;
 }
 
 a{
-    color:white;
+	color: white;
 }
 
 .container {
 	max-width: 400px;
-	margin: 0 auto;
+	margin: auto auto 5px auto;
 	border: 1px solid #ccc;
+	display: flex;
+	color: aliceblue;
 }
 
 h1 {
 	text-align: center;
-	margin: 20px 0 0 0;
+	margin: 20px 0 20px 0;
+	font-size: 1.5em;
+	font-weight: large;
+	background-color: greenyellow
+}
+
+h2{
+	text-align: center;
+	margin: 20px 0 20px 0;
 	font-size: 1.25em;
 	font-weight: normal;
 }
