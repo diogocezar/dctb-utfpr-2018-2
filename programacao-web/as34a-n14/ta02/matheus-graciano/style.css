@@ -40,6 +40,10 @@ a{
 	color: white;
 }
 
+a:hover{
+	color: goldenrod;
+}
+
 .container {
 	max-width: 400px;
 	margin: auto auto 5px auto;
@@ -63,8 +67,169 @@ h2{
 	font-weight: normal;
 }
 
+h3{
+	text-align: center;
+	margin: 20px 0 20px 0;
+	font-size: 1.5em;
+	font-weight: large;
+}
+
+.mySlider {
+	position : relative;
+	display : block;
+	overflow : hidden;
+	max-width : 400px;
+	height : 400px;
+	max-height : 400px;
+	margin : 0 auto;
+  }
+  
+.slider {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 0;
+	transition: transform 1600ms;
+	transform: scale(1);
+	margin: auto auto 5px auto;
+	border: 1px solid #ccc;
+	color: aliceblue;
+  }
+
+.slide_img_01 {
+	width: 400px;
+	height: 400px;
+	background : url('1080.jpg') no-repeat center;
+	background-size: cover;
+	left: 0%;
+}
+  
+.slide_img_02 {
+	width: 400px;
+	height: 400px;
+	background : url('1070.jpg') no-repeat center;
+	background-size : cover;
+	left: 100%
+}
+
+.slide_img_03 {
+	width: 400px;
+	height: 400px;
+	background : url('1060.jpg') no-repeat center;
+	background-size: cover;
+	left: 200%;
+}
+  
+.slide_img_04 {
+	width: 400px;
+	height: 400px;
+	background : url('1050.jpg') no-repeat center;
+	background-size : cover;
+	left: 300%
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 55;
+}
+
+.control label svg {
+  width : 48px;
+  height : 48px;
+  fill : #fff;
+  stroke : currentColor;
+  stroke-width : 0;
+}
+
+.control label svg:hover {
+  transition : all .2s ease;
+  fill : #000;
+}
+
+.control label {
+  z-index: 0;
+  display: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.control label:hover { opacity: 1.0; }
+
+.next { right: 1%; }
+
+.previous { left: 1%; }
+
+.slider-pagination {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider-pagination label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  margin: 0 2px;
+  border: solid 1px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+.slide-radio1:checked ~ .next .numb2, .slide-radio2:checked ~ .next .numb3, .slide-radio3:checked ~ .next .numb4, .slide-radio4:checked ~ .next .numb1, .slide-radio1:checked ~ .previous .numb4, .slide-radio2:checked ~ .previous .numb1, .slide-radio3:checked ~ .previous .numb2, .slide-radio4:checked ~ .previous .numb3 {
+  display: block;
+  z-index: 1
+}
+
+.slide-radio1:checked ~ .slider-pagination .page2, .slide-radio2:checked ~ .slider-pagination .page3, .slide-radio3:checked ~ .slider-pagination .page4, .slide-radio4:checked ~ .slider-pagination .page1 { background: rgba(255,255,255,1) }
+
+.slide-radio1:checked ~ .slider { transform: translateX(0%); }
+
+.slide-radio2:checked ~ .slider { transform: translateX(-100%); }
+
+.slide-radio3:checked ~ .slider { transform: translateX(-200%); }
+
+.slide-radio4:checked ~ .slider { transform: translateX(-300%); }
+
+@media only screen and (max-width: 400px) {
+
+.mySlider {
+  position : relative;
+  width : 100%;
+  height : 400px;
+}
+.slider > div { padding: 0 2% }
+.control {
+  position: absolute;
+  top: 60%;
+  margin-top: -24px;
+  z-index: 55;
+}
+.control label svg {
+  width : 32px;
+  height : 32px;
+  fill : #fff;
+  stroke : currentColor;
+  stroke-width : 0;
+}
+
 body {
 	font-family: monospace;
 	color: #333;
 }
 
+}
