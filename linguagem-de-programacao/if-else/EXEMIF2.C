@@ -1,5 +1,5 @@
 /* Exemplo de if encadeado,
-   e de comparação de um caracter */
+   e de comparaÃ§Ã£o de um caracter */
 
 #include<conio.h>
 #include<stdio.h>

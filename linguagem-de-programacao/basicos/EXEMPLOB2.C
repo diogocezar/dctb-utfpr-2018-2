@@ -1,5 +1,5 @@
-/* Exemplo de uso da funcao printf b·sico
-   O comando \n dentro do printf È usado para pular linha durante a impress„o
+/* Exemplo de uso da funcao printf b√°sico
+   O comando \n dentro do printf √© usado para pular linha durante a impress√£o
 */
 
 #include<stdio.h>

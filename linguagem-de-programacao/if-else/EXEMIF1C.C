@@ -1,10 +1,10 @@
 /* Exemplo basico de if e else
 
-   Esta solução é bem melhor, pois o teste é feito apenas uma vez.
+   Esta soluÃ§Ã£oo Ã© bem melhor, pois o teste Ã© feito apenas uma vez.
 
-   Caso o numero for impar o resto da divisao é 1.
-   Na linguagem C qualquer número diferente de zero é VERDADEIRO, ou seja,
-   caso o número seja ímpar, o if é atividado.                             */
+   Caso o numero for impar o resto da divisao Ã© 1.
+   Na linguagem C qualquer nÃºmero diferente de zero Ã© VERDADEIRO, ou seja,
+   caso o nÃºmero seja Ã­mpar, o if Ã© atividado.                             */
 
 #include<conio.h>
 #include<stdio.h>
