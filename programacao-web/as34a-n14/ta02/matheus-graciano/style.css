@@ -15,6 +15,30 @@
 	flex-direction: column;
 }
 
+.flex-grow {
+	flex-grow: 1;
+}
+
+.center {
+	align-content: center;
+}
+
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
 /* Flex Item */
 .item {
 	margin: 5px;
@@ -44,15 +68,26 @@ a:hover{
 	color: goldenrod;
 }
 
+.space-around {
+	height: 200px;
+	align-content: space-around;
+}
+
+.column-nowrap {
+	flex-flow: column nowrap;
+}
+
 .container {
 	max-width: 400px;
-	margin: auto auto 5px auto;
+	margin: 0 auto;
 	border: 1px solid #ccc;
 	display: flex;
 	color: aliceblue;
+	flex-wrap: wrap;
 }
 
 h1 {
+	color: #000;
 	text-align: center;
 	margin: 20px 0 20px 0;
 	font-size: 1.5em;
@@ -70,16 +105,16 @@ h2{
 h3{
 	text-align: center;
 	margin: 20px 0 20px 0;
-	font-size: 1.5em;
-	font-weight: large;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 .mySlider {
 	position : relative;
-	display : block;
+	display : flex;
 	overflow : hidden;
 	max-width : 400px;
-	height : 400px;
+	height: 400px;
 	max-height : 400px;
 	margin : 0 auto;
   }
@@ -98,7 +133,7 @@ h3{
 	height: 100%;
 	opacity: 1;
 	z-index: 0;
-	transition: transform 1600ms;
+	transition: transform 1200ms;
 	transform: scale(1);
 	margin: auto auto 5px auto;
 	border: 1px solid #ccc;
@@ -108,7 +143,7 @@ h3{
 .slide_img_01 {
 	width: 400px;
 	height: 400px;
-	background : url('1080.jpg') no-repeat center;
+	background : url(images/1080.jpg) no-repeat center;
 	background-size: cover;
 	left: 0%;
 }
@@ -116,7 +151,7 @@ h3{
 .slide_img_02 {
 	width: 400px;
 	height: 400px;
-	background : url('1070.jpg') no-repeat center;
+	background : url(images/1070.jpg) no-repeat center;
 	background-size : cover;
 	left: 100%
 }
@@ -124,7 +159,7 @@ h3{
 .slide_img_03 {
 	width: 400px;
 	height: 400px;
-	background : url('1060.jpg') no-repeat center;
+	background : url(images/1060.jpg) no-repeat center;
 	background-size: cover;
 	left: 200%;
 }
@@ -132,15 +167,16 @@ h3{
 .slide_img_04 {
 	width: 400px;
 	height: 400px;
-	background : url('1050.jpg') no-repeat center;
-	background-size : cover;
+	background: url(images/1050.jpg) no-repeat center;
+	background-size: cover;
 	left: 300%
 }
 
 .control {
-  position: absolute;
+	position: absolute;
+	color:black;
   top: 50%;
-  margin-top: -24px;
+	margin-top: -23px;
   z-index: 55;
 }
 
@@ -205,7 +241,7 @@ h3{
 
 .slide-radio4:checked ~ .slider { transform: translateX(-300%); }
 
-@media only screen and (max-width: 400px) {
+
 
 .mySlider {
   position : relative;
@@ -228,8 +264,11 @@ h3{
 }
 
 body {
+	color: aliceblue;
 	font-family: monospace;
-	color: #333;
+	background-image: url(images/nvi.png);
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 }
