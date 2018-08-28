@@ -20,7 +20,15 @@
 }
 
 .center {
+	align-self: center;
+}
+
+.center {
 	align-content: center;
+}
+
+.flex-start {
+	align-self: flex-start;
 }
 
 .order1 {
@@ -60,6 +68,18 @@
 	color: white;
 }
 
+.basis-110 {
+	flex-basis: 110px;
+}
+
+.basis-300 {
+	flex-basis: 300px;
+}
+
+.basis-110-porcento {
+	flex-basis: calc(25% - 10px);
+}
+
 a{
 	color: white;
 }
@@ -75,6 +95,40 @@ a:hover{
 
 .column-nowrap {
 	flex-flow: column nowrap;
+}
+
+.flex-start {
+	align-self: flex-start;
+}
+
+.flex-end {
+	align-self: flex-end;
+}
+
+.center {
+	align-self: center;
+}
+
+.align-items {
+	align-items: flex-end;
+}
+
+.shrink-0-basis {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 150px;
+}
+
+.shrink-1-basis {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 150px;
+}
+
+.shrink-3-basis {
+	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 150px;
 }
 
 .container {
@@ -175,9 +229,9 @@ h3{
 .control {
 	position: absolute;
 	color:black;
-  top: 50%;
+  	top: 50%;
 	margin-top: -23px;
-  z-index: 55;
+  	z-index: 55;
 }
 
 .control label svg {
@@ -240,8 +294,6 @@ h3{
 .slide-radio3:checked ~ .slider { transform: translateX(-200%); }
 
 .slide-radio4:checked ~ .slider { transform: translateX(-300%); }
-
-
 
 .mySlider {
   position : relative;
