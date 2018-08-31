@@ -53,17 +53,17 @@
 	background: green;
 	text-align: center;
 	font-size: 1.5em;
+	display: flex;
 }
 
 .flex-item-1 {
 	
 	flex: 1;
 	background-color: #333;
+
 }
 
 .flex-item-2 {
-	
-	flex: 1;
 	background-color: blue;
 	color: white;
 }
