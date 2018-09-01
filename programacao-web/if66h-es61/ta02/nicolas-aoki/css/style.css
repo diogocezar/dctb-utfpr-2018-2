@@ -1,6 +1,9 @@
 body{
     background-color: teal;
 }
+h1{
+    text-align: center;
+}
 .menu{
     background-color: rgb(241, 76, 76);
     display: flex;
@@ -10,7 +13,32 @@ body{
     flex-wrap: wrap;
 }
 .item{
-    margin:5px;
+    font-size: 1.5em;
+    margin:10px;
     text-decoration: none;
     color: white;
+}
+.corpo{
+    display: flex;
+    background-color: goldenrod;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.sideMenu{
+    display: flex;
+    background-color: khaki;
+    flex-direction: column;
+}
+.images{
+    display: flex;
+    max-width:20%;
+    max-height: 100%;
+    align-content: stretch;
+}
+.galeria{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: space-between;
 }
