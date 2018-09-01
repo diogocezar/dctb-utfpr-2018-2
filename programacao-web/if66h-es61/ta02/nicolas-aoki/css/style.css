@@ -1,0 +1,16 @@
+body{
+    background-color: teal;
+}
+.menu{
+    background-color: rgb(241, 76, 76);
+    display: flex;
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.item{
+    margin:5px;
+    text-decoration: none;
+    color: white;
+}
