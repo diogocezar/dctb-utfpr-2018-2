@@ -18,7 +18,7 @@
 .sidenav {
     grid-area: sidenav;
     background-color: #f6f6f6;
-    width: 220px;
+    width: 170px;
     height: 100vh;
     padding: 2%;
     overflow: auto;
