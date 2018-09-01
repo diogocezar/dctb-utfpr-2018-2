@@ -1,0 +1,29 @@
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0!important;
+
+}
+
+.grid {
+    display: grid;
+
+}
+
+.logo {
+    grid-area: logo;
+}
+
+
+.grid-area {
+	grid-template-areas:
+		"sidenav nav nav"
+		"sidenav content content"  
+		"sidenav footer footer"
+        ;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 0.5fr 3fr 0.3fr;
+        grid-auto-rows: minmax(100px, auto);
+}
+
+

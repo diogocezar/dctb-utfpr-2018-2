@@ -1,0 +1,25 @@
+
+.content {
+    grid-area: content;
+}
+
+.main-content {
+    padding: 20px;
+    background: #8844ee;
+    color: white;
+
+}
+
+
+.content-style {
+    background: #26353e;
+    color: #C2C6D3;
+    padding: 20px 20px;
+}
+
+.content-style h2 {
+    font-size: 3em;
+    margin: 0px;
+    line-height: 1;
+    color: #C2C6D3;
+}
