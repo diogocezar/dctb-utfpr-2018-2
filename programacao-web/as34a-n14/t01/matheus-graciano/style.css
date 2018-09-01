@@ -1,0 +1,113 @@
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+
+.header-menu{
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+  background-color: #22223b;
+  display: block;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.menu-container{
+  position: relative;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+
+.menu-item{
+  position: relative;
+  float: left;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.menu-container ul:li:first-child{
+  float: left;
+}
+
+a{
+  position: relative;
+  float: left;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+.Logo{
+  width: 313px;
+  height: 70px;
+  margin-right: 150px;
+  background: url(assets/images/geovanna-logo-nav.svg);
+}
+
+a:hover{
+  color:rgba(255,255,255,0.7);
+}
+
+
+body{
+  font-family: TrajanPro-Regular, serif;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+}
+
+body,html{
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: TrajanPro-Regular;
+  src: url('assets/fonts/TrajanPro-Regular.otf');
+}
+
+  
+@media all and (max-width: 800px) {
+    ul {
+      flex-grow: 1;
+      justify-content: space-around;
+    }
+}
+    
+@media all and (max-width: 600px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+} 
