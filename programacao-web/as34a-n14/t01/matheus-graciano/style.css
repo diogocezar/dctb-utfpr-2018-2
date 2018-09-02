@@ -71,7 +71,7 @@ section {
 }
 
 
-a{
+.menu-item a{
   position: relative;
   float: left;
   padding: 1em;
@@ -88,7 +88,7 @@ a{
   background: url(assets/images/geovanna-logo-nav.svg);
 }
 
-a:hover{
+.menu-item a:hover{
   color:rgba(255,255,255,0.7);
 }
 
@@ -127,7 +127,7 @@ a:hover{
 }
 
 .content-home h4 .h1{
-  color: #4a4e69;
+  color: #9a8c98;
 } 
 
 .content-home button{
@@ -145,6 +145,7 @@ a:hover{
     line-height: 38px;
     font-family: Montserrat,sans-serif;
     font-size: 1rem;
+    text-align: center;
 }
 
 #button:hover{
@@ -153,16 +154,85 @@ a:hover{
   color: #4a4e69;
 }
 
+
 @media screen and(max-width:1200px){
   .content-home h2{font-size: 5.5rem;}
 }
 
 
-@media screen and (max-width: 480px) {
-  section#home {
-    height: calc(100vh - 60px);
-    margin-top: 60px; } }
+/* Presentation */
 
+.presentation{
+  height: calc(100vh - 534px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url(assets/images/geovanna-bg-presentation.jpg);
+  background-position: 50%;
+}
+
+.content-presentation button{
+  margin-top: 4rem;
+}
+
+#button-p{
+  border: 1px solid #f2e9e4;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+  cursor: pointer;
+  width: 260px;
+  border-radius: 40px;
+  height: 60px;
+  line-height: 38px;
+  font-family: Montserrat,sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#button-p:hover{
+transition: all 0.3s;
+background-color: transparent;
+color: #f2e9e4;
+}
+
+.content-presentation{
+  text-align: center;
+}
+
+.content-presentation h2{
+  font-size: 2rem;
+}
+
+.content-presentation h2, .content-presentation h3{
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+.content-presentation h3{
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+}
+
+.content-presentation img{
+  margin: 2.5rem 0;
+  height: 80px;
+}
+
+.content-presentation img{
+  left: 50%;
+  position: center;
+}
+
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+a{
+  color: #f2e9e4;
+  text-decoration: none;
+}
 
 body{
   font-family: TrajanPro-Regular, serif;
