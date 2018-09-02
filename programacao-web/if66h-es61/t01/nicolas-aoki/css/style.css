@@ -42,7 +42,9 @@ body {
 	align-items: center;
 }
 .conteudo-home{
-    margin:100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 .home-btn{
     text-decoration: none;
