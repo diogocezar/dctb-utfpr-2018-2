@@ -41,5 +41,25 @@ h1{
     align-items: flex-start;
     text-align: center;
     justify-content: space-around;
-    flex-grow: 1;
+    flex: 3 2 300px;
+}
+.podium{
+    display: flex;
+    background-color: burlywood;
+    margin-top:50px;
+    justify-content: center;
+    height: 100px;
+}
+.primeiro{
+    background-color: gold;
+    order:2;
+    
+}
+.segundo{
+    background-color: silver;
+    order:1;
+}
+.terceiro{
+    background-color: brown;
+    order:3;
 }
