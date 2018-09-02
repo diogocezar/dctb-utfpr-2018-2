@@ -14,14 +14,16 @@
 
 <body>
     <section id="cabecalho">
-        <nav class="container" id="header">
-            <img class="logo" src="img/geovanna-logo-nav.svg" alt="Logo">
-            <button class="hamburger hamburger--collapse" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </nav>
+        <div id="parent">
+            <nav class="container" id="header">
+                <img class="logo" src="img/geovanna-logo-nav.svg" alt="Logo">
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </nav>
+        </div>
 
         <div class="menu-mobile menu-container">
             <ul>
@@ -45,11 +47,25 @@
     </section>
 
     <section id="home">
-        
+        <div id="content-home">
+            <h2 class="titulo-font">O grande momento está chegando?</h2>
+            <h3 class="titulo-font"> Vocês vão se casar? Não se preocupe! </h3>
+            <h4 class="content-apresentation">
+                Sou a
+                <span class="name-apresentation">
+                    Geovanna Garcia,
+                </span>
+                <h4 class="content-apresentation">
+                    Estou aqui para lhe ajudar </h4>
+            </h4>
+            <button id="btn-contato" class="button button-transparent">
+                ENTRE EM CONTATO
+            </button>
+        </div>
     </section>
 
 
-
+    
 
 
 
@@ -59,17 +75,33 @@
         var hamburger = document.querySelector(".hamburger");
         var menu = document.querySelector(".menu-mobile");
         var active = false;
+        var body = document.getElementsByTagName("body")[0];
         hamburger.addEventListener("click", function () {
             hamburger.classList.toggle("is-active");
-            if(!active) {
+            if (!active) {
                 menu.style.display = 'flex';
+                body.style.overflow = 'hidden';
                 active = true;
             } else {
                 menu.style.display = 'none';
+                body.style.overflow = 'auto';
                 active = false;
             }
 
         });
+    </script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("parent").style.top = "0";
+            } else {
+                document.getElementById("parent").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
 </body>
 
