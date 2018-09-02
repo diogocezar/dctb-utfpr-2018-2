@@ -1,7 +1,7 @@
 body {    
     margin: 0 !important;
     padding: 0 !important;
-    
+    height: 100%;
 }
 .navbar{
     display: flex;
@@ -31,4 +31,29 @@ body {
     margin:10px;
     text-decoration: none;
     color:white;
+}
+.home{
+    background-image: url("../img/geovanna-bg-home.jpg");
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	align-items: center;
+}
+.conteudo-home{
+    margin:100px;
+}
+.home-btn{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border:2px solid white;
+    background-color: Transparent;
+    padding:20px;
+}
+.home-btn:hover{
+    background-color: white;
+    transition-duration:0.4s;
 }
