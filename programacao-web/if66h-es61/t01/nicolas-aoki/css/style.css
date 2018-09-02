@@ -14,7 +14,7 @@ body {
 .navbar{
     display: flex;
     background-color:#29213e;
-    height: 75px;
+    height: 95px;
     align-content: center;
 }
 .logo{
@@ -38,7 +38,9 @@ body {
 .navItens{
     margin:10px;
     text-decoration: none;
-    color:white;
+    font-family: trojan;
+    font-size:1.5em;
+    color:#d4c9c9;
 }
 .home{
     background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
@@ -73,21 +75,31 @@ body {
 .frase-home-3{
     font-family: trojan;
     color:#d4c9c9;
+    font-size:1.5rem;
+    margin:0;
+    padding-bottom: 10px;
+}
+.nome-frase-3{
+    color:gray;
 }
 .frase-home-4{
     font-family: trojan;
     color:#d4c9c9;
+    font-size:1.5rem;
+    margin:0;
 }
 .home-btn{
+    font-size:1rem;
     font-family: trojan;
     color:#d4c9c9;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    border-radius: 30px;
-    border:2px solid #d4c9c9;
+    border-radius: 60px;
+    border:1.5px solid #d4c9c9;
     background-color: Transparent;
-    padding:20px;
+    margin-top:4rem;
+    padding:30px 70px 30px 70px;
 }
 .home-btn:hover{
     background-color: white;
