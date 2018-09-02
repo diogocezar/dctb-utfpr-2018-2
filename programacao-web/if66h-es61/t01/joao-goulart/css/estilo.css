@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300');
+@font-face {
+  font-family: 'TrajanPro-Regular';
+  src: url('../font/TrajanPro-Regular.eot?') format('eot'), url('../font/TrajanPro-Regular.woff') format('woff'), url('../font/TrajanPro-Regular.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'AfterMidnite';
+  src: url('../font/AfterMidnite.eot?') format('eot'), url('../font/AfterMidnite.woff') format('woff'), url('../font/AfterMidnite.ttf') format('truetype'); }
+
+html {
+    font-size: 14px; 
+}
+  
+body {
+    font-size: 14px;
+    font-family: 'TrajanPro-Regular', serif;
+    background-color: #F2E9E4;
+    color: #4A4E69; 
+}
+
+#header {
+    background-color: #23203E;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 4px;
+    padding-left: 10px;
+}
+
+.menu-item {
+    list-style: none;
+    padding-top: 40px;
+}
+
+.menu-item a {
+    font-size: 2rem!important;
+    font-weight: 400;
+    color: #f2e9e4;
+    font-family: 'TrajanPro-Regular', serif;
+}
+
+@media (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-mobile {
+        background-color: #4a4e69;
+        height: 90vh;
+        display: none;
+    }
+
+    .menu-mobile ul {
+        text-align: center;
+        padding: 0;
+    }
+    
+}
