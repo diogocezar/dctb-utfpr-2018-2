@@ -1,3 +1,11 @@
+@font-face{
+    font-family: midnight;
+    src: url(../fonts/AfterMidnite.woff);
+}
+@font-face{
+    font-family: trojan;
+    src: url("../fonts/TrajanPro-Bold.woff");
+}
 body {    
     margin: 0 !important;
     padding: 0 !important;
@@ -33,7 +41,8 @@ body {
     color:white;
 }
 .home{
-    background-image: url("../img/geovanna-bg-home.jpg");
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-home.jpg");
     background-repeat: no-repeat;
     height: calc(100vh - 70px);
     display: flex;
@@ -46,16 +55,42 @@ body {
     flex-flow: column wrap;
     align-items: center;
 }
+.frase-home-1{
+    font-family: midnight,sans-serif;
+    color:white;
+    font-size:7.5rem;
+    font-weight: lighter;
+    margin:0;
+}
+.frase-home-2{
+    font-family: midnight,sans-serif;
+    color:white;
+    font-size:4.5rem;
+    font-weight: lighter;
+    margin:0;
+    margin-top:-80px;
+}
+.frase-home-3{
+    font-family: trojan;
+    color:#d4c9c9;
+}
+.frase-home-4{
+    font-family: trojan;
+    color:#d4c9c9;
+}
 .home-btn{
+    font-family: trojan;
+    color:#d4c9c9;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
-    border:2px solid white;
+    border-radius: 30px;
+    border:2px solid #d4c9c9;
     background-color: Transparent;
     padding:20px;
 }
 .home-btn:hover{
     background-color: white;
     transition-duration:0.4s;
+    color:rgb(39, 38, 38);
 }
