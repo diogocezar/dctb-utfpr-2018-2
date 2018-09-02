@@ -1,0 +1,34 @@
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+.navbar{
+    display: flex;
+    background-color:#29213e;
+    height: 75px;
+    align-content: center;
+}
+.logo{
+    display:flex;
+    margin-left:100px;
+    align-self: center;
+}
+.flex-inicio{
+    align-self: flex-start;
+}
+.flex-fim{
+    align-self: flex-end;
+}
+.navbarColuna{
+    display: flex;
+    margin:auto;
+    list-style-type: none;
+    flex-wrap: row;
+    justify-content: space-around;
+}
+.navItens{
+    margin:10px;
+    text-decoration: none;
+    color:white;
+}
