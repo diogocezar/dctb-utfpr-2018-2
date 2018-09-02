@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
 @media (min-width: 1200px)
 .container {
     max-width: 1140px;
@@ -27,6 +29,19 @@
   display: block;
 }
 
+section {
+  padding-top: 7rem;
+  padding-bottom: 5rem; }
+  @media only screen and (max-width: 768px) {
+    section {
+      padding-top: 6rem;
+      padding-bottom: 4rem; } }
+  @media only screen and (max-width: 480px) {
+    section {
+      padding-top: 5rem;
+      padding-bottom: 3rem; }
+     }
+
 .container{
   display: flex;
   width: 100%;
@@ -55,9 +70,6 @@
   font-size: 1.2em;
 }
 
-.menu-container ul:li:first-child{
-  float: left;
-}
 
 a{
   position: relative;
@@ -80,11 +92,114 @@ a:hover{
   color:rgba(255,255,255,0.7);
 }
 
+/* Home */
+
+.home {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(assets/images/geovanna-bg-home.jpg);
+  background-position: left top;
+}
+
+.content-home{
+  font-size: 1.5em;
+  font-family: AfterMidnite,sans-serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+.content-home h2{
+  font-size: 6.5rem;
+}
+
+.content-home h3{
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.content-home h4{
+  font-family: TrajanPro-Regular,serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+.content-home h4 .h1{
+  color: #4a4e69;
+} 
+
+.content-home button{
+  margin-top: 4rem;
+}
+
+#button{
+    border: 1px solid #f2e9e4;
+    background-color: transparent;
+    color: #f2e9e4;
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+}
+
+#button:hover{
+  transition: all 0.3s;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+}
+
+@media screen and(max-width:1200px){
+  .content-home h2{font-size: 5.5rem;}
+}
+
+
+@media screen and (max-width: 480px) {
+  section#home {
+    height: calc(100vh - 60px);
+    margin-top: 60px; } }
+
 
 body{
   font-family: TrajanPro-Regular, serif;
   background-color: #f2e9e4;
   color: #4a4e69;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h3, h3{
+  font-size: 1.5rem;
+}
+
+.h4, h4{
+  font-size: 1.5rem;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
 }
 
 body,html{
@@ -96,6 +211,10 @@ body,html{
   src: url('assets/fonts/TrajanPro-Regular.otf');
 }
 
+@font-face {
+  font-family: AfterMidnite;
+  src: url('assets/fonts/AfterMidnite.otf');
+}
   
 @media all and (max-width: 800px) {
     ul {
