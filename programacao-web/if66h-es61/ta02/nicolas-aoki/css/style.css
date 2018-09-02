@@ -46,20 +46,33 @@ h1{
 .podium{
     display: flex;
     background-color: burlywood;
-    margin-top:50px;
     justify-content: center;
     height: 100px;
 }
 .primeiro{
+    display: flex;
     background-color: gold;
     order:2;
-    
+    margin-top: 20px;
+    width:100px;
+    justify-content: center;
+    align-items: center;
 }
 .segundo{
+    display: flex;
     background-color: silver;
     order:1;
+    width:100px;
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
 }
 .terceiro{
-    background-color: brown;
+    display: flex;
+    background-color: rgb(194, 99, 99);
     order:3;
+    width:100px;
+    margin-top:70px;
+    justify-content: center;
+    align-items: center;
 }
