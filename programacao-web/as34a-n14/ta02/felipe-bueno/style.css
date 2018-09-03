@@ -1,0 +1,61 @@
+body {
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 10%;
+}
+
+#div-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#div1 {
+    width: 10%;
+}
+
+#div2 {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+#div2 a{
+    color: white;
+}
+
+#section1 {
+    padding: 400px;
+    margin-top: 3%;
+    background-image: linear-gradient(rgba(150,150,150,.9),rgba(0,0,0,.9)), url(http://selectgame.gamehall.uol.com.br/wp-content/uploads/2016/08/desconto-em-tudo-800x400.png);
+}
+
+#inicio:active {
+    color: black;
+    order: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    margin: 60px;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.grow2 {
+    flex-grow: 2;
+}
