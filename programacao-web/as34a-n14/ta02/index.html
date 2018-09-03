@@ -1,3 +1,92 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>  
+        <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css.css"/>
+    </head>
+    <body>
+        <div class="fundo">
+        <h1>Flex Container</h1>
+        <div id="display">
+        <h3>Display Flex</h3>
+        <selection class="container flex">
+            <div class="item">Goku</div>
+            <div class="item">Vegeta</div>
+            <div class="item">Gohan</div>
+            <div class="item">Mestre Kame</div>
+        </selection>
+        
+        <h3>Flex-Direction: column-reverse</h3>
+        <p>Os itens ficam em uma unica coluna, um embaixo do outro, porem com ordem reversa.</p>
+        <selection class="container column-reverse">
+                <div class="item">Goku</div>
+                <div class="item">Vegeta</div>
+                <div class="item">Gohan</div>
+                <div class="item">Mestre Kame</div>
+        </selection>
+
+        <h3>Flex-Wrap: Wrap</h3>
+        <p>Quebra de linha assim que um dos flex itens não puder ser compactado</p>
+         <selection class="container2 wrap">
+            <div class="item">Goku</div>
+            <div class="item">Vegeta</div>
+            <div class="item">Gohan</div>
+            <div class="item">Mestre Kame</div>
+        </selection>
+
+        <h3>Flex-Flow: Row Nowrap</h3>
+        <p>Coloca o conteúdo em linha e não permite a quebra de linha</p>
+        <selection class="container2 nowrap">
+            <div class="item">Goku</div>
+            <div class="item">Vegeta</div>
+            <div class="item">Gohan</div>
+            <div class="item">MestreKame</div>
+        </selection>
+
+        <h3>Justify-Content: Center</h3>
+        <p>Alinha os itens ao centro do Container</p>
+        <selection class="container center">
+            <div><img id="goku" src="goku-web.jpg" alt="Goku"/></div>
+            <div><img id="picolo" src="picolo-web.jpg" alt="Picolo"/></div>
+        </selection>
+
+        <h3>Aling-Items: Flex-End</h3>
+        <p>Alinha os itens ao final</p>
+        <selection class="container flex-end">
+            <div class="item">Goku</div>
+            <div class="item">Vegeta</div>
+            <div class="item">Gohan</div>
+            <div class="item">MestreKame</div>
+        </selection>
+
+        <h3>Align-Content: Space-Between</h3>
+        <p>Cria um espaço igual entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom</p>
+        <selection class="container space-between">
+            <div class="item">Goku</div>
+            <div class="item">Vegeta</div>
+            <div class="item">Gohan</div>
+            <div class="item">MestreKame</div>
+            <div class="item">Bulma</div>
+            <div class="item">Kuririn</div>
+            <div class="item">Goten</div>
+            <div class="item">Majin Boo</div>
+            
+        </selection>
+
+        <h1>Flex Item</h1>
+        <h3>Flex-Grow: 2</h3>
+        <selection class="container flex-grow">
+            <div class="item">Goku</div>
+            <div class="item">Vegeta</div>
+            <div class="item">Gohan</div>
+        </selection>
+
+
+
+
+    </div>
+</div>
+    </body>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
