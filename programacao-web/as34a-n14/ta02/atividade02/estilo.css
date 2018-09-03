@@ -1,0 +1,51 @@
+.container {
+	border: 2px solid blue;
+	display: flex;
+	}
+.containerwrap{
+	border: 5px solid red;
+	max-width: 180px;
+	display: flex;
+}
+.item {
+	flex: 1;
+	height: 200px;
+	width: 200px;
+	background-image: url('https://source.unsplash.com/random/350x230');
+}
+
+
+.item span {
+	background-color: red;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.row-reverse{
+	flex-direction: row-reverse;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.nowrap{
+	flex-wrap: nowrap;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+
+.wrap-reverse{
+	flex-wrap: wrap-reverse;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
