@@ -1,0 +1,126 @@
+/*Header*/
+.header-container{
+    border: 1px solid #ccc;
+    justify-content: space-between;
+}
+
+.div-border{
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.display-center{
+    justify-content: center;
+}
+
+.display-column{
+    display: flex;
+    flex-direction: column; 
+}
+
+.display-height{
+    height: 100px;
+}
+
+.display-flex{
+    display: flex; 
+    flex-direction: row;
+}
+
+.item-start-end{
+    justify-content: flex-end;
+}
+
+.flex-header{
+    flex: 1;
+}
+
+/*List*/
+.list-root-container{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.list-flex{
+    display: flex;
+}
+
+.list-border{
+    border: 1px solid #ccc;
+}
+
+.list-container{
+    padding: 5px;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.list-container > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 45%;
+    margin: 5px;
+}
+
+.list-wrap{
+    flex-wrap: wrap;
+}
+
+.list-item-ordem-0{
+    order: 0;
+}
+
+.list-item-ordem-1{
+    order: 1;
+}
+
+.list-item-ordem-3{
+    order: 3;
+}
+
+.list-item-ordem-4{
+    order: 4;
+}
+
+.list-item-2{
+    align-self: auto;
+}
+
+.list-item-3{
+    align-self: baseline;
+}
+
+.list-item-4{
+    align-self: flex-end;
+}
+
+.list-item-5{
+    align-self: flex-start;
+}
+
+.list-item-6{
+    align-self: center;
+}
+
+.list-item-7{
+    align-self: stretch;
+}
+
+.list-shrink-1{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.list-shrink-2{
+    flex-shrink: 3;
+    flex-grow: 1;
+    flex-basis: 20px;
+}
