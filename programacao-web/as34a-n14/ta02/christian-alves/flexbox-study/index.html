@@ -1,0 +1,233 @@
+<html>
+    <head>
+        <title>Flexbox</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <!--propriedade flex, flex-wrap, flex-end-->
+        <h1>display: flex, flex-wrap, flex-end (barra de navegação)</h1>
+        <div class="container flex flex-wrap justify-flex-end">
+            <div class="item">Home</div>
+            <div class="item">A Empresa</div>
+            <div class="item">Clientes</div>
+            <div class="item">Contato</div>
+            <div class="item">Vagas</div>
+        </div>
+
+        <h1>display: flex, flex-wrap, flex-start (barra de navegação)</h1>
+        <div class="container flex flex-wrap justify-flex-start">
+            <div class="item">Home</div>
+            <div class="item">A Empresa</div>
+            <div class="item">Clientes</div>
+            <div class="item">Contato</div>
+            <div class="item">Vagas</div>
+        </div>
+
+        <h1>display: flex, flex-wrap, flex-center (barra de navegação)</h1>
+        <div class="container flex flex-wrap justify-flex-center">
+            <div class="item">Home</div>
+            <div class="item">A Empresa</div>
+            <div class="item">Clientes</div>
+            <div class="item">Contato</div>
+            <div class="item">Vagas</div>
+        </div>
+
+        <h1>display: flex (barra de navegação, itens com mesmo tamanho)</h1>
+        <div class="container flex flex-wrap">
+            <div class="item flex-item-1">Home</div>
+            <div class="item flex-item-1">A Empresa</div>
+            <div class="item flex-item-1">Clientes</div>
+            <div class="item flex-item-1">Contato</div>
+            <div class="item flex-item-1">Vagas</div>
+        </div>
+
+        <h1>display: flex (wrap-reverse)</h1>
+        <div class="container flex flex-wrap-reverse">
+            <div class="item flex-item-1">Home</div>
+            <div class="item flex-item-1">A Empresa</div>
+            <div class="item flex-item-1">Clientes</div>
+            <div class="item flex-item-1">Contato</div>
+            <div class="item flex-item-1">Vagas</div>
+        </div>
+
+
+        <!--display: flex (items de tamanho diferente-->
+        <h1>display: flex (conteudo de página, com tamanhos diferentes)</h1>
+        <div class="container flex flex-wrap">
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non ad, ipsam minima repellat harum. Aut pariatur quaerat veniam, ut mollitia quis, recusandae distinctio minima beatae voluptatibus labore, sed tempora.</p>
+            </article>
+            <article class="item flex-item-2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id temporibus nobis numquam, ea iusto fugiat rerum. Labore itaque placeat odit modi, accusantium corrupti eum quod quos perspiciatis atque corporis! Assumenda?</p>
+                <p>Quisquam voluptates, assumenda maiores pariatur commodi, eligendi temporibus itaque beatae necessitatibus officiis ipsam harum est voluptatem amet! Totam, et perspiciatis. Illum, nemo error quisquam odio soluta at? Quod, impedit voluptates?</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam illo fugiat, non quas perferendis temporibus iusto deleniti accusamus inventore adipisci consectetur earum laboriosam illum eveniet placeat at omnis tenetur fuga!</p>
+            </article>
+        </div>
+
+        <!--flex-direction-->
+        <h1>flex-direction: row (galeria de fotos)</h1>
+        <div class="container flex row">
+            <figure class="item">
+                <img src="img/photo-001-350x230-random.jpeg"/>
+            </figure>
+            <figure class="item">
+                <img src="img/photo-002-350x230-random.jpeg"/>
+            </figure>
+            <figure class="item">
+                <img src="img/photo-003-350x230-random.jpeg"/>
+            </figure>
+            <figure class="item">
+                <img src="img/photo-004-350x230-random.jpeg"/>
+            </figure>
+        </div>
+
+        <h1>flex-direction: row-reverse (galeria de fotos)</h1>
+        <div class="container flex row-reverse">
+            <figure class="item">
+                <img src="img/photo-001-350x230-random.jpeg"/>
+            </figure>
+            <figure class="item">
+                <img src="img/photo-002-350x230-random.jpeg"/>
+            </figure>
+            <figure class="item">
+                <img src="img/photo-003-350x230-random.jpeg"/>
+            </figure>
+            <figure class="item">
+                <img src="img/photo-004-350x230-random.jpeg"/>
+            </figure>
+        </div>
+
+        <h1>flex-direction: column (artigos de uma página)</h1>
+        <div class="container flex column">
+            <article class="item">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam deserunt non dolorem facere quae illum minima voluptatem, est ad odio ab quam! Corrupti eos iure cum excepturi ut veritatis!</p>
+                <p>Aspernatur atque cupiditate quos commodi ut sed praesentium fuga. Corporis excepturi sint, fuga fugiat nulla eius quia distinctio iste, eligendi asperiores eos enim pariatur aperiam animi neque omnis culpa nam.</p>
+            </article>
+
+            <article class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium deleniti atque dolorum, omnis facilis velit repellat veniam nihil modi reprehenderit labore unde consequatur tempore quia ipsam! Iusto, officiis rem.</p>
+                <p>Quis officiis libero tenetur, dicta, ad maiores magnam earum consequatur id est impedit enim rerum omnis repudiandae dolorum voluptatum? Doloremque voluptates provident, magnam nam rerum incidunt est assumenda aliquam at?</p>
+                <p>Cupiditate consequatur voluptatibus velit quasi tempora est iure eum accusamus culpa labore, modi atque minus expedita esse, enim provident quia ab dolore beatae veniam saepe. Ut, adipisci? Esse, nihil blanditiis!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nihil asperiores sequi aspernatur impedit, iste dolores neque eius vero ipsum recusandae iure fugit deleniti, ducimus repellendus harum ab! Non, illum.</p>
+            </article>
+
+            <article class="item">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nihil dolor quis facere nostrum quam beatae? Iste, nobis cum veniam voluptate ducimus laudantium ipsum esse a error dolore, commodi nam!</p>
+                <p>Deleniti cumque dolores dolorum non, saepe accusamus veritatis dolor ut, amet provident optio quisquam corporis nam quia laboriosam ipsum molestiae! Nemo rerum facilis distinctio accusamus modi cupiditate dicta magni ad.</p>
+                <p>Impedit pariatur tenetur velit, explicabo nisi quod sapiente blanditiis, provident deleniti repellendus hic. Ut necessitatibus deserunt, totam ipsam dolore nostrum enim eaque aut tenetur nam quae iusto est vero debitis.</p>
+            </article>
+        </div>
+
+        <h1>flex-direction: column-reverse (artigos de uma página)</h1>
+        <div class="container flex column-reverse">
+            <article class="item">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam deserunt non dolorem facere quae illum minima voluptatem, est ad odio ab quam! Corrupti eos iure cum excepturi ut veritatis!</p>
+                <p>Aspernatur atque cupiditate quos commodi ut sed praesentium fuga. Corporis excepturi sint, fuga fugiat nulla eius quia distinctio iste, eligendi asperiores eos enim pariatur aperiam animi neque omnis culpa nam.</p>
+            </article>
+
+            <article class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium deleniti atque dolorum, omnis facilis velit repellat veniam nihil modi reprehenderit labore unde consequatur tempore quia ipsam! Iusto, officiis rem.</p>
+                <p>Quis officiis libero tenetur, dicta, ad maiores magnam earum consequatur id est impedit enim rerum omnis repudiandae dolorum voluptatum? Doloremque voluptates provident, magnam nam rerum incidunt est assumenda aliquam at?</p>
+                <p>Cupiditate consequatur voluptatibus velit quasi tempora est iure eum accusamus culpa labore, modi atque minus expedita esse, enim provident quia ab dolore beatae veniam saepe. Ut, adipisci? Esse, nihil blanditiis!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nihil asperiores sequi aspernatur impedit, iste dolores neque eius vero ipsum recusandae iure fugit deleniti, ducimus repellendus harum ab! Non, illum.</p>
+            </article>
+
+            <article class="item">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nihil dolor quis facere nostrum quam beatae? Iste, nobis cum veniam voluptate ducimus laudantium ipsum esse a error dolore, commodi nam!</p>
+                <p>Deleniti cumque dolores dolorum non, saepe accusamus veritatis dolor ut, amet provident optio quisquam corporis nam quia laboriosam ipsum molestiae! Nemo rerum facilis distinctio accusamus modi cupiditate dicta magni ad.</p>
+                <p>Impedit pariatur tenetur velit, explicabo nisi quod sapiente blanditiis, provident deleniti repellendus hic. Ut necessitatibus deserunt, totam ipsam dolore nostrum enim eaque aut tenetur nam quae iusto est vero debitis.</p>
+            </article>
+        </div>
+
+        <h1>justify-content: space-between (barra de navegação - espaço entre itens)</h1>
+        <div class="container flex flex-wrap space-between">
+            <div class="item">Página inicial</div>
+            <div class="item">Portfólio</div>
+            <div class="item">Sobre mim</div>
+            <div class="item">Contato</div>
+        </div>
+
+        <h1>justify-content: space-around (barra de navegação - espaço entre itens)</h1>
+        <div class="container flex flex-wrap space-around">
+            <div class="item">Página inicial</div>
+            <div class="item">Portfólio</div>
+            <div class="item">Sobre mim</div>
+            <div class="item">Contato</div>
+        </div>
+
+        <h1>justify-content: space-around (barra de navegação mobile)</h1>
+        <div class="container flex flex-wrap column space-around">
+            <div class="item">Página inicial</div>
+            <div class="item">Portfólio</div>
+            <div class="item">Sobre mim</div>
+            <div class="item">Contato</div>
+        </div>
+
+        <h1>align-items: stretch (artigos com margem alinhada ao conteudo de tamanhos maior)</h1>
+        <div class="container flex flex-wrap stretch">
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore eligendi at ratione, molestiae, voluptates corporis error, sunt eveniet nisi quae voluptatem obcaecati dolorem cupiditate ipsum! Amet consequatur tempore officia.</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aut, similique pariatur necessitatibus, illum, laboriosam ex accusamus deleniti quod eos adipisci officiis. Et pariatur minus consequuntur debitis, quae doloribus ducimus.</p>
+                <p>Asperiores dolore quae et voluptas explicabo consequatur vero doloremque quam numquam quia, odit, esse, ipsa ipsum iste molestiae? Assumenda, accusamus voluptates nostrum quod illum aperiam tempore magni excepturi perferendis veritatis!</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis fugit aliquam, officia inventore iusto beatae magni eaque suscipit atque accusantium earum quas aperiam soluta, aut ab necessitatibus omnis et!</p>
+                <p>Quasi sint sequi ducimus libero tempore in dignissimos cumque praesentium, natus exercitationem nemo repudiandae asperiores. Mollitia officiis cupiditate officia id quos temporibus explicabo ducimus nam velit deserunt, totam odit illum.</p>
+                <p>Quasi sapiente laborum omnis a consequatur doloribus necessitatibus ea aliquid repudiandae eveniet, consequuntur, vitae voluptates saepe numquam? Tenetur sit exercitationem cum vitae recusandae facilis? Est unde pariatur voluptates tenetur voluptatibus.</p>
+            </article>
+        </div>
+
+        <h1>align-items: flex-start (artigos com margem alinhada ao tamanho do conteúdo no topo)</h1>
+        <div class="container flex flex-wrap align-flex-start">
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore eligendi at ratione, molestiae, voluptates corporis error, sunt eveniet nisi quae voluptatem obcaecati dolorem cupiditate ipsum! Amet consequatur tempore officia.</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aut, similique pariatur necessitatibus, illum, laboriosam ex accusamus deleniti quod eos adipisci officiis. Et pariatur minus consequuntur debitis, quae doloribus ducimus.</p>
+                <p>Asperiores dolore quae et voluptas explicabo consequatur vero doloremque quam numquam quia, odit, esse, ipsa ipsum iste molestiae? Assumenda, accusamus voluptates nostrum quod illum aperiam tempore magni excepturi perferendis veritatis!</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis fugit aliquam, officia inventore iusto beatae magni eaque suscipit atque accusantium earum quas aperiam soluta, aut ab necessitatibus omnis et!</p>
+                <p>Quasi sint sequi ducimus libero tempore in dignissimos cumque praesentium, natus exercitationem nemo repudiandae asperiores. Mollitia officiis cupiditate officia id quos temporibus explicabo ducimus nam velit deserunt, totam odit illum.</p>
+                <p>Quasi sapiente laborum omnis a consequatur doloribus necessitatibus ea aliquid repudiandae eveniet, consequuntur, vitae voluptates saepe numquam? Tenetur sit exercitationem cum vitae recusandae facilis? Est unde pariatur voluptates tenetur voluptatibus.</p>
+            </article>
+        </div>
+
+        <h1>align-items: flex-end (artigos com margem alinhada ao tamanho do conteúdo no final)</h1>
+        <div class="container flex flex-wrap align-flex-start">
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore eligendi at ratione, molestiae, voluptates corporis error, sunt eveniet nisi quae voluptatem obcaecati dolorem cupiditate ipsum! Amet consequatur tempore officia.</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aut, similique pariatur necessitatibus, illum, laboriosam ex accusamus deleniti quod eos adipisci officiis. Et pariatur minus consequuntur debitis, quae doloribus ducimus.</p>
+                <p>Asperiores dolore quae et voluptas explicabo consequatur vero doloremque quam numquam quia, odit, esse, ipsa ipsum iste molestiae? Assumenda, accusamus voluptates nostrum quod illum aperiam tempore magni excepturi perferendis veritatis!</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis fugit aliquam, officia inventore iusto beatae magni eaque suscipit atque accusantium earum quas aperiam soluta, aut ab necessitatibus omnis et!</p>
+                <p>Quasi sint sequi ducimus libero tempore in dignissimos cumque praesentium, natus exercitationem nemo repudiandae asperiores. Mollitia officiis cupiditate officia id quos temporibus explicabo ducimus nam velit deserunt, totam odit illum.</p>
+                <p>Quasi sapiente laborum omnis a consequatur doloribus necessitatibus ea aliquid repudiandae eveniet, consequuntur, vitae voluptates saepe numquam? Tenetur sit exercitationem cum vitae recusandae facilis? Est unde pariatur voluptates tenetur voluptatibus.</p>
+            </article>
+        </div>
+
+        <h1>align-items: center (artigos alinhados ao centro)</h1>
+        <div class="container flex flex-wrap align-center">
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore eligendi at ratione, molestiae, voluptates corporis error, sunt eveniet nisi quae voluptatem obcaecati dolorem cupiditate ipsum! Amet consequatur tempore officia.</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aut, similique pariatur necessitatibus, illum, laboriosam ex accusamus deleniti quod eos adipisci officiis. Et pariatur minus consequuntur debitis, quae doloribus ducimus.</p>
+                <p>Asperiores dolore quae et voluptas explicabo consequatur vero doloremque quam numquam quia, odit, esse, ipsa ipsum iste molestiae? Assumenda, accusamus voluptates nostrum quod illum aperiam tempore magni excepturi perferendis veritatis!</p>
+            </article>
+            <article class="item flex-item-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nobis fugit aliquam, officia inventore iusto beatae magni eaque suscipit atque accusantium earum quas aperiam soluta, aut ab necessitatibus omnis et!</p>
+                <p>Quasi sint sequi ducimus libero tempore in dignissimos cumque praesentium, natus exercitationem nemo repudiandae asperiores. Mollitia officiis cupiditate officia id quos temporibus explicabo ducimus nam velit deserunt, totam odit illum.</p>
+                <p>Quasi sapiente laborum omnis a consequatur doloribus necessitatibus ea aliquid repudiandae eveniet, consequuntur, vitae voluptates saepe numquam? Tenetur sit exercitationem cum vitae recusandae facilis? Est unde pariatur voluptates tenetur voluptatibus.</p>
+            </article>
+        </div>
+    </body>
+</html>
