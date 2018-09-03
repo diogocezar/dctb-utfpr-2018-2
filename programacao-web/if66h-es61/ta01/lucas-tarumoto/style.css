@@ -1,0 +1,55 @@
+body {
+
+	background-color: white;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+h1{
+
+	font-size: 3em
+
+}
+
+
+
+h2{
+
+	font-size: 2em
+
+}
+
+
+
+p{
+
+	font-size: 1.4em
+
+}
+
+
+
+a{
+
+	font-size: 1.4em
+
+}
+
+
+
+li{
+
+	font-size: 1.4em
+
+}
+
+
+
+section{
+
+	margin: 50px
+
+}

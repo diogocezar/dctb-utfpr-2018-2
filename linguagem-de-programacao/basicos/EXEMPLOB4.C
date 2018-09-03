@@ -1,6 +1,6 @@
 /* Exemplo de uso da funcao getch e getche.
-   A funÁ„o getch le uma tecla e n„o imprimi o que foi digitado.
-   A funÁ„o getche le uma tecla e IMPRIMI o que foi digitado.  */
+   A fun√ß√£oo getch le uma tecla e n√£o imprimi o que foi digitado.
+   A fun√ß√£oo getche le uma tecla e IMPRIMI o que foi digitado.  */
 
 #include<stdio.h>
 //#include<curses.h>

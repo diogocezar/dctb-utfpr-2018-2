@@ -1,10 +1,10 @@
-/* Exemplo do uso de if com validações das entradas
-   e de uso do comando return para devolver código de erro ao S.O
+/* Exemplo do uso de if com validaÃ§Ãµes das entradas
+   e de uso do comando return para devolver cÃ³digo de erro ao S.O
 
    Definido pelo programador, quando este programa devolver:
-    Código  0: Nenhum erro durante a execução do programa
-    Código -1: Erro no total de aulas
-    Código -2: Erro na porcentagem máxima de faltas         */
+    CÃ³digo  0: Nenhum erro durante a execuï¿½ï¿½o do programa
+    CÃ³digo -1: Erro no total de aulas
+    CÃ³digo -2: Erro na porcentagem mÃ¡xima de faltas         */
 
 #include<stdio.h>
 #include<stdlib.h>

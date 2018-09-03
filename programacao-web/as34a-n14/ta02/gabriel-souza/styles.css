@@ -1,0 +1,171 @@
+/* Página */
+.page {
+	border: 2px solid red;
+	padding: 10px;
+	background-color:black;
+	border-radius: 20px;
+}
+/* Final Página */
+
+/* Display Block */
+.container-display-block {
+	max-width: 400px;
+	margin: 0 auto;
+}
+.item {
+	margin: 5px;
+	background: white;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+/* Final Display Block */
+
+/* Flex-Direction row */
+.row {
+	flex-direction: row;
+}
+.container-row {
+	max-width: 100px;
+	margin: 0 auto;
+	display: flex;
+	border: 2px dashed white;
+	padding: 0.5px;
+}
+.item2 {
+	flex: 1;
+	margin: 2px;
+	color: white;
+	background: black;
+	text-align: center;
+	font-size: 1.5em;
+}
+/* Final Flex-Direction row */
+
+/* Flex-Wrap nowrap*/
+.nowrap {
+	flex-wrap: nowrap;
+}
+.container-nowrap {
+	max-width: 300px;
+	display: flex;
+	border: 2px solid yellow;
+	margin: 0 auto;
+	margin-top: 70px;
+	margin-bottom: 2px;
+}
+/* Final Flex-Wrap nowrap*/
+
+/* Flex-Flow row nowrap*/
+.row-nowrap {
+	flex-flow: row nowrap;
+}
+.container-row-nowrap {
+	max-width: 180px;
+	margin: 0 auto;
+	display: flex;
+	border: 2px dashed red;
+}
+/* Final Flex-Flow row nowrap*/
+
+/* Align-Content stretch*/
+.stretch {
+	align-content: stretch;
+}
+.container-stretch {
+	max-width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 150px;
+	margin-top: 120px;
+}
+.item5 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	color: white;
+	background: black;
+	font-size: 1.5em;
+	text-align: center;
+	align-self: center;
+}
+/* Final Align-Content stretch*/
+
+/* Galerria de Fotos */
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 120px;
+}
+.gallery img {
+	height: 200px;
+	flex-grow: 0; 
+	flex-shrink: 1; 
+	flex-basis: 40%;
+	padding: 10px;
+}
+/* Final da Galerria de Fotos */
+
+/* Justify-Content space-between*/
+.space-between {
+	justify-content: space-between;
+}
+.container-space-between {
+	max-width: 195px;
+	display: flex;
+	border: 1px solid white;
+}
+.item3 {
+	margin: 2px;
+	padding: 0.5px;
+	color: white;
+	background: black;
+	font-size: 1.5em;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+/* Final Justify-Content space-between*/
+
+/* Align-Items: center column */
+.center {
+	align-items: center;
+}
+.container-center-column {
+	margin:-100px 0px 10px 1100px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.item4 {
+	margin: 1px;
+	padding: 0 10px;
+	color: white;
+	background: black;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: 'Gloria Hallelujah', cursive;
+	flex: 0;
+	padding: 2px;
+}
+/* Final Align-Items: center column */
+
+/* Flex Item order */
+.order-4{
+	order:4;
+}
+.order-3{
+	order:3;
+}
+.order-1{
+	order:1;
+}
+.order-2{
+	order:2;
+}
+@media (max-width: 400px){
+	.order-4{order:-1;}
+}
+/* Final Flex Item order */

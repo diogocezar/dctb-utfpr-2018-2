@@ -1,0 +1,418 @@
+body {
+    background: linear-gradient(50deg,#ff416a81,#7e26f885),url('../img/cover2.jpg');
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.pd {
+    padding: 100px 50px;
+}
+
+.fl-cl-ct {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr{
+    width: 200px;
+    margin-bottom: 70px;
+}
+
+/* Orders section*/
+
+.order-1 {
+	order: 1;
+}
+
+.order-2 {
+	order: 2;
+}
+
+.order-3 {
+	order: 3;
+}
+
+.order-4 {
+	order: 4;
+}
+
+/* Images grid section*/
+
+.img-1{
+    background-image: url('https://source.unsplash.com/collection/2348098/');
+}
+
+.img-2{
+    background-image: url('https://source.unsplash.com/collection/878073/');
+}
+
+.img-3{
+    background-image: url('https://source.unsplash.com/collection/944765/');
+}
+
+.img-4{
+    background-image: url('https://source.unsplash.com/collection/2407767/');
+}
+
+/* -- Buttons -- */
+.btn-custom {
+    color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Header section*/
+
+header {
+	background: rgba(0, 0, 0, 0.6);
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 100px;
+}
+
+header .img-logo {
+	height: 50px;
+    display: flex;
+    align-items: center;
+	background: url('../img/logo.png') no-repeat;
+	background-size: contain;
+    color: transparent;
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 #5f15a5);
+    filter: opacity(.5) drop-shadow(0 0 0 #5f15a5);
+}
+
+header .img-logo::after{
+    content: "[display:flex][justify-content: space-between;]";
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+header li a {
+    color: #fff;
+}
+header li a:hover{
+    color: #5f15a5;
+}
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+header li:last-child {
+    margin-right: 0;
+}
+
+/* End header section */
+
+/* Welcome section */
+.welcome {
+    min-height: 100vh;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome .btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome h1 {
+    font-size: 6rem;
+    margin-bottom: 50px;
+}
+
+.welcome a {
+    flex-direction: row;
+}
+
+/*End welcome*/
+
+/* About section*/
+.about {
+    background-color: #fff;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-bottom:  35px;
+    color: #2e2e2e;  
+    text-align: center;  
+}
+
+.about p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.about .grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.about .grid li {
+    height: 350px;
+    padding:  20px;
+    background-clip:  content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .grid li.sm{
+    flex-basis: 40%;
+}
+.about .grid li.lg{
+    flex-basis: 60%;
+}
+/*End about section*/
+
+/*Contact section*/
+.contact {
+    background-color: #7c25f8; 
+}
+
+.contact h3 {
+    font-size: 2rem;
+    margin-bottom:  35px;
+    color: #fff;  
+    text-align: center;  
+}
+
+.contact p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact hr{
+    color: #fff;
+}
+
+.contact .grid{
+    width: 100%;
+    display: flex;
+}
+
+.contact .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.contact .grid li i {
+    color: #d66eff; 
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.contact .grid li h4 {
+    font-size:  1.5rem;
+    color: #d66eff; 
+    margin-bottom: 30px;
+}
+
+.contact .grid li p {
+    color: #fff;
+}
+/*End contact section*/
+
+/*Newsleter section*/
+.newsletter {
+    background-color: #fff;
+}
+
+.newsletter h3 {
+    font-size: 2rem;
+    margin-bottom:  35px;
+    color: #2e2e2e;  
+    text-align: center;  
+}
+
+.newsletter p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter input {
+    padding: 15px;
+    border: 1px solid #7c25f8;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.newsletter button {
+    padding: 15px;
+    background-color: #7c25f8;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Newsletter end section*/
+
+/*Services section*/
+.services {
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.services .description{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    margin: 5px;
+}
+
+.services h2 {
+    font-size: 3rem;
+}
+
+.services h3 {
+    font-size: 2rem;
+}
+
+.services .grid {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .grid li {
+    height: 300px;
+    border-radius:  4px;
+    background-clip:  content-box;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    flex-grow: 0; 
+    flex-shrink: 1;  
+    flex-basis: 45%;
+}
+
+/*End services section*/
+
+
+/*Footer section*/
+footer {
+    background-color: #7c25f8;
+    padding: 50px 0px;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child{
+    margin-right: 0;
+}
+
+footer ul li a {
+    color: #d66eff;
+    font-size: 2rem;
+}
+
+footer ul li a:hover {
+    color: #dd99f8;
+    font-size: 2rem;
+}
+
+footer p {
+    color: #d66eff;
+    text-align: center;
+}
+/*End footer section*/
+
+@media only screen and (max-width: 700px){
+    header {flex-direction: column;}
+    header nav{flex-direction: column;   align-items: center;    }
+    header nav li{ margin: 5px 0;}
+    header img {margin-bottom: 15px;}
+    .welcome h1 {font-size: 2.5rem;}
+    .about .grid li.sm, .about .grid li.lg {flex-basis: 100%}
+    .newsletter input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+    .welcome .btn {
+        flex-direction: column;
+    }
+    .welcome .btn a {
+        margin-bottom: 25px;
+    }
+
+    .order-4 {
+        order: -1;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .contact .grid {
+        flex-direction: column-reverse;
+    }
+
+    .services .grid {
+        flex-direction: column-reverse;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>flex-example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importação do bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Importação da fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar bg-dark fixed-top">
+        <div id="div-container">
+            <div id="div1">
+                    <img src="data:image/png;base64,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">
+            </div>
+            <div id="div2">
+                <a href="#">Home</a>
+                <a href="#">Text0</a>
+                <a href="#">Text1</a>
+                <a href="#" id="inicio">Inicio</a>
+            </div>
+        </div>
+    </nav>
+    <section id="section1">
+        <div class="container">
+            <p class="item grow1">Example</p>
+            <p class="item grow2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate sit quisquam tempora doloribus minus nihil officia enim voluptatem obcaecati. Iure similique, tenetur blanditiis laudantium voluptatem consequuntur doloremque. Aliquid, laudantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos voluptatibus facere dignissimos id, consequuntur debitis quidem! Eveniet, amet cupiditate. Tempore, voluptate! Unde voluptates tempora saepe nostrum, omnis aperiam dolore!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed accusantium consequuntur sapiente aut omnis dolor placeat, voluptatem accusamus, error nemo quibusdam non, eius officia ipsa explicabo aperiam temporibus corrupti natus?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab sint eum assumenda, tempore quae eius. Architecto odio saepe suscipit hic vel? Doloremque repudiandae obcaecati delectus consectetur facilis maxime ea.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quod distinctio quos necessitatibus! Fuga molestiae itaque hic modi magnam. Fugit architecto odio necessitatibus libero, quaerat unde eum possimus quod veritatis!
+            </p>
+            <p class="item grow1">Example</p>
+        </div>
+    </section>
+</body>
+</html>

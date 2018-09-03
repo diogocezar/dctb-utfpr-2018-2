@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <meta charset="utf-8">
+    <title> Flex Items </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>           
+    <h1>Flex Items</h1>
+    <div id="menu">
+        <ul>
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="#flex-grow"> Flex-Grow </a></li>
+            <li> <a href="#flex-basis"> Flex-Basis </a></li>
+            <li> <a href="#flex-shrink"> Flex-Shrink </a></li>
+            <li> <a href="#flex"> Flex </a></li>
+            <li> <a href="#order"> Order </a></li>
+            <li> <a href="#align-self"> Align-Self </a></li>
+        </ul>
+    </div>
+
+    <h2>Flex Grow: flex-grow:0</h2>
+    <!--Section 1-->
+    <section class="flex-grow">
+        <div class="container flex flex-grow">
+            <div class="item">D</div>
+            <div class="item">A</div>
+            <div class="item">N</div>
+            <div class="item">I</div>
+            <div class="item">E</div>
+            <div class="item">L</div>
+        </div>
+    </section>
+
+    <h2>Flex-Basis: auto </h2>
+    <!--Section 2-->
+    <section class="flex-basis">
+        <div class="container flex flex-grow ">
+            <div class="item basis-auto">1</div>
+            <div class="item basis-auto-grow-1">2</div>
+            <div class="item basis-auto">3</div>
+            <div class="item basis-auto-grow-1">4</div>
+        </div>
+    </section>
+
+    <h2>Flex-Shrink:1 </h2>
+    <!--Section 3-->
+    <section class="flex-shrink">
+        <div class="container flex shrink-1">
+            <div class="item">Shrink01</div>
+            <div class="item">Shrink012</div>
+            <div class="item">Shrink0123</div>
+            <div class="item">Shrink01234</div>
+        </div>
+    </section>
+
+    <h2>Flex: basis-auto </h2>
+    <!--Section 4-->
+    <section id="flex">
+        <div class="container flex basis-auto ">
+            <div class="item basis-auto">flex1</div>
+            <div class="item ">flex2</div>
+            <div class="item basis-auto">flex3</div>
+            <div class="item ">flex4</div>
+        </div>
+    </section>
+
+    <h2>Order: mixed numbers </h2>
+    <!--Section 5-->
+    <section id="order">
+        <div class="container flex order">
+            <div class="item order4">1</div>
+            <div class="item order3">2</div>
+            <div class="item order1">3</div>
+            <div class="item order2">4</div>
+        </div>
+    </section>
+
+    <h2>Align-Self: multiple </h2>
+    <!--Section 6-->
+    <section id="align-self">
+        <div class="container flex ">
+            <div class="item flex-start">Start</div>
+            <div class="item center">Center Center Center</div>
+            <div class="item ">Item Item Item Item</div>
+            <div class="item flex-end">End</div>         
+        </div>
+    </section>
+</body>
+</html>

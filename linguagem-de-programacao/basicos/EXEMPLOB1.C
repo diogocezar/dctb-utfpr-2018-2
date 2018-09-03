@@ -1,5 +1,5 @@
 /* Nome: Alexande R. M. Feitosa
-   Descrição: Primeiro programa em c
+   DescriÃ§Ã£o: Primeiro programa em c
 */
 
 #include<stdio.h>

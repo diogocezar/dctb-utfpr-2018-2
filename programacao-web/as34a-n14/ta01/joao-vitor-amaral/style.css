@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+}
+header{
+	
+	height: 2em;
+}
+img{
+	width: 300px;
+	height: 300px;
+	margin-left: 42%;
+}
+nav{
+	background-color: #4682B4;
+	width: 100%;
+	padding: 1em;
+	height: 1.3em;
+	text-align: center;
+	position: fixed;
+
+}
+nav li{
+	display: inline-block;
+}
+a{
+	
+	text-decoration: none;
+	color: white;
+	margin: 0 50px 0 0;
+}
+main{
+	
+}
+.dados{
+	padding-left: 2em;
+	margin: 0;
+	font-size: 2em;
+}
+h1{
+	text-align: center;
+	font-size: 5em;
+	margin: 0;
+	padding: 0.5em;
+}
+#sobre{
+	background-color: #C1CDCD;
+	height: 550px;
+}
+#habilidades{
+	background-color: #B2DFEE;
+	height: 550px;
+	
+}
+h2{
+	margin: 0;
+	padding: 0.8em;
+	font-size: 3.5em;
+	padding-left: 2.5em;
+}
+ul{
+	font-size: 2em;
+	padding-left: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.form{
+	background-color: #9AC0CD;
+	height: 550px;
+}
+#horario{
+	background-color: #68838B;
+}
+table{
+	width: 90%;
+	height: 580px;
+	padding-left: 2em;
+	font-size: 2em;
+}
+footer{
+	background-color: #4682B4;
+
+}
+#rede_sociais{
+	text-align: center;
+	display: inline-block;
+
+}
+.icone-face{
+	color: black;
+	font-size: 50px; 
+	text-align: center;
+	float: left;
+}
+.icone-insta{
+	color: black;
+	font-size: 50px; 
+	text-align: center;
+	float: left;
+}
+.icone-git{
+	color: black;
+	font-size: 50px; 
+	text-align: center;
+	float: left;
+}

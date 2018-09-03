@@ -1,0 +1,28 @@
+body {
+    color: #3c4858;
+}
+
+.titulo {
+    text-align: center;
+    background-color: #6048fa;
+    color: white;
+}
+.img-perfil {
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+    color: black;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#informacoes {
+    background-color: white;
+}
+
+.rede-social {
+    font-size: 22px;
+}
