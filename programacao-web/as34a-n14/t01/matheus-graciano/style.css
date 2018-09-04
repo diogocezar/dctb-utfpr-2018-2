@@ -1,28 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
 
-@media screen and (min-width: 1200px){
-  .container {
-      max-width: 1140px;
-  }
-  }
-  
-  @media screen and (min-width: 992px){
-  .container {
-      max-width: 960px;
-  }
-  }
-  
-  @media screen and (min-width: 768px){
-  .container {
-      max-width: 720px;
-  }
-  }
-  @media screen and (min-width: 576px){
-  .container {
-      max-width: 540px;
-  }
-  }
-
 .container {
   width: 100%;
   padding-right: 15px;
@@ -31,9 +8,33 @@
   margin-left: auto;
 }
 
-div{
-  display: block;
+@media screen and (max-width: 1200px){
+  .container{
+    max-width: 1140px;;
+  }
 }
+
+@media screen and (max-width: 992px){
+  .container{
+    max-width: 960px;;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    max-width: 720px;;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .container{
+    max-width: 540px;;
+  }
+}
+
+* {
+  outline: none !important; }
+
 
 .header-menu{
   top: 0;
@@ -321,27 +322,6 @@ section#services{
   margin-left: -15px;
 }
 
-@media screen and (min-width: 992px){
-  .parte {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
-}
-
-@media screen and(min-width: 768px){
-  .parte {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
-}
-
-@media screen and (min-width: 576px){
-  .parte {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-}
-
 .parte{
   position: relative;
   width: 100%;
@@ -349,6 +329,29 @@ section#services{
   padding-right: 15px;
   padding-left: 15px;
 }
+
+@media screen and (min-width: 992px){
+  .parte{
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media screen and(min-width: 768px){
+  .parte{
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 576px){
+  .parte{
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+
 
 #content-services h3 {
   font-family: TrajanPro-Regular,serif;
@@ -374,6 +377,154 @@ section#services{
   left: 50%;
   transform: translate(-50%)!important;
 }
+
+/* Depositions */
+
+#content-depositions h2 {
+  font-family: AfterMidnite,sans-serif;
+  color: #22223b;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#content-depositions img{
+  height: 120px;
+  width: 120px;
+  margin-bottom: 3rem;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%)!important;
+}
+
+#content-depositions h3{
+  color: #9a8c98;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0 30%;
+  margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 992px){
+  #content-depositions h3{
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 768px){
+  #content-depositions h3{
+    font-size: 1.1rem;
+  }
+}
+
+/* Contacts */
+
+section#contacts{
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)), url(assets/images/geovanna-bg-contact.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#content-contacts{
+  text-align: center;
+}
+
+#content-contacts h2 {
+  font-family: AfterMidnite,sans-serif;
+  color: #f2e9e4;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+#content-contacts img{
+  height: 120px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#content-contacts h3{
+  font-family: TrajanPro-Regular, serif;
+  color: #c9ada7;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+#content-contacts h4{
+  font-family: TrajanPro-Regular,serif;
+  color: #c9ada7;
+  font-size: 1.5rem;
+}
+
+#content-contacts p.bigger{
+  font-size: 2rem;
+}
+
+#content-contacts p{
+  font-size: 1.2em;
+  color: #f2e9e4;
+}
+
+p{
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+#content-contacts p small {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+small{
+  font-size: 80%;
+  font-weight: 400;
+}
+
+#content-contacts ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#content-contacts ul li {
+  border: 2px solid #F2E9E4;
+  padding: 13px;
+  border-radius: 50%;
+  list-style-type: none; 
+}
+
+#content-contacts ul li:first-child {
+  margin-right: 15px; 
+}
+
+#content-contacts ul li a img {
+  height: 35px;
+  width: 35px; 
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts ul li a img {
+    height: 20px;
+    width: 20px; 
+  } 
+}
+
+#content-contacts ul li a img {
+  height: 35px;
+  width: 35px;
+  vertical-align: middle;
+  border-style: none;
+}
+
 
 
 /* Section */
