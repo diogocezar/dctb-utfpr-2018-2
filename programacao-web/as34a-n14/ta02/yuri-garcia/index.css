@@ -1,0 +1,178 @@
+.row {
+	flex-direction: row;
+}
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.column {
+	flex-direction: column;
+}
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.nowrap {
+	flex-wrap: nowrap;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.center {
+	justify-content: center;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+.flex{
+	flex: 1;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.baseline {
+	align-items: baseline;
+}
+
+.grow0 {
+	flex-grow: 0;
+}
+
+.grow1 {
+	flex-grow: 1;
+}
+
+.grow2 {
+	flex-grow: 2;
+}
+
+.basis-110 {
+	flex-basis: 110px;
+}
+
+.height
+{
+	height: 300px;
+}
+
+.container {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.container2 {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.shrink-0-basis {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 150px;
+}
+
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+.align-items {
+	align-items: flex-start;
+}
+
+.item {
+	margin: 3px;
+	background: #3399ff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.img1{
+	width: 175px;
+	height: 100px;
+	background: url('img1.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.img2{
+	width: 175px;
+	height: 100px;
+	background: url('img2.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.img3{
+	width: 175px;
+	height: 200px;
+	background: url('img3.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.img4{
+	width: 175px;
+	height: 200px;
+	background: url('img4.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.img5{
+	width: 300px;
+	height: 200px;
+	background: url('img5.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.img6{
+	width: 300px;
+	height: 200px;
+	background: url('img6.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.img7{
+	width: 300px;
+	height: 200px;
+	background: url('img7.jpg') no-repeat center;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #000000;
+}

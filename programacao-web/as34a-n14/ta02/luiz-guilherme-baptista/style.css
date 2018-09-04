@@ -1,0 +1,191 @@
+.page {
+   border: 10px solid gray;
+   padding: 10px;
+   background-color:black;
+   border-radius: 20px;
+}
+
+.container-display-block {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+.flex {
+   display: flex;
+}
+
+.flex-loja{
+    flex-flow: column nowrap;
+}
+
+.itemt {
+   border-radius: 20px;
+   margin: 20px auto;
+   background: orange;
+   text-align: center;
+   font-size: 1.5em;
+   color: black;
+   min-width: 20px;
+   max-width: 800px;
+}
+
+.item0 {
+   margin: 20px auto;
+   background: green;
+   text-align: center;
+   font-size: 1.5em;
+   color: black;
+   min-width: 20px;
+   max-width: 600px;
+}
+
+.item1 {
+   border-radius: 20px;
+   margin: 5px;
+   background: gold;
+   text-align: center;
+   font-size: 3em;
+   font-weight: bold;
+   color: black;
+}
+
+.item2 {
+   border-radius: 20px;
+   margin: 5px;
+   background: gold;
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+.item3 {
+   flex: 1;
+}
+
+.item4 {
+   flex: 1;
+   margin: 5px;
+   padding: 0 10px;
+   color: white;
+   background: black;
+   font-size: 1em;
+   text-align: center;
+   align-self: center;
+}
+
+.item5{
+    flex: 1;
+    margin: 5px;    
+    text-align: center;
+}
+
+.item6{
+   flex: 1;
+   margin: 5px;
+   padding: 0 10px;
+   color: white;
+   background: black;
+   font-size: 1em;
+   align-self: center;
+}
+
+.item7{
+   flex: 1;
+   margin: 5px;  
+   justify-content: center;
+   text-align: center;
+   font-size: 2em;
+}
+
+a{
+   color: white;
+}
+ 
+a:hover{
+   color: goldenrod;
+}
+
+.container {
+   border-radius: 20px;
+   max-width: 800px;
+   margin: 0 auto;
+   border: 1px solid #ccc;
+   display: flex; 
+   text-align: center;
+   color: blue;
+   flex-wrap: wrap;
+}
+
+ .nowrap {
+   flex-wrap: nowrap;
+}
+
+.container-nowrap {
+   max-width: 400px;
+   display: flex;
+   border: 2px solid yellow;
+   margin: 0 auto;
+   margin-top: 20px;
+   margin-bottom: 2px;
+}
+
+.row-nowrap {
+   flex-flow: row nowrap;
+   text-align: center;
+}
+
+.container-row-nowrap {
+   max-width: 180px;
+   margin: 0 auto;
+   display: flex;
+   border: 2px dashed red;
+}
+
+.container-stretch {
+   max-width: 1000px;
+   margin: 0 auto;
+   flex-wrap: wrap;
+   margin-bottom: 1px;
+   margin-top: 20px;
+   border-radius: 20px;
+}
+
+.container-flex-local{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;    
+    padding: 20px;
+}
+
+.row {
+   flex-direction: row;
+}
+
+.order1 {
+   order: 1;
+}
+ 
+.order2 {
+   order: 2;
+}
+ 
+.order3 {
+   order: 3;
+}
+ 
+.order4 {
+   order: 4;
+}
+
+body {
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+ 	color: white;
+ 	font-family: monospace;
+   background-color: gold;
+ 	background-size: cover;
+ 	background-attachment: fixed;
+   text-align: center;
+}

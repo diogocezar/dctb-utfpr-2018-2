@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TA02 - CSS Flex</title>
+
+    <style>
+        /* Flex */
+		.flex {
+			display: flex;
+		}
+        .row {
+	      flex-direction: row;
+        }
+		.grow0 {
+			flex-grow: 0;
+		}
+		.grow1 {
+			flex-grow: 1;
+		}
+		.grow2 {
+			flex-grow: 2;
+		}
+		.stretch {
+			align-items: stretch;
+		}
+		.center {
+			align-self: center;
+		}
+		.column {
+			flex-direction: column;
+		}
+		.wrap {
+			flex-wrap: wrap;
+		}
+		.space-between {
+			justify-content: space-between;
+		}
+		.item {
+            margin: 15px;
+            background: #00FFFF;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        
+         h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            display: flex;
+        }
+        .resolucao { 
+        	height:17em;
+        	width: 18.3em;
+        	margin: 2em;
+        }
+        body {
+            font-family: monospace;
+            color: #2F4F4F;
+        }
+    </style>
+
+</head>
+<body>
+
+	<h1>&#164Companhia das Piscinas</h1>
+	<section class="container space-between">
+        <div class="item">&#164Bombas</div>
+		<div class="item">&#164Construção</div>
+        <div class="item">&#164Paisagismo</div>
+		<div class="item">&#164Manutenção</div>
+	</section>
+
+  <h1>Material desejado:</h1>
+	<section class="container column">
+		<div class="item">&#155 Alvenaria &#139</div>
+		<div class="item">&#155 Fibra de Vidro &#139</div>
+        <div class="item">&#155 Plástico (Portátil) &#139</div>
+		<div class="item">&#155 Vinil &#139</div>
+	</section>
+
+  <h1> Modelos mais populares:</h1>
+	<section class="container wrap">
+		<div> <img src="https://pisoparapiscina.com/wp-content/uploads/2017/03/piso-barato-para-piscina-1.jpg" class="resolucao" alt="Piscina"/> </div>
+
+		<div> <img src="http://www.bocasantaofertas.com.br/upimg/produtos/4629/piscina-de-fibra-de-vidro-380-x-2-25-x-1-00-m-5300-litros_4629(12080).jpg" class="resolucao" alt="Piscina"/> </div>
+
+		<div> <img src="https://casaeconstrucao.org/wp-content/uploads/2015/11/modelos-de-piscinas-22.jpg" class="resolucao" alt="Piscina"/> </div>
+      
+		<div> <img src="https://decorandotudo.org/wp-content/uploads/2017/02/piscina-vinil.jpg" class="resolucao" alt="Piscina"/> </div>
+      
+        <div> <img src="http://www.in9reformasmanutencoes.com.br/piscina-de-vidro-rio-de-janeiro.jpg?v=1tiuow5r1911z7f" class="resolucao" alt="Piscina"/> </div>
+      
+        <div> <img src="https://www.miamiimportadosonline.com/wp-content/uploads/2017/06/Piscina-Infla´vel-Infantil-Arco-i´ris-Intex2.jpeg" class="resolucao" alt="Piscina"/> </div>
+      
+	</section>
+
+	<h1>Rodapé</h1>
+	<section class="container stretch">
+		<div class="item grow2">Ajuda: <br/> &#187 Para segurança <br/> &#187 Para Limpeza <br/> </div>
+
+		<div class="item grow2">Redes Sociais: <br/> &#187 Facebook <br/> &#187 Instagram</div>
+
+		<div class="item grow2">Sobre a empresa: <br/> &#187 Telefone <br/> &#187 Email <br/> &#187 Quem somos</div>
+	</section>
+</body>
+</html>

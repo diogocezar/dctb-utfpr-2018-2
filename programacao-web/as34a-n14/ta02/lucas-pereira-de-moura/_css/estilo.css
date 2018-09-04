@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+div#interface{
+    width: 1000px;
+    margin: -20px auto -20px auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h1#linkscolecionador{
+    margin-top: 110px;
+}
+
+h2#emuladores{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+h1#fotos{
+    margin-top: 150px;
+}
+
+
+/*container que contem o menu(display)1*/
+.containermenu{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-item-1{
+    flex: 1;
+}
+
+.item1{
+    margin: 10px;
+    border: 3px solid purple;
+    border-radius: 3px;
+    background-color: #D358F7;
+    text-align: center; 
+    
+}
+
+/*---------------------------*/
+
+/*container que contem as fotos de revistas(flex-direction)2*/
+.containerrevistas{
+    max-width: 900;
+    margin: 0 auto;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.item2{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: #D358F7;
+    
+}
+
+/*---------------------------------------------------------*/
+
+/*container que contem os links para emuladores(flex-wrap(wrap-reverse))3*/
+.containeremulador{
+    width: 300px;
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.item3{
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: purple;
+    padding: 5px;
+}
+/*-----------------------------------------------------*/
+
+/*container que contem os links para lojas e grupos da comunidade colecionista(flex-flow(columm-nowwrap))4*/
+.containerlinks{
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+    background-color: #D358F7;
+}
+
+.column-nowwrap{
+    flex-flow: row wrap;
+}
+
+.item4_1{
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    font-size: 40px;
+    
+
+}
+.item4_2{
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    font-size: 40px;
+
+}
+.item4_3{
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+/*container contendo alguns mini botoes(justify-content (flex-end))5*/
+.containerminibotoes{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+        
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.item5{
+    margin: 5px;
+    padding: 0 10px;
+    background: purple;
+    
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+/*container contendo alguns dados interessantes(align items (flex-start))6*/
+.containerdados{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.item6{
+    flex: 1;
+    margin: 5px;
+    padding: 0 10;
+    background: #D358F7;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*----------------------------------------------------------------------*/
+
+/*container que contem conteudo final da pagina(align-content (space-tebween))7*/
+.containerfinal{
+    max-width: 900px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+	flex-wrap: wrap;
+}
+
+.space-between{
+    align-content: space-between;
+}
+
+.item7{
+    flex: 1;
+    margin: 5px;
+    padding: 0 10px;
+    background-color: purple;
+    text-align: center;
+    font-size: 1.5em;
+}
+/*----------------------------------------------------------------------*/
+
+
+/*Paragrafos com texto*/
+
+p#snes{
+    font-family: cursive;
+    width: 300px;
+    border: 3px solid purple;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+p#mdrive{
+    font-family: cursive;
+    width: 400px;
+    border: 3px solid purple;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 560px;
+    margin-top: -280px;
+}
+
+p#texto_revista1{
+    font-family: cursive;
+    font-size: 13px;
+    width: 200px;
+    margin-left: 700px;
+    margin-top: -750px;
+}
+
+p#texto_revista2{
+    font-family: cursive;
+    font-size: 13px;
+    width: 200px;
+    margin-left: 700px;
+    margin-top: 90;
+}
+
+p#texto_revista3{
+    font-family: cursive;
+    font-size: 13px;
+    width: 280px;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+
+p#texto_emuladores{
+    font-family: cursive;
+    width: 500px;
+    border: 3px solid purple;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 350px;
+    margin-top: -300px;
+}
+
+/*----------------------------------------------------------*/
+
+
+/*-------------segunda pagina----------------------*/
+
+/*container contendo fotos da locadora(flex-grow())*/
+.containerfotoslocadoras{
+    max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.grow1{
+    flex-grow: 1;
+}
+
+.item1_2{
+    margin: 5px;
+	
+}
+/*--------------------------------------------------*/
+
+/*container contendo fotos de consoles*/
+.containerfotoslanhouse{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.lanhouse{
+    flex-wrap: wrap;
+}
+
+.item1_3{
+    margin: 5px;
+    
+}
+/**-------------------------------------------------/
+
+/*Paragrafos segunda pagina*/
+
+p#lanhouse{
+    font-family: cursive;
+    font-size: 18px;
+    width: 300px;
+    border: 3px solid purple;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 580px;
+    margin-top: -400px;
+    background-color: #D358F7;
+}
+/*---------------------------*/
+
+
+/*container contendo fotos de pc antigo para novo(flex-shirk)*/
+.containerfotospc{
+    max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.shrink-1 {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.item1_4{
+    margin: 5px;
+	
+}
+/*-----------------------------------------------------*/
+
+
+
+/*------------terceira pagina*-----------------(flex)*/
+/*container contendo videos do defenestrando jogos(flex)*/
+.containervideos1{
+    max-width: 980px;
+	margin: 0 auto;
+	display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.item2_1{
+    margin: 5px;
+    position: relative;	
+}
+
+
+/*---------------------------------------------------*/
+
+/*container contendo do colonia contraataca(order)*/
+.containervideos2{
+    max-width: 980px;
+	margin: 0 auto;
+	display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+/*-----------*/
+.order2 {
+	order: 2;
+}
+.order-1 {
+	order: -1;
+}
+.order1 {
+	order: 1;
+}
+
+/*----------*/
+
+.item2_3{
+    margin: 5px;
+    position: relative;
+}
+
+
+/*---------------------------------------------------*/
+
+/*container contendo videos mao na luva(align-self)*/
+.containervideos3{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+
+.baseline {
+	align-self: baseline;
+}
+
+.item2_4{
+    margin: 5px;
+    position: relative;
+}
+
+
+
+/*----*/

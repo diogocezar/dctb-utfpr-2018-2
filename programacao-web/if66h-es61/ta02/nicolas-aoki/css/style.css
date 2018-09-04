@@ -1,0 +1,78 @@
+body{
+    background-color: teal;
+}
+h1{
+    text-align: center;
+}
+.menu{
+    background-color: rgb(241, 76, 76);
+    display: flex;
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.item{
+    font-size: 1.5em;
+    margin:10px;
+    text-decoration: none;
+    color: white;
+}
+.corpo{
+    display: flex;
+    background-color: goldenrod;
+    flex-flow: row wrap;
+    
+}
+.sideMenu{
+    display: flex;
+    background-color: khaki;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.images{
+    display: flex;
+    max-width:20%;
+    max-height: 100%;
+    align-content: stretch;
+}
+.galeria{
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: space-around;
+    flex: 3 2 300px;
+}
+.podium{
+    display: flex;
+    background-color: burlywood;
+    justify-content: center;
+    height: 100px;
+}
+.primeiro{
+    display: flex;
+    background-color: gold;
+    order:2;
+    margin-top: 20px;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+}
+.segundo{
+    display: flex;
+    background-color: silver;
+    order:1;
+    width:100px;
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
+}
+.terceiro{
+    display: flex;
+    background-color: rgb(194, 99, 99);
+    order:3;
+    width:100px;
+    margin-top:70px;
+    justify-content: center;
+    align-items: center;
+}
