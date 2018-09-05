@@ -148,11 +148,20 @@ a {
 .links{
     width:90%
 }
-
+.self{
+    height: 60%;
+}
 .flexit{
     flex: 3 1 30%;
+    align-self: baseline;
 }
 
 .flexit2{
     flex: 2 1 150px;
+    align-self:center;   
+}
+
+.flexit3{
+    flex: 2 1 150px;
+    align-self: flex-end    
 }
