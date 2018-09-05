@@ -8,34 +8,50 @@
     <title>TA02 - Felipe Kamimura</title>
 </head>
 <body>
-    <!--Here I'll use the item 5, justify-content: space-between to align the header itens-->
+    <!--Here I'll use the container item 5, justify-content: space-between to align the header itens-->
     <header class="container flex space-between">
         icone
         <div>
-            <!--Here I'll use the item 3, flex-wrap: wrap to help align the menu in the header-->
-            <div class="container flex wrap">
+            <!--Here I'll use the container item 4, flex-flow: wrap to help align the menu in the header-->
+                <div class="container flex flex-flow">
                 <div class="menu_item">menu 1 </div>
                 <div class="menu_item">menu 2</div>
                 <div class="menu_item">menu 3</div>
             </div>
         </div>
-       
     </header>
-    <!--Here I'm using the iten1 1 and 3: display and flex-wrap: wrap
+    <!--Here I'm using the container item 6, align-items to align the title to the right
+     and item container 2 flex-direction to align the itens in a column-->
+    <div class="container flex flex-end column">
+            <!--Here I'm using flex item 6: align-self, to make to title go up and the subtitle down-->
+            <div class="title align-self1"> <h2>O estudo do Flex Container</h2></div>
+            <div class="title align-self2"> <h2>inclusive no título</h2></div>
+       
+    </div>
+    <!--Here I'll use the container item 7, align-content: to write something in two columns-->
+    <section class="container flex space-around">
+        <div class="item col">THIS IS THE FIRST 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a eleifend velit, vitae lobortis nisl. Sed commodo, augue sit amet lobortis luctus, nunc mauris commodo nulla, eget faucibus orci lectus non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris et justo non diam lacinia maximus.</div>
+        <div class="item col">THIS IS THE SECOND Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a eleifend velit, vitae lobortis nisl. Sed commodo, augue sit amet lobortis luctus, nunc mauris commodo nulla, eget faucibus orci lectus non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris et justo non diam lacinia maximus. </div>
+    </section>
+
+    <!--Here I'm using the container item 1 and 3: display and flex-wrap: wrap
     To show the tags in line-->
     <h3>Tags em um div com o display: flex-wrap</h3>
     <section class="container flex flex-wrap">
-        <div class="item tag">UTFPR</div>
-        <div class="item tag">Web 1</div>
-        <div class="item tag">html</div>
-        <div class="item tag">css</div>
-        <div class="item tag">flex Container</div>
-        <div class="item tag">TA 02</div>
+        <!--Here I'll use the flex item 1 flex-grow, so the tags listed here will have the same size-->
+        <div class="item tag grow">UTFPR</div>
+        <div class="item tag grow">Web 1</div>
+        <div class="item tag grow">html</div>
+        <div class="item tag grow">css</div>
+        <div class="item tag grow">flex Container</div>
+        <div class="item tag grow">TA 02</div>
     </section>
+
     <footer class="container column">
-        <div class="item footer">Parte 1 do rodape</div>
-        <div class="item footer">Parte 2 do rodape</div>
-        <div class="item footer">Parte 3 do rodape</div>
+        <div class="item footer">Felipe Issamu de Melo Kamimura</div>
+        <div class="item footer">Trabalho Prático sobre Flex Container - Web 1 (TA02)</div>
+        <div class="item footer">2018 - UTFPR CP</div>
     </footer>
     
 </body>
