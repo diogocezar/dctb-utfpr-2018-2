@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: cursive, monospace;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(234,230,247);
+}
+
+header{
+	display: flex;
+	background-color: rgb(82,112,255);
+	justify-content: space-around;
+}
+
+header p{
+	color: white;
+	align-self: center;
+	font-size: 3vw;
+}
+
+header img{
+	width: 10%;
+	height: 10%;
+}
+
+.titulo-materia{
+	display: flex;
+	margin: 20px;
+	justify-content: center;
+}
+
+.container{
+	display: flex;
+}
+
+.aba1{
+	order: 1;
+	flex-basis: 50%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	background-color: rgba(82,112,255,0.5);
+	flex-wrap: wrap;
+}
+
+.aba1 p{
+	margin: 20px;
+}
+
+.aba1 img{
+	align-self: center;
+}
+
+#luzia{
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.aba2{
+	order: 2;
+	flex-shrink: 1;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.aba2 p{
+	margin: 20px;
+	margin-bottom: 10px;
+}
+
+.aba2 img{
+	align-self: center;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(45,177,255);
+	background-color: rgb(1,22,39);
+}
