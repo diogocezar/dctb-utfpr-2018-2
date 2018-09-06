@@ -1,0 +1,331 @@
+.item1 {
+	margin: -3px;
+	background: yellow;
+	text-align: center;
+	font-size: 1.5em;
+  font-family: monospace;
+	color: #333;
+}
+/* Flex Container */
+.container1 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	
+}
+/* Flex Item */
+.menusup {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 4px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.25em;
+}
+.wrap1 {
+	flex-wrap: wrap;
+}
+
+/* Flex Container */
+.container2 {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item2 {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+  text-align: center;
+  font-family: monospace;
+	color: #333;
+}
+
+.column-nowrap3 {
+	flex-flow: column nowrap;
+}
+.row-wrap3 {
+	flex-flow: row wrap;
+}
+
+/* Flex Item */
+.item3 {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+  font-weight: normal;
+}
+.space-around4 {
+	justify-content: space-around;
+}
+
+/* Flex Container */
+.container4 {
+	max-width: 420px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.column4 {
+	min-height: 200px;
+	flex-direction: column;
+}
+
+/* Flex Item */
+.item4 {
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Indica que o conteúdo deve se expandir */
+.flex4 {
+	flex: 1;
+}
+/* Flex Container */
+.container5 {
+	max-width: 420px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* Flex Item */
+.item5 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.alinhamento-central5 {
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+.alinhamento-central .item5 {
+	flex: 0;
+	padding: 10px;
+}
+.stretch6 {
+	align-content: stretch;
+}
+
+
+/* Flex Container */
+.container6 {
+	max-width: 420px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+}
+/* Flex Item */
+.item6 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+.grow0 {
+	flex-grow: 0;
+}
+
+.item7 {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container7 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.basis-0 {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+
+.basis-numero-container8 {
+	flex-wrap: wrap;
+}
+
+.basis-110 {
+	flex-basis: 110px;
+}
+
+.basis-300 {
+	flex-basis: 300px;
+}
+
+.basis-110-porcento {
+	flex-basis: calc(25% - 10px);
+}
+
+
+.item8 {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+	position: relative;
+}
+
+/* Flex Container */
+.container8 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* Flex Item */
+img8 {
+	display: block;
+	max-width: 100%;
+	margin: 10px auto;
+}
+.shrink-1-basis9 {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 150px;
+}
+.shrink-3-basis9 {
+	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 150px;
+}
+
+.flex-wrap9 {
+	flex-wrap: wrap;
+}
+
+
+.item9 {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container9 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+.basis-110 {
+	flex: 0 1 110px;
+}
+/* ESTILOS GERAIS */
+
+.item10 {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+	position: relative;
+}
+
+/* Flex Container */
+.container10 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* Flex Item */
+img10 {
+	display: block;
+	max-width: 100%;
+	margin: 10px auto;
+}
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
+.order-1 {
+	order: -1;
+}
+.item11 {
+	margin: 5px;
+	padding: 0 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container11 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+.flex-end12 {
+	align-self: flex-end;
+}
+.stretch12 {
+	align-self: stretch;
+}
+
+.align-items12 {
+	align-items: flex-end;
+}
+
+.item12 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+.container12 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.column12 {
+	flex-direction: column;
+}
+}
