@@ -32,6 +32,7 @@ h1{
 .flex{
     display: flex;
     justify-content: flex-start;
+    align-content: flex-start;
 }
 .big{
     border: 2px solid black;
@@ -126,11 +127,11 @@ a {
 .bas{
     height: 50%;
     width: 90%;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 .basis{
     flex-basis: 30%;
-    height: 90%
+    max-height: 90%;
 }
 
 .order1{
