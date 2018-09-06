@@ -1,0 +1,425 @@
+body{
+
+	font-family: 'Andale Mono', monospace;
+
+	background-color: #FFFFF0;
+
+	font-size: 20px;
+
+	color: #F5FFFA;
+
+	padding: 30px;
+
+}
+
+
+
+h2 {
+
+	text-align: center;
+
+	margin: 20px 0 0 0;
+
+	font-size: 1.25em;
+
+	font-weight: normal;
+
+}
+
+
+
+h3 {
+
+	margin: 20px 0 0 0;
+
+	font-size: 20px;
+
+	font-weight: normal;
+
+  	color: black;
+
+}
+
+
+
+h4 {
+
+	margin: 20px 0 0 0;
+
+	font-size: 15px;
+
+	font-weight: normal;
+
+  	color: black;
+
+}
+
+
+
+h5 {
+
+	margin: 20px 0 0 0;
+
+	font-size: 17px;
+
+	font-weight: normal;
+
+  	color: black;
+
+  	text-align: center;
+
+}
+
+
+
+.flex {
+
+	display: flex;
+
+  
+
+}
+
+
+
+.container {
+
+	max-width: 360px;
+
+	margin: 0 auto;
+
+	display: flex;
+
+}
+
+.item2{
+
+  font-size: 15px;
+
+  weight: 50%;
+
+}
+
+
+
+.buscar{
+
+    display: flex;
+
+  	width: 20%;
+
+  	background-color: #A9A9A9;
+
+  	color: white;
+
+	justify-content: center;
+
+    align-items: center;
+
+  	margin: auto;
+
+    height: 50px;
+
+  	
+
+}
+
+
+
+.botao {
+
+    display: flex;
+
+  	width: 10%;
+
+  	background-color: #696969;
+
+  	color: white;
+
+	justify-content: center;
+
+  	margin: auto;
+
+}
+
+
+
+.filtro {
+
+    display: flex;
+
+  	background-color: #FFFFF0;
+
+  	color: black;
+
+  	flex-direction: column; /*utilizado para alinhar os itens em colunas */
+
+}
+
+
+
+.opcoes{
+
+  font-size: 13px;
+
+  color: black;
+
+  width: 12%;
+
+  height: 20px;
+
+  margin: 5px;
+
+  border: 1px solid black;  
+
+ }
+
+
+
+.info{
+
+  display: flex;
+
+  background-color: #FFFFF0;
+
+  color: black;
+
+  justify-content: flex-end;
+
+  flex-flow: column nowrap; /*utilizado para colocar os itens em coluna e não permitir quebra de linha */
+
+  
+
+}
+
+
+
+.items-info{
+
+  font-size: 13px;  
+
+  color: black;
+
+  height: 20px;
+
+  margin: 5px;
+
+  
+
+}
+
+
+
+.opcoes2{
+
+  display: flex;
+
+  font-size: 15px;
+
+  color: black;
+
+  margin: 5px;
+
+  width: 50%;
+
+ }
+
+
+
+
+
+.opcoes3{
+
+  display: flex;
+
+  font-size: 15px;
+
+  color: black;
+
+  margin: 5px;  
+
+  
+
+ }
+
+
+
+.item3{
+
+  font-size: 16px; 
+
+  color: black;
+
+  height: 20px;
+
+  margin: 5px;
+
+  border: 3px solid black; 
+
+  text-align: center;
+
+}
+
+
+
+.opcoes4{
+
+  display: flex;
+
+  font-size: 15px;
+
+  color: black;
+
+  margin: 5px;  
+
+  
+
+ }
+
+
+
+.item4{
+
+  font-size: 16px; 
+
+  color: black;
+
+  height: 20px;
+
+  margin: 5px;
+
+  border: 3px solid black; 
+
+  text-align: center;
+
+  width: 50%;
+
+}
+
+
+
+.basis-0 {
+
+	flex-grow: 1; /*utilizado para manter a mesma largura*/
+
+	flex-basis: 0; /*utilizado para distribuir o restante do espaço ao redor do conteúdo flex-item*/
+
+}
+
+
+
+.order-1 {
+
+	order: -1; /*utilizado para reposicionar o item que deve aparecer primeiro para ficar todos os itens em ordem alfabética */
+
+}
+
+
+
+.shrink-3 {
+
+  	flex-grow: 0;
+
+	flex-shrink: 3; /*utilizado para diminuir 3x o tamanho do item do Chile*/
+
+}
+
+
+
+.shrink-1 {
+
+  	flex-grow: 0;
+
+	flex-shrink: 1;/*utilizado para diminuir 1x o tamanho do restante dos itens*/
+
+}
+
+
+
+.flex1-1-100px{
+
+  flex: 1 1 100px; /*definição do flex-grow, flex-shrink e flex-basis por meio do atalho flex que ajusta dois dos itens da classe*/
+
+}
+
+
+
+.flex-end{
+
+  	align-items: flex-end; /*utilizado para alinhar os itens ao final da linha*/
+
+}
+
+
+
+.align-center{
+
+  	align-content: center;
+
+}
+
+
+
+.flex-end-self {
+
+	align-self: flex-end; /*utilizado para alinha 3 dos itens do menu ao final do container*/
+
+}
+
+
+
+.space-around {
+
+	justify-content: space-around;
+
+}
+
+.space-between{
+
+	justify-content: space-between; /*utilizado para deixar espacos entre os itens*/
+
+}
+
+
+
+.nowrap {
+
+	flex-wrap: nowrap;/*utilizado para não permitir a quebra de linha dos itens mais vendidos*/
+
+}
+
+
+
+.self-flex-end {
+
+	align-self: flex-end;
+
+}
+
+
+
+.item{
+
+  width: 25%;
+
+  font-size: 15px;
+
+}
+
+
+
+.menu{
+
+  	display: flex; /* para tornar os itens do container em flex itens*/
+
+
+
+	margin: 0 auto;
+
+	background-color: black;
+
+  	color: white;
+
+    align-items: center; /* utilizado para alinhar os os itens ao centro */
+
+}
