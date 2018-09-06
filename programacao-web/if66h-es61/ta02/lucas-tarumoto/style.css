@@ -1,0 +1,251 @@
+body{
+
+	font-family: 'Arial', sans-serif;
+
+	background-color: gray;
+
+	align-items: center;
+
+	display: block;
+
+	justify-content: center;
+
+	font-size: 14px;
+
+}
+
+
+
+#all{
+
+	background-color: black;
+
+  margin-left: 320px;
+
+  margin-right: 320px;
+
+  height 100%;
+
+}/*Implementacao do item display:flex na seção menu*/
+
+.menu{
+
+  	display: flex;
+
+  	width: 100%;
+
+	margin: 0 auto;
+
+	border: 3px solid purple;
+
+	background-color: black;
+
+  	color: white;
+
+}
+
+/*Classes item possui propriedade flex: 1 (padrao)*/
+
+.item {
+
+	margin: 10px;
+
+	background: purple;
+
+	text-align: center;
+
+	font-size: 1.5em;
+
+	flex: 1;
+
+}
+
+
+
+.img{
+
+	margin: 10px;
+
+	background: purple;
+
+	text-align: center;
+
+	font-size: 1.5em;
+
+}
+
+/*Ordenaçao dos i1, i2, ... com propriedades flex como grow, basis e shrink*/
+
+#i1{order: 5; flex: 1 2 0;}
+
+#i2{order: 3; flex: 3 0 0;}
+
+#i3{order: 8; flex: 80px;}
+
+#i4{order: 1;}
+
+#i5{order: 7;}
+
+#i6{order: 4;}
+
+#i7{order: 2;}
+
+#i8{order: 6; }
+
+
+
+/*utilização do align-self: center no menu acima*/
+
+.menuitem{
+
+  display: flex;
+
+	margin: 10px;
+
+	background: purple;
+
+	text-align: center;
+
+	font-size: 1.5em;
+
+  align-self: flex-start;
+
+}
+
+
+
+/*ajustamento do menu no canto superior direito com justify-content: flex-end*/
+
+.space{ 
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+}
+
+
+
+.logo{
+
+	font-size: 2.5em;
+
+}
+
+
+
+/*utilização de flex-flow: row wrap para ajustameto do label, button e input, além do
+
+align-items: center para coloca-los no centro*/
+
+.back{
+
+  	
+
+  	flex-flow: row wrap;
+
+	max-width: 360px;
+
+	margin: 0 auto;
+
+	display: flex;
+
+	align-items: center;
+
+}
+
+
+
+.input{
+
+	background-color: white;
+
+  	width: 250px;
+
+}
+
+.button{
+
+	background-color: black;
+
+    color: white;
+
+  	height: 30px;
+
+ 	border: none;
+
+  	flex:1;
+
+}
+
+.label{
+
+	margin: 5px;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 1.5em;
+
+  	flex: 1;
+
+}
+
+
+
+/*alogamento dos divs dentro da secao sec2 com align-content: stretch*/
+
+.sec2{
+
+  max-width: 420px;
+
+	margin: 0 auto;
+
+	display: flex;
+
+	border: 1px solid #ccc;
+
+  height: 600px;
+
+	flex-wrap: wrap;
+
+  align-content: stretch;
+
+}
+
+
+
+.menu> .space> #item1> .sub-menu{
+
+  display: none;
+
+  list-style: none;
+
+  position: absolute;
+
+  top: 26px;
+
+  left: 1138px;
+
+  background: purple;
+
+  min-width: 12.9em;
+
+  z-index: 1000;
+
+}
+
+
+
+/*utilização do hover para aparecer sub-menu com flex-direction: column*/
+
+.menu> .space> #item1:hover> .sub-menu{
+
+	display: flex;
+
+    flex-direction: column;
+
+}
