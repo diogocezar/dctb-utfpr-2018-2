@@ -30,6 +30,13 @@
 .col{
     background-color: #ffd3ea;
     margin: 10px;
+    flex-grow: 2;
+}
+.shrink{
+    flex-grow:1;
+    flex-shrink: 1;
+    flex-basis: 50px;
+    background-color: #43a8e8;
 }
 .row-wrap{
     flex-flow: row wrap;
@@ -44,6 +51,7 @@
     margin: 0 auto;
     border:0px solid #000000;
 }
+
 header{
     height: auto;
     width: auto;

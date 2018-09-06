@@ -23,16 +23,28 @@
     <!--Here I'm using the container item 6, align-items to align the title to the right
      and item container 2 flex-direction to align the itens in a column-->
     <div class="container flex flex-end column">
+            
             <!--Here I'm using flex item 6: align-self, to make to title go up and the subtitle down-->
             <div class="title align-self1"> <h2>O estudo do Flex Container</h2></div>
             <div class="title align-self2"> <h2>inclusive no título</h2></div>
        
     </div>
     <!--Here I'll use the container item 7, align-content: to write something in two columns-->
-    <section class="container flex space-around">
-        <div class="item col">THIS IS THE FIRST 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a eleifend velit, vitae lobortis nisl. Sed commodo, augue sit amet lobortis luctus, nunc mauris commodo nulla, eget faucibus orci lectus non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris et justo non diam lacinia maximus.</div>
-        <div class="item col">THIS IS THE SECOND Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a eleifend velit, vitae lobortis nisl. Sed commodo, augue sit amet lobortis luctus, nunc mauris commodo nulla, eget faucibus orci lectus non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris et justo non diam lacinia maximus. </div>
+    <section class="container flex wrap">
+        <!--It's suposed to have a line before the two columns, it could be used as title a table for comparing things, for examploe-
+        flex items: 1, 2 and 3 (grow, basis and shrink)-->
+        <div class=" item shrink">This Is The Title but I'm tiping a big text to check if the line breaks
+            and the content is adaptative
+        </div>
+        <div class=" flex space-around">
+        <div class="item col">DESCRIPTION 1 <br/> THIS IS THE FIRST TEXT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a eleifend velit, vitae lobortis nisl. Sed commodo, augue sit amet lobortis luctus, nunc mauris commodo nulla, eget faucibus orci lectus non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris et justo non diam lacinia maximus.</div>
+        <div class="item col">DESCRIPTION 2 <br/>THIS IS THE SECOND TEXT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a eleifend velit, vitae lobortis nisl. Sed commodo, augue sit amet lobortis luctus, nunc mauris commodo nulla, eget faucibus orci lectus non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris et justo non diam lacinia maximus. </div>
+        </div>
+        <div class=" item shrink">Here is</div>
+        <div class=" item shrink2">the bottom line</div>
+        <div class=" item shrink2">to check the</div>
+        <div class=" item shrink3"> shrink</div>
+        <div class=" item shrink4"> & basis</div>
     </section>
 
     <!--Here I'm using the container item 1 and 3: display and flex-wrap: wrap
