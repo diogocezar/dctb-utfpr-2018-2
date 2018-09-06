@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My page with applications flex Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    <!--Utilizando aplicação display flex-->
+    <h1>Display Flex</h1>
+    <section class="container flex">
+        <a href="#" class="item">Home</a>
+        <a href="#" class="item">What we do</a>
+        <a href="#" class="item">Why we do it</a>
+        <a href="#" class="item">How we do it</a>
+        <a href="#" class="item">Our Services</a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Blog</a>
+        <a href="#" class="item">Contact Us</a>
+    </section>
+    <!--Utilizando flex column-->
+    <h1>Flex Direction</h1>
+    <section class="container1 column">
+        <a href="#" class="item1">Home</a>
+        <a href="#" class="item1">What we do</a>
+        <a href="#" class="item1">Why we do it</a>
+        <a href="#" class="item1">How we do it</a>
+        <a href="#" class="item1">Our Services</a>
+        <a href="#" class="item1">About</a>
+        <a href="#" class="item1">Blog</a>
+        <a href="#" class="item1">Contact Us</a>
+    </section>
+    <!--Utilizando Flex Wrap-->
+    <h1>Flex Wrap</h1>
+    <section class="container2 wrap">
+        <a href="#" class="item1">Home</a>
+        <a href="#" class="item1">What we do</a>
+        <a href="#" class="item1">Why we do it</a>
+        <a href="#" class="item1">How we do it</a>
+        <a href="#" class="item1">Our Services</a>
+        <a href="#" class="item1">About</a>
+        <a href="#" class="item1">Blog</a>
+        <a href="#" class="item1">Contact Us</a>
+    </section>
+    <!--Utilizando Flex Flow - Column-Now-Rap-->
+    <h1>Flex Flow</h1>
+    <section class="container2 column-nowrap">
+        <a href="#" class="item1">Home</a>
+        <a href="#" class="item1">What we do</a>
+        <a href="#" class="item1">Why we do it</a>
+        <a href="#" class="item1">How we do it</a>
+        <a href="#" class="item1">Our Services</a>
+        <a href="#" class="item1">About</a>
+        <a href="#" class="item1">Blog</a>
+        <a href="#" class="item1">Contact Us</a>
+    </section>
+    <!--Utiliando Justify content - flex-start-->
+    <h1>Justify-Content</h1>
+    <section class="container3 flex-start">
+        <a href="#" class="item1">Home</a>
+        <a href="#" class="item1">What we do</a>
+        <a href="#" class="item1">Why we do it</a>
+        <a href="#" class="item1">How we do it</a>
+        <a href="#" class="item1">Our Services</a>
+        <a href="#" class="item1">About</a>
+        <a href="#" class="item1">Blog</a>
+        <a href="#" class="item1">Contact Us</a>
+    </section>
+    <!--Utilizando Align-Items como galeria de imagens-->
+    <h1>Align-Items</h1>
+    <section class="stretch">
+        <img class="galery" src="https://source.unsplash.com/random/100x100">
+        <img class="galery" src="https://source.unsplash.com/random/100x100">
+        <img class="galery" src="https://source.unsplash.com/random/100x100">
+        <img class="galery" src="https://source.unsplash.com/random/100x100">
+        <img class="galery" src="https://source.unsplash.com/random/100x100">
+    </section>
+    <!--Align Content - flex-end-->
+    <h1>Align-Content</h1>
+    <section class="container4 flex-end">
+        <a href="#" class="item1">Home</a>
+        <a href="#" class="item1">What we do</a>
+        <a href="#" class="item1">Why we do it</a>
+        <a href="#" class="item1">How we do it</a>
+        <a href="#" class="item1">Our Services</a>
+        <a href="#" class="item1">About</a>
+        <a href="#" class="item1">Blog</a>
+        <a href="#" class="item1">Contact Us</a>
+    </section>
+    <h1>Aqui Inicia-se Flex-Item</h1>
+    <!--Exemplos de Flex Item-->
+    <h1>flex-shrink com conteúdo diferente</h1>
+    <!--Utilizando Flex-shrink-de tamanhos mistos utilizando exemplo de shrink tambem-->
+    <section class="containerfi">
+        <a href="#" class="item2 flex-shrink-1">Home</a>
+        <a href="#" class="item2 flex-shrink-1">What we do</a>
+        <a href="#" class="item2 flex-shrink-1">Why we do it</a>
+        <a href="#" class="item2 flex-shrink-2">How we do it</a>
+        <a href="#" class="item2 flex-shrink-2">Our Services</a>
+        <a href="#" class="item2 flex-shrink-2">About</a>
+        <a href="#" class="item2 flex-shrink-3">Blog</a>
+        <a href="#" class="item2 flex-shrink-3">Contact Us</a>
+    </section>
+    <!--Utilizando flex basis utilizando junto com flex-->
+    <h1>Flex item - Flex</h1>
+    <section class="containerfi basis-container">
+        <a href="#" class="item2 basis-110-grow-1">Home</a>
+        <a href="#" class="item2 basis-110-grow-1">What we do</a>
+        <a href="#" class="item2 basis-110-grow-1">Why we do it</a>
+        <a href="#" class="item2 basis-110-grow-1">How we do it</a>
+        <a href="#" class="item2 basis-110-grow-1">Our Services</a>
+        <a href="#" class="item2 basis-110-grow-1">About</a>
+        <a href="#" class="item2 basis-110-grow-1">Blog</a>
+        <a href="#" class="item2 basis-110-grow-1">Contact Us</a>
+    </section>
+    <!--Utilizando Align-self com posiçoes diferentes no container-->
+    <h1>Flex - Align-Self</h1>
+    <section class="containerfi column">
+        <a href="#" class="item2 baseline">Home</a>
+        <a href="#" class="item2 baseline">What we do</a>
+        <a href="#" class="item2 baseline">Why we do it</a>
+        <a href="#" class="item2 center">How we do it</a>
+        <a href="#" class="item2 center">Our Services</a>
+        <a href="#" class="item2 center">About</a>
+        <a href="#" class="item2 end">Blog</a>
+        <a href="#" class="item2 end">Contact Us</a>
+
+    </section>
+    <!--fler order ordenando de maneira aleatoria alguns valores-->
+    <h1>Flex order</h1>
+    <section class="container column">
+        <div class="item1 ">Utilizando Order</div>
+        <a href="#" class="item1 order1">1</a>
+        <a href="#" class="item1 order2">3</a>
+        <a href="#" class="item1 order3">4</a>
+        <a href="#" class="item1 order4">2</a>
+        <a href="#" class="item1 order5">7</a>
+        <a href="#" class="item1 order6">5</a>
+        <a href="#" class="item1 order7">6</a>
+    </section>
+    <footer>
+        <h2>Joao Carlos Pirolo Filho</h2>
+        <h2>Entrega da atividade 02</h2>
+    </footer>
+</body>
+
+</html>
