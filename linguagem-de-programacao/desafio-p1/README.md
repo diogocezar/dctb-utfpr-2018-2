@@ -66,9 +66,9 @@ Se a opção desejada for a número 1, então, deve-se mostrar um novo menu com 
 │ HELLO HEISENBERG │
 └──────────────────┘
 
-┌─────────────────┬─────────────────────────────┐
-│ OPÇÃO ESCOLHIDA │ [1] Cadastrar novo elemento │
-└─────────────────┴─────────────────────────────┘
+┌──────────────────┬─────────────────────────────┐
+│ OPÇÃO ESCOLHIDA  │ [1] Cadastrar novo elemento │
+└──────────────────┴─────────────────────────────┘
 
 Para qual dia da semana deseja cadastrar?
 
@@ -92,9 +92,9 @@ E após escolher, o dia da semana, por exemplo, Segunda-Feira! Pergunte qual o e
 │ HELLO HEISENBERG │
 └──────────────────┘
 
-┌─────────────────┬──────────────────────┐
-│ OPÇÃO ESCOLHIDA │ [0] Segunda-Feira    │
-└─────────────────┴──────────────────────┘
+┌──────────────────┬──────────────────────┐
+│ OPÇÃO ESCOLHIDA  │ [0] Segunda-Feira    │
+└──────────────────┴──────────────────────┘
 
 Qual é o elemento que deseja cadastrar?
 
@@ -132,25 +132,25 @@ Para exibir o relatório utilize o seguinte padrão:
 │ HELLO HEISENBERG │
 └──────────────────┘
 
-┌─────────────────┬────────────────────────┐
-│ OPÇÃO ESCOLHIDA │ [1] Consultar Produção │
-└─────────────────┴────────────────────────┘
+┌──────────────────┬────────────────────────┐
+│ OPÇÃO ESCOLHIDA  │ [1] Consultar Produção │
+└──────────────────┴────────────────────────┘
 
-┌─────────────────┬────────────────┐
-│ SEGUNDA-FEIRA   │ 1.320 unidades │
-├─────────────────┼────────────────┤
-│ TERÇA-FEIRA     │ 2.320 unidades │
-├─────────────────┼────────────────┤
-│ QUARTA-FEIRA    │ 1.320 unidades │
-├─────────────────┼────────────────┤
-│ QUINTA-FEIRA    │ 8.320 unidades │
-├─────────────────┼────────────────┤
-│ SEXTA-FEIRA     │ 7.720 unidades │
-├─────────────────┼────────────────┤
-│ SÁBADO          │ 9.970 unidades │
-├─────────────────┼────────────────┤
-│ DOMINGO         │     0 unidades │
-└─────────────────┴────────────────┘
+┌──────────────────┬────────────────┐
+│ SEGUNDA-FEIRA    │ 1.320 unidades │
+├──────────────────┼────────────────┤
+│ TERÇA-FEIRA      │ 2.320 unidades │
+├──────────────────┼────────────────┤
+│ QUARTA-FEIRA     │ 1.320 unidades │
+├──────────────────┼────────────────┤
+│ QUINTA-FEIRA     │ 8.320 unidades │
+├──────────────────┼────────────────┤
+│ SEXTA-FEIRA      │ 7.720 unidades │
+├──────────────────┼────────────────┤
+│ SÁBADO           │ 9.970 unidades │
+├──────────────────┼────────────────┤
+│ DOMINGO          │     0 unidades │
+└──────────────────┴────────────────┘
 
 Digite [0] para voltar ao menu principal: 
 ```
