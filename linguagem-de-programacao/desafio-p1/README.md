@@ -174,7 +174,11 @@ A opção 4 apenas sai do programa.
 11. Utilize em algum momento do seu programa a instrução de incremento ```i++```;
 12. Os menus e interfaces devem ser feitas EXATAMENTE como a descrição;
 
-### Dicas úteis para melhorar a formatação do código
+### Dica
+
+Começe a implementação pelas funcionalidades, e apenas depois pense em melhorar o visual do programa, o importante é que ele funcione como o desejado.
+
+### Links Úteis
 
 * http://bit.ly/2CoYcgp
 * http://bit.ly/2wRhOUG
