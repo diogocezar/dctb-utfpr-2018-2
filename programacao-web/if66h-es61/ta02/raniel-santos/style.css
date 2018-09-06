@@ -1,0 +1,111 @@
+ body{
+    background-color: darkred;
+    color: aliceblue;
+    text-align: center;
+}
+ header{
+     text-align: center;
+ }
+
+ img{
+    height: 200px;
+    width: 300px;
+
+ }
+
+ /*Utilizando display flex*/
+.container{
+    margin: 0 auto;
+    width: 80%;
+    max-height: 800px;
+    display: flex;
+    border: 1px solid aliceblue;
+
+}
+
+/*flex utilizado para que os itens ocupem todo o tamanho do container*/
+.item{
+    flex: 1;
+    background: rgb(58, 1, 1);
+    margin: 6px;
+    font-size: 2em;
+}
+
+/*Utilizando flex grow para aumentar item selecionado*/
+.item2{
+    flex: 1;
+    background: rgb(58, 1, 1);
+    margin: 6px;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.item2:hover{
+    flex-grow: 3;
+    transition: 0.5s;
+}
+
+/*Utilizando justify-content space-around e wrap para uma galeria*/
+.flex_justifyC{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Utilizando flex-direction e align-items*/
+.flex_direction{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/*Utilizado o row-reverse para inverter a ordem dos items*/
+.flex_flow{
+    flex-flow: row-reverse wrap;
+}
+
+/*Container com textos utilizando align-item*/
+/*Utilizando order para alterar a ordem e deixar do menor ao maior*/
+.align_items{
+    align-items: baseline;
+}
+.item5{
+    order: 2;
+}
+.item1{
+    order: 1;
+}
+
+/*Container com texto utilizando align-content e align-self*/
+.imgt{    
+    height: 75px;
+    width: 200px;
+    padding: 10px;
+}
+.imgt2{
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+}
+.align_content{
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.end{
+    align-self: center;
+}
+
+/*utilizando o flex-basis*/
+.basis_auto{
+    flex-basis: auto;
+}
+.basis_grow{
+    flex-grow: 3;
+    flex-basis: auto;
+}
+
+/*utilizando flex-shrink  no flex fazendo com que a imagem preencha o espaço do container*/
+.imgEx{
+    flex: 1 1 70px;
+}
+.flex_shrink{
+    flex-wrap: wrap;
+}
