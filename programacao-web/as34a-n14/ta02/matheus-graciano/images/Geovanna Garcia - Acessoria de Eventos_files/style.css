@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
 
 .container {
-  width: calc(100%-70px);
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -35,29 +35,37 @@
 * {
   outline: none !important; }
 
-#content-menu{
-  display: flex;
-  align-content: space-around!important;
-}
 
 .header-menu{
-  width: 100%;
   top: 0;
+  left: 0;
   position: fixed;
+  width: 100%;
   height: 70px;
+  z-index: 999;
   background-color: #22223b;
+  display: block;
 }
 
-.container #logo{
-  position: relative;
-  float: left;
+.containe{
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
 }
 
 .menu-container{
+  position: relative;
+  float: right;
+  display: flex;
   flex-direction: column;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .menu-item{
@@ -75,8 +83,15 @@
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  
 }
 
+.Logo{
+  width: 313px;
+  height: 70px;
+  margin-right: 150px;
+  background: url(assets/images/geovanna-logo-nav.svg);
+}
 
 .menu-item a:hover{
   color:rgba(255,255,255,0.7);
@@ -84,14 +99,14 @@
 
 /* Home */
 
-section#home{
+.home {
   height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 70px;
   background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(assets/images/geovanna-bg-home.jpg);
-  background-position: 0 0;
+  background-position: left top;
 }
 
 .content-home{
@@ -152,8 +167,12 @@ section#home{
 
 /* Presentation */
 
-section#presentation{
-  background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)), url(assets/images/geovanna-bg-presentation.jpg);
+.presentation{
+  height: calc(100vh - 534px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url(assets/images/geovanna-bg-presentation.jpg);
   background-position: 50%;
 }
 
@@ -222,62 +241,40 @@ a{
 
 /* About */
 
-.content-about{
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+.about{
+  margin-left: 97.5px;
+  width: 774px;
 }
 
-#content-about{
-  margin-left: 97.5px;
+.content-about{
   padding-top: 7rem;
   padding-bottom: 5rem;
   width: 665px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
+  margin-left: auto;
 }
 
-#content-about h2{
+.content-about h2{
     font-family: AfterMidnite,sans-serif;
     color: #22223b;
     font-size: 6rem;
     margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 768px) {
-  #content-about h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 1rem; 
-  } 
-}
-
-#content-about h3{
+.content-about h3{
     color: #9a8c98;
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  #content-about h3 {
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 1rem; 
-  } 
-}
-
-#content-about p {
+.content-about p {
   font-family: Montserrat,sans-serif;
   color: #22223b;
   line-height: 2rem;
   margin-bottom: 2rem;
 }
-
-@media screen and (max-width: 768px) {
-  #content-about p {
-    text-align: center; } }
 
 .p {
   font-size: 1em;
@@ -287,24 +284,11 @@ a{
   margin-bottom: 1rem;
 }
 
-#content-about img{
+.content-about img{
     height: 120px;
     width: 120px;
     margin-top: 1rem;
     margin-bottom: 4rem;
-}
-
-@media only screen and (max-width: 768px) {
-  #content-about img {
-    height: 100px;
-    left: 50%;
-    position: relative;
-  } 
-}
-@media only screen and (max-width: 480px) {
-  #content-about img {
-    height: 80px; 
-  } 
 }
 
 /* Services */
