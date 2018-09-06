@@ -30,13 +30,32 @@
 .col{
     background-color: #ffd3ea;
     margin: 10px;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 .shrink{
-    flex-grow:1;
+    flex-grow: 2;
     flex-shrink: 1;
-    flex-basis: 50px;
+    flex-basis: 150px;
     background-color: #43a8e8;
+}
+
+.shrink2{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
+    background-color: #43a8e8;
+}
+
+.shrink3{
+    flex-grow: 1;
+    flex-shrink: 3;
+    flex-basis: 10px;
+    background-color: #43a8e8;
+}
+
+.basis-1{
+    flex: 0 1 110px;
+    background-color: #8ab6fc;
 }
 .row-wrap{
     flex-flow: row wrap;
@@ -46,15 +65,41 @@
     flex-direction: column;
 
 }
+
+.order0{
+    order:0;
+    align-self: center;
+}
+.order1{
+    order:1;
+    align-self: center;
+}
+.order2{
+    order:2;
+    align-self: flex-end;
+}
+.order-1{
+    order:-1;
+    align-self: flex-start;
+}
+.flex-grow{
+    flex-grow: 2;
+}
 .container{
     max-width: width auto;
     margin: 0 auto;
     border:0px solid #000000;
 }
+.container2{
+    max-width: width auto;
+    height: 150px;
+    margin: 0 auto;
+    border:1px solid #000000;
+}
 
 header{
     height: auto;
-    width: auto;
+    width: 100%;
     background-color: #ff99b7;
     color: white;
 }

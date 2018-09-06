@@ -10,10 +10,9 @@
 <body>
     <!--Here I'll use the container item 5, justify-content: space-between to align the header itens-->
     <header class="container flex space-between">
-        icone
-        <div>
+       <div class="menu_item2">TA02-FK</div>
             <!--Here I'll use the container item 4, flex-flow: wrap to help align the menu in the header-->
-                <div class="container flex flex-flow">
+            <div class="container flex ">
                 <div class="menu_item">menu 1 </div>
                 <div class="menu_item">menu 2</div>
                 <div class="menu_item">menu 3</div>
@@ -44,10 +43,24 @@
         <div class=" item shrink2">the bottom line</div>
         <div class=" item shrink2">to check the</div>
         <div class=" item shrink3"> shrink</div>
-        <div class=" item shrink4"> & basis</div>
+        <div class=" item shrink3"> & basis</div>
     </section>
+    <!--Here is to check the flex propertie, flex-item 4-->
+    <section class="container flex wrap">
+        <div class="item basis-1">SMALL</div>
+        <div class="item basis-1">SMALL2</div>
+        <div class="item basis-1">a little bigger</div>
+        <div class="item basis-1">Button with big description, like a test wich you could select one</div>
 
-    <!--Here I'm using the container item 1 and 3: display and flex-wrap: wrap
+    </section>
+    <!-- flex item- Order & align: to use it as a way to emphasize smth-->
+    <section class="container2 flex ">
+                <div class="item order1 flex-grow col">1 first</div>
+                <div class="item order0 flex-grow col">2 second</div>
+                <div class="item order2 flex-grow col">3 thrid</div>
+                <div class="item order-1 flex-grow col">but this one won</div>
+    </section>
+    <!-- Here I'm using the container item 1 and 3: display and flex-wrap: wrap
     To show the tags in line-->
     <h3>Tags em um div com o display: flex-wrap</h3>
     <section class="container flex flex-wrap">
