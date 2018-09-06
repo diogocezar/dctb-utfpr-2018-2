@@ -83,13 +83,14 @@
     align-self: flex-start;
 }
 .flex-grow{
-    flex-grow: 2;
+    flex-grow:1;
 }
 .container{
     max-width: width auto;
     margin: 0 auto;
     border:0px solid #000000;
 }
+
 .container2{
     max-width: width auto;
     height: 150px;
@@ -99,7 +100,7 @@
 
 header{
     height: auto;
-    width: 100%;
+    width: auto;
     background-color: #ff99b7;
     color: white;
 }
@@ -127,6 +128,13 @@ h3{
     padding: 5px;
     font-weight: bold;
 }
+.menu_item2{
+    flex: 1;
+    text-align: left;
+    background-color: #ff306d;
+    padding: 5px;
+    font-weight: bold;
+}
 
 .menu_item:hover{
     background-color: #ffd7e3;
@@ -135,8 +143,7 @@ h3{
 .item{
     margin: 5px;
     padding: 1px;
-    text-align: center;
-    
+    text-align: center; 
 }
 .tag{
     flex-grow: 1;
