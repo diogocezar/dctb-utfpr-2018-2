@@ -43,16 +43,18 @@ Por exemplo, se tivéssemos algo como: ```C[0] = 1345;``` significaria que na se
 Faça um programa que tenha o seguinte MENU:
 
 ```
-======================
-== HELLO HEISENBERG ==
-======================
+┌──────────────────┐
+│ HELLO HEISENBERG │
+└──────────────────┘
 
 O que o senhor deseja hoje?
 
-1. Cadastrar um novo elemento para um dia da semana;
-2. Consultar produção cada dia da semana;
-3. Limpar toda a memória (INVADIRAM O LABORATÓRIO)!
-4. Sair;
+┌────────────────────────────────────────────────────────┐
+│ [1] Cadastrar um novo elemento para um dia da semana;  │
+│ [2] Consultar produção cada dia da semana;             │
+│ [3] Limpar toda a memória (INVADIRAM O LABORATÓRIO)!   │
+│ [4] Sair;                                              │
+└────────────────────────────────────────────────────────┘
 
 Digite a sua opção:
 ```
@@ -60,71 +62,97 @@ Digite a sua opção:
 Se a opção desejada for a número 1, então, deve-se mostrar um novo menu com a seguintes opções:
 
 ```
-======================
-== HELLO HEISENBERG ==
-======================
+┌──────────────────┐
+│ HELLO HEISENBERG │
+└──────────────────┘
 
-Opção escolhida: Cadastrar novo elemento!
+┌─────────────────┬─────────────────────────────┐
+│ OPÇÃO ESCOLHIDA │ [1] Cadastrar novo elemento │
+└─────────────────┴─────────────────────────────┘
 
 Para qual dia da semana deseja cadastrar?
 
-0. Segunda-Feira;
-1. Terça-Feira;
-2. Quarta-Feira;
-3. Quinta-Feira;
-4. Sexta-Feira;
-5. Sábado;
-6. Domingo;
+┌─────────────────────────────┐
+│ [0] Segunda-Feira;          │
+│ [1] Terça-Feira;            │
+│ [2] Quarta-Feira;           │
+│ [3] Quinta-Feira;           │
+│ [4] Sexta-Feira;            │
+│ [5] Sábado;                 │
+│ [6] Domingo;                │
+└─────────────────────────────┘
 
 Digite a sua opção:
 ```
 
-E após escolher, o dia da semana, por exemplo, Segunda-Feira! Pergunte finalmente a quantidade de elementos que se deseja incluir;
+E após escolher, o dia da semana, por exemplo, Segunda-Feira! Pergunte qual o elemento e finalmente a quantidade de elementos que se deseja incluir;
 
 ```
-======================
-== HELLO HEISENBERG ==
-======================
+┌──────────────────┐
+│ HELLO HEISENBERG │
+└──────────────────┘
 
-Opção escolhida: Segunda-Feira.
+┌─────────────────┬──────────────────────┐
+│ OPÇÃO ESCOLHIDA │ [0] Segunda-Feira    │
+└─────────────────┴──────────────────────┘
 
 Qual é o elemento que deseja cadastrar?
 
-0. Carbono;
-1. Hidrogênio;
-2. Nitrogênio;
+┌────────────────────────────────────────────────────────┐
+│ [0] Carbono;                                           │
+│ [1] Hidrogênio;                                        │
+│ [2] Nitrogênio;                                        │
+└────────────────────────────────────────────────────────┘
 
-Digite a quantidade:
+Digite o elemento: 0
+Qual a quantidade: 1432
+```
+No exemplo, adicionou-se 1432 do elemento Carbono na Segunda-Feira.
+
+Ao finalizar a operação 1, deve-se substituir a posição do vetor em questão.
+
+A opção número 2 do menu principal ```Consultar produção cada dia da semana``` deve de fato fazer o cálculo, para isso, utilize a fórmula que o Senhor Branco nos passou e diga, para cada dia da semana quantas unidade de Matanfetamina é possível ser criada naquele dia.
+
+Por exemplo se na Segunda-Feira, tivéssemos as seguintes quantidades:
+
+```
+C => 100
+H => 150
+N => 10
 ```
 
-Digitando a quantidade deve-se substituir a posição do vetor em questão.
+Então, poderímos deduzir que na Segunda-Feira poderiam ser criadas 10 unidades de Metanfetamina.
 
-A opção número 2 do menu principal ```Consultar produção cada dia da semana``` deve de fato fazer o cálculo, para isso, utilize a fórmula que o Senhor Branco nos passou e diga, para cada dia da semana quantas unidade de Matanfetamina é possível ser criada naquele dia. Antes de ser exibido em tela, um novo vetor de quantidade de metanfetaminas deve ser criado para possuir o total produzido para cada dia. Por exemplo: ```M[1] = 2432``` Significaria que na terça-feira seria possível produzir 2.432 unidades de Metanfetamina com os materias pendentes.
+Mas, antes de ser exibido em tela o resultado, um novo vetor de quantidade de metanfetaminas deve ser criado para possuir o total produzido para cada dia. Por exemplo: ```M[0] = 10``` Significaria que na Segunda-Feira seria possível produzir 10 unidades de Metanfetamina com os materias pendentes.
 
 Para exibir o relatório utilize o seguinte padrão:
 
 ```
-======================
-== HELLO HEISENBERG ==
-======================
+┌──────────────────┐
+│ HELLO HEISENBERG │
+└──────────────────┘
 
-Opção escolhida: Consultar produção!
+┌─────────────────┬────────────────────────┐
+│ OPÇÃO ESCOLHIDA │ [1] Consultar Produção │
+└─────────────────┴────────────────────────┘
 
-======================================
-= SEGUNDA-FEIRA   ->  1.320 unidades =
-======================================
-= TERÇA-FEIRA     ->  2.320 unidades =
-======================================
-= QUARTA-FEIRA    ->  1.320 unidades =
-======================================
-= QUINTA-FEIRA    ->  8.320 unidades =
-======================================
-= SEXTA-FEIRA     ->  7.720 unidades =
-======================================
-= SÁBADO          ->  9.970 unidades =
-======================================
-= DOMINGO         ->      0 unidades =
-======================================
+┌─────────────────┬────────────────┐
+│ SEGUNDA-FEIRA   │ 1.320 unidades │
+├─────────────────┼────────────────┤
+│ TERÇA-FEIRA     │ 2.320 unidades │
+├─────────────────┼────────────────┤
+│ QUARTA-FEIRA    │ 1.320 unidades │
+├─────────────────┼────────────────┤
+│ QUINTA-FEIRA    │ 8.320 unidades │
+├─────────────────┼────────────────┤
+│ SEXTA-FEIRA     │ 7.720 unidades │
+├─────────────────┼────────────────┤
+│ SÁBADO          │ 9.970 unidades │
+├─────────────────┼────────────────┤
+│ DOMINGO         │     0 unidades │
+└─────────────────┴────────────────┘
+
+Digite [0] para voltar ao menu principal: 
 ```
 
 A opção 3 é uma opção _EMERGENCIAL_. Assim que houver qualquer problema, se é que você me entende... Deve-se rapidamente limpar todas as informações que estão armazenadas no programa. Para isso, cada posição de cada vetor deverá ter o valor substituido por -1.
@@ -143,5 +171,12 @@ A opção 4 apenas sai do programa.
 8. Utilize os comando de compilação e execução do terminal para testar o seu programa;
 9. Só mostre seu código depois de testar todo o programa;
 10. Deve-se obrigatoriamente utilizar ```do{ ... }while()``` para os menus do programa;
-11. Utilize em algum momento do seu programa a instrução de incremento ```i++```
-12. Os menus e interfaces devem ser feitas EXATAMENTE como a descrição; 
+11. Utilize em algum momento do seu programa a instrução de incremento ```i++```;
+12. Os menus e interfaces devem ser feitas EXATAMENTE como a descrição;
+
+### Dicas úteis para melhorar a formatação do código
+
+* http://bit.ly/2CoYcgp
+* http://bit.ly/2wRhOUG
+* http://bit.ly/2wOkFgX
+* http://bit.ly/2wOEZ1x
