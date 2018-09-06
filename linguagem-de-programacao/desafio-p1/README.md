@@ -104,7 +104,7 @@ Qual é o elemento que deseja cadastrar?
 │ [2] Nitrogênio;                                        │
 └────────────────────────────────────────────────────────┘
 
-Digite o elemento: 0
+Qual elemento: 0
 Qual a quantidade: 1432
 ```
 No exemplo, adicionou-se 1432 do elemento Carbono na Segunda-Feira.
@@ -133,7 +133,7 @@ Para exibir o relatório utilize o seguinte padrão:
 └──────────────────┘
 
 ┌──────────────────┬────────────────────────┐
-│ OPÇÃO ESCOLHIDA  │ [1] Consultar Produção │
+│ OPÇÃO ESCOLHIDA  │ [2] Consultar Produção │
 └──────────────────┴────────────────────────┘
 
 ┌──────────────────┬────────────────┐
