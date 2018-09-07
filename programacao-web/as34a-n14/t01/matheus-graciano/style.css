@@ -614,4 +614,116 @@ body,html{
   font-family: AfterMidnite;
   src: url('assets/fonts/AfterMidnite.otf');
 }
+
+/* Teste Slider e Carousel */
+
+
+/* Here's where our carousel begins, with the main wrapper being
+relatively positioned, so that our absolutely positioned items are
+in the right place. */
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: url("http://haloxp.com/codepen/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-next{
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.arrow-prev{
+  left: 0;
+}
+
+  &.light {
+    color: white;
+    .arrow {
+      background: url("http://haloxp.com/codepen/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
+    }
+  }
+
+ 
+  @media (max-width: 480px) {
+    .arrow, &.light .arrow {
+      background-size: 10px;
+      background-position: 10px 50%;
+    }
+  }
   
+
+  [id^="target-item"] {
+    display: none;
+  }
+
+
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+
+
+  *:target ~ .item-1 {
+    opacity: 0;
+  }
+
+
+  #target-item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+
+  #target-item-2:target ~ .item-2, #target-item-3:target ~ .item-3, #target-item-4:target ~ .item-4, #target-item-5:target ~ .item-5{
+    z-index: 3;
+    opacity: 1;
+  }
+
+  /* Config Carrossel */
+.carousel-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-wrapper p{
+  text-align: center;
+  color: #4a4e69;
+}
+
+.carousel-wrapper img{
+  height: 120px;
+  width: 120px;
+  margin-bottom: 3rem;
+  position: relative;
+  /* left: 50%; */
+  /* transform: translate(-50%)!important; */
+}
+
+.carousel-wrapper h4{
+  color: #4a4e69;
+}
+
+.carousel-wrapper h5{
+  color: #c9ada7;
+  font-size: 1.25rem;
+}
