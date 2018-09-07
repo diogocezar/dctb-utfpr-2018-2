@@ -16,19 +16,13 @@ body {
     font-family: 'TrajanPro-Regular', serif;
     background-color: #F2E9E4;
     color: #4A4E69; 
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 #header {
     background-color: #23203E;
 }
-#parent {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: top 0.3s;
-
-  }
 
 a {
     text-decoration: none;
@@ -83,46 +77,14 @@ a {
         padding-top: 60px;
     }
 
-    #content-home {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 10rem;
-        padding-bottom: 3rem;
-        text-align: center;
-        color: #f2e9e4;
-    
-    }
-    
-    #content-home h2, #content-home h3, #content-home h4 {
-        font-weight: 500;
-        line-height: 1.2;
-    }
-    
-    #content-home h2 {
-        font-size: 3rem;
-        margin-top: 5px;
-        margin-bottom: 0;
-       
-    
-    }
-    
-    #content-home h3 {
-        font-size: 2rem;
-        margin-bottom: 15%; 
-    }
+ 
 
-    #content-home h4 {
-        font-size: 1.2rem;
-        margin-top: 5px;
-        margin-bottom: 0;
-    
+
+    section {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
     }
-    
-    #content-home button{
-        margin-top: 4rem;
-    }
+   
     
 }
 
@@ -157,65 +119,20 @@ a {
         padding: 0;
     }
     
-    #home {
-        height: calc(100vh - 70px);
-        padding-top: 60px;
+    
+    section {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
     }
 
-    #content-home {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30%;
-        text-align: center;
-        color: #f2e9e4;
-    
-    }
-    
-    #content-home h2, #content-home h3, #content-home h4 {
-        font-weight: 500;
-        line-height: 1.2;
-    }
-    
-    #content-home h2 {
-        font-size: 4rem;
-       
-    
-    }
-    
-    #content-home h3 {
-        font-size: 2rem;
-        width: 100%;
-
-
-    }
-    
-    #content-home h4 {
-        font-size: 1.2rem;
-
-    
-    }
-    
-    #content-home button{
-        margin-top: 4rem;
-    }
-    .content-apresentation {
-        width: 100%;
-        margin-top: 10px;
-    }
+  
+   
 }
 
-#home {
-    background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(../img/geovanna-bg-home.jpg);
-    background-position: 0 0;
-}
+
+
 .titulo-font {
     font-family: 'AfterMidnite', sans-serif;
-}
-
-.name-apresentation {
-    color: #9a8c98;
 }
 
 .button {
@@ -234,3 +151,7 @@ a {
     background-color: transparent;
     color: #f2e9e4;
 }
+
+
+
+
