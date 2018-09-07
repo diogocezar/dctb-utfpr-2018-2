@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
 
-.container {
+.container{
   width: calc(100%-70px);
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px; 
+  padding-left: 15px;
+}
+
+div{
+  display: block;
 }
 
 @media screen and (max-width: 1200px){
@@ -32,13 +36,7 @@
   }
 }
 
-* {
-  outline: none !important; }
-
-#content-menu{
-  display: flex;
-  align-content: space-around!important;
-}
+/* Menu */
 
 .header-menu{
   width: 100%;
@@ -46,9 +44,12 @@
   position: fixed;
   height: 70px;
   background-color: #22223b;
+  z-index: 999;
 }
 
 .container #logo{
+  width: 313px;
+  height: 70px;
   position: relative;
   float: left;
 }
@@ -58,6 +59,8 @@
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+  position: relative;
+  float: right;
 }
 
 .menu-item{
@@ -73,7 +76,7 @@
   float: left;
   padding: 1em;
   text-decoration: none;
-  color: #fff;
+  color: #f2e9e4;
   cursor: pointer;
 }
 
