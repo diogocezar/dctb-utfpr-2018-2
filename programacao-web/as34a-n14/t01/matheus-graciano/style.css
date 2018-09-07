@@ -222,11 +222,41 @@ a{
 
 /* About */
 
+.config{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 992px){
+  .config {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+}
+
+@media screen and (max-width: 768px){
+.config {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+@media screen and(max-width: 576px){
+.config {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
 .content-about{
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  position: relative;
 }
 
 #content-about{
@@ -238,6 +268,12 @@ a{
   padding-left: 15px;
   margin-right: auto;
 }
+@media screen and (max-width: 480px){
+  #content-about{
+    margin-left: auto;
+  }
+}
+  
 
 #content-about h2{
     font-family: AfterMidnite,sans-serif;
@@ -294,14 +330,15 @@ a{
     margin-bottom: 4rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #content-about img {
     height: 100px;
     left: 50%;
     position: relative;
+    transform: translate(-50%, 0) !important;
   } 
 }
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #content-about img {
     height: 80px; 
   } 
