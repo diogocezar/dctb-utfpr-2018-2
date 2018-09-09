@@ -9,30 +9,31 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
-    <nav class="header-menu">
-        <div id="content-menu" class="container">
-                <img id="logo" src="assets/images/geovanna-logo-nav.svg" alt="Logo Geovanna Garcia">
-                <div class="menu-container">
-                    <ul>
-                        <li class="menu-item">
-                            <a href="#presentation">Apresentação</a>
-                        </li>
-                        <li class="menu-item"> 
-                            <a href="#about">Sobre</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#services">Serviços</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#depositions">Depoimentos</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#contacts">Contato</a>
-                        </li>
-                    </ul>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <input type="checkbox" id="control-nav" />
+        <label for="control-nav" class="control-nav"></label>
+        <label for="control-nav" class="control-nav-close"></label>
+        <a href="#home"><img id="logo" src="assets/images/geovanna-logo-nav.svg" alt="Logo Geovanna Garcia"></a>
+        <nav class="menu">
+            <ul>
+                <li class="menu-item">
+                    <a href="#presentation">Apresentação</a>
+                </li>
+                <li class="menu-item"> 
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#services">Serviços</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#depositions">Depoimentos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacts">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section id="home">
         <div class="content-home">
             <h2>O grande momento está chegando?</h2>
@@ -43,7 +44,7 @@
         </div>
     </section>
     <section id="presentation">
-        <div class="content-presentation">
+        <div class="content-presentation" class="container">
             <h2>Preparamos uma apresentação<br>especial para vocês!</h2>
             <img src="assets/images/geovanna-icon-presentation.svg" alt="Imagem de um cartão decorado com corações">
             <h3>conheça detalhadamente os nossos serviços</h3>
@@ -64,7 +65,6 @@
                     <h3>A nossa missão</h3>
                     <p>é planejar com total dedicação o momento mais importante na vida de um casal, acompanhando todo processo com muito profissionalismo transmitindo tranquilidade e confiança para que os noivos possam desfrutar ao máximo esse momento único e especial.</p> 
                 </div>
-                    
             </div>   
         </div>
     </section>

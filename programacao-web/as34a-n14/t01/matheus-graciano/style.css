@@ -35,33 +35,43 @@ div{
     max-width: 540px;;
   }
 }
-
 /* Menu */
 
-.header-menu{
-  width: 100%;
-  top: 0;
-  position: fixed;
+header {
   height: 70px;
-  background-color: #22223b;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #22223b;
   z-index: 999;
+  display: flex;
+  justify-content: center;
 }
 
-.container #logo{
+@media screen and (max-width: 1008px){
+  header{
+    justify-content: flex-start;
+  }
+}
+
+input#control-nav {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+header #logo{
   width: 313px;
   height: 70px;
-  position: relative;
-  float: left;
+  margin-right: 140px;
 }
 
-.menu-container{
-  flex-direction: column;
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
-  position: relative;
-  float: right;
+@media screen and (max-width: 1160px){
+  header #logo{
+    margin-right: auto;
+  }
 }
+
 
 .menu-item{
   position: relative;
@@ -83,6 +93,67 @@ div{
 
 .menu-item a:hover{
   color:rgba(255,255,255,0.7);
+}
+
+@media screen and (max-width: 1008px) {
+  header .control-nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #fff;
+    border-width: 3px 0;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  header .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #333;
+  }
+
+  header .control-nav-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    border-left: 1px solid #ccc;
+    background: #22223b;
+    overflow-x: auto;
+    z-index: 999;
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
+  }
+}
+
+#control-nav:checked ~ .control-nav-close {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#control-nav:checked ~ nav {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /* Home */
@@ -108,9 +179,49 @@ section#home{
   font-size: 6.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .content-home h2 {
+    font-size: 5.5rem; }
+}
+@media screen and (max-width: 992px) {
+  .content-home h2 {
+    font-size: 5rem; } 
+}
+@media screen and (max-width: 768px) {
+  .content-home h2 {
+    font-size: 4rem; } 
+}
+@media screen and (max-width: 480px) {
+  .content-home h2 {
+    font-size: 3rem; } 
+}
+@media screen and (max-width: 320px) {
+  .content-home h2 {
+    font-size: 2.5rem; } 
+}
+
 .content-home h3{
   font-size: 4rem;
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-home h3 {
+    font-size: 3.5rem; } 
+}
+@media screen and (max-width: 992px) {
+  .content-home h3 {
+    font-size: 3rem; } 
+}
+@media screen and (max-width: 768px) {
+  .content-home h3 {
+    font-size: 2rem;
+    margin-top: 2rem; } 
+}
+@media screen and (max-width: 320px) {
+  .content-home h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem; } 
 }
 
 .content-home h4{
@@ -139,6 +250,8 @@ section#home{
     font-family: Montserrat,sans-serif;
     font-size: 1rem;
     text-align: center;
+    position: relative;
+
 }
 
 #button:hover{
@@ -176,6 +289,7 @@ section#presentation{
   font-family: Montserrat,sans-serif;
   font-size: 1rem;
   text-align: center;
+  position: relative;
 }
 
 #button-p:hover{
@@ -227,7 +341,7 @@ a{
 
 .config{
   position: relative;
-  width: 100%;
+  max-width: 58.333333%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -263,13 +377,7 @@ a{
 }
 
 #content-about{
-  margin-left: 97.5px;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
-  width: 665px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
+  margin-left: 18.5vw;
 }
 @media screen and (max-width: 480px){
   #content-about{
@@ -363,12 +471,36 @@ section#services{
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  #content-services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; } 
+}
+
 #content-services img{
   height: 120px;
   margin-bottom: 3rem;
   left: 50%;
   position: relative;
   transform: translate(-50%)!important;
+}
+
+@media screen and (max-width: 768px) {
+  #content-services img {
+    height: 100px;
+    margin-bottom: 2rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-services img {
+    height: 80px;
+    margin-bottom: 1.5rem; } 
 }
 
 .divisao{
@@ -417,6 +549,31 @@ section#services{
   margin-bottom: 2rem;
 }
 
+
+@media only screen and (max-width: 768px) {
+    #content-services h3 .hl {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem; } 
+}
+
+@media only screen and (max-width: 480px) {
+    #content-services h3 .hl {
+      font-size: 2rem;
+      margin-bottom: 2rem; } 
+}
+
+@media only screen and (max-width: 768px) {
+  #content-services h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem; } 
+}
+
+@media only screen and (max-width: 480px) {
+  #content-services h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; } 
+}
+
 #content-services p {
   font-family: Montserrat,sans-serif;
   color: #f2e9e4;
@@ -424,6 +581,13 @@ section#services{
   padding: 0 15%;
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-services p {
+    padding: 0;
+    margin-bottom: 4rem;
+    font-size: 1rem; } 
 }
 
 #content-services button{
@@ -443,6 +607,17 @@ section#services{
   text-align: center;
 }
 
+@media screen and (max-width: 768px){
+  #content-depositions h2{
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 480px){
+  #content-depositions h2{
+    font-size: 4rem;
+  }
+}
+
 #content-depositions img{
   height: 120px;
   width: 120px;
@@ -451,6 +626,15 @@ section#services{
   position: relative;
   transform: translate(-50%)!important;
 }
+
+@media screen and (max-width: 768px) {
+  #content-depositions img {
+    height: 100px;
+    width: 100px; } }
+@media screen and (max-width: 480px) {
+  #content-depositions img {
+    height: 80px;
+    width: 80px; } }
 
 #content-depositions h3{
   color: #9a8c98;
@@ -493,10 +677,30 @@ section#contacts{
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  #content-contacts h2 {
+    font-size: 4rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts h2 {
+    font-size: 3rem; } 
+}
+
 #content-contacts img{
   height: 120px;
   vertical-align: middle;
   border-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts img {
+    height: 100px; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts img {
+    height: 80px; } 
 }
 
 #content-contacts h3{
@@ -506,10 +710,31 @@ section#contacts{
   margin-bottom: 6rem;
 }
 
+@media screen and (max-width: 768px) {
+  #content-contacts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts h3 {
+    font-size: 1.2rem; } 
+}
+
 #content-contacts h4{
   font-family: TrajanPro-Regular,serif;
   color: #c9ada7;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts h4 {
+    font-size: 1.3rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts h4 {
+    font-size: 1.2rem; } 
 }
 
 #content-contacts p.bigger{
@@ -519,6 +744,11 @@ section#contacts{
 #content-contacts p{
   font-size: 1.2em;
   color: #f2e9e4;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts p {
+    font-size: 0.9rem; } 
 }
 
 p{
@@ -566,18 +796,18 @@ small{
   width: 35px; 
 }
 
-@media screen and (max-width: 768px) {
-  #content-contacts ul li a img {
-    height: 20px;
-    width: 20px; 
-  } 
-}
-
 #content-contacts ul li a img {
   height: 35px;
   width: 35px;
   vertical-align: middle;
   border-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts ul li a img {
+    height: 20px;
+    width: 20px; 
+  } 
 }
 
 
@@ -654,13 +884,6 @@ body,html{
   font-family: AfterMidnite;
   src: url('assets/fonts/AfterMidnite.otf');
 }
-
-/* Teste Slider e Carousel */
-
-
-/* Here's where our carousel begins, with the main wrapper being
-relatively positioned, so that our absolutely positioned items are
-in the right place. */
 
 .carousel-wrapper {
   position: relative;
@@ -740,6 +963,7 @@ in the right place. */
   }
 
   /* Config Carrossel */
+
 .carousel-wrapper{
   display: flex;
   flex-direction: column;
@@ -755,8 +979,6 @@ in the right place. */
   width: 120px;
   margin-bottom: 3rem;
   position: relative;
-  /* left: 50%; */
-  /* transform: translate(-50%)!important; */
 }
 
 .carousel-wrapper h4{
