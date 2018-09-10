@@ -1,0 +1,298 @@
+
+
+.basis-auto {
+	flex-grow: 1;
+	flex-basis: auto;
+}
+
+
+.basis-auto-grow-2 {
+	flex-grow: 2;
+	flex-basis: auto;
+}
+
+.baseline {
+	align-items: baseline;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.center {
+	align-items: center;
+}
+.center1 {
+	justify-content: center;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.itemMenu {	
+	flex: 1;
+	margin: 5px;
+	font-family:Trajan Pro;
+	text-align: center;
+	font-size: 17;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.containerLogo1{
+	display: flex;
+	max-width: 300px;
+	
+	
+}
+.containerLogo2{
+	display: flex;
+	max-width: 150px;
+	height: 20px;
+	
+}
+.containerMenu {
+	
+	display: flex;
+	margin: 0 auto;
+	background: #22223B;
+	
+}
+
+.botao{
+	font-family:Trajan Pro;
+	font-size:18;
+	border: 2px solid #f2f2f2;
+	border-radius: 15px;
+	border-radius: 15px;
+	width: 300px;
+}
+.botao:hover{
+	border: 2px solid #32254f;
+	border-radius: 15px;
+	color: #32254f;
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.botaoRev{
+	font-family:Trajan Pro;
+	font-size:18;
+	border: 2px solid #9A8C98;
+	border-radius: 15px;
+	background-color: #9A8C98;
+	color: #9A8C98;
+	width: 300px;
+}
+
+.botaoRev:hover{
+	
+	border: 2px solid #f2f2f2;
+	border-radius: 15px;
+	background: none; 
+	cursor: pointer;
+}
+
+
+.column {
+	
+	flex-direction: column;
+}
+
+.container {
+	max-width: 920px;
+	display: flex;
+	margin: 0 auto;
+	
+}
+.containerMed {
+	max-width: 620px;
+	display: flex;
+	margin: 0 auto;
+		
+}
+.containerMedlado {
+	max-width: 520px;
+	display: flex;
+	margin: 10;
+		
+}
+
+.containerIni {
+	color: #f2f2f2;
+	background-image: url(bride-and-groom-sitting-on-wooden-bridge-over-stream.png);
+	background-size: cover
+	
+	
+}
+.containerApre {
+	background-image: url(modern-bride-and-groom.png);
+	background-size: cover
+	
+}
+
+.containerSobre {
+	background:#F2E9E4;
+	
+}
+
+.align-items {
+	align-items: flex-end;
+}
+
+.containerServ {
+	background-image: url(bouquet-of-roses-in-room.png);
+	background-size: cover
+	
+}
+
+.itemLogo1 {
+	color: #f2f2f2;
+	font-size:16;
+}
+.itemLogo2 {
+	color: #f2f2f2;
+	font-size:9;
+}
+
+.itemGrande {
+	font-size:90;
+	font-family:After Midnite;
+}
+
+.itemMed {
+	font-size:55;
+	font-family:Trajan Pro;
+}
+
+.itemPeq {
+	font-size:33;
+	font-family:Trajan Pro;
+}
+
+.itemSobGrande {
+	font-size:120;
+	font-family:After Midnite;
+	color:#4A4E69;
+}
+
+.itemSobMed {
+	font-size:31;
+	font-family:Trajan Pro;
+	color:#707070;
+}
+
+.itemSobPeq {
+	font-size:20;
+	font-family:Montserrat;
+	color:#707070;
+}
+
+.itemApreGrande {
+	font-size:45;
+	color: #f2f2f2;
+}
+
+.itemAprePeq {
+	font-size:21;
+	color: #9A8C98;
+}
+
+.itemSerGrande {
+	font-size:55;
+	font-family:Trajan Pro;
+	color:#f2f2f2;
+}
+
+.itemSerMed {
+	font-size:55;
+	font-family:Trajan Pro;
+	color:#707070;
+}
+
+.itemSerPeq {
+	font-size:20;
+	font-family:Montserrat;
+	color:#f2f2f2;
+}	
+
+
+.containerCont {
+	background-image: url(wedding-decor-flowers.png);
+	background-size: cover
+	
+}
+
+.itemCont123
+{
+	font-size:123;
+	font-family:After Midnite;
+	color:#f2f2f2;
+}
+
+.itemCont57
+{
+	font-size:57;
+	font-family:Montserrat;
+	color:#f2f2f2;
+}
+
+.itemCont41
+{
+	font-size:41;
+	font-family:Trajan Pro;
+	color:#c9ada7;
+}
+
+.itemCont32
+{
+	font-size:32;
+	font-family:Montserrat;
+	color:#f2f2f2;
+}
+
+.itemCont29
+{
+	font-size:29;
+	font-family:Trajan Pro;
+	color:#c9ada7;
+}
+
+.itemRodap
+{
+	font-size:15;
+	font-family:Gothan;
+	color:#f2f2f2;
+}
+
+.contRodapEsq
+{
+	max-width: 520px;
+	display: flex;
+	margin: 10;
+}
+
+
+h1 {
+	
+	font-size:50;
+	
+}
+
+h2 {
+	font-size:30;
+}
+
+a{color :#f2f2f2;}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
