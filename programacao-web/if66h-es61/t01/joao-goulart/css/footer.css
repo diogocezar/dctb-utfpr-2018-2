@@ -1,0 +1,115 @@
+#footer {
+    background: linear-gradient(rgba(34, 34, 59, .8), rgba(34, 34, 59, .9)), url(../img/geovanna-bg-contact.jpg);
+    background-position: 50%;
+}
+
+.content-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #f2e9e4;
+}
+
+.content-footer h2 {
+    font-family: 'AfterMidnite', sans-serif;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.content-footer img {
+    height: 120px;
+}
+
+.content-footer h3 {
+    font-family: 'TrajanPro-Regular', serif;
+    color: #c9ada7;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1.5rem;
+}
+
+.content-footer h4 {
+    font-family: 'TrajanPro-Regular', serif;
+    color: #c9ada7;
+    font-size: 1.5rem;
+    margin-block-end: 0 !important;
+}
+
+.content-footer p a {
+    color: #f2e9e4;
+    text-decoration: none;
+}
+
+.content-footer p small {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 2rem;
+}
+
+.content-footer ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-footer ul li a img {
+    height: 35px;
+    width: 35px;
+}
+
+.content-footer ul li {
+    list-style-type: none;
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .content-footer h2 {
+        font-size: 4rem;
+    }
+    .content-footer img {
+        height: 110px;
+    }
+    .content-footer h3 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .content-footer h4 {
+        font-size: 1.3rem;
+    }
+    .content-footer img {
+        height: 110px;
+    }
+    .content-footer ul li a img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-footer h2 {
+        font-size: 3rem;
+    }
+    .content-footer img {
+        height: 100px;
+    }
+    .content-footer h3 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .content-footer h4 {
+        font-size: 1.3rem;
+    }
+    .content-footer img {
+        height: 110px;
+    }
+    .content-footer ul li a img {
+        height: 20px;
+        width: 20px;
+    }
+}
