@@ -1,0 +1,313 @@
+body {
+    background-color: #22223b;
+    font-family: Cambria, Arial, sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 80px 125px;
+}
+
+.flex {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+header img {
+    width: 250px;
+}
+
+header nav div:nth-child(2) {
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    font-family: TrajanPro-Regular, sans-serif;
+    color: white;
+}
+
+header a:hover {
+    text-decoration-color: white;
+    text-decoration-line: underline;
+}
+
+.dark {
+    color: white;
+}
+
+.light {
+    color: #22223b
+}
+
+p, figcaption{
+    line-height: 2;
+}
+
+section {
+    text-align: center;
+    padding: 50px 0 50px;
+}
+
+section h1 {
+    font-size: 5rem;
+    margin: 20px 0px 40px;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    padding: 30px 0 50px;
+}
+
+section a {
+    display: inline-block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.bg-home {
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(34, 34, 59, 1)), url("../img/geovanna-bg-home.jpg") no-repeat;
+    background-size: cover;
+}
+
+#main h1,
+#main h2 {
+    font-family: AfterMidnite, sans-serif;
+}
+
+#main {
+    font-family: TrajanPro-Regular, sans-serif;
+}
+
+#main a {
+    font-family: Montserrat;
+    color: antiquewhite;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#main a:hover {
+    color: #22223b;
+    background-color: white;
+}
+
+.bg-presentation {
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.8)), url("../img/geovanna-bg-presentation.jpg") no-repeat;
+    background-size: cover;
+}
+
+#presentation img,
+#about img,
+#services img,
+#briefing img,
+#contact img {
+    width: 100px;
+    height: 100px;
+}
+
+#presentation {
+    font-family: TrajanPro-Regular, sans-serif;
+}
+
+#presentation h1 {
+    font-size: 1.5em;
+}
+
+#presentation p {
+    font-family: Montserrat, sans-serif;
+    font-size: .9em;
+    padding: 30x 0;
+    margin: 50px 0;
+}
+
+#presentation a {
+    font-family: Montserrat, sans-serif;
+    color: #22223b85;
+    background-color: white;
+    border: 1px solid white;
+}
+
+#presentation a:hover,
+#services a:hover{
+    color:white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+figure {
+    margin: 0 0 50px;
+}
+
+#about {
+    flex-direction: column;
+    text-align: start;
+    background-color: white;
+    width: max-content;
+}
+
+#about h1 {
+    font-family: AfterMidnite, sans-serif;
+    text-transform: lowercase;
+}
+
+#about h2 {
+    font-family: TrajanPro-Regular, sans-serif;
+    font-size: 1.5em;
+    color: #9a8c98;
+}
+
+#about p {
+    font-family: Montserrat, sans-serif;
+    font-size: .9em;
+    color: #9a8c98;
+    margin: 0 0 30px;
+}
+
+#about div {
+    width: 60%;
+}
+
+#services {
+    flex-direction: column;
+}
+
+#services h1,
+#services h2 {
+    font-family: TrajanPro-Regular, sans-serif;
+    font-size: 2.5em;
+}
+
+#services h2 {
+    color: #9a8c98;
+}
+
+#services p {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+}
+
+#services div.flex {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bg-services {
+    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(34, 34, 59, 0.9)), url("../img/geovanna-bg-services.jpg") no-repeat;
+    background-size: cover;
+}
+
+#services a {
+    margin: 30px 0;
+    color: #22223b;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.consulting {
+    width: 60%;
+}
+
+#services div:nth-child(3) {
+    margin: 30px 0 0;
+}
+
+#briefing {
+    flex-direction: column;
+    background-color: white;
+    font-family: TrajanPro-Regular, sans-serif;
+    color: #22223b;
+}
+
+#briefing h1 {
+    font-family: AfterMidnite, sans-serif;
+    text-transform: lowercase;
+}
+
+#briefing h2 {
+    display: block;
+    font-family: TrajanPro-Regular, sans-serif;
+    font-size: 1.3em;
+    color: #9a8c98;
+    width: 40%;
+}
+
+#briefing p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 30px;
+}
+
+#briefing figure {
+    border-bottom: 1px solid #22223b;
+}
+
+#briefing div p:nth-child(2) {
+    border-bottom: 1px solid #22223b;
+}
+
+#briefing div:nth-child(1) {
+    align-items: center;
+}
+
+.bg-contact {
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(34, 34, 59, 0.9)), url("../img/geovanna-bg-contact.jpg") no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    font-family: TrajanPro-Regular, sans-serif;
+}
+
+#contact h1 {
+    font-family: AfterMidnite, sans-serif;
+    text-transform: lowercase;
+}
+
+#contact h3,
+#contact h4 {
+    color: #9a8c98;
+}
+
+#contact h4 {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+#contact p {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+}
+
+#contact div img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}

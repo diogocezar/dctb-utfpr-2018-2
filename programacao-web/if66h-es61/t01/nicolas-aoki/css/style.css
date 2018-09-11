@@ -1,0 +1,160 @@
+@font-face{
+    font-family: midnight;
+    src: url(../fonts/AfterMidnite.woff);
+}
+@font-face{
+    font-family: trojan;
+    src: url("../fonts/TrajanPro-Bold.woff");
+}
+@font-face{
+    font-family: mont;
+    src:url("../fonts/Montserrat-Light.ttf")
+}
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+}
+.navbar{
+    display: flex;
+    background-color:#29213e;
+    height: 95px;
+    align-content: center;
+}
+.logo{
+    display:flex;
+    margin-left:100px;
+    align-self: center;
+}
+.flex-inicio{
+    align-self: flex-start;
+}
+.flex-fim{
+    align-self: flex-end;
+}
+.navbarColuna{
+    display: flex;
+    margin:auto;
+    list-style-type: none;
+    flex-wrap: row;
+    justify-content: space-around;
+}
+.navItens{
+    margin:10px;
+    text-decoration: none;
+    font-family: trojan;
+    font-size:1.4em;
+    color:#d4c9c9;
+}
+.home{
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-home.jpg");
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	align-items: center;
+}
+.conteudo-home{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.frase-home-1{
+    font-family: midnight,sans-serif;
+    color:white;
+    font-size:7.5rem;
+    font-weight: lighter;
+    margin:0;
+}
+.frase-home-2{
+    font-family: midnight,sans-serif;
+    color:white;
+    font-size:4.5rem;
+    font-weight: lighter;
+    margin:0;
+    margin-top:-80px;
+}
+.frase-home-3{
+    font-family: trojan;
+    color:#d4c9c9;
+    font-size:1.5rem;
+    margin:0;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.nome-frase-3{
+    color:gray;
+}
+.frase-home-4{
+    font-family: trojan;
+    color:#d4c9c9;
+    font-weight: lighter;
+    font-size:1.5rem;
+    margin:0;
+}
+.home-btn{
+    text-transform: uppercase;
+    font-size:1rem;
+    font-family: mont;
+    color:white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    border:1.5px solid #d4c9c9;
+    background-color: Transparent;
+    margin-top:4rem;
+    padding:30px 70px 30px 70px;
+}
+.home-btn:hover{
+    background-color: white;
+    transition-duration:0.4s;
+    color:rgb(39, 38, 38);
+}
+.apresentacao{
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-presentation.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	align-items: center;
+}
+.img-apresentacao{
+    margin:2.5rem 0;
+    height: 80px;
+}
+.apresentacao-btn{
+    text-transform: uppercase;
+    font-size:1rem;
+    font-family: mont;
+    color:black;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    border:1.5px solid #d4c9c9;
+    background-color: white;
+    margin-top:4rem;
+    padding:30px 70px 30px 70px;
+}
+.apresentacao-btn:hover{
+    background-color: Transparent;
+    transition-duration:0.4s;
+    color:white;
+}
+.conteudo-apresentacao{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.frase-apresentacao-1{
+    font-family: trojan;
+    color:#d4c9c9;
+    font-size:1.5rem;
+    margin:0;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}

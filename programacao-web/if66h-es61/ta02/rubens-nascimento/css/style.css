@@ -1,0 +1,153 @@
+body{
+    background-color: aqua
+}
+
+p{
+    font-size: 1.5em;
+}
+.bold{
+    font-weight: bold
+}
+.menu{
+    background-color: bisque;
+    display: flex;
+    flex-flow: row;
+}
+.verticalMenu{
+
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    width: 10%
+}
+
+.horizontalMenu{
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    width: 40%
+}
+
+.item{
+
+    margin: 5px;
+    background-color: yellow;
+}
+
+.item:hover{
+    color: yellow;
+    background-color: black;
+}
+
+.gallery{
+    background-color: orangered;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.heroGallery{
+    background-color: orange;
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.areas{
+    background-color: greenyellow;
+    height: 300px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.area1{
+    background-color: blue;
+    display: flex;
+    flex-grow: 1;
+}
+.area2{
+
+    background-color: green;
+    display: flex;
+    flex-grow: 1;
+}
+.area3{
+
+    background-color: grey;
+    display: flex;
+    flex-grow: 1;
+}
+.area4{
+    background-color: blueviolet;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    align-self: center;
+    background-color: silver;
+    color: black;
+}
+
+a:hover{
+    background-color: beige;
+}
+
+.text1{
+    background-color: rgb(243, 95, 95);
+    align-self: flex-end;
+}
+.text2{
+    background-color: rgb(243, 191, 95);
+    align-self: flex-end;
+}
+.text3{
+    background-color: rgb(130, 243, 95);
+    align-self: flex-end;
+}
+.text4{
+    background-color: rgb(95, 243, 236);
+    justify-content: flex-start;
+}
+
+
+
+.group{
+    background-color: rgb(128, 5, 15);
+    height: 300px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team1{
+    background-color: yellow;
+    flex: 1 1 40%;
+    order: 3;
+}
+.team2{
+    background-color: gold;
+    flex: 1 1  100%;
+    order: 1;
+}
+.team3{
+    background-color: orange;
+    order: 4;
+    flex: 1 1 20%;
+}
+.team4{
+    background-color: rgb(196, 129, 4);
+    order: 3;
+    flex: 2 3 20%;
+}

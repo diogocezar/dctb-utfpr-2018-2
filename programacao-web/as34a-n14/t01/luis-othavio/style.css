@@ -1,0 +1,601 @@
+#loader{
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgb(34, 34, 59);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: TrajanPro-Regular,serif;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body, html {
+    font-size: 14px;
+}
+
+section {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.header{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 80%;
+}
+
+#header-menu{
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #22223b;
+}
+
+#menu-container{
+  position: relative;
+  float: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+#navbar-nav{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+
+}
+
+header img{
+  width: 225px;
+}
+
+header a {
+  font-family: TrajanPro-Regular, sans-serif;
+  color: #f2e9e4;
+  font-size: 1.05em;
+  margin: 0 1em;
+  line-height: 40px;
+  padding-top: 19px;
+}
+
+header a:hover {
+    text-decoration-color: #f2e9e4;
+    text-decoration-line: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home{
+  font-family: TrajanPro-Regular, sans-serif;
+
+}
+
+#content-home h2 {
+    font-size: 6.5rem;
+}
+
+#content-home h3 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+#content-home h2, #content-home h3 {
+    font-family: AfterMidnite,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+#content-home h4 {
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+#content-home{
+  margin-top: 4rem;
+}
+
+section#home {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(./assets/img/geovanna-bg-home.jpg);
+  background-position: 0 0;
+}
+
+#presentation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url(./assets/img/geovanna-bg-presentation.jpg);
+  background-position: 50%;
+
+}
+
+#content-presentation h2 {
+  font-size: 2rem;
+}
+
+#content-presentation h3 {
+    font-size: 1rem;
+    font-family: Montserrat,sans-serif;
+}
+
+#content-presentation h2, #content-presentation h3 {
+  font-family: TrajanPro-Regular,serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+#content-presentation img {
+  margin: 2.5rem 0;
+  height: 80px;
+}
+
+#content-presentation img, .center-translate {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%)!important;
+}
+
+#content-presentation button {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.button-white{
+  border: 1px solid #f2e9e4;
+  transition: all 0.3s ease-in-out 0s, transform 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;
+}
+
+.button-white:hover {
+    background-color: transparent;
+    color: #f2e9e4;
+}
+
+.button{
+  cursor: pointer;
+  width: 260px;
+  border-radius: 40px;
+  height: 60px;
+  line-height: 38px;
+  font-family: Montserrat,sans-serif;
+  font-size: 1rem;
+}
+
+.button, .center-translate {
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%)!important;
+    -ms-transform: translate(-50%)!important;
+    transform: translate(-50%)!important;
+}
+
+#content-home button {
+    margin-top: 4rem;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.button-transparent{
+  border: 1px solid #f2e9e4;
+  background-color: transparent;
+  color: #f2e9e4;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button-transparent:hover {
+    background-color: #f2e9e4;
+    color: gray;
+}
+
+.about{
+
+}
+
+.container-about {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#content-about h2 {
+  font-family: AfterMidnite,sans-serif;
+  color: #22223b;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  padding-left: 15px;
+  width: 100%;
+}
+
+#content-about h3 {
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#content-about p {
+    font-family: Montserrat,sans-serif;
+    color: #22223b;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-right: 30px;
+}
+
+#content-about img {
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+section#services{
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(./assets/img/geovanna-bg-services.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#content-services{
+  width: 100%;
+}
+
+.content-services-row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#content-services h2 {
+    font-family: TrajanPro-Regular,serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #f2e9e4;
+    margin-bottom: 3rem;
+}
+
+#content-services img {
+    height: 120px;
+    margin-bottom: 3rem;
+    vertical-align: middle;
+}
+
+#content-services img, .center-translate {
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%)!important;
+    -ms-transform: translate(-50%)!important;
+    transform: translate(-50%)!important;
+}
+
+#content-services button {
+    margin-top: 3rem;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.lg{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+#content-services h3 {
+    font-family: TrajanPro-Regular,serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+}
+
+#content-services h3 .hl {
+    font-size: 3rem;
+}
+
+#content-services p {
+    font-family: Montserrat,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#content-testmonials{
+  width: 100%;
+}
+
+.content-testmonials-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#content-testmonials h2 {
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#content-testmonials img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 3rem;
+}
+
+#content-testmonials img, .center-translate {
+    left: 50%;
+    position: relative;
+    transform: translate(-50%)!important;
+}
+
+#content-testmonials h3 {
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: 7rem;
+}
+
+#testimony{
+  width: 100%;
+  position: relative;
+}
+
+.row-testimony p {
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#content-testmonials img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 3rem;
+}
+
+.row-testimony h4, .row-testimony h5 {
+    text-align: center;
+}
+
+.row-testimony h5 {
+  color: #c9ada7;
+}
+
+.h5, h5 {
+    font-size: 1.25rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+section#contact {
+    background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(./assets/img/geovanna-bg-contact.jpg);
+    background-position: 50%;
+}
+
+#content-contact {
+    text-align: center;
+}
+
+#content-contact h2 {
+    font-family: AfterMidnite,sans-serif;
+    color: #f2e9e4;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#content-contact img {
+    height: 120px;
+}
+
+#content-contact h3 {
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+#content-contact h4 {
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.5rem;
+}
+
+#content-contact p.bigger {
+    font-size: 2rem;
+}
+
+#content-contact p {
+    font-size: 1.2em;
+    color: #f2e9e4;
+}
+
+#content-contact p small {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 2rem;
+}
+
+#content-contact ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#content-contact ul li:first-child {
+    margin-right: 15px;
+}
+
+#content-contact ul li {
+    border: 2px solid #f2e9e4;
+    padding: 13px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+#content-contact ul li a img {
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  max-width: 1140px;
+}
+
+.flex {
+    display: flex;
+}
+
+.item {
+    flex: 1;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+
+#presentation img {
+    width: 100px;
+    height: 100px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    border-style: none;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+#root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}

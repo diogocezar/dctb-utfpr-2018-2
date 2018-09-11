@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <meta charset="utf-8">
+    <title> Flex Container </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>           
+    <h1>Flex Container</h1>
+    <div id="menu">
+        <ul>
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="#display"> Display </a></li>
+            <li> <a href="#flex-direction"> Flex-Direction </a></li>
+            <li> <a href="#flex-wrap"> Flex-Wrap </a></li>
+            <li> <a href="#flex-flow"> Flex-Flow </a></li>
+            <li> <a href="#justify-content"> Justify-Content </a></li>
+            <li> <a href="#align-items"> Align-Items </a></li>
+            <li> <a href="#align-content"> Align-Content </a></li>
+        </ul>
+    </div>
+
+    <h2>Display: block</h2>
+    <!--Section 1-->
+    <section class="display">
+        <div class="container block ">
+            <div class="item">Primeiro bloco</div>
+            <div class="item">Segundo bloco</div>
+            <div class="item">Terceiro bloco</div>
+            <div class="item">Quarto bloco</div>
+        </div>
+    </section>
+
+    <h2>Flex-Direction: row</h2>
+    <!--Section 2-->
+    <section class="flex-direction">
+        <div class="container flex row">
+            <div class="item">Exemplo 1</div>
+            <div class="item">Exemplo 2</div>
+            <div class="item">Exemplo 3</div>
+            <div class="item">Exemplo 4</div>
+        </div>
+    </section>
+
+    <h2>Flex-Direction: row-reverse</h2>
+    <!--Section 2.1-->
+    <section class="flex-direction">
+        <div class="container flex row-reverse">
+            <div class="item">Exemplo 1</div>
+            <div class="item">Exemplo 2</div>
+            <div class="item">Exemplo 3</div>
+            <div class="item">Exemplo 4</div>
+        </div>
+    </section>
+
+    <h2>Flex-Wrap: wrap</h2>
+    <!--Section 3-->
+    <section id="flex-wrap">
+        <div class="container flex  wrap">
+            <div class="item">Exemplo 1</div>
+            <div class="item">Exemplo 2</div>
+            <div class="item">Exemplo 3</div>
+            <div class="item">Exemplo 4</div>
+        </div>
+    </section>
+
+    <h2>Flex-Wrap: wrap-reverse</h2>
+    <!--Section 3.1-->
+    <section id="flex-wrap">
+        <div class="container flex wrap-reverse">
+            <div class="item">Exemplo 1</div>
+            <div class="item">Exemplo 2</div>
+            <div class="item">Exemplo 3</div>
+            <div class="item">Exemplo 4</div>
+        </div>
+    </section>
+
+    <h2>Flex-Flow: row wrap</h2>
+    <!--Section 4-->
+    <section id="flex-flow">
+        <div class="container row-wrap">
+            <div class="item">TestandoRow-Wra   p11111111111111111111</div>
+            <div class="item">TestandoRow-Wrap22222222222222222222</div>
+            <div class="item">TestandoRow-Wrap33333333333333333333</div>
+            <div class="item">TestandoRow-Wrap44444444444444444444</div>            
+        </div>
+    </section>
+
+    <h2>Justify-Content: flex-start</h2>
+    <!--Section 5-->
+    <section id="justify-content">
+        <div class="container flex flex-start">
+            <div class="item">Start1</div>
+            <div class="item">Start2</div>
+            <div class="item">Start3</div>       
+        </div>
+    </section>
+
+    <h2>Justify-Content: flex-end</h2>
+    <!--Section 5.1-->
+    <section id="justify-content">
+        <div class="container flex flex-end">
+            <div class="item">End1</div>
+            <div class="item">End2</div>
+            <div class="item">End3</div>         
+        </div>
+    </section>
+
+    <h2>Align-Items: stretch</h2>
+    <!--Section 6-->
+    <section id="align-items">
+        <div class="container flex stretch">
+            <div class="item">ABC DEF GHI </div>
+            <div class="item">ABC DEF GHI JKL </div>
+            <div class="item">ABC DEF GHI JKL MNO</div>
+            <div class="item">ABC DEF GHI JKL MNO PQR</div>
+        </div>
+    </section>
+
+    <h2>Align-Content: center</h2>
+    <!--Section 7-->
+    <section id="align-content">
+        <div class="container center">
+            <div class="item">ABC DEF GHI </div>
+            <div class="item">ABC DEF GHI JKL </div>
+            <div class="item">ABC DEF GHI JKL MNO</div>
+            <div class="item">ABC DEF GHI JKL MNO PQR</div>
+        </div>
+    </section>
+
+</body>
+</html>

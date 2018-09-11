@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+    font-family: AfterMidnite;
+    src: url(./assets/fonts/AfterMidnite.ttf);
+}
+
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url(./assets/fonts/TrajanPro-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url()
+}
+
+@font-face {
+    font-family: TrajanPro-Bold;
+    src: url(./assets/fonts/TrajanPro-Bold.ttf);
+}

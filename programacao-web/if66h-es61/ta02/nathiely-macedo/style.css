@@ -1,0 +1,72 @@
+body{
+    background-color: #EFEFEF;
+}
+
+#logo{
+    align-self: flex-start;
+    padding-right: 800px;
+    order: -2;
+    flex : 0 1 auto;
+    flex-shrink: 1;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #6E0E0A;
+
+}
+.itemMenu{
+    padding: 0 20px;
+}
+
+.destaques{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap; 
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+
+.itemDestaque{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 20px;
+    flex-shrink: 0;
+}
+
+.foto{
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    flex-shrink: 1;
+}
+
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: inherit;
+    font-weight: bold;
+    font-variant: small-caps;
+
+}
+#esporte{
+    color: #228B22;
+}
+
+#economia{
+    color: #FF4500;
+}
+
+#politica{
+    color: #C71585;
+}
+
+#entretenimento{
+    color: blue;
+    order: -1;
+}
