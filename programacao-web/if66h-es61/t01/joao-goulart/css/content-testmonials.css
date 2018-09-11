@@ -17,6 +17,9 @@
     text-align: center;
 }
 
+.container {
+    height: auto;
+}
 
 
 .content-testmonials h3 {

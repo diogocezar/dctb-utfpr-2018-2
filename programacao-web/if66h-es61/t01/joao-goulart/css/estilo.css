@@ -34,9 +34,9 @@ a {
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
     margin-top: 4px;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .menu-item {
@@ -51,6 +51,43 @@ a {
     font-family: 'TrajanPro-Regular', serif;
 }
 
+.hamburger {
+    display: none!important;
+}
+
+
+.menu-desktop li {
+    list-style: none;
+    float: left;
+}
+
+.menu-desktop li a {
+    font-family: 'TrajanPro-Regular',serif;
+    color: #f2e9e4;
+    font-weight: 400;
+    margin-top: 4px;
+    display: block;
+    margin: 0 1.1em;
+    line-height: 40px;
+    font-size: 1.18em;
+    padding-top: 1%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
 
 @media (max-width: 480px) {
     .container {
@@ -65,6 +102,15 @@ a {
         justify-content: space-around;
         align-items: center;
     }
+
+    .hamburger {
+        display: inline-block!important;
+    }
+
+    .menu-desktop {
+        display: none!important;
+    }
+
 
     .menu-mobile {
         background-color: #4a4e69;
@@ -84,6 +130,11 @@ a {
 
  
 
+    .logo {
+        height: 50px;
+        margin-top: 4px;
+        padding-left: 10px;
+    }
 
     section {
         padding-top: 5rem;
@@ -99,6 +150,16 @@ a {
         width: 220px!important;
         font-size: .9rem;
     }
+
+
+    .hamburger {
+        display: inline-block!important;
+    }   
+
+    .menu-desktop {
+        display: none!important;
+    }
+
 
     .container {
         display: flex;
@@ -130,6 +191,11 @@ a {
         padding-bottom: 4rem;
     }
 
+    .logo {
+        height: 50px;
+        margin-top: 4px;
+        padding-left: 10px;
+    }
   
    
 }

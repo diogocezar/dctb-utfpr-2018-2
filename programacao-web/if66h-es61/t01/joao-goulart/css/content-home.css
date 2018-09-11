@@ -3,6 +3,58 @@
     background-position: 0 0;
 }
 
+
+
+#home {
+    height: calc(100vh - 70px);
+    padding-top: 60px;
+}
+
+#content-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    text-align: center;
+    color: #f2e9e4;
+
+}
+
+#content-home h2, #content-home h3, #content-home h4 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#content-home h2 {
+    font-size: 6.5rem;
+    margin-bottom: 1%;
+
+}
+
+#content-home h3 {
+    font-size: 4rem;
+    width: 100%;
+    margin-top: 0;
+
+
+}
+
+#content-home h4 {
+    font-size: 1.5rem;
+
+
+}
+
+#content-home button{
+    margin-top: 4rem;
+}
+
+.content-apresentation {
+    width: 100%;
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) and (min-width: 480px){ 
     #content-about h2 {
         text-align: center;

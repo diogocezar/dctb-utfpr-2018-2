@@ -42,6 +42,15 @@
     line-height: 2rem;
 }
 
+.content-services img {
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.content-services span {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
 
 
 @media (max-width: 768px) and (min-width: 480px) {
