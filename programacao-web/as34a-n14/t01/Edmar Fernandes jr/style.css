@@ -61,6 +61,8 @@
 .containerMenu {
 	
 	display: flex;
+	max-width:100%;
+	
 	margin: 0 auto;
 	background: #22223B;
 	
@@ -107,19 +109,27 @@
 }
 
 .container {
-	max-width: 920px;
+	max-width: 100%;
 	display: flex;
 	margin: 0 auto;
 	
 }
 .containerMed {
-	max-width: 620px;
+	max-width: 50%;
 	display: flex;
 	margin: 0 auto;
 		
 }
+
+.containerPeq
+{
+	max-width: 30%;
+	display: flex;
+	margin: 0 auto;
+}
+
 .containerMedlado {
-	max-width: 520px;
+	max-width: 50%;
 	display: flex;
 	margin: 10;
 		
@@ -265,6 +275,11 @@
 	color:#c9ada7;
 }
 
+.item16 {
+	color: #9A8C98;
+	font-family:Montserrat;
+	font-size:16;
+}
 .itemRodap
 {
 	font-size:15;
