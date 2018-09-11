@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+@font-face{
+    font-family: AfterMidnite;
+    src: url("fonts/AfterMidnite.otf");
+}
+
+@font-face{
+    font-family: TrajanPro-Regular;
+    src: url("fonts/TrajanPro-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+}
+
+section{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.container-flex{
+    display: flex;
+}
+
+button{
+    margin-top: 4rem;
+    background-color: transparent;
+    color: #f2e9e4;
+    border-radius: 40px;
+    width: 260px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f2e9e4;
+}
+
+button:hover{
+    background-color: #f2e9e4;
+    color: #807dbe;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    top: 0;
+    position: absolute;
+    background-color: #22223b;
+}
+
+
+/* Header */
+
+#header{
+    background-color: #22223b;
+    height: 70px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+}
+
+#header img{
+    top: 5px;
+    bottom: 5px;
+    height: 60px;
+    position: relative;
+    float: left;
+}
+
+
+#navbar{
+    position: relative;
+    float: right;
+    height: 60px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+
+.nav-item li{
+    display: inline;
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-family: TrajanPro-Regular, serif;
+    padding: 0 1rem;
+    padding-top: 16px;
+    line-height: 40px;
+}
+
+.nav-item li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #f2e9e4;
+}
+
+/* Home */
+
+#home{
+    top: 60px;
+    height: 100vh;
+    background-image: url(images/geovanna-bg-home.jpg);
+    text-align: center;
+    color: #f2e9e4;
+    position: relative;
+}
+
+#home h2, #home h3{
+    font-family: AfterMidnite, sans-serif;
+}
+
+#home h2{
+    font-size: 6.5rem;
+}
+
+#home h3{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+    margin-top: -61px;
+}
+
+#home h4{
+    font-family: TrajanPro-Regular, serif;
+    font-size: 1.5rem;
+}
+
+#home-span{
+    color: #9a8c98;
+}
+
+/* Presentation */
+
+#presentation{
+    background-image: url(images/geovanna-bg-presentation.jpg); 
+    text-align: center;
+    color: #f2e9e4;
+    position: relative;
+}
+
+#presentation img{
+    margin: 2.5rem 0;
+    height: 80px;
+}
+
+#presentation h2{
+    font-family: TrajanPro-Regular, serif;
+    font-size: 2rem;
+    
+}
+
+#presentation p{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3rem;
+}
+
+#presentation button{
+    margin: 2.5rem 0;
+    background-color: #f2e9e4;
+    color: #807dbe;
+}
+
+#presentation button:hover{
+    background-color: transparent;
+    color: #f2e9e4;
+}
+
+#presentation .overlay{
+    background-color: #515177;
+}
+
+/* About */
+
+#about{
+    background-color: #f2e9e4;
+    line-height: 1.2;
+}
+
+#about h2{
+    font-family: AfterMidnite, sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+#about h3{
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#about img{
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+#about p{
+    font-family: Montserrat,sans-serif;
+    color: #22223b;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-text{
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Services */
+
+#services{
+    background-image: url(images/geovanna-bg-services.jpg);
+    text-align: center;
+    position: relative;
+}
+
+#services h2{
+    font-family: TrajanPro-Regular,serif;
+    font-size: 3rem;
+    color: #f2e9e4;
+    margin-bottom: 3rem;
+}
+
+#services h3{
+    font-family: TrajanPro-Regular,serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+}
+
+#services img{
+    height: 120px;
+    margin-bottom: 3rem;
+}
+
+#services button{
+    margin: 2.5rem 0;
+    background-color: #f2e9e4;
+    color: #807dbe;
+}
+
+#services button:hover{
+    background-color: transparent;
+    color: #f2e9e4;
+}
+
+#services p{
+    font-family: Montserrat,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services-span{
+    font-size: 3rem;
+}
+
+/* Brief */
+
+#brief{
+    background-color: #f2e9e4;
+    text-align: center;
+    color: #4a4e69;
+}
+
+#brief h2{
+    font-family: AfterMidnite,sans-serif;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+#brief img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 3rem;
+}
+
+#brief h3{
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+}
+
+#brief p{
+    font-family: TrajanPro-Regular, serif;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+#brief .container-flex > div{
+    max-width: 50%;
+}
+
+#brief h4, #brief h5{
+    margin-bottom: .5rem;
+    font-family: TrajanPro-Regular;
+}
+
+#brief h5{
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    color: #c9ada7;
+}
+
+.div-p{
+    max-height: 50%;
+}
+
+/* Contact */
+
+#contact{
+    background-image: url(images/geovanna-bg-contact.jpg);
+    text-align: center;
+    position: relative;
+    color: #f2e9e4;
+}
+
+#contact img{
+    height: 120px;
+    width: 120px;
+}
+
+#contact h2{
+    font-family: AfterMidnite, sans-serif;
+    font-size: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    line-height: 1.2rem;
+}
+
+#contact h3{
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1.75rem;
+}
+
+#contact h4{
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.5rem;
+}
+
+#contact p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #f2e9e4;
+    font-size: 2rem;
+    font-family: TrajanPro-Regular,serif;
+}
+
+#contact p a{
+    color: #f2e9e4;
+    text-decoration: none;
+}
+
+#contact p small{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#contact-span{
+    font-size: 1.2rem;
+}
+
+#contact ul > li{
+    display: inline;
+}
+
+.icon{
+    height: 35px!important; 
+    width: 35px!important;
+}
+
+@media screen and (max-width: 1300px){
+    .container{
+        max-width: 1140px;
+    }
+
+    #home h2{
+        font-size: 5.5rem;
+    }
+
+    #home h3{
+        font-size: 3.5rem;
+    } 
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+
+    #home h2{
+        font-size: 5rem;
+    }
+
+    #home h3{
+        font-size: 3rem;
+    } 
+
+    #brief h3{
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+
+    #brief p{
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+
+    section{
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    .container-flex{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 4rem;
+    }
+
+    #home h3{
+        font-size: 2rem;
+        margin-top: 2rem;
+    } 
+
+    #home h4{
+        font-size: 1.2rem;
+    }
+
+    button{
+        height: 50px;
+        width: 220px!important;
+        font-size: 0.9rem;
+    }
+
+    #services h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #services h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #services img{
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+
+    #services p{
+        padding: 0;
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+
+    .services-span{
+        font-size: 2.5rem;
+    }
+
+    #brief h2{
+        font-size: 5rem;
+    }
+
+    #brief h3{
+        font-size: 1.1rem;
+    }
+
+    #brief h4{
+        font-size: 1rem;
+    }
+
+    #brief h5{
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    #brief img{
+        height: 100px;
+        width: 100px;
+    }
+
+    #brief p{
+        font-size: .9rem;
+    }
+
+    #contact h2{
+        font-size: 4rem;
+    }
+
+    #contact h3{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    #contact h3{
+        font-size: 1.2rem;
+    }
+
+    #contact img{
+        height: 100px;
+    }
+
+    #contact p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 562px){
+    .container{
+        max-width: 540px;
+    }
+
+}
+@media screen and (max-width: 480px){
+
+    section{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    #home h2{
+        font-size: 3rem;
+    }
+
+    #home h3{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    } 
+
+    #services h2{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #services h3{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .services-span{
+        font-size: 2rem;
+    }
+
+    #services img{
+        height: 80px;
+        margin-bottom: 1.5rem;
+    }
+
+    #brief h2{
+        font-size: 4rem;
+    }
+
+    #brief img{
+        height: 80px;
+        width: 80px;
+    }
+
+    #contact h2{
+        font-size: 4rem;
+    }
+
+    #contact h3{
+        font-size: 1.2rem;
+    }
+
+    #contact h4{
+        font-size: 1.2rem;
+    }
+
+    #contact img{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        max-width: 300px;
+    }
+
+    section{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    #home{
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+    }
+
+    #home h2{
+        font-size: 2.5rem;
+    }
+
+    #home h3{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    } 
+}
