@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        .columns {
+            display: flex;
+        }
+
+        .column {
+            background: #eee;
+            border: 5px solid #ccc;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main-column {
+            flex: 2;
+        }
+
+        .column {
+            background: #eee;
+            border: 5px solid #ccc;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .article {
+            background: #0000FF;
+            border: 5px solid #191970;
+            color: white;
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Example Flex Container Display -->
+    <div class="columns">
+        <div class="column main-column">
+           First column
+        </div>
+        <div class="column">
+            Second column
+        </div>
+    </div>
+    <!-- Example Flex direction -->
+    <div class="columns">
+        <div class="column main-column">
+            <article class="article">
+                <p>Important News</p>
+                <p>Brazilians complain: "We have no one to vote for in the elections. </p>
+            </article>
+            <article class="article">
+                <p>Sports </p>
+                <p>São Paulo Brazilian championship champion!!!!</p>
+            </article>
+        </div>
+        <div class="column">
+            <article class="article">
+                <p> Weather forecast </p>
+                <p>Rain all the time. </p>
+            </article>
+            <article class="article">
+                <p>Music</p>
+                <p>Lady Gaga releases new single.</p> 
+            </article>
+            <article class="article">
+                <p> Advertisements</p>
+                <p> Polishop launches new fryer.</p>
+            </article>
+        </div>
+    </div>
+
+</body>
+</html>
