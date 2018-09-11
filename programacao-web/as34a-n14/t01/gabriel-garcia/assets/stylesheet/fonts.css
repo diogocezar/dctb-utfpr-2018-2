@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Trajan Pro";
+  src: url("../fonts/TrajanPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "After Midnight";
+  src: url("../fonts/AfterMidnite.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+}
