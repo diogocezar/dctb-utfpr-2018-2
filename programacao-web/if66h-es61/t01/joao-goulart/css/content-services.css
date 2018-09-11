@@ -1,0 +1,112 @@
+#services {
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)), url(../img/geovanna-bg-services.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.content-services {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-family: TrajanPro-Regular, serif;
+    text-align: center;
+    color: #f2e9e4;
+}
+
+.container-flex-service {
+    flex-direction: row;
+}
+.content-services h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.content-services h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+.content-services span {
+    font-size: 3rem;
+}
+
+.content-services p {
+    font-family: 'Montserrat',sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.content-services img {
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.content-services span {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .content-services img {
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+
+    .content-services span {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .content-services p {
+        padding: 0;
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+    .download-b {
+        position: relative;
+        right: 50%;
+    }
+
+    .container-flex-service {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-services img {
+        height: 80px;
+        margin-bottom: 1.5rem
+    }
+    .content-services h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .content-services h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-services span {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .content-services p {
+        padding: 0;
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+    .content-services {
+        flex-direction: column;
+    }
+
+
+}
