@@ -1,0 +1,516 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300);
+
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url(fonts/TrajanPro-Regular.eot?) format("eot"), url(fonts/TrajanPro-Regular.woff) format("woff"), url(fonts/TrajanPro-Regular.ttf) format("truetype"), url(fonts/TrajanPro-Regular.svg#TrajanPro-Regular) format("svg");
+}
+
+@font-face {
+    font-family: AfterMidnite;
+    src: url(fonts/AfterMidnite.eot?) format("eot"), url(fonts/AfterMidnite.woff) format("woff"), url(fonts/AfterMidnite.ttf) format("truetype"), url(fonts/AfterMidnite.svg#AfterMidnite) format("svg");
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+center,
+ul,
+li,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+body{
+    font-family: TrajanPro-Regular, serif;
+    background-color: #F2E9E4;
+    color: #4A4E69;
+    font-size: 14px;
+    line-height: 1;
+}
+
+html {
+    font-size: 14px;
+}
+
+
+/*Menu*/
+#menu .container{
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #22223B;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+/*imagem do menu*/
+#menu .a-menu img {
+    height: 60px;
+    margin-top: 5px;
+}
+
+/*alinhamento do menu*/
+#menu header {
+    float: left;
+}
+
+/*posição dos itens*/
+#menu .menu-container ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+/*fonte das letras*/
+#menu .menu-container ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin: 0 7px;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.18em;
+    padding-top: 16px;
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+/*passar mouse em cima*/
+#menu .menu-container ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #9A8C98;
+    -webkit-transform: scale3d(0, 5, 1);
+    transform: scale3d(0, 5, 1);
+}
+
+/*passar mouse em cima*/
+#menu .menu-container ul li a:hover:before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+/*botoes*/
+.button {
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+}
+
+.button-transparent,
+.button-white {
+    border: 1px solid #F2E9E4;
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: #F2E9E4;
+}
+.button-transparent:hover {
+    background-color: #F2E9E4;
+    color: #22223B
+}
+
+.button-white {
+    background-color: #F2E9E4;
+    color: #4A4E69;
+}
+
+.button-white:hover {
+    background-color: transparent;
+    color: #F2E9E4
+}
+
+/*imagens e botoes no centro*/
+#apresentacao .box-presentation img,
+#depoimentos img,
+#servicos img,
+.button,
+.center-translate {
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, 0) !important;
+}
+
+/*seção do home*/
+#home {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)), url(images/geovanna-bg-home.jpg);
+    background-position: left top;
+}
+
+/*fontes do h2*/
+#home .box-home h2 {
+    font-family: AfterMidnite, sans-serif;
+    color: #F2E9E4;
+    text-align: center;
+    font-size: 6.5rem;
+}
+
+/*fontes do h3*/
+#home .box-home h3 {
+    font-family: AfterMidnite, sans-serif;
+    color: #F2E9E4;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+/*fontes h4*/
+#home .box-home h4 {
+    font-family: TrajanPro-Regular, serif;
+    color: #F2E9E4;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*fonte especificada no hl*/
+#home .box-home h4 .hl {
+    color: #9A8C98;
+}
+
+/*botao do home*/
+#home .box-home button {
+    margin-top: 4rem;
+}
+
+/*seção da apresentação*/
+#apresentacao {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(74, 74, 105, .8), rgba(74, 74, 105, .8)), url(images/geovanna-bg-presentation.jpg);
+    background-position: center center;
+}
+
+/*h2*/
+#apresentacao .box-presentation h2{
+    font-family: TrajanPro-Regular, serif;
+    color: #F2E9E4;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*h3*/
+#apresentacao .box-presentation h3 {
+    font-family: Montserrat, sans-serif;
+    color: #F2E9E4;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*img no centro*/
+#apresentacao .box-presentation img {
+    margin: 2.5rem 0;
+    height: 80px;
+}
+
+/*botao*/
+#apresentacao .box-presentation button {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/*seção de sobre*/
+
+#sobre{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background: #f2e9e4;
+}
+
+#sobre .container {
+    color: #22223B;
+    width: 40%;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+/*h2 sobre*/
+#sobre h2 {
+    font-family: AfterMidnite, sans-serif;
+    color: #22223B;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+/*h3 sobre*/
+#sobre h3 { 
+    color: #9A8C98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem; 
+}
+
+/*texto p sobre*/
+#sobre p {  
+    font-family: "Montserrat", sans-serif;
+    color: #22223B;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1em;
+}
+
+/*imagem do sobre*/
+#sobre img {
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+/*seção dos serviços*/
+#servicos {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)), url(images/geovanna-bg-services.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/*h2 serviço*/
+#servicos h2 {
+    font-size: 3rem;
+    color: #F2E9E4;
+    font-family: TrajanPro-Regular, serif;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/*h3 serviço*/
+#servicos h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #9A8C98;
+    font-family: TrajanPro-Regular, serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*hl do serviço*/
+#servicos h3 .hl {
+    font-size: 3rem;
+}
+
+/*p do serviço*/
+#servicos p {
+    font-family: Montserrat, sans-serif;
+    color: #F2E9E4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/*coluna serviço*/
+#servicos .container .col{
+    width: 50%;
+    flex: 50%;
+}
+/*2 coluna serviço*/
+#servicos .container .cols {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 480px){
+    #servicos .container .col{
+        width: 100%;
+        flex: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/*imagem do serviço*/  
+#servicos img {
+    margin-bottom: 3rem;
+    height: 120px;
+}
+
+/*botao do serviço*/
+#servicos button {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+/*seçao depoimento*/
+#depoimentos{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background: #f2e9e4;
+}
+
+#depoimentos p, h4{
+    font-family: TrajanPro-Regular,serif;
+    color: #4a4e69;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 15%;
+    margin-bottom: 2rem;
+}
+
+#depoimentos .container .row .colunas {
+    width: 100%;
+    flex: 100%;
+}
+
+#contato h2,
+#depoimentos h2 {
+    font-family: AfterMidnite, sans-serif;
+    text-align: center;
+}
+
+/*h2 do depoimento*/
+#depoimentos h2 {
+    color: #22223B;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+/*h3 do depoimento*/
+#depoimentos h3 {
+    color: #9A8C98;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+#depoimentos h5 {
+    color: #9A8C98;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+/*imagem do depoimento*/
+#depoimentos img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 3rem;
+}
+
+/*seção do contato*/
+#contato {
+    padding-top: 7rem;
+    padding-bottom: 5rem;   
+    background: linear-gradient(rgba(34, 34, 59, .8), rgba(34, 34, 59, .9)), url(images/geovanna-bg-contact.jpg);
+    background-position: center center;
+    text-align: center;
+}
+
+/*h2 contato*/
+#contato h2 {
+    color: #F2E9E4;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+/*h3 contato */
+#contato h3 {
+    font-family: TrajanPro-Regular, serif;
+    color: #C9ADA7;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1.75rem;
+}
+
+/*h4 contato */
+#contato h4 {
+    font-family: TrajanPro-Regular, serif;
+    color: #C9ADA7;
+    font-size: 1.75rem;
+}
+
+#contato h5 {
+    font-family: TrajanPro-Regular, serif;
+    color: #F2E9E4;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+/*p contato*/
+#contato p {
+    color: #F2E9E4;
+    padding: 15px;
+    font-size: 2rem;
+}
+
+/*ul contato*/
+#contato ul {
+    padding: 0;
+    margin: 2.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ul li contato*/
+#contato ul li {
+    border: 2px solid #F2E9E4;
+    padding: 13px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+/*espaçamento do logo do insta com face*/
+#contato ul li:first-child {
+    margin-right: 15px;
+}
+
+/*tamanho do logo insta e face*/
+#contato ul li a img {
+    height: 35px;
+    width: 35px;
+}
+/*imagem do contato*/
+#contato img {
+    height: 120px;
+}
