@@ -1,6 +1,6 @@
 var bazarHeader = document.getElementById("header");
-var bazarTeste = document.getElementById("teste");
-var bazarProducts = document.getElementById("config");
+var bazarInformation = document.getElementById("information");
+var bazarProducts = document.getElementById("product0");
 
 
 var ourRequest = new XMLHttpRequest();
@@ -15,7 +15,7 @@ ourRequest.send();
 function renderHTML(data){
     var htmlHeader = "";
     var htmlProducts = "";
-    var htmlTeste = "";
+    var htmlInformation = "";
 
 
     htmlHeader += "<h1>" +data.configs.title+ "</h1>";
@@ -23,22 +23,30 @@ function renderHTML(data){
     htmlHeader += "<p>" +data.configs.email+ "</p>";
     htmlHeader += "<p>" +data.configs.phone+ "</p>";
 
-    htmlHeader += "<p>" +data.configs.description[0].p+ "</p>";
-    htmlHeader += "<p>" +data.configs.description[1].p+ "</p>"
+    htmlInformation += "<p>" +data.configs.description[0].p+ "</p>"
+    htmlInformation += "<p>" +data.configs.description[1].p+ "</p>"
+    htmlInformation += "<h2>" +data.configs.description[2].h2+ "</h2>"
+    htmlInformation += "<p>" +data.configs.description[3].p+ "</p>"
 
-    htmlHeader += "<h2>" +data.configs.description[2].h2+ "</h2>"
-    htmlHeader += "<p>" +data.configs.description[3].p+ "</p>"
-
-    htmlTeste += "<p>" +data.configs.description[0].p+ "</p>"
 
     for(i=0; i < data.products.length; i++){
-        htmlProducts += "<h4>" +data.products[i].name+ "</h4>"
+        htmlProducts += "<h2>" +data.products[i].name+ "</h2>"
         htmlProducts += "<img src =" +data.products[i].image+ ">"
+        for(j=0; j < data.products[i].description.length; j++){
+            if(data.products[i].description[j].p){
+                htmlProducts += "<p>" +data.products[i].description[j].p+ "</p>"
+            }
+            else{
+                htmlProducts += "<h4>" +data.products[i].description[j].h4+ "</h4>"
+            }
+        }
+        htmlProducts += "<h2>Preço: R$" + data.products[i].price + "</h2>";
     }
 
 
     bazarHeader.innerHTML = htmlHeader;
+    bazarInformation.innerHTML = htmlInformation;
     bazarProducts.innerHTML = htmlProducts;
-    bazarTeste.innerHTML = htmlTeste;
+    
 
 }
