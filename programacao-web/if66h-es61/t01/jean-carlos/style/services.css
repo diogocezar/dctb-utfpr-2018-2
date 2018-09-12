@@ -1,0 +1,74 @@
+.services{
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(34,34,59,.84),
+    rgba(34,34,59,.98)),
+        url("../imgs/geovanna-bg-services.jpg");
+    height:130%;
+    background-position: 50%;
+    background-position-y: 0%;
+    padding-top:50px;   
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.services h2{
+
+    font-weight: 20px;
+    text-transform: uppercase;
+}
+.services h3{
+    color:#9a8c98;    
+    font-family: TrajanPro-Regular,serif;
+    margin-bottom:0;      
+    text-transform: uppercase;
+    letter-spacing: 0.5px;     
+}
+.services h4{
+    color:#9a8c98;    
+    font-weight: 500;
+    font-family: TrajanPro-Regular,serif;
+    margin-top:0;      
+    text-transform: uppercase;
+    letter-spacing: 1.8px; 
+    text-align: center;   
+}
+.services p{
+    color:#f2e9e4;
+    font-family:Montserrat,sans-serif;
+    line-height: 25px;
+    text-align:center;
+    font-weight: 500;
+}
+
+.services a{
+    border: 1px solid #f2e9e4;
+    background-color: #f2e9e4;
+    color: #4a4e69;
+    font-weight: 500;
+    text-transform: uppercase; 
+    font-family: Montserrat,sans-serif;
+    text-align: center; 
+}
+@media only screen and (max-width: 480px){
+    .services img{
+        height: 12%;
+    }
+    .services h2{
+        font-size: 1.4rem;
+        
+    }
+    .services h3{
+        font-size: 1.4rem;   
+    }
+    .services h4{
+        font-size: 1.7rem;    
+    }
+    .services p{
+        font-size: 0.8rem;        
+    }
+    .services a{
+        width: 70%
+    }
+}    
