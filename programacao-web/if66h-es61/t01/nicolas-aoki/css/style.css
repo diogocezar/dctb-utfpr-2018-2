@@ -250,6 +250,8 @@ body {
 .topo-depoimento{   
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }
 .img-depoimento{
     width:10%;
