@@ -10,57 +10,50 @@
     background: linear-gradient(rgba(34,34,59,.84),
     rgba(34,34,59,.98)),
         url("../imgs/geovanna-bg-home.jpg");
-    height: 90%;
+    height:90%;
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
 }
-
-p,h2,h3{
+.about p{
+    text-transform: uppercase;
+}
+.about p,h2,h3{
     color:#f2e9e4;
     text-align:center;
     font-family: TrajanPro-Regular,serif;
-    font-weight: 20;    
+    font-weight: 500;
 }
 stronger{
     color: #9a8c98;
 }
 
-h2,h3{
+.about h2,h3{
     font-family: AfterMidnite,sans-serif;
 }
-
-.about a{
-    text-decoration:none;
-    border: 1px solid #f2e9e4;
-    border-radius: 25px;
-    padding: 10px;
-    padding-left:30px;
-    padding-right:30px;
-    color:#f2e9e4;
-    font-family:Montserrat,sans-serif;
-    font-weight: 5;
-    line-height: 40px;
+.about h2{
+    line-height: 3rem;    
 }
 
-.presentation{
-    background: linear-gradient(rgba(74,74,105,.8),
-    rgba(74,74,105,.8)),
-        url("../imgs/geovanna-bg-presentation.jpg");
-}
+
+
 @media only screen and (max-width: 480px){
-
+    .about{
+        height:80%;
+    }
     h2{
         font-size: 3rem;
     }
 
-    h3{
+    .about h3{
         font-size: 1.8rem;
     }
-    p{
+    .about p{
         font-size: 1.3rem;
     }
     a{
         font-size: 0.9rem;
     }
+
 }
