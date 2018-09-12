@@ -1,0 +1,16 @@
+[T01] - 13/09/2018 - 18:00
+Vocês devem criar o seu primeiro site! Para isso, devem se basear em um website já pronto!
+
+O site em questão está disponível em: https://www.geovannagarcia.com.br/
+
+Todos os assets podem ser encontrados no repositório oficial, onde o site está hospedado: https://github.com/creativetroops/www.geovannagarcia.com.br
+
+O site foi desenvolvido em ReactJS, Bootstrap, SASS e JQuery, porém nesta tarefa é OBRIGATÓRIO que seja utilizado apenas: HTML e CSS, mesmo que isso prejudique alguns efeitos visuais.
+
+Não é obrigatório implementar a funcionalidade do carrosel.
+
+Os links devem apontar para as seções como âncoras.
+
+Deve-se procurar se manter o mais fiel possível ao site que está online, incluindo a sua versão responsiva.
+
+Dentro da pasta design do repositório, temos o layout em Adobe XD, para obter a diagramação, imagens, cores e fontes.
