@@ -277,14 +277,46 @@ body {
 .depoimento{
     background-color: #f3e8e3;
 }
+.topo-depoimento-1{
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+}
 .topo-depoimento{   
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
+.frase-depo-3{
+    text-align: center;
+    font-family: trojan;
+    color:#d4c9c9;
+    font-size:1.2rem;
+    margin:0;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    margin:0 30%;
+}
 .img-depoimento{
     width:10%;
+    margin-bottom:30px;
+}
+.baixo-depoimento{
+    display: flex;
+    flex-wrap: row;
+}
+.depoimento-relato{
+    text-align: center;
+}
+.depoimento-relato-1{
+    margin:30px;
+    padding:0 30px;
+    font-size:1.2rem;
+    font-family: trojan;
 }
 .contato{
     background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(../img/geovanna-bg-contact.jpg);
