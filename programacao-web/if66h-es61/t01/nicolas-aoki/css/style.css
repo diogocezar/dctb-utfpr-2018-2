@@ -161,6 +161,12 @@ body {
     padding-bottom: 10px;
     font-weight: lighter;
 }
+.frase-apresentacao-2{
+    font-family: mont;
+    color:white;
+    text-decoration: none;
+    font-size:0.9rem;
+}
 .sobre{
     background-color: #f3e8e3;
     display: flex;
