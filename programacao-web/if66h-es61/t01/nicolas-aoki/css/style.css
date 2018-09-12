@@ -216,6 +216,22 @@ body {
     url("../img/geovanna-bg-services.jpg");
     background-position: 50%;
     background-size: cover;
+    padding-top:98px;
+    padding-bottom:70px;
+}
+.tipo-servico{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.assessoria-servicos{
+    display: flex;
+    margin:20px;
+}
+.assessoria-servico-1{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 .frase-servico-1{
     font-family: trojan;
@@ -234,7 +250,6 @@ body {
 .topo-depoimento{   
     display: flex;
     flex-flow: column wrap;
-    
 }
 .img-depoimento{
     width:10%;
