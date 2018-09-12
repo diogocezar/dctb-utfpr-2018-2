@@ -122,7 +122,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-	align-items: center;
+    align-items: center;
+    padding-top:98px;
+    padding-bottom:70px
 }
 .img-apresentacao{
     margin:2.5rem 0;
@@ -213,11 +215,6 @@ body {
     background-position: 50%;
     background-size: cover;
 }
-.align{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .frase-servico-1{
     font-family: trojan;
     color:white;
@@ -231,17 +228,11 @@ body {
 }
 .depoimento{
     background-color: #f3e8e3;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
 }
-.topo-depoimento{    
+.topo-depoimento{   
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-
+    
 }
 .img-depoimento{
     width:10%;
