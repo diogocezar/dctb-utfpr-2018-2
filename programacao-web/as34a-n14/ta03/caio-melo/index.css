@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1300px;
+}
+
+#header{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+section{
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+.product{
+    margin-bottom: 3rem;
+}
