@@ -1,0 +1,116 @@
+.servicos{
+	font-family: "Trajan Pro", serif;
+	background: linear-gradient(
+	    to bottom,
+	    rgba(34,34,60, 0.8),
+	    rgba(34,34,60, 1)
+	  ),url("../images/geovanna-bg-services.jpg");
+	color: rgb(242,233,228);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	background-repeat: no-repeat;
+}
+
+.servicos .altera-coluna{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-self: flex-start;
+}
+
+.servicos .altera-coluna div{
+	width: 30%;
+	padding-bottom: 5vw;
+	padding-top: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  	.servicos .altera-coluna {
+	  	flex-direction: column;
+	  	justify-content: center;
+	  	align-self: center;
+	  	padding-left: 2vw;
+	  }
+	.servicos .altera-coluna div{
+		align-self: center;
+		width: 100%;
+		padding-bottom: 5vw;
+		padding-top: none;
+	}
+
+	.servicos h2{
+		font-size: 6vw;
+		font-weight: 100;
+	}
+
+	.servicos h3{
+		color: rgb(154,140,152);
+		font-size: 4vw;
+		font-weight: 100;
+	}
+
+	.servicos p{
+		font-size: 2vw;
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+	.depoimentos h2{
+		font-size: 10vw;
+	}
+
+	.depoimentos h3{
+		font-size: 6vw;
+	}
+
+	.depoimentos p{
+		font-size: 4vw;
+	}
+
+}
+
+.servicos img{
+	margin: 7vh;
+	width: 5vw;
+}
+
+.servicos button{
+	font-family: "Trajan Pro", serif;
+	border-radius: 90px;
+	background-color: rgb(242,233,228);
+	color: rgb(96,90,105);
+	padding: 15px 30px;
+	transition: all 0.2s linear;
+	margin: 50px;
+	border-style: solid;
+	border-color: rgb(242,233,228);
+	cursor: pointer;
+	font-size: 1vw;
+	font-weight: 100;
+}
+
+.servicos button:hover{
+	background-color: transparent;
+	color: rgb(242,233,228);
+}
+
+.servicos h2{
+	font-size: 3vw;
+	font-weight: 100;
+}
+
+.servicos h3{
+	color: rgb(154,140,152);
+	font-size: 2vw;
+	font-weight: 100;
+}
+
+.servicos p{
+	font-size: 1vw;
+}
