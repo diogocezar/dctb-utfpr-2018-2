@@ -172,10 +172,12 @@ body {
 .sobre{
     background-color: #f3e8e3;
     display: flex;
-    align-items: flex-start;
+    padding-top:98px;
+    padding-bottom:70px;
 }
 .conteudo-sobre{
     width: 50%;
+    margin-left:90px;
 }
 .frase-sobre-1{
     font-family: midnight,sans-serif;
