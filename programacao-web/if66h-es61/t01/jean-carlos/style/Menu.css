@@ -45,7 +45,7 @@ label{
     display:none;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 720px){
     
     .menuBar{
         display:flex;
@@ -53,6 +53,47 @@ label{
     }
     
 
+    label{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+    .menuList{
+        text-align: center;
+        width: 100%;
+        display:none;
+        background-color:#4a4e69;
+
+    }
+
+    .menuList a{
+        display: flex;
+        flex-direction: column;
+        font-size:2rem!important;
+    }
+
+    #toggle:checked + .menuList{
+        display:flex;
+        flex-direction: column;
+        margin:0px;
+        height: 1200%;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;        
+    }
+ 
+}
+
+@media (min-width: 721px) and (max-width: 1024px){
+    
+      
+    .menuBar{
+        display:flex;
+        justify-content: space-between;
+    }
+    
     label{
         display: flex;
         flex-direction: column;

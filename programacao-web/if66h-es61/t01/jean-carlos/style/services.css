@@ -51,7 +51,7 @@
     font-family: Montserrat,sans-serif;
     text-align: center; 
 }
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 720px){
     .services img{
         height: 12%;
     }
