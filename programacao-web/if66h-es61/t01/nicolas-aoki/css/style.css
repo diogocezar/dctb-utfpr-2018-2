@@ -207,9 +207,39 @@ body {
 .img-servico{
     width:10%;
 }
+.servicos{
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-services.jpg");
+    background-position: 50%;
+    background-size: cover;
+}
+.frase-servico-1{
+    font-family: trojan;
+    color:white;
+}
+.frase-servico-2{
+    font-family: trojan;
+    color: #9a8c98;
+}
+.frase-servico-3{
+    color:white;
+}
+.depoimento{
+    background-color: #f3e8e3;
+}
 .img-depoimento{
     width:10%;
 }
+.contato{
+    background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(../img/geovanna-bg-contact.jpg);
+    background-position: 50%;
+}
 .img-contato{
+    width:10%;
+}
+.instagram-logo{
+    width:10%;
+}
+.facebook-logo{
     width:10%;
 }
