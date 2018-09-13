@@ -1,0 +1,79 @@
+#contact{
+    background: linear-gradient(rgba(34, 34, 59, 0.8), rgba(34, 34, 59, 0.9)), url("../assets/images/geovanna-bg-contact.jpg");
+    background-position: 0 0;
+    background: cover;
+    display:block;
+}
+
+.content-contact{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:50px;
+}
+.content-contact img{
+    height: 120px;
+}
+
+.content-contact ul img{
+    height: 35px;
+    width: 35px;
+}
+ul{
+    list-style: none; 
+}
+.content-contact ul li{
+    border-radius: 50%;
+    padding: 13px;
+    margin: 10px;
+    border: 2px solid #f2e9e4;
+    list-style-type: none;
+    text-align: center;
+}
+
+.content-contact ul{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.content-contact h2{
+    font-size: 6rem;
+    color: #f2e9e4;
+    margin-bottom: 3rem; 
+    font-weight: 500;
+}
+
+.content-contact h3{
+    font-size: 1.75rem;
+    margin-bottom: 6rem; 
+}
+.content-contact h4{
+    font-size: 1.5rem;
+    margin-bottom:0px;
+}
+
+.content-contact a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #f2e9e4;
+    font-weight: 500;
+}
+
+small{
+    color: #f2e9e4;
+}
+
+.content-contact a{
+    color: #f2e9e4;
+}
+
+.contact-tel{
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
