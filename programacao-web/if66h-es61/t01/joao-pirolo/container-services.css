@@ -1,0 +1,93 @@
+
+#container-services{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(assets/images/geovanna-bg-services.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+#column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#column img{
+    height: 120px;
+    margin-bottom: 3rem;
+    align-content: center;
+}
+#column-left, h3{
+    font-family: 'TrajanPro-Regular', serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+}
+#column-right, h3{
+    font-family: 'TrajanPro-Regular', serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+}
+#column-left{
+    flex-grow: 1;
+}
+#column-right{
+    flex-grow: 1;
+}
+#column-left p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: Montserrat,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+}
+#column-right p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: Montserrat,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1rem;
+    line-height: 1.5rem;     
+}
+#columns{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    margin: 10px 0px 0px 100px;
+}
+#contacts{
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #f2e9e4;
+    font-size: 12px;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    margin-top: 4rem;
+    background-color: transparent;
+    color: #f2e9e4;
+}  
+#contacts:hover{
+    background-color: #f2e9e4;
+    color: rgba(34,34,59,.98);
+}
+.align{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}

@@ -1,0 +1,73 @@
+#container-reviews{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background-color: #f2e9e4;
+}
+#columns{
+    font-family: 'AfterMidnite', serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#reviews{
+    font-family: 'AfterMidnite', serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
+#columns img{
+    height: 120px;
+    margin-bottom: 3rem;
+    align-content: center;
+}
+#columns h3{
+    font-family: 'TrajanPro-Regular', serif;
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: .5rem;
+}
+#column-left #review{
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'TrajanPro-Regular', serif;
+    color: #22223b; 
+}
+#column-right #review{
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'TrajanPro-Regular', serif;
+    color: #22223b;
+}
+#couple p{
+    border-bottom: 1px solid #c9ada7;
+}
+#container-reviews h2 {
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.h2, h2 {
+    font-size: 2rem;
+}
