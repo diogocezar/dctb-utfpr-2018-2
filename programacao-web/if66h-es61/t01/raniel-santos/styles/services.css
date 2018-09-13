@@ -1,0 +1,91 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Trajan Pro", serif;
+    color: rgb(242,233,228);
+    background: linear-gradient(
+	    to bottom,
+	    rgba(34,34,60, 0.8),
+	    rgba(34,34,60, 1)
+      ),url("../assets/images/geovanna-bg-services.jpg");
+      
+      padding-top: 70px;
+      padding-bottom: 50px;
+}
+
+.services img{
+    height: 130px;
+    margin-bottom: 24px;
+}
+
+.services h2{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.services .box h2{
+    font-family: "Trajan Pro", serif;
+    font-size: 32px;
+    color: #9a8c98;
+    margin-bottom: 32px;
+}
+
+.services h3{
+    font-family: "Trajan Pro", serif;
+    font-size: 24px;
+    line-height: 2.4rem;
+    color: #9a8c98;
+}
+
+.services .box div{
+    width: 30%;
+}
+
+.services .box{
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat,sans-serif;
+    justify-content: space-around;
+    color: #f2e9e4;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.services .box p{
+    padding: 0 15%;
+}
+
+.services button{
+	font-family: "Trajan Pro", serif;
+	font-size: 15px;
+	border-radius: 90px;
+	background-color: rgb(242,233,228);
+	color: rgb(96,90,105);
+	padding: 20px 40px;
+	transition: all 0.2s linear;
+	margin: 50px;
+	cursor: pointer;
+}
+
+.services button:hover{
+    transition: 0.5s;    
+	border-style: solid;
+	border-color: rgb(242,233,228);
+	background-color: transparent;
+	color: rgb(242,233,228);
+}
+
+@media screen and (max-width: 768px) {
+    .services .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+	  	align-self: center;
+	  	padding-left: 2vw;
+	  }
+}
