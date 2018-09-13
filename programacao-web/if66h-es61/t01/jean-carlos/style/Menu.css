@@ -30,7 +30,7 @@ body{
     margin: 0 10px;
     line-height: 70px;
     font-family: TrajanPro-Regular,serif;
-    font-size:1.18em;
+    font-size:1.1em;
     text-transform: uppercase;
     border: none;    
 }
@@ -44,6 +44,10 @@ label{
 }
 
 #toggle{
+    display:none;
+}
+
+.dissapear{
     display:none;
 }
 
@@ -130,10 +134,13 @@ label{
 
 @media (min-width: 1025px){
     .menuBar{
-        padding-left: 300px;
+        padding-left: 1%;
+        justify-content: space-between;
+        padding-right: 3%;
     }
     .menuList a{
-        margin-right: 0px;
-        margin-left: 0px;        
+        margin-right: -10px;
+        margin-left: -10px;        
     } 
+    
 }
