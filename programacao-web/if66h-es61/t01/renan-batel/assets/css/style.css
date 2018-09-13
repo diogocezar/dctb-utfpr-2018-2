@@ -63,28 +63,28 @@ table {
 
 @font-face {
   font-family: "After Midnite";
-  src: url( "/assets/font/AfterMidnite.woff" ) format( "woff" ),
-       url( "/assets/font/AfterMidnite.otf" ) format( "otf" ),
-       url( "/assets/font/AfterMidnite.ttf" ) format( "ttf" ),
-       url( "/assets/font/AfterMidnite.eot" ) format( "eot" );
+  src: url( "../font/AfterMidnite.woff" ) format( "woff" ),
+       url( "../font/AfterMidnite.otf" ) format( "otf" ),
+       url( "../font/AfterMidnite.ttf" ) format( "ttf" ),
+       url( "../font/AfterMidnite.eot" ) format( "eot" );
 }
 
 @font-face {
   font-family: "Trajan Pro";
   font-weight: normal;
-  src: url( "/assets/font/TrajanPro-Regular.woff" ) format( "woff" ),
-       url( "/assets/font/TrajanPro-Regular.otf" ) format( "otf" ),
-       url( "/assets/font/TrajanPro-Regular.ttf" ) format( "ttf" ),
-       url( "/assets/font/TrajanPro-Regular.eot" ) format( "eot" );
+  src: url( "../font/TrajanPro-Regular.woff" ) format( "woff" ),
+       url( "../font/TrajanPro-Regular.otf" ) format( "otf" ),
+       url( "../font/TrajanPro-Regular.ttf" ) format( "ttf" ),
+       url( "../font/TrajanPro-Regular.eot" ) format( "eot" );
 }
 
 @font-face {
   font-family: "Trajan Pro";
   font-weight: bold;
-  src: url( "/assets/font/TrajanPro-Bold.woff" ) format( "woff" ),
-       url( "/assets/font/TrajanPro-Bold.otf" ) format( "otf" ),
-       url( "/assets/font/TrajanPro-Bold.ttf" ) format( "ttf" ),
-       url( "/assets/font/TrajanPro-Bold.eot" ) format( "eot" );
+  src: url( "../font/TrajanPro-Bold.woff" ) format( "woff" ),
+       url( "../font/TrajanPro-Bold.otf" ) format( "otf" ),
+       url( "../font/TrajanPro-Bold.ttf" ) format( "ttf" ),
+       url( "../font/TrajanPro-Bold.eot" ) format( "eot" );
 }
 
 /**
@@ -125,18 +125,25 @@ p {
   font-family: "After Midnite";
   line-height: 1.32em;
 }
+
+@media screen and ( min-width: 992px ) {
+  p {
+    font-size: 1.12em;
+  }
+}
+
 /**
  *  Layout
  */
 
 .container {
   display: block;
-  max-width: 94%;
+  width: 94%;
   margin: 0 auto;
 }
 
 .section {
-  padding: 70px 0 42px 0;
+  padding: 3.6rem 0 2.6rem 0;
   text-align: center;
 }
   .section > h2 {
@@ -219,6 +226,55 @@ img.icon {
     background: var( --o-purple-dark );
   }
 
+@media screen and ( min-width: 768px ) {
+  .container {
+    width: 88%;
+  }
+
+  .section {
+    padding: 4.6rem 0 3.6rem 0;
+  }
+    .section > h2 {
+      font-size: 1.52em;
+    }
+    .section > h2.cursive {
+      font-size: 3.66em;
+    }
+
+  a.icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  img.icon {
+    height: 80px;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  .container {
+    width: 82%;
+  }
+  .section {
+    padding: 5.2rem 0 4.2rem 0;
+  }
+    .section > h2 {
+      font-size: 1.82em;
+    }
+    .section > h2.cursive {
+      font-size: 4.06em;
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+  .container {
+    width: 76%;
+  }
+  .section {
+    padding: 5.6rem 0 4.6rem 0;
+  }
+}
+
 /**
  *  Components
  */
@@ -246,6 +302,12 @@ img.icon {
   background-color: transparent;
 }
 
+@media screen and ( min-width: 992px ) {
+  .button {
+    padding: 1.2rem 3.2rem;
+  }
+}
+
 /**
  *  Header/Navigation
  */
@@ -256,18 +318,42 @@ header {
   left: 0;
   width: 100vw;
   background-color: var( --purple );
-  height: 60px;
   z-index: 1;
 }
   header > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
     padding: .4rem 0;
   }
 
 .header_logo > a {
   width: 200px;
+}
+  .header_logo > a > .big {
+    display: none;
+  }
+
+.header_nav {
+  display: none;
+}
+  .header_nav > ul {
+    display: flex;
+  }
+.header_nav,
+.header_nav > ul,
+.header_nav > ul > li,
+.header_nav-link {
+  height: 100%;
+}
+
+.header_nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0 .8rem;
+  color: var( --light );
+  cursor: pointer;
 }
 
 #toggleSidenav {
@@ -283,6 +369,7 @@ header {
     border-radius: 50%;
     border: 1px solid;
     border-color: var( --light );
+    cursor: pointer;
   }
     #toggleSidenav + label > span,
     #toggleSidenav + label::before,
@@ -355,12 +442,33 @@ header {
   color: var( --light );
 }
 
+@media screen and ( min-width: 480px ) {
+  .header_logo > a > .big {
+    display: block;
+  }
+  .header_logo > a > .small {
+    display: none;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  header > .container {
+    height: 72px;
+  }
+  .header_sidenav {
+    display: none;
+  }
+  .header_nav {
+    display: block;
+  }
+}
+
 /**
  *  Home
  */
 
 .home {
-  background-image: url( "/assets/image/geovanna-bg-home.jpg" );
+  background-image: url( "../image/geovanna-bg-home.jpg" );
 }
   .home > .container {
     display: flex;
@@ -381,6 +489,7 @@ header {
     }
     .home > .container > h4 {
       font-size: 1.08em;
+      color: var( --light );
     }
     .home > .container > h4:first-of-type {
       margin-bottom: .6rem;
@@ -389,12 +498,38 @@ header {
       margin-bottom: 3.2rem;
     }
 
+@media screen and ( min-width: 768px ) {
+  .home > .container > h1 {
+    font-size: 3.22em;
+    margin-bottom: 2.22rem;
+  }
+  .home > .container > h3 {
+    font-size: 2em;
+  }
+  .home > .container > h4 {
+    font-size: 1.32em;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  .home > .container > h1 {
+    font-size: 3.62em;
+    margin-bottom: 2.42rem;
+  }
+  .home > .container > h3 {
+    font-size: 2.2em;
+  }
+  .home > .container > h4 {
+    font-size: 1.52em;
+  }
+}
+
 /**
  *  Presentation
  */
 
 .presentation {
-  background-image: url( "/assets/image/geovanna-bg-presentation.jpg" );
+  background-image: url( "../image/geovanna-bg-presentation.jpg" );
 }
   .presentation > .section > h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -413,19 +548,43 @@ header {
     margin-bottom: .6rem;
   }
 
+@media screen and ( min-width: 768px ) {
+  .about > .section {
+    text-align: left;
+  }
+}
+
 /**
  *  Services
  */
 
 .services {
-  background-image: url( "/assets/image/geovanna-bg-services.jpg" );
+  background-image: url( "../image/geovanna-bg-services.jpg" );
 }
-  .services > .section > h3 {
+  .services_block > div > h3 {
     font-size: 1.26em;
+    margin-bottom: 1.8rem;
   }
-  .services > .section > p:first-of-type {
+  .services_block > div:first-of-type > p {
     margin-bottom: 3.2rem;
   }
+
+@media screen and ( min-width: 768px ) {
+  .services_block > div > h3 {
+    font-size: 1.88em;
+    margin-bottom: 2.2rem;
+  }
+  .services_block > div:first-of-type > p {
+    margin-bottom: 0;
+  }
+  .services_block {
+    display: flex;
+  }
+    .services_block > div {
+      width: 50%;
+      padding: 0 2.6rem;
+    }
+}
 
 /**
  *  Testimonials
@@ -440,7 +599,7 @@ header {
  */
 
 .contact {
-  background-image: url( "/assets/image/geovanna-bg-contact.jpg" );
+  background-image: url( "../image/geovanna-bg-contact.jpg" );
 }
   .contact h3,
   .contact h4 {
@@ -474,3 +633,21 @@ header {
   .contact_social > .icon:not( :first-of-type ) {
     margin-left: .8rem;
   }
+
+@media screen and ( min-width: 992px ) {
+  .contact h3,
+  .contact h4 {
+    font-size: 1.22em;
+  }
+  .contact > .section > h2.cursive {
+    font-size: 4.06em;
+  }
+  .contact_phone {
+    font-size: 2.22em;
+    margin: 1.4rem 0 1rem 0;
+  }
+  .contact_email {
+    margin-top: 1.2rem;
+    font-size: .98em;
+  }
+}
