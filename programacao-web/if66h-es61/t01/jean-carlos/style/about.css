@@ -77,3 +77,20 @@ stronger{
     }
 
 }
+
+@media (min-width: 1025px){
+    .about h2{
+        font-size: 6rem;
+        margin-bottom: 0px;
+    }
+
+    .about h3{
+        font-size: 3.5rem;
+        text-transform: none;
+    }
+
+    .about p{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+}

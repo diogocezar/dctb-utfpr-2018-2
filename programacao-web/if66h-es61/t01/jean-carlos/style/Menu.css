@@ -18,6 +18,7 @@ body{
 }
 
 
+
 #menuImg{
     height:50px;
     margin-left: 5px;    
@@ -31,6 +32,7 @@ body{
     font-family: TrajanPro-Regular,serif;
     font-size:1.18em;
     text-transform: uppercase;
+    border: none;    
 }
 
 label{
@@ -38,7 +40,7 @@ label{
     line-height: 50px;
     display:none;
     font-size: 20px;
-    color: f2e9e4;
+    color: #f2e9e4;
 }
 
 #toggle{
@@ -124,4 +126,14 @@ label{
         justify-content: center;
         z-index: 9999;        
     }
+}
+
+@media (min-width: 1025px){
+    .menuBar{
+        padding-left: 300px;
+    }
+    .menuList a{
+        margin-right: 0px;
+        margin-left: 0px;        
+    } 
 }
