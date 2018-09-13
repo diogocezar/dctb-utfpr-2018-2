@@ -1,0 +1,653 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ *  Common
+ */
+
+:root {
+  --purple: rgb(34, 34, 59);
+  --light-purple: rgb(74, 78, 105);
+  --light: rgb(242, 233, 228);
+  --pink-dark: rgb(154, 140, 152);
+  --pink-light: rgb(201, 173, 167);
+  --o-purple-dark: linear-gradient( rgba( 34, 34, 59, .84 ), rgba( 34, 34, 59, .98 ) );
+  --o-purple-light: linear-gradient( rgba( 74, 74, 105, .8 ), rgba( 74, 74, 105, .8 ) );
+}
+
+@font-face {
+  font-family: "After Midnite";
+  src: url( "../font/AfterMidnite.woff" ) format( "woff" ),
+       url( "../font/AfterMidnite.otf" ) format( "otf" ),
+       url( "../font/AfterMidnite.ttf" ) format( "ttf" ),
+       url( "../font/AfterMidnite.eot" ) format( "eot" );
+}
+
+@font-face {
+  font-family: "Trajan Pro";
+  font-weight: normal;
+  src: url( "../font/TrajanPro-Regular.woff" ) format( "woff" ),
+       url( "../font/TrajanPro-Regular.otf" ) format( "otf" ),
+       url( "../font/TrajanPro-Regular.ttf" ) format( "ttf" ),
+       url( "../font/TrajanPro-Regular.eot" ) format( "eot" );
+}
+
+@font-face {
+  font-family: "Trajan Pro";
+  font-weight: bold;
+  src: url( "../font/TrajanPro-Bold.woff" ) format( "woff" ),
+       url( "../font/TrajanPro-Bold.otf" ) format( "otf" ),
+       url( "../font/TrajanPro-Bold.ttf" ) format( "ttf" ),
+       url( "../font/TrajanPro-Bold.eot" ) format( "eot" );
+}
+
+/**
+ *  Global
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: var( --light );
+  font-family: "Trajan Pro", serif;
+  color: var( --light );
+}
+
+/**
+ *  Typography
+ */
+
+h3, h4, h5, h6, span {
+  color: var( --pink-dark );
+}
+ 
+p, .cursive {
+  color: var( --purple );
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: .98em;
+  line-height: 1.72em;
+}
+
+.cursive {
+  font-family: "After Midnite";
+  line-height: 1.32em;
+}
+
+@media screen and ( min-width: 992px ) {
+  p {
+    font-size: 1.12em;
+  }
+}
+
+/**
+ *  Layout
+ */
+
+.container {
+  display: block;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3.6rem 0 2.6rem 0;
+  text-align: center;
+}
+  .section > h2 {
+    font-size: 1.22em;
+    line-height: 1.2em;
+  }
+  .section > h2.cursive {
+    font-size: 3.4em;
+  }
+  .section > h3 {
+    margin-bottom: 1.42rem;
+    line-height: 1.44em;
+  }
+  .section > h3 > strong {
+    font-size: 1.4em;
+  }
+  .section > img.icon {
+    margin: 2.5rem 0;
+  }
+  .section > .button {
+    margin-top: 2.6rem;
+  }
+
+a.clean {
+  text-decoration: none;
+}
+a.clean:hover {
+  text-decoration: none;
+}
+a.image {
+  display: block;
+}
+a.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  border: 1px solid var( --light );
+  border-radius: 50%;
+}
+
+img.responsive {
+  width: auto;
+  height: auto;
+  width: 100%;
+}
+img.icon {
+  height: 80px;
+  width: auto;
+}
+
+.background-image {
+  position: relative;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  .background-image::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+  }
+  .background-image p, 
+  .background-image .cursive {
+    color: var( --light );
+  }
+  .background-image > .container {
+    position: relative;
+  }
+
+  .background-light::before {
+    background: var( --o-purple-light );
+  }
+  .background-dark::before {
+    background: var( --o-purple-dark );
+  }
+
+@media screen and ( min-width: 768px ) {
+  .container {
+    width: 88%;
+  }
+
+  .section {
+    padding: 4.6rem 0 3.6rem 0;
+  }
+    .section > h2 {
+      font-size: 1.52em;
+    }
+    .section > h2.cursive {
+      font-size: 3.66em;
+    }
+
+  a.icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  img.icon {
+    height: 80px;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  .container {
+    width: 82%;
+  }
+  .section {
+    padding: 5.2rem 0 4.2rem 0;
+  }
+    .section > h2 {
+      font-size: 1.82em;
+    }
+    .section > h2.cursive {
+      font-size: 4.06em;
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+  .container {
+    width: 76%;
+  }
+  .section {
+    padding: 5.6rem 0 4.6rem 0;
+  }
+}
+
+/**
+ *  Components
+ */
+
+.button {
+  display: inline-block;
+  padding: 1rem 2.6rem;
+  border: 1px solid var( --light );
+  border-radius: 36px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: .92em;
+  line-height: 1em;
+  transition: color .22s, background-color .22s;
+}
+.button.solid,
+.button.outline:hover {
+  color: var( --purple );
+  background-color: var( --light );
+}
+.button.outline,
+.button.solid:hover {
+  color: var( --light );
+  background-color: transparent;
+}
+
+@media screen and ( min-width: 992px ) {
+  .button {
+    padding: 1.2rem 3.2rem;
+  }
+}
+
+/**
+ *  Header/Navigation
+ */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var( --purple );
+  z-index: 1;
+}
+  header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: .4rem 0;
+  }
+
+.header_logo > a {
+  width: 200px;
+}
+  .header_logo > a > .big {
+    display: none;
+  }
+
+.header_nav {
+  display: none;
+}
+  .header_nav > ul {
+    display: flex;
+  }
+.header_nav,
+.header_nav > ul,
+.header_nav > ul > li,
+.header_nav-link {
+  height: 100%;
+}
+
+.header_nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0 .8rem;
+  color: var( --light );
+  cursor: pointer;
+}
+
+#toggleSidenav {
+  display: none;
+}
+  #toggleSidenav + label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: var( --light );
+    cursor: pointer;
+  }
+    #toggleSidenav + label > span,
+    #toggleSidenav + label::before,
+    #toggleSidenav + label::after {
+      width: 14px;
+      height: 1px;
+      background-color: var( --light );
+    }
+    #toggleSidenav + label > span {
+      opacity: 0.9999;
+      transition: opacity .2s ease-in;
+    }
+    #toggleSidenav + label::before,
+    #toggleSidenav + label::after {
+      content: '';
+      transition: transform .2s ease-in;
+    }
+    #toggleSidenav + label::before {
+      margin-bottom: 5px;
+    }
+    #toggleSidenav + label::after {
+      margin-top: 5px;
+    }
+    #toggleSidenav:checked + label > span {
+      transition: opacity .32s ease-out;
+      opacity: 0.0001;
+    }
+    #toggleSidenav:checked + label::before,
+    #toggleSidenav:checked + label::after {
+      transition: transform .32s ease-out;
+    }
+    #toggleSidenav:checked + label::before {
+      transform: translateY( 6px ) rotate( 45deg );
+    }
+    #toggleSidenav:checked + label::after {
+      transform: translateY( -6px ) rotate( -45deg );
+    }
+    #toggleSidenav:checked ~ .header_sidenav-panel {
+      transition: transform .32s ease-out;
+      transform:  translateY( 0 );
+    }
+
+.header_sidenav-panel {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var( --light-purple );
+  transform: translateY( 100% );
+  transition: transform .2s ease-in;
+}
+
+.header_sidenav-nav {
+  height: 100%;
+}
+  .header_sidenav-nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+    .header_sidenav-nav > ul > li:not( :first-of-type ) {
+      margin-top: 2.6rem;
+    }
+
+.header_sidenav-link {
+  font-size: 1.8em;
+  color: var( --light );
+}
+
+@media screen and ( min-width: 480px ) {
+  .header_logo > a > .big {
+    display: block;
+  }
+  .header_logo > a > .small {
+    display: none;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  header > .container {
+    height: 72px;
+  }
+  .header_sidenav {
+    display: none;
+  }
+  .header_nav {
+    display: block;
+  }
+}
+
+/**
+ *  Home
+ */
+
+.home {
+  background-image: url( "../image/geovanna-bg-home.jpg" );
+}
+  .home > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 60px;
+    text-align: center;
+  }
+    .home > .container > h1 {
+      font-size: 2.32em;
+      margin-bottom: 1.52rem;
+    }
+    .home > .container > h3 {
+      font-size: 1.62em;
+      margin-bottom: 3.2rem;
+    }
+    .home > .container > h4 {
+      font-size: 1.08em;
+      color: var( --light );
+    }
+    .home > .container > h4:first-of-type {
+      margin-bottom: .6rem;
+    }
+    .home > .container > h4:last-of-type {
+      margin-bottom: 3.2rem;
+    }
+
+@media screen and ( min-width: 768px ) {
+  .home > .container > h1 {
+    font-size: 3.22em;
+    margin-bottom: 2.22rem;
+  }
+  .home > .container > h3 {
+    font-size: 2em;
+  }
+  .home > .container > h4 {
+    font-size: 1.32em;
+  }
+}
+
+@media screen and ( min-width: 992px ) {
+  .home > .container > h1 {
+    font-size: 3.62em;
+    margin-bottom: 2.42rem;
+  }
+  .home > .container > h3 {
+    font-size: 2.2em;
+  }
+  .home > .container > h4 {
+    font-size: 1.52em;
+  }
+}
+
+/**
+ *  Presentation
+ */
+
+.presentation {
+  background-image: url( "../image/geovanna-bg-presentation.jpg" );
+}
+  .presentation > .section > h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var( --light );
+    font-weight: 300;
+  } 
+
+/**
+ *  About
+ */
+
+.about {
+
+}
+  .about > .section > h2.cursive {
+    margin-bottom: .6rem;
+  }
+
+@media screen and ( min-width: 768px ) {
+  .about > .section {
+    text-align: left;
+  }
+}
+
+/**
+ *  Services
+ */
+
+.services {
+  background-image: url( "../image/geovanna-bg-services.jpg" );
+}
+  .services_block > div > h3 {
+    font-size: 1.26em;
+    margin-bottom: 1.8rem;
+  }
+  .services_block > div:first-of-type > p {
+    margin-bottom: 3.2rem;
+  }
+
+@media screen and ( min-width: 768px ) {
+  .services_block > div > h3 {
+    font-size: 1.88em;
+    margin-bottom: 2.2rem;
+  }
+  .services_block > div:first-of-type > p {
+    margin-bottom: 0;
+  }
+  .services_block {
+    display: flex;
+  }
+    .services_block > div {
+      width: 50%;
+      padding: 0 2.6rem;
+    }
+}
+
+/**
+ *  Testimonials
+ */
+
+.testimonials {
+
+}
+
+/**
+ *  Contact
+ */
+
+.contact {
+  background-image: url( "../image/geovanna-bg-contact.jpg" );
+}
+  .contact h3,
+  .contact h4 {
+    color: var( --pink-light );
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  .contact a {
+    display: block;
+    color: var( --light );
+  }
+    .contact > .section > h2.cursive {
+      font-size: 2.4em;
+    }
+
+.contact_block:not( :last-of-type ) {
+  margin-bottom: 2.6rem;
+}
+.contact_phone {
+  margin: .8rem 0 .6rem 0;
+  font-size: 1.8em;
+}
+.contact_email {
+  margin-top: .8rem;
+  font-size: .78em;
+}
+.contact_social {
+  display: flex;
+  justify-content: center;
+}
+  .contact_social > .icon:not( :first-of-type ) {
+    margin-left: .8rem;
+  }
+
+@media screen and ( min-width: 992px ) {
+  .contact h3,
+  .contact h4 {
+    font-size: 1.22em;
+  }
+  .contact > .section > h2.cursive {
+    font-size: 4.06em;
+  }
+  .contact_phone {
+    font-size: 2.22em;
+    margin: 1.4rem 0 1rem 0;
+  }
+  .contact_email {
+    margin-top: 1.2rem;
+    font-size: .98em;
+  }
+}
