@@ -1,0 +1,38 @@
+.about{
+    display: flex;
+    background-color: #f2e9e4;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Trajan Pro", serif;
+    color: rgb(154,140,152);
+    padding-left: 250px;
+	padding-top: 45px;;
+	padding-bottom: 70px;;
+}
+
+.about img{    
+	margin: 70px;
+	width: 80px;
+}
+
+.about h2{
+    font-family: "afterMidnite", serif;
+    font-size: 80px;
+    font-weight: 80;
+    color: rgb(34,34,60);
+    margin-bottom: 40px;
+}
+
+.about h3{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.about p{
+    font-family: Montserrat,sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 2rem;
+    margin-top: 30px;
+    width: 40%;
+}
