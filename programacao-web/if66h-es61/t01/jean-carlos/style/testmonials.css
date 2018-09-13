@@ -45,3 +45,28 @@
         margin-bottom: 3rem;
     }
 }
+
+
+@media (min-width: 721px) and (max-width: 1024px){
+    .testmonials{
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+    .testmonials h2{
+        font-size:4rem;
+    }
+}
+
+@media (min-width: 1025px){
+    .testmonials{
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+    .testmonials h2{
+        font-size: 5rem;
+    }
+    
+    .testmonials h3,p{
+        font-size: 1.1rem
+    }
+}

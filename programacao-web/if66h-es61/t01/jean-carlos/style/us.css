@@ -66,3 +66,38 @@
 
     }
 }
+
+@media (min-width: 1025px){
+    .us p, h2, h3{
+        text-align: left;
+    }
+    .us{
+        padding-left: 15%;
+        padding-right: 40%;
+        padding-top: 80px;
+        height: 120%;
+        justify-content: space-between;
+        
+    }
+    .us h2{
+        font-size: 5.2rem;
+        color:#22223b;
+        margin-bottom: 50px;
+    }
+
+    .us p{
+        font-size: 1rem;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .us h3{
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .us img{
+        height: 13%;
+        align-self: flex-start;
+    }
+}
