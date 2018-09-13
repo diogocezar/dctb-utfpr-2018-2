@@ -283,7 +283,6 @@ body {
     flex-basis: 20%;
     align-items: center;
     justify-content: center;
-    margin-top:30px;
 }
 .topo-depoimento{   
     display: flex;
@@ -334,6 +333,25 @@ body {
 .contato{
     background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(../img/geovanna-bg-contact.jpg);
     background-position: 50%;
+    text-align: center;
+    padding-top:88px;
+    padding-bottom:88px;
+}
+.contato-frase-1{
+    font-family: trojan;
+    color: #c9ada7;
+}
+.contato-frase-2{
+    font-family: trojan;
+    color: #c9ada7;
+}
+.contato-frase-3{
+    font-family: trojan;
+    color: #c9ada7;
+}
+.contato-frase-4{
+    font-family: trojan;
+    color: white;
 }
 .img-contato{
     width:10%;
@@ -343,4 +361,18 @@ body {
 }
 .facebook-logo{
     width:10%;
+}
+ul{
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0; padding: 0;
+}
+li{
+    margin-left:0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0; padding: 0;
 }
