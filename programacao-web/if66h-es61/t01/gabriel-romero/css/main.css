@@ -1,0 +1,591 @@
+body,html {
+    font-size: 14px !important;
+    height:100%;
+}
+
+/* FONTES */
+
+@font-face{
+    font-family: AfterMidnite;
+    src: url("../fonts/AfterMidnite.woff");
+}
+
+@font-face{
+    font-family: TrajanPro-Regular;
+    src: url("../fonts/TrajanPro-Regular.woff");
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* MENU */
+#menu{
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #22223b;
+    box-sizing: border-box;
+    padding-top: 7px;
+    position: fixed;
+    z-index: 1;
+}
+
+.hamburguer{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    float: right;
+    border-radius: 50%; 
+    border: 1px solid #f2e9e4;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.logo{
+    height: 50px;
+    margin-left: 5px;
+}
+
+.prim{
+    margin-top: 11px !important;
+}
+
+.linha{
+    width: 14px;
+    height: 1px;
+    background-color: #9a8c98;
+    margin: 6px 0;
+    margin-left: 12px;
+}
+/* FIM MENU */
+
+/* MENU ITENS MOBILE */
+
+.menu-mobile{
+    display: none;
+    width: 100%;
+    position: fixed;  
+    height: 100vh;
+    background-color: #4a4e69;
+    font-size: 14px;
+    flex-flow: column wrap;
+    z-index: 1;
+}
+
+.hamburguer:hover + .menu-mobile, .menu-mobile:hover{
+    display: flex;
+}
+
+.menu-mobile ul{
+    position: relative;
+    top: 50px;
+}
+
+.menu-mobile ul{
+    padding-top: 1rem;
+}
+
+.mobile-item{
+    position: relative;
+    margin-bottom: 3rem;
+    font-family: 'TrajanPro-Regular',serif;
+}
+
+.mobile-item a{
+    font-size: 2rem !important;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #f2e9e4;
+    width: 100%;
+}
+
+/* HOME */
+#home{
+    height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("../img/home.jpg");  
+}
+
+#home .conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 93px;
+    width: 100%;
+}
+
+#home .conteudo h2, #home .conteudo h3{
+    font-family: 'AfterMidnite', sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+#home .conteudo h2{
+    font-size: 2.5em;
+}
+
+#home .conteudo h3{
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+#home .conteudo p{
+    font-family: 'TrajanPro-Regular', serif;
+    color: #f2e9e4;
+    text-align: center;
+    margin-top: 4.4em;
+    font-size: 1.0rem;
+    line-height: 1.5;
+}
+
+#home .conteudo p span{
+    color: #9a8c98;
+}
+
+#botao-home{
+    margin-top: 4.4em;
+    background-color: transparent;
+    border: 1px solid #f2e9e4;
+    color: #f2e9e4;
+    border-radius: 40px;
+    padding: 17px 26px 17px 26px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* APRESENTAÇÃO */
+
+#apresentacao{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)), url("../img/apresentacao.jpg");
+    background-position: 50%;
+}
+
+.conteudoApre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7.4rem;
+    padding-bottom: 4.4rem;
+    width: 100%;
+}
+
+.conteudoApre h2{
+    font-size: 1.2rem;
+    font-family: 'TrajanPro-Regular', serif;
+    color: #f2e9e4;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.conteudoApre h3{
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.botao-apresentacao{
+    margin-top: 3.0rem;
+    background-color: #f2e9e4;
+    border: 1px solid #f2e9e4;
+    color: #4a4e69;
+    border-radius: 40px;
+    padding: 17px 26px 17px 26px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2.5rem;
+}
+
+.conteudoApre img{
+    margin: 2.5rem 0;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+/* SOBRE NOS */
+
+#sobre{
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: #f2e9e4;
+}
+
+.conteudoSobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3.8rem;
+    padding-bottom: 3.8rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+}
+
+.conteudoSobre h2{
+    font-family: 'AfterMidnite',sans-serif;
+    color: #22223b;
+    font-size: 3.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.subtitulo{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #9a8c98;
+}
+
+.texto{
+    font-family: 'Montserrat',sans-serif;
+    color: #22223b;
+    line-height: 1.8rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.87rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.coracao{
+    height: 88px;
+    box-sizing: border-box;
+    margin: 2.5rem 0 3.5rem 0;
+}
+
+.subtitulo span{
+    font-size: 1.11rem;
+}
+
+/* SERVIÇOS */
+
+#servico{
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("../img/servicos.jpg");
+    background-position: 50%;
+}
+
+.conteudoServ{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3.0rem; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.tituloServ{
+    font-size: 1.25rem;
+    color: #f2e9e4;
+    font-family: 'TrajanPro-Regular', serif;
+    font-weight: 500;
+}
+
+.img-anel{
+    height: 81px;
+    box-sizing: border-box;
+    margin: 2.0rem 0 2.0rem 0;
+}
+
+.cima{
+    color: #9a8c98;
+    font-family: 'TrajanPro-Regular', serif;
+    font-size: 1.35rem;
+}
+
+.baixo{
+    font-size: 1.75rem;
+    margin-bottom: 1.3rem;
+    color: #9a8c98;
+    font-family: 'TrajanPro-Regular', serif;
+}
+
+.subTituloServico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoServico{
+    font-family: 'Montserrat',sans-serif;
+    color: #f2e9e4;
+    line-height: 1.85rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+.botao-servico{
+    margin-top: 0.8rem;
+    background-color: #f2e9e4;
+    border: 1px solid #f2e9e4;
+    color: #4a4e69;
+    border-radius: 40px;
+    padding: 17px 26px 17px 26px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2.0rem;
+}
+
+/* DEPOIMENTOS */
+#depoimentos{
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: #f2e9e4;
+}
+
+.conteudoDepo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.conteudoDepo h2{
+    font-family: 'AfterMidnite',sans-serif;
+    color: #22223b;
+    font-size: 3.35rem;
+    margin-bottom: 0.8rem;
+}
+
+.baloes{
+    height: 80px;
+    box-sizing: border-box;
+    margin: 2.5rem 0 3.0rem 0;
+}
+
+.centraliza{
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+/* CONTATO */
+#contato{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("../img/contato.jpg");
+    background-position: 50%;
+}
+
+.conteudoContato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5.5rem; 
+}
+
+.redes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.conteudoContato h2 {
+    font-size: 2.75rem;
+    font-family: 'AfterMidnite', sans-serif;
+    color: #f2e9e4;
+}
+
+.dourado {
+    font-family: 'TrajanPro-Regular',serif;
+    color: #c9ada7;
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.primeiro{
+    margin-bottom: 2.5rem;
+}
+
+.num{
+    color: #f2e9e4;
+    text-decoration: none;
+}
+
+.numP{
+    font-size: 1.78rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-family: 'TrajanPro-Regular',serif;
+}
+
+.click{
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+    color: #f2e9e4;
+    font-family: 'TrajanPro-Regular',serif;
+}
+
+.email{
+    margin-top: 0.8rem;
+    font-family: 'TrajanPro-Regular',serif;
+    color: #f2e9e4;
+    font-size: 0.7rem;
+}
+
+.imgContato{
+    height: 80px;
+    box-sizing: border-box;
+    margin: 2.0rem 0 2.0rem 0;
+}
+
+.redesIcone{
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 2px solid #f2e9e4;
+    padding: 13px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 374px) and (max-width:425px){
+    #home .conteudo h2{
+        font-size: 3rem;
+    }
+
+    #home .conteudo h3{
+        font-size: 1.8rem;
+    }
+    .menu-desk{
+        display: none;
+    }
+}
+
+@media (min-width: 426px) and (max-width:767px){
+    #home .conteudo h2{
+        font-size: 3.8rem;
+
+    }
+    #home .conteudo h3{
+        font-size: 1.8rem;
+    }
+    .menu-desk{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    #home .conteudo h2{
+        font-size: 4.6rem;
+
+    }
+    #home .conteudo h3{
+        font-size: 2.6rem;
+    }
+
+    .conteudoApre h2{
+        font-size: 1.6rem;
+    }
+
+    .conteudoSobre{
+        width: 50%;
+        margin-left: 1.5rem;
+    }
+
+    .divide{
+        display: flex;     
+        flex-direction: row;
+        width: 100%; 
+    }
+
+    .menu-desk{
+        display: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1024px){
+    #home .conteudo h2{
+        font-size: 5.2rem;
+
+    }
+    #home .conteudo h3{
+        font-size: 3.2rem;
+    }
+
+    .conteudoApre h2{
+        font-size: 1.6rem;
+    }
+
+    .conteudoSobre{
+        width: 50%;
+        align-items: flex-start;
+        margin-left: 1.5rem;
+    }
+
+    .texto{
+        text-align: justify;
+    }
+
+    .divide{
+        display: flex;     
+        flex-direction: row;
+        width: 100%; 
+    }
+
+    .hamburguer{
+        display: none;
+    }
+
+    .menu-desk{
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px){
+    #home .conteudo h2{
+        font-size: 6.1rem;
+
+    }
+    #home .conteudo h3{
+        font-size: 3.6rem;
+    }
+
+    .conteudoApre h2{
+        font-size: 1.6rem;
+    }
+
+    .conteudoSobre{
+        width: 50%;
+        margin-left: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .texto{
+        text-align: justify;
+    }
+
+    .divide{
+        display: flex;     
+        flex-direction: row;
+        width: 100%; 
+    }
+
+    .hamburguer{
+        display: none;
+    }
+}
