@@ -1,6 +1,6 @@
 var bazarHeader = document.getElementById("header");
 var bazarInformation = document.getElementById("information");
-var bazarProducts = document.getElementById("product0");
+var bazarProducts = document.getElementById("item");
 
 
 var ourRequest = new XMLHttpRequest();
@@ -20,8 +20,12 @@ function renderHTML(data){
 
     htmlHeader += "<h1>" +data.configs.title+ "</h1>";
     htmlHeader += "<h2>" +data.configs.subTitle+ "</h2>";
+    htmlHeader += "<a href=mailto:diogo@digocesar.com>"
     htmlHeader += "<p>" +data.configs.email+ "</p>";
+    htmlHeader += "</a>"
+    htmlHeader += "<a href=tel:+5543996299435>"
     htmlHeader += "<p>" +data.configs.phone+ "</p>";
+    htmlHeader += "</a>"
 
     htmlInformation += "<p>" +data.configs.description[0].p+ "</p>"
     htmlInformation += "<p>" +data.configs.description[1].p+ "</p>"
@@ -30,6 +34,7 @@ function renderHTML(data){
 
 
     for(i=0; i < data.products.length; i++){
+        htmlProducts += "<div>"
         htmlProducts += "<h2>" +data.products[i].name+ "</h2>"
         htmlProducts += "<img src =" +data.products[i].image+ ">"
         for(j=0; j < data.products[i].description.length; j++){
@@ -40,7 +45,12 @@ function renderHTML(data){
                 htmlProducts += "<h4>" +data.products[i].description[j].h4+ "</h4>"
             }
         }
-        htmlProducts += "<h2>Preço: R$" + data.products[i].price + "</h2>";
+        htmlProducts += "<h2>R$: " + data.products[i].price + "</h2>";
+        htmlProducts += "<a href=mailto:diogo@digocesar.com>"
+        htmlProducts += "<button>Comprar"
+        htmlProducts += "</button>"
+        htmlProducts += "</a>"
+        htmlProducts += "</div>"
     }
 
 
