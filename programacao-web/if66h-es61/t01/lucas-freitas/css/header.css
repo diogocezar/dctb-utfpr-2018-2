@@ -1,0 +1,31 @@
+header{
+	height: 11vh;
+	font-weight: bold;
+	font-family: "Trajan Pro", serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(34,34,60);
+	font-size: 1.5vw;
+}
+
+header img{
+	height: 10vh;
+}
+
+header a{
+	color: rgb(239,230,225);
+	text-decoration: none;
+}
+
+header a:hover{
+	border-bottom: solid;
+	border-color: rgb(239,230,225);
+}
+
+header ul{
+	flex-basis:50%;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}

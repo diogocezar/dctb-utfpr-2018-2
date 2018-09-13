@@ -1,0 +1,37 @@
+.us{
+    display:flex;
+    flex-direction: column;
+    height: 110%;
+    justify-content: space-between;
+    padding: 40px;
+}
+.us h2{
+    color:#4a4e69;
+    margin-bottom: 5px;
+    font-family: AfterMidnite,sans-serif;    
+}
+
+.us p{
+    font-size: 0.8rem;
+    font-family:Montserrat,sans-serif;
+    line-height: 25px;
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.us h3{
+    font-family: TrajanPro-Regular,serif; 
+    color:#9a8c98;
+    font-size: 1rem;    
+    text-transform: uppercase;
+    margin: 0px;
+    text-align:center;
+    
+}
+.us img{
+    height: 10%;
+}
+@media only screen and (max-width: 480px){
+
+}
