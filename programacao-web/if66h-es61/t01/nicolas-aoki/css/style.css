@@ -18,7 +18,7 @@ body {
 .navbar{
     display: flex;
     background-color:#29213e;
-    height: 65px;
+    height: 75px;
     align-content: center;
 }
 .logo{
@@ -274,7 +274,7 @@ body {
     display:flex;
     justify-content: center;
 }
-.depoimento{
+.depoimentos{
     background-color: #f3e8e3;
 }
 .topo-depoimento-1{
@@ -316,6 +316,19 @@ body {
     margin:30px;
     padding:0 30px;
     font-size:1.2rem;
+    font-family: trojan;
+    color:#29213e;
+    font-weight: lighter;
+}
+.depoimento-frase-3{
+    font-family: trojan;
+    color:#29213e;
+    font-weight: lighter;
+}
+
+.depoimento-frase-4{
+    font-weight: lighter;
+    color:#d4c9c9;
     font-family: trojan;
 }
 .contato{
