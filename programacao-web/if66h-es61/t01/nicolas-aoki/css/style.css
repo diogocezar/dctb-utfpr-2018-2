@@ -21,6 +21,7 @@ body {
     height: 75px;
     align-content: center;
 }
+
 .logo{
     display:flex;
     margin-left:100px;
@@ -379,4 +380,54 @@ li{
     border-radius: 50%;
     display: inline-block;
     margin: 0; padding: 0;
+}
+@media only screen and (max-width: 1000px) {
+    #home{
+        height:100%;
+    }
+    .navbarColuna {
+        visibility: hidden;
+    }
+    .frase-home-1{
+        font-size: 4vh;
+    }
+
+    .frase-home-2{
+        font-size: 3vh;
+    }
+    .assessoria-servicos{
+        flex-flow: column wrap;
+    }
+    .topo-depoimento{
+        margin-top:90px;
+    }
+    .baixo-depoimento{
+        flex-flow: column wrap;    
+    }
+    #sobre{
+        justify-content: center;
+        align-content: center;
+    }
+    .frase-sobre-1{
+        line-height: 2rem;
+        text-align: center;
+    }
+    .frase-sobre-2{
+        font-size: 0.7vh;
+        margin-top: 40px;
+        text-align: center;  
+    }
+    .frase-sobre-3{
+        line-height: 2rem;
+        text-align: center;
+        font-size: 0.7vh
+    }
+    .img-sobre{
+        width:auto;
+    }
+    .frase-sobre-4{
+        font-size: 0.7vh;
+        margin-top: 40px;
+        text-align: center;  
+    }
 }
