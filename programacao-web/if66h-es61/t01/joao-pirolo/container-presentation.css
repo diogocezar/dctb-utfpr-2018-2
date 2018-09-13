@@ -1,0 +1,50 @@
+#container-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)), url("./assets/images/geovanna-bg-presentation.jpg");
+    background-position: 50%;
+}
+
+#container-presentation h2{
+    font-size: 2rem;
+    font-family: 'TrajanPro-Regular', serif;
+    color: #f2e9e4;
+    text-align: center;}
+    
+    @media only screen and (max-width: 768px) {
+        #content-presentation h2 {
+          font-size: 1.4rem; } }
+    
+#container-presentation h3{
+    font-size: 0.8rem;
+    font-family: 'TrajanPro-Regular', serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+#container-presentation img{
+    margin: 2.5rem;
+    height: 80px;
+}
+#button-pres{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #f2e9e4;
+    background-color: #f2e9e4;
+    color: #4a4e69;
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: 'Montserrat', serif;
+    font-size: 1rem;
+    transition: all 0.3s;
+}  
+#button-pres:hover{
+    background-color: transparent;
+    color: #f2e9e4;
+}
