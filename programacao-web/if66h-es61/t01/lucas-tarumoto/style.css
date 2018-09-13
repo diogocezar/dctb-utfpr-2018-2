@@ -1,0 +1,507 @@
+@font-face {
+	font-family: "AfterMidnite";
+	src: local("AfterMidnite.otf"), url("AfterMidnite.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TrajanProReg";
+	src: local("TrajanPro-Regular.otf"), url("TrajanPro-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+  
+  body {
+     margin:0;
+  }	
+
+  #menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #22223B;
+    color: #F2E9E4;
+    height: 70px;
+    align-items: center;
+  }
+
+.esse{
+      display: flex;
+    flex-flow: row wrap;
+    margin-right: 250px;
+  }
+
+  .menuitem{
+    align-items: center;
+	margin-top: 15px;
+	margin-right: 35px;
+	font-size: 15px;
+	height: 30px;
+	font-family: TrajanProReg;
+  }
+
+.menuanimation{
+  	display: none;
+  	margin-top: 1px;
+  	margin-left: -0.5px;
+  	display:flex;
+	width: 0px;
+  	height: 20px;
+  	background-color: #9A8C98;
+  	transition: width 0.3s, height 0.2s;
+}
+
+#item1:hover #ani1{
+  	display: flex;
+	width: 115px;
+  	height: 3px
+}
+#item2:hover #ani2{
+  	display: flex;
+	width: 48px;
+  	height: 3px
+}
+#item3:hover #ani3{
+  	display: flex;
+	width: 70px;
+  	height: 3px
+}
+#item4:hover #ani4{
+  	display: flex;
+	width: 111px;
+  	height: 3px
+}
+#item5:hover #ani5{
+  	display: flex;
+	width: 73px;
+  	height: 3px
+}
+
+#Layer_1{
+  display: flex;
+    flex: 1;
+  width: 275px;
+  margin-left: 200px;
+}
+
+#main{
+	margin:0;
+  	background: linear-gradient(rgba(34,34,59,.84), rgba(34,34,59,.98)), url('geovanna-bg-home.jpg');	
+  	width:100%;
+ 	height:720px;
+
+}
+
+.textmain{
+	margin-top: -30px;
+	color: rgb(242, 233, 228);
+  	text-align: center;
+}
+
+#textmain1{	
+	font-family: AfterMidnite;
+	font-size: 91px;
+	margin-bottom: -50px;
+}
+
+#textmain2{
+	font-family: AfterMidnite;
+	font-size: 56px;
+}
+
+#textmain3{
+	font-family: TrajanProReg;
+	font-size: 21px;
+}
+
+#textmain4{
+	margin-top: 10px;
+	font-family: TrajanProReg;
+	font-size: 21px;
+}
+
+#box{
+  display: flex;
+  justify-content: center;
+  margin-left: 650px;
+  width: 230px;
+  height: 50px;
+  color: #F2E9E4;
+  font-size: 14px;
+  border: 1px solid rgb(242, 233, 228);
+  border-radius: 25px;
+  line-height: 50px;
+}
+
+#button{
+	font-family: Montserrat, sans-serif;
+}
+
+#box:hover{
+	background: #F2E9E4;
+}
+
+#box:hover #button{
+	color: #4A4E69;
+}
+
+#heartcard{
+	margin:0;
+  	background: linear-gradient(rgba(74, 74, 105, 0.8), rgba(74, 74, 105, 0.8)), url('geovanna-bg-presentation.jpg');	
+  	width:100%;
+ 	height:550px;
+}
+
+#heartcardtext1{
+	font-family: TrajanProReg;
+	letter-spacing: 1px;
+	color: rgb(242, 233, 228);
+  	text-align: center;
+  	font-size: 24px;
+}
+
+#heartcardtext2{
+	letter-spacing: 1px;
+	font-family: TrajanProReg;
+	color: rgb(242, 233, 228);
+  	text-align: center;
+  	font-size: 24px;
+}
+
+#cards{
+	margin-top: -30px;
+	width: 65px;
+  	margin-left: 735px;
+}
+
+#heartcardtext3{
+	font-family: Montserrat, sans-serif;
+	color: rgb(242, 233, 228);
+  	text-align: center;
+  	font-size: 14px;
+}
+
+#box2{
+  display: flex;
+  justify-content: center;
+  margin-left: 650px;
+  width: 230px;
+  height: 50px;
+  color: rgb(74, 78, 105);
+  font-size: 14px;
+  background: #F2E9E4;
+  border: 1px solid rgb(242, 233, 228);
+  border-radius: 25px;
+  line-height: 50px;
+}
+
+#button2{
+	font-family: Montserrat, sans-serif;
+}
+
+#box2:hover{
+  color: rgb(242, 233, 228);
+  background: rgba(74, 74, 105, 0.8);
+}
+
+#presentation{
+	margin:0;
+  	background: rgb(242, 233, 228);	
+  	width:100%;
+ 	height:840px;
+}
+
+#presentationheader{
+	font-family: AfterMidnite;
+	font-weight: 200;
+	font-size: 84px;
+  	color: rgb(34, 34, 59);
+  	margin-left: 210px;
+	margin-bottom: -15px;
+	margin-top: -10px;
+}
+
+.prestext1{
+	font-family: TrajanProReg;
+  	font-size: 20px;
+	color: rgb(154, 140, 152);
+  	margin-left: 210px;
+}
+
+.prestext2{
+	font-family: Montserrat, sans-serif;
+	font-weight: 0.2px;
+  	font-size: 15px;
+	letter-spacing: 1px;
+	color: rgb(34, 34, 59);
+  	margin-left: 210px;
+}
+
+#hearts{
+	width: 120px;
+  	margin-left: 210px;
+}
+
+#services{
+	margin:0;
+  	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url('geovanna-bg-services.jpg');	
+  	width:100%;
+ 	height:770px;
+}
+
+#servicetext1{
+	color: rgb(242, 233, 228);
+	font-size: 42px;
+	font-family: TrajanProReg;
+	text-align: center;
+}
+
+#ring{
+	margin-top: 40px;
+	width: 75px;
+  	margin-left: 735px;
+}
+
+#servicebox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 75%;
+	margin-left: 200px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.servicetext2{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	color: rgb(154, 140, 152);
+	font-family: TrajanProReg;
+	text-align: center;
+}
+
+.pserv1{
+	font-size: 28px;
+}
+
+.pserv2{
+	margin-top: -40px;
+	font-size: 42px;
+}
+
+.pserv3{
+	margin-top: -20px;
+	font-size: 16.5px;
+	color: rgb(242, 233, 228);
+	font-family: Montserrat, sans-serif;
+	letter-spacing: 1px;
+}
+
+#box3{
+  display: flex;
+  justify-content: center;
+  margin-left: 650px;
+  width: 230px;
+  height: 50px;
+  color: rgb(74, 78, 105);
+  font-size: 14px;
+  background: #F2E9E4;
+  border: 1px solid rgb(242, 233, 228);
+  border-radius: 25px;
+  line-height: 50px;
+}
+
+#button3{
+	font-family: Montserrat, sans-serif;
+}
+
+#testimony{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background: rgb(242, 233, 228);	
+	align-items: center;
+	height: 1200px;
+}
+
+#ballon{
+	width: 100px;
+	margin-left: 160px;
+	margin-top: -80px;
+}
+
+#testtext1{
+	font-family: "AfterMidnite";
+	text-align: center;
+	font-size: 84px;
+	color: rgb(34, 34, 59);
+}
+
+#testtext2{
+	font-family: "TrajanProReg";
+	text-align: center;
+	font-size: 21px;
+	color: rgb(154, 140, 152);
+}
+
+#wit{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 72.5%;
+	margin-top: 60px;
+	margin-left: 145px;
+}
+
+.wittext1{
+	color: rgb(74, 78, 105);
+	font-size: 22px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.line{
+	background: #C9ADA7;
+	height: 4px;
+	width: 135px;
+	margin-top: 275px;
+	margin-left: -440px;
+}
+
+#line1{
+	margin-left: -455px;
+}
+
+#photo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 90%;
+	margin-top: 35px;
+	margin-left: 80px;
+}
+
+#photo1{
+	margin-left: -20px;
+}
+
+#photo2{
+	margin-left: -75px;
+}
+
+#photodesc{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.phototext{
+	font-family: "TrajanProReg";
+	text-align: center;
+}
+
+#phototext1{
+	margin-left: 140px;
+}
+
+#phototext2{
+	margin-right: 50px;
+}
+
+#contact{
+	margin:0;
+  	background: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url('geovanna-bg-contact.jpg');	
+  	width:100%;
+ 	height:890px;
+}
+
+#contacttext1{
+	margin-top: 20px;
+	color: rgb(242, 233, 228);
+	font-family: "AfterMidnite";
+	font-size: 84px;
+	text-align: center;
+}
+
+#rings{
+	margin-top: -100px;
+	margin-left: 695px;
+	width: 140px;
+}
+
+#contacttext2{
+	color: rgb(201, 173, 167);
+	font-family: "TrajanProReg";
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+#wpp{
+	font-family: "TrajanProReg";
+	text-align: center;
+}
+
+#wpptext{
+	font-size: 21px;
+	color: rgb(201, 173, 167);
+}
+
+#number{
+	margin-top: -10px;
+	font-size: 28px;
+	color: rgb(242, 233, 228);
+}
+
+#click{
+	margin-top: -15px;
+	font-size: 13px;
+	color: rgb(242, 233, 228);
+}
+
+#emailtext{
+	font-size: 21px;
+	color: rgb(201, 173, 167);
+	text-align: center;
+	font-family: "TrajanProReg";
+	margin-top: -25px;
+}
+
+#email{
+	font-size: 16px;
+	color: rgb(242, 233, 228);
+	text-align: center;
+	font-family: "TrajanProReg";
+	margin-top: -15px;
+}
+
+#finalbox{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 690px;
+	margin-top: 40px;
+	width: 400px;
+}
+
+.boxsocial{
+	display: flex;
+	justify-content: space-around;
+	border: 2px solid rgb(242, 233, 228);
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	margin-right: 15px;
+}
+
+#insta{
+	width: 40px;
+
+}
+
+#fb{
+	width: 40px;
+
+}
