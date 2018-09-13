@@ -15,7 +15,7 @@ body {
     padding: 0 !important;
     height: 100%;
 }
-.navbar{
+#navbar{
     display: flex;
     background-color:#29213e;
     height: 75px;
@@ -47,7 +47,7 @@ body {
     font-size:1em;
     color:#d4c9c9;
 }
-.home{
+#home{
     background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
     url("../img/geovanna-bg-home.jpg");
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ body {
     transition-duration:0.4s;
     color:rgb(39, 38, 38);
 }
-.apresentacao{
+#apresentacao{
     background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
     url("../img/geovanna-bg-presentation.jpg");
     background-position: 50%;
@@ -169,7 +169,7 @@ body {
     text-decoration: none;
     font-size:0.9rem;
 }
-.sobre{
+#sobre{
     background-color: #f3e8e3;
     display: flex;
     padding-top:98px;
@@ -211,7 +211,7 @@ body {
 .img-servico{
     width:10%;
 }
-.servicos{
+#servicos{
     background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
     url("../img/geovanna-bg-services.jpg");
     background-position: 50%;
@@ -274,7 +274,7 @@ body {
     display:flex;
     justify-content: center;
 }
-.depoimentos{
+#depoimentos{
     background-color: #f3e8e3;
 }
 .topo-depoimento-1{
@@ -330,7 +330,7 @@ body {
     color:#d4c9c9;
     font-family: trojan;
 }
-.contato{
+#contato{
     background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(../img/geovanna-bg-contact.jpg);
     background-position: 50%;
     text-align: center;
@@ -340,14 +340,18 @@ body {
 .contato-frase-1{
     font-family: trojan;
     color: #c9ada7;
+    margin:60px 0;
+    font-size: 24px;
 }
 .contato-frase-2{
     font-family: trojan;
     color: #c9ada7;
+    font-size: 18px;
 }
 .contato-frase-3{
     font-family: trojan;
-    color: #c9ada7;
+    color: white;
+    font-size: 28px;
 }
 .contato-frase-4{
     font-family: trojan;
