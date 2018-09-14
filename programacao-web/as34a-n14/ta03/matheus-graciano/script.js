@@ -1,5 +1,4 @@
 var bazarHeader = document.getElementById("header");
-var bazarInformation = document.getElementById("information");
 var bazarProducts = document.getElementById("item");
 
 
@@ -15,7 +14,6 @@ ourRequest.send();
 function renderHTML(data){
     var htmlHeader = "";
     var htmlProducts = "";
-    var htmlInformation = "";
 
 
     htmlHeader += "<h1>" +data.configs.title+ "</h1>";
@@ -27,14 +25,24 @@ function renderHTML(data){
     htmlHeader += "<p>" +data.configs.phone+ "</p>";
     htmlHeader += "</a>"
 
-    htmlInformation += "<p>" +data.configs.description[0].p+ "</p>"
-    htmlInformation += "<p>" +data.configs.description[1].p+ "</p>"
-    htmlInformation += "<h2>" +data.configs.description[2].h2+ "</h2>"
-    htmlInformation += "<p>" +data.configs.description[3].p+ "</p>"
+    htmlHeader += "<div class=marg>"
+
+    htmlHeader += "<p>" +data.configs.description[0].p+ "</p>"
+    htmlHeader += "<p>" +data.configs.description[1].p+ "</p>"
+    htmlHeader += "<h2>" +data.configs.description[2].h2+ "</h2>"
+    htmlHeader += "<p>" +data.configs.description[3].p+ "</p>"
+
+    htmlHeader += "</div>"
 
 
     for(i=0; i < data.products.length; i++){
-        htmlProducts += "<div>"
+        if(data.products[i].active){
+            htmlProducts += "<div class='col-lg-4 item well'>"
+        }
+        else{
+            htmlProducts += "<div class='col-lg-4 item well selled'>"
+        }
+        
         htmlProducts += "<h2>" +data.products[i].name+ "</h2>"
         htmlProducts += "<img src =" +data.products[i].image+ ">"
         for(j=0; j < data.products[i].description.length; j++){
@@ -45,7 +53,7 @@ function renderHTML(data){
                 htmlProducts += "<h4>" +data.products[i].description[j].h4+ "</h4>"
             }
         }
-        htmlProducts += "<h2>R$: " + data.products[i].price + "</h2>";
+        htmlProducts += "<h2 class=price>R$: " + data.products[i].price + "</h2>";
         htmlProducts += "<a href=mailto:diogo@digocesar.com>"
         htmlProducts += "<button>Comprar"
         htmlProducts += "</button>"
@@ -55,7 +63,6 @@ function renderHTML(data){
 
 
     bazarHeader.innerHTML = htmlHeader;
-    bazarInformation.innerHTML = htmlInformation;
     bazarProducts.innerHTML = htmlProducts;
     
 
