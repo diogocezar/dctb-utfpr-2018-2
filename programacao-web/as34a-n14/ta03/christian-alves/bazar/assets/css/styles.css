@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+}
+
+#sec-main {
+    text-align: center;
+}
+
+div {
+    margin: 10px 20px;
+    background-color: darkgray;
+}
+
+img {
+    width: 75%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
