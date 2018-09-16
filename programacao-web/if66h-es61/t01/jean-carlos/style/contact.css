@@ -42,15 +42,20 @@
     margin-top: 0;
     color: #f2e9e4;   
 }
-
-.social img{
+.social{
+    display:flex;
+}
+.socialImg{
     border: 3px solid #f2e9e4; 
     line-height: 60px;
-    border-radius: 35px;
+    border-radius: 50%;
     padding: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 720px){
     .contact img{
         height: 13%
     }
@@ -71,7 +76,75 @@
         font-size: 0.8rem;
     }
     
-    .social img{
-        height: 3%
+    .socialImg img{
+        height: 100%
+    }
+}
+
+
+@media (min-width: 721px) and (max-width: 1024px){
+    .contact h2{
+        font-size: 5rem;
+    }
+    
+    .contact img{
+        height: 17%;
+    }
+
+    .contact p{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+
+    .contact h3{
+        font-size: 2.3rem;
+    }
+    
+    #small{
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+    .socialImg img{
+        height: 100%
+    }
+}
+
+@media (min-width: 1025px){
+    .contact{
+        height: 100%
+    }
+    .contact h2{
+        font-size: 5rem;
+    }
+    
+    .contact img{
+        height: 17%;
+    }
+
+    .contact p{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+
+    .contact h3{
+        font-size: 2.3rem;
+        margin-bottom: 0px;
+    }
+    
+    #small{
+        font-size: 0.8rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        color: #f2e9e4;   
+        
+    }
+    #white{
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+        color: #f2e9e4;           
+    }
+    .socialImg img{
+        height: 100%
     }
 }

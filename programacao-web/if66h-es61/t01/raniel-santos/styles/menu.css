@@ -1,0 +1,32 @@
+.top_menu{
+	height: 70px;
+	font-weight: bold;
+	font-family: "Trajan Pro", serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(34,34,60);
+	font-size: 14px;
+}
+
+.top_menu img{
+	height: 50px;
+}
+
+.top_menu a{
+	color: rgb(239,230,225);
+	text-decoration: none;
+}
+
+.top_menu a:hover{
+	border-bottom: solid;
+    border-color: rgb(239,230,225);
+    transition: 0.5s;
+}
+
+.top_menu ul{
+	flex-basis:50%;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}

@@ -1,0 +1,46 @@
+#header-menu{
+    padding-bottom: 70px;
+    
+}
+#flex{
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left:-150px; 
+}
+#items{
+    margin-top: 10px;
+    display: inline;
+    
+}
+#header-menu{
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #22223b;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    align-items: center;  
+}
+#items a{
+    margin-left: 170px;
+    margin-right: -140px;
+    font-family: 'TrajanPro-Regular';
+    font-size: 1.05em;
+    color: #f2e9e4;
+    text-decoration: none;  
+}
+
+#header-menu #flex img{
+    height: 100px;
+    width: 268px;
+    float: left;
+    max-width: 190px; 
+    margin-left: 0; 
+    border: none;
+}
+

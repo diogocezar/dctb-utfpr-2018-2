@@ -32,7 +32,7 @@
     text-align: center;    
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 720px){
     .testmonials h3{
         font-size: 1rem;    
     }
@@ -43,5 +43,30 @@
         height: 120px;
         width: 120px;
         margin-bottom: 3rem;
+    }
+}
+
+
+@media (min-width: 721px) and (max-width: 1024px){
+    .testmonials{
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+    .testmonials h2{
+        font-size:4rem;
+    }
+}
+
+@media (min-width: 1025px){
+    .testmonials{
+        padding-right: 30%;
+        padding-left: 30%;
+    }
+    .testmonials h2{
+        font-size: 5rem;
+    }
+    
+    .testmonials h3,p{
+        font-size: 1.1rem
     }
 }

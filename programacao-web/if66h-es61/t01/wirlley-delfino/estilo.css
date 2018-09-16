@@ -1,0 +1,361 @@
+@font-face{
+    font-family: midnight;
+    src: url(./fonts/AfterMidnite.woff);
+}
+@font-face{
+    font-family: trojan;
+    src: url("./fonts/TrajanPro-Bold.woff");
+}
+@font-face{
+    font-family: mont;
+    src:url("./fonts/Montserrat-Light.ttf")
+}
+
+@font-face{
+    font-family: merriweather;
+    src:url("./fonts/Merriweather-Light.ttf")
+}
+
+@font-face{
+    font-family: IndieFlower;
+    src:url("./fonts/IndieFlower.ttf")
+}
+
+
+
+body {    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.cabecalho{
+	color: white;
+	font-family: trojan;
+	font-size:1.4em;
+	background-color:#29213e;
+	display: flex;
+	width: auto;
+	height: 70px;
+	align-items: flex-end;
+	align-self: center;
+	flex-grow: row;
+	justify-content: space-around;
+}
+
+.cabecalho #cab{
+	text-decoration: none;
+	color: inherit; 
+}
+
+
+.Inicial{
+	background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e), url("./img/geovanna-bg-home.jpg");
+	width: auto;
+	height: 560px;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color : white;
+}
+
+.Inicial #frase1{
+	font-family: midnight;
+	font-size:4em;
+	margin-top: 50px;
+}
+
+.Inicial #frase2{
+	font-family: midnight;
+	color : white;	
+	font-size:4em;
+}
+.Inicial #frase3{
+	margin-top: 40px;
+	font-family: Merriweather;
+}
+
+.Inicial #frase5{
+	margin-top: 50px;
+}
+
+.Apresentacao{
+	background: url("./img/parte2.png");
+	width: auto;
+	height: 550px;
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.Apresentacao #frase1{
+	font-family: mont;
+	font-size: 1.4em;
+	margin-top: 70px;
+}
+
+.Apresentacao #frase2{
+	font-family: mont;
+	font-size: 1.1em;
+}
+
+.Apresentacao #frase3{
+	margin-top: 75px;
+}
+
+.Apresentacao #frase4{
+	font-family: mont;
+	margin-top: 80px;
+}
+
+.Apresentacao #frase5{
+	margin-top: 45px;
+}
+
+
+.sobre{
+	width: auto;
+	height: 900px;
+	background-color: #FAF0E6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sobre #frase1{
+	display: flex;
+	align-self: flex-start;
+	margin-top: 35px;
+	margin-left: 120px;
+	font-family: midnight;
+	font-size: 6em;
+}
+
+.sobre #frase2{
+	display: flex;
+	margin-left: 120px;
+	margin-top: 20px;
+	align-self: flex-start;
+	font-family: mont;
+
+}
+
+.sobre #frase3{
+	display: flex;
+	margin-left: 120px;
+	margin-top: 50px;
+	align-self: flex-start;
+	font-family: mont;
+	font-size: 0.9em;
+}
+
+.sobre #coracao{
+	display: flex;
+	align-self: flex-start;
+	margin-top: 50px;
+	margin-left: 120px;
+}
+.sobre #frase4{
+	display: flex;
+	margin-left: 120px;
+	margin-top: 50px;
+	align-self: flex-start;
+	font-family: mont;
+	font-size: 0.9em;
+}
+
+.sobre #frase7{
+	display: flex;
+	margin-left: 120px;
+	margin-top: 30px;
+	align-self: flex-start;
+	font-family: mont;
+	font-size: 0.9em;
+}
+.sobre #frase6{
+	display: flex;
+	margin-left: 120px;
+	margin-top: 50px;
+	align-self: flex-start;
+	font-family: mont;
+}
+
+
+.servicos{
+	background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e), url("./img/geovanna-bg-services.jpg");
+	width: auto;
+	height: 750px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+
+}
+.servicos_conteudo1{
+	display: flex;
+	align-self: center;
+}
+.servicos_conteudo1 #frase1{
+	font-family: merriweather;
+	font-size: 3em;
+}
+
+.servicos_conteudo1 #frase2{
+	margin-left: 650px;
+}
+
+.Acompleta{
+	margin-top: 110px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: IndieFlower;
+	font-size: 2em;
+}
+
+.servicos_completa #frase1{
+	margin-left: 20px;
+}
+
+.servicos_intermediaria #frase1{
+	margin-left: 20px;
+}
+
+.servicos_conteudo1{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+.servicos_conteudo1 #frase1{
+	margin-top: 70px;
+}
+
+.servicos_conteudo1 #frase2{
+	margin-top: 40px;
+	margin-left: 30px;
+
+}
+
+.servicos_conteudo2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.depoimentos{
+	width: auto;
+	height: 1050px;
+	background-color: #FAF0E6;
+	display: flex;
+	flex-direction: column;
+}
+
+.depotimento_conteudo1{
+	font-family: IndieFlower;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.depotimento_conteudo1 #frase1{
+	font-family: midnight;
+	font-size: 5em;
+	margin-top: 30px;
+	margin-left: 80px;
+}
+
+.depotimento_conteudo1 #frase2{
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+.depotimento_conteudo1 #frase3{
+	margin-top: 30px;
+	margin-left: 80px;
+	font-size: 1.2em;
+}
+.depotimento_conteudo1 #frase4{
+	margin-left: 80px;
+	font-size: 1.2em;
+}
+.depotimento_conteudo1 #frase5{
+	margin-left: 60px;
+	font-size: 1.2em;
+}
+
+.depotimento_conteudo2 #frase1{
+	display: flex;
+	align-items: flex-start;
+	margin-left: 100px;
+	margin-top: 100px;
+	font-family: mont;
+	font-size: 1em;
+}
+
+.depotimento_conteudo2 #frase2{
+	margin-left: 200px;
+	margin-top: 30px;
+}
+
+.depotimento_conteudo2 #frase3{
+	margin-left: 190px;
+	margin-top: 10px;
+	font-family: mont;
+}
+
+.depotimento_conteudo2 #frase4{
+	margin-left: 225px;
+	margin-top: 10px;
+	font-family: mont;
+}
+
+.contatos{
+	background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e), url("./img/geovanna-bg-contact.jpg");
+	width: auto;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.contatos #frase1{
+	 font-family: IndieFlower;
+	font-size: 4em;
+	margin-top: 80px;
+}
+
+.contatos #frase2{
+	margin-top: 30px;
+}
+
+.contatos #frase3 {
+	margin-top: 30px;
+	font-size: 2em;
+}
+
+.contatos #frase4 {
+	font-size: 2em;
+}
+
+.contatos #frase5 {
+	margin-top: 70px;
+	font-size: 1.2em;
+}
+
+.contatos #frase6 {
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+.contatos #frase7 {
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+.contatos #frase8 {
+	margin-top: 20px;
+	font-size: 2em;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300');
+
+@font-face{
+    font-family: 'TrajanPro-Regular';
+    src: url('../assets/fonts/TrajanPro-Regular.eot') format('eot'), 
+        url('../assets/fonts/TrajanPro-Regular.woff') format('woff'),
+        url('../assets/fonts/TrajanPro-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'AfterMidnite';
+    src: url('../assets/fonts/AfterMidnite.eot') format('eot'), 
+        url('../assets/fonts/AfterMidnite.woff') format('woff'),
+        url('../assets/fonts/AfterMidnite.ttf') format('truetype');
+}
+
+container{
+    display: flex;
+}
+
+.font1{
+    font-family: 'AfterMidnite';
+    font-weight: 500;
+}
+
+.font2, a{
+    font-family: 'TrajanPro-Regular', serif;
+    font-weight: 500;
+}
+
+body{
+    font-family: 'MontSerrat', sans-serif;
+    font-size: 14px;
+    font-weight: 1.5;
+    color: #4a4e69;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9e4;
+}
+* {
+	box-sizing: border-box;
+}
+.all{display:flex; flex-wrap: wrap; flex-direction: column;}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+section{
+    padding-top: 4rem;
+    padding-bottom:3rem;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 40px;
+    width: 260px;
+    height: 60px;
+    line-height: 38px;
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn1{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.btn1:hover{
+    background-color: #f2e9e4;
+    color: #22223b;
+}
+
+.btn2{
+    background-color: #f2e9e4;
+    color: #22223b;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    color: #ffffff;
+}
