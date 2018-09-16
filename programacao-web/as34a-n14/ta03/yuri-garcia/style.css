@@ -1,0 +1,65 @@
+/*Imports fontes*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img
+{
+    width: 300px;
+    height: 300px;
+}
+
+h1
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+
+h4
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+p
+{
+	font-size: 0.9em;
+	margin-bottom: 5px;
+}
+
+.container
+{
+    align-content: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+body 
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.05);
+}
