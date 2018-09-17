@@ -1,0 +1,65 @@
+#topo {
+    text-align: center;
+    background: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#produtos {
+    background-color: beige;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    margin-top: 2%;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+ 
+}
+
+.card-text {
+    margin-bottom: 0.3rem;
+    font-size: 14px;
+}
+
+.price {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.buy-bt {
+    width: 100%;
+    opacity: 1;
+    position: relative;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7em !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-transform: uppercase !important;
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif !important;
+    color: #000;
+}
