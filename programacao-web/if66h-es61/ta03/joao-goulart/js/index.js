@@ -22,6 +22,7 @@ $(document).ready(() => {
 
 function montaLista(produtos) {
     var html = [];
+    console.log(produtos)
     html.push('<div class="container"><div class="row">');
     for (var i = 0; i < produtos.length; i++) {
 
@@ -38,7 +39,12 @@ function montaLista(produtos) {
             }
         }
         html.push('<p class="price">R$ ' + produtos[i].price + ',00</p>');
-        html.push('<button type="button" class="btn btn-outline-dark buy-bt">COMPRAR</button>');
+
+        if(produtos[i].active) {
+            html.push('<button type="button" class="btn btn-outline-dark buy-bt">COMPRAR</button>');
+        } else {
+            html.push('<button type="button" disabled="disabled" class="btn btn-outline-dark buy-bt">ESGOTADO</button>');
+        }
         html.push(' </div>  </div> </div> ');
     }
     html.push('</div></div>');
@@ -49,7 +55,6 @@ function montaLista(produtos) {
 
 function montaConfig(config) {
     var html = [];
-    console.log(config);
     html.push('<div class="container">');
     html.push('<h1 id="title">' + config.title + '</h1>');
     html.push('<h2 id="substitle">' + config.subTitle + '</h2>');
