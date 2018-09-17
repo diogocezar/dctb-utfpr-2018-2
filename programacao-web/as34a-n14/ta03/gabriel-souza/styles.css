@@ -1,0 +1,44 @@
+section{
+    padding: 25px;
+    text-align: center;
+}
+
+div{
+    margin: 10px 20px;
+}
+
+img{
+    width: 30%;
+}
+
+h1{
+	text-transform: uppercase;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	font-size: 45px;
+	text-align: center;
+	color:#424242;
+}
+
+h2{
+	font-size: 20px;
+	text-align: center;
+	color:#424242;
+}
+
+h3{
+	font-size: 20px;
+	color:#424242;
+}
+
+h4{
+	font-size: 20px; 
+    color:#424242;  
+}
+
+p{
+	font-size: 14px;
+	color:#424242;
+}
+
+
