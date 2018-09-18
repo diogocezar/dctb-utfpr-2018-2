@@ -1,0 +1,5 @@
+Utilizando os conhecimento obtidos com a aula sobre JavaScript e Ajax;
+
+Utilize o seguinte JSON: ...database.json para criar o front-end de um sistema de venda de produtos;
+
+você pode-se basear no sistema atual que consome este JSON: https://diogocezar.github.io/bazar/
