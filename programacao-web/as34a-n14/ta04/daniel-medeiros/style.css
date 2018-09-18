@@ -1,0 +1,40 @@
+body {
+    margin: auto 0;
+    color: #000;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+#product,
+#contact {
+    background: rgb(198, 201, 247);
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+form{
+    padding-top: 20px;
+}
+
+button{
+    padding: 5px;
+}
+
+.border {
+    padding: 25px;
+    border: 1px solid rgb(30, 55, 78)!important;
+}
+
+.form-group input{
+    width: 100%;
+    
+}
+/*
+*{
+    border: 1px solid red;
+}
+*/
