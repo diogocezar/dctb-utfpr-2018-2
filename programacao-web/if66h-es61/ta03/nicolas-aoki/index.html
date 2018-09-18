@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bazar TA03</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url: "/ep-dados.php",
+                data : JSON.stringify(data),
+                dataType: 'JSON',
+                success: success,
+                type: 'get',
+                error: function (errorStatus, xhr) {
+                    alert("Error"+JSON.stringify(errorStatus));
+                }
+            });
+            function success(data,status){
+                console.log(data);
+            }
+        })
+    </script>
+    
+</body>
+</html>
