@@ -1,0 +1,145 @@
+/* --------------------------- Fonts --------------------------- */
+
+@font-face {
+    font-family: "Code";
+    src: url("../font/Code-bold.otf") format("opentype");
+}
+
+/* --------------------------- Utils --------------------------- */
+
+.space-top{
+    margin-top: 25px;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    padding-top: 30px;
+    font-family: Code;
+    font-size: 20px;
+}
+
+p{
+    font-size: 12px;
+    width: 90%;
+    padding: 6%;
+    margin: 0px;
+    margin-left: 8px;
+}
+
+div{
+    margin: 0 px;
+}
+
+.content-01{
+    color: #e6e6e6;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/product-01.jpg");
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.content-02{
+    color: #e6e6e6;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/product-02.jpg");
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.content-03{
+    color: #e6e6e6;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/product-03.jpg");
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.content-04{
+    color: #e6e6e6;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/product-04.jpg");
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.content-01:hover{
+    background-size: 120%;
+}
+
+.content-02:hover{
+    background-size: 120%;
+}
+
+.content-03:hover{
+    background-size: 120%;
+}
+
+.content-04:hover{
+    background-size: 120%;
+}
+
+.container-product{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact{
+    width: 100%;
+}
+
+.input-text{
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 25px;
+    height: 50px;
+    padding-left: 2%;
+}
+
+.input-btn{
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    color: #606060;
+    margin-left: 9%;
+    margin-top: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #acacac;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.input-btn:hover{
+    border-color: #606060;
+    background-color: #606060;
+    color: #fff;
+}
+
+.input-area{
+    max-width: 80%;
+    min-width: 80%;
+    margin-left: 9%;
+    margin-top: 25px;
+    max-height: 125px;
+    min-height: 125px;
+    padding-left: 2%;
+}
+
