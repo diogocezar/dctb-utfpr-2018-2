@@ -1,0 +1,54 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="TrabalhoW.aspx.cs" Inherits="WebApplication1.TrabalhoW" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="assets/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <nav class="navbar navbar-default" role="navigation" style="margin-bottom:0;">
+            <ul class="nav nav-tabs" >
+                <li><a href="#">Home</a></li>
+                <li class="pipe"></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li class="pipe"></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div  class= "container-fluid" id="produtos">
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Teclado Wireless</h3><p class="text-center">Teclado sem fio</p></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Notebook Acer</h3><p class="text-center">Notebook i3 com HD de 500GB e 2 Gb de RAM</p></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Notebook Samsung</h3><p class="text-center">Notebook i5 com HD de 1TB, 4GB de RAM e placa de vídeo dedicada</p></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Mouse</h3><p class="text-center">Mouse sem fio</p></div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Smartphone Motorola</h3><p class="text-center">Motorola G5 dual-chip com 16GB</p></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Powerbank</h3><p class="text-center">Powerbank com 8 cargas completas</p></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Smartphone Sony</h3><p class="text-center">Sony XPeria L1, câmera de 13MP </p></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 boxInterna"><h3>Fone Bluetooth</h3><p class="text-center">Fone bluetooth com 4 horas de bateria e slot de cartão de memória</p></div>
+        </div>
+        </div>
+    </div>
+
+    
+    <div class="linha" id="contato">
+        <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12" id="coluna1">
+                <asp:TextBox ID="txtNome" runat="server" Width="100%" Height="40px" placeholder="Nome" CssClass="txtbox text-center marginTop"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" Width="100%" Height="40px" placeholder="E-Mail" CssClass="txtbox text-center marginTop"></asp:TextBox><br />
+            </div>
+        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12" id="coluna2">
+                <asp:TextBox ID="txtTelefone" runat="server" Width="100%" Height="40px" placeholder="Assunto" CssClass="txtbox text-center marginTop pull-right"></asp:TextBox>
+                <asp:TextBox ID="txtCidade" runat="server" Width="100%" Height="300px" placeholder="Mensagem" CssClass="txtbox text-center marginTop"></asp:TextBox>
+            </div>
+            </div>
+    </form>
+</body>
+</html>
