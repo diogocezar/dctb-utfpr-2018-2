@@ -1,0 +1,28 @@
+/*Imports fontes*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+h1{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+h2
+{
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
+.jumbotron{
+    background-color: #fff;
+}
+
+body
+{
+    font: 100%;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}

@@ -1,0 +1,52 @@
+body{
+    background: linear-gradient(rgba(112,112,112, .5), rgb(100,100,100, .5));
+    font-size: 14px;
+}
+
+#header{
+    text-align: center;
+    background-color: white;
+    font-family: 'Montserrat', serif;
+}
+
+.row{
+    justify-content: flex-start;
+}
+
+.produto{
+    height: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 60px;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 30px;
+    font-family: 'Montserrat', serif;
+    background: white;
+    border-radius: 5px;
+}
+
+img{
+    width: 100%;
+    height: 20em;
+}
+
+.desativado{
+    filter: blur(2px);
+}
+
+.button{
+    align-self: center;
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+.button:hover{
+    color: white;
+    background: grey;
+}
