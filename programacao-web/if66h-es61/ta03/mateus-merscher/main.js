@@ -6,19 +6,19 @@ xhttp.onreadystatechange = () => {
     data = xhttp.response;
     data = JSON.parse(data)
     let content = '';
-    let desc = '';
     data.products.forEach(e => {
+      let desc = '';
       e.description.forEach(d =>{
         keys = Object.keys(d);
         values = Object.values(d)
         desc+=`<`+keys[0]+`>`+values[0]+`</`+keys[0]+`>`
       })
-            content+=`<div class="prod">
-                          <h3>`+ e.name + `</h3>
+            content+=`<div class="prod `+e.active+`">
+                          <h3>`+ e.name.toUpperCase() + `</h3>
                           <img src="`+ e.image + `"/>
                           `+ desc +`
                           <h1>`+'R$'+ e.price+',00' +`<h1>
-                          <button onClick="comprar()">COMPRAR</button>
+                          <a href="mailto:`+data.configs.email+`?subject=`+data.configs.subject+`&body=`+data.configs.bodyMail+e.name+`"><button>COMPRAR</button></a>
                           </div>`
   }); 
     head.innerHTML = '<title>' + data.configs.title + '</title>'
@@ -39,17 +39,3 @@ xhttp.onreadystatechange = () => {
 };
 xhttp.open("GET", "https://diogocezar.github.io/bazar/json/database.json", true);
 xhttp.send();
-var css;
-var cssRecover = new XMLHttpRequest();
-cssRecover.onreadystatechange = () => {
-  if (cssRecover.readyState == 4 && cssRecover.status == 200) {
-     css = cssRecover.response;
-     head.innerHTML += "<style>"+css+"</style>";
-    console.log(css)
-    }
-};
-cssRecover.open("GET", "style.css",true);
-cssRecover.send();
-function comprar(){
-  console.log('fechou')
-}
