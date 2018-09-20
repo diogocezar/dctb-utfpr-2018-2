@@ -19,11 +19,19 @@
                 type: 'GET',
                 url: 'https://diogocezar.github.io/bazar/json/database.json',
                 success: function(result){
-                    console.log(result);
+                    conf(result.configs);
+                    prod(result.products);
                 },
             });
+            function conf(obj){
+                console.log(obj)
+            }
+            function prod(obj){
+                console.log(obj);
+            }
         });
     </script>
-
+    <div id="config"></div>
+    <div id="products"></div>
 </body>
 </html>
