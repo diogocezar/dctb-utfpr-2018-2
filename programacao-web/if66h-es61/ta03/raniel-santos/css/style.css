@@ -1,0 +1,107 @@
+body{
+    background-color: #7b023b;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: #f6f1ec;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* -------------------HEADER-------------- */
+
+header{
+    line-height: 0.9;
+    padding-bottom: 20px;
+}
+
+header h1{
+    font-size: 50px;
+    line-height: 0.1;
+}
+
+header h2{
+    font-size: 30px;
+}
+
+header p{
+    font-size: 1.1rem;
+    color: #beb8b8;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 350px;;
+    margin-right: 350px;
+    letter-spacing: 2px;
+}
+
+header button{
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #b30d47;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #f6f1ec;
+}
+
+/* -------------------CONTAINER-------------- */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #8b0836;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container > .false{
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+}
+.container > div{
+    align-items: center;
+    background-color: #b30d47;
+    max-width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 14px;
+}
+
+.container img{
+    width: 315px;
+    height: 236.25px;
+}
+
+.container  button{
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #7b023b;
+    font-size: 15px;
+    border-radius: 12px;
+    border-color: #7b023b;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #f6f1ec;
+}
+
+.container  p{
+    font-size: 13px;
+}
+
+.container  h2{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.container  h4{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.container  button:hover{
+    background-color: #a3044f;
+}

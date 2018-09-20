@@ -1,0 +1,509 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Bonita';
+    src: url("../fonts/AfterMidnite.otf");
+}
+
+@font-face{
+    font-family: 'Normal';
+    src: url("../fonts/TrajanPro-Bold.otf");
+}
+@font-face{
+    font-family: 'Normal2';
+    src: url("../fonts/Montserrat-Light.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.containerMenu a{
+    text-decoration: none;
+    color: #F2E9E4;
+}
+
+.containerMenu{
+    margin: 0 auto;
+    display: flex;   
+    background-color: #22223B;
+    padding-left: 450px;
+}
+.flex-end{
+    justify-content: center;
+}
+.itemMenu{
+    color: #F2E9E4;
+    margin: 5px;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;  
+    font-family: 'Normal';
+    
+}
+
+div#menu #logonome{
+    font-family: 'Normal';
+    position: absolute;
+    color: #F2E9E4;
+    padding-top: 10px;
+    padding-left: 180px;
+    font-size: 20;
+     
+    
+}
+div#menu #logonome2{
+    position: absolute;
+    color: #F2E9E4;
+    font-family: 'Normal2';
+    padding-top: 36px;
+    padding-left: 220px;
+    font-size: 10;
+}
+
+div#menu img#logo{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    padding-left: 105px;
+}
+
+
+
+/*--------*/
+div#fundo1{
+    
+    background: url("../imagens/geovanna-bg-home.jpg") no-repeat;
+    box-shadow: 0 650px rgba(34, 34, 59, .9) inset;
+    margin-top: 0px;
+    text-align: center;  
+    padding-bottom: 70px;     
+          
+}
+
+
+div#fundo1 h1{
+    
+    color: #F2E9E4;
+    padding-top: 60px;
+    font-family: 'Bonita';
+    font-size: 91;
+    
+    
+}
+div#fundo1 h2{
+    
+    color: #F2E9E4;
+    /*margin-top: -60px;*/
+    font-family: 'Bonita';
+    font-size: 56;
+    
+}
+div#fundo1 #Geovanna1{
+    
+    color: #F2E9E4;
+    font-family: 'Normal';
+    font-size: 22;
+    padding-top: 32px;
+}
+div#fundo1 #botao1{
+    
+    margin-top: 60px;
+    margin-left: 550px;
+    margin-right: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Normal2';
+    border: 1px solid #F2E9E4;
+    background-color: #F2E9E4;
+    border-radius: 80px;
+}
+/*--------*/
+
+/**/
+div#fundo2{
+    background: url("../imagens/geovanna-bg-presentation.jpg") no-repeat;
+    box-shadow: 0 650px rgba(34, 34, 59, .7) inset;
+    padding-bottom: 70px;
+    
+    
+    
+}
+div#fundo2 img#icone_convite{
+    width: 80px;
+    height: 80px;
+    margin-left: 48%;
+    padding-top: 40px;
+    padding-bottom: 5%;
+    
+    
+}
+div#fundo2 h1{
+    font-family: 'Normal';
+    font-size: 28;
+    color: #F2E9E4;
+    padding-top: 110px;
+    text-align: center;
+}
+
+div#fundo2 #texto_fundo2{
+    font-family: 'Normal2';
+    font-size: 14;
+    text-align: center;
+    color: #F2E9E4;
+}
+
+div#fundo2 #botao2{
+    font-family: 'Normal2';
+    text-align: center;
+    font-size: 14;
+    margin-top: 60px;
+    margin-left: 545px;
+    margin-right: 545px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #F2E9E4;
+    border-radius: 80px;
+    background-color: #F2E9E4;
+    
+}
+/**/
+
+/**/
+div#fundo3{
+    background-color: #F2E9E4;
+    padding-bottom: 70px;
+}
+
+div#fundo3 h1{
+    color: #4A4E69;
+    font-family: 'Bonita';
+    font-size: 90;
+    padding-top: 50px;
+    margin-left: 150px;
+}
+div#fundo3 h2{
+    font-family: 'Normal';
+    color: #9A8C98;
+    margin-left: 150px;
+}
+div#fundo3 #texto_fundo3{
+    font-size: 14;
+    font-family: 'Normal2';
+    padding-top: 30px;
+    margin-left: 150px;
+    color: #4A4E69;
+}
+div#fundo3 #texto_fundo3_p2{
+    font-size: 14;
+    font-family: 'Normal2';
+    padding-top: 30px;
+    margin-left: 150px;
+    color: #4A4E69;
+}
+
+div#fundo3 img#coracao{
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    padding-left: 12%;
+    padding-bottom: 5%;
+}
+div#fundo3 #texto_fundo3_p3{
+    font-size: 14;
+    font-family: 'normal2';
+    padding-top: 30px;
+    margin-left: 150px;
+    color: #4A4E69;
+}
+/**/
+
+/**/
+div#fundo4{
+    background: url("../imagens/geovanna-bg-services.jpg") no-repeat;
+    box-shadow: 0 650px rgba(34, 34, 59, .9) inset;
+    padding-bottom: 70px;
+}
+
+div#fundo4 h1{
+    font-family: 'Normal';
+    font-size: 38;
+    text-align: center;
+    padding-top: 80px;
+    color: #F2E9E4;
+}
+
+div#fundo4 #titulo_texto_fundo4{
+    position: absolute;
+    text-align: center;
+    padding-left: 24%;
+    color: #9A8C98;
+    font-size: 25;
+}
+div#fundo4 #texto_fundo4{
+    position: absolute;
+    text-align: center;
+    padding-top: 55px;
+    padding-left: 15%;
+    color: #F2E9E4;
+}
+
+div#fundo4 #titulo_texto_fundo4_p2{
+    position: absolute;
+    text-align: center;
+    padding-left: 72%;
+    color: #9A8C98;
+    font-size: 25;
+}
+
+div#fundo4 #texto_fundo4_p2{
+    position: absolute;
+    text-align: center;
+    padding-top: 55px;
+    padding-left: 66%;
+    color: #F2E9E4;
+}
+
+div#fundo4 img#anel{
+    padding-top: 50px;
+    padding-left: 47%;
+    width: 100px;
+    height: 100px;
+}
+
+div#fundo4 #botao4{
+    font-family: 'Normal2';
+    margin-top: 220px;
+    text-align: center;
+    font-size: 14;
+    margin-left: 545px;
+    margin-right: 545px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #F2E9E4;
+    border-radius: 80px;
+    background-color: #F2E9E4;
+}
+/**/
+
+/**/
+
+div#fundo5{
+    background-color: #F2E9E4;
+    padding-bottom: 580px;
+}
+
+div#fundo5 h1{
+    font-family: 'Bonita';
+    font-size: 80;
+    color: #4A4E69;
+    text-align: center;
+    padding-top: 80px;
+}
+
+div#fundo5 img#baloes{
+    width: 120px;
+    height: 120px;
+    padding-left: 46%;    
+}
+
+div#fundo5 #fundo5_texto1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Normal';
+    font-size: 22;
+    color: #9A8C98;
+}
+
+div#fundo5 #casal1{
+    text-align: center;
+    position: absolute;
+    font-family: 'Normal';
+    padding-left: 15%;
+    padding-top: 50px;
+    font-size: 16;
+    color: #4A4E69;
+}
+
+div#fundo5 img#casal1{
+    padding-top: 280px;
+    padding-left: 25%;
+}
+
+div#fundo5 #casal1nome{
+    font-size: 22;
+    font-family: 'Normal';
+    position: absolute;
+    padding-top: 450px;
+    padding-left: 23%;
+    color: #4A4E69;
+}
+div#fundo5 #casal1data{
+    font-size: 22;
+    font-display: 'Normal';
+    position: absolute;
+    padding-top: 485px;
+    padding-left: 27%;
+    color: #C9ADA7;
+}
+
+div#fundo5 #casal2{
+    font-family: 'Normal';
+    text-align: center;
+    position: absolute;
+    font-family: 'Normal';
+    padding-left: 60%;
+    padding-top: 50px;
+    font-size: 16;
+    color: #4A4E69;
+}
+
+div#fundo5 img#casal2{
+    padding-top: 280px;
+    padding-left: 70%;
+}
+div#fundo5 #casal2nome{
+    font-size: 22;
+    font-family: 'Normal';
+    position: absolute;
+    padding-top: 450px;
+    padding-left: 67%;
+    color: #4A4E69;
+}
+div#fundo5 #casal2data{
+    font-size: 18;
+    font-family: 'Normal';
+    position: absolute;
+    padding-top: 485px;
+    padding-left: 72%;
+    color: #C9ADA7;
+}
+
+/**/
+
+/**/
+
+div#fundo6{
+    background: url("../imagens/geovanna-bg-contact.jpg") no-repeat;
+    box-shadow: 0 950px rgba(34, 34, 59, .7) inset;
+    padding-bottom: 200px;
+}
+div#fundo6 h1{
+    font-family: 'Bonita';
+    font-size: 90;
+    text-align: center;
+    padding-top: 80px;
+}
+
+div#fundo6 img#aneis{
+    width: 120px;
+    height: 120px;
+    padding-left: 46%;
+}
+
+div#fundo6 #fundo6_texto1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Normal';
+    color: #C9ADA7;
+}
+
+div#fundo6 #fundo6_texto2{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Normal';
+    color: #C9ADA7;
+}
+
+div#fundo6 #fundo6_texto3{
+    text-align: center;
+    font-family: 'Normal';
+    color: #F2E9E4;
+    font-size: 28;
+}
+div#fundo6 #fundo6_texto4{
+    text-align: center;
+    font-family: 'Normal';
+    color: #F2E9E4;
+    font-size: 13;
+    
+}
+div#fundo6 #fundo6_texto5{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Normal';
+    color: #C9ADA7;
+}
+div#fundo6 #fundo6_texto6{
+    text-align: center;
+    font-family: 'Normal';
+    color: #F2E9E4;
+    font-size: 14;
+}
+
+div#fundo6 img#insta{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    padding-top: 50px;
+    padding-left: 45%; 
+}
+div#fundo6 img#face{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    padding-top: 51px;
+    padding-left: 51%;
+
+}
+
+@media (max-width: 900px){
+    div#fundo5 #casal2{
+        display: none;
+    }
+    div#fundo5 #casal2nome{
+        display: none;
+    }
+    div#fundo5 #casal2data{
+        display: none;
+    }
+    
+
+    div#fundo4 #titulo_texto_fundo4{
+        position: relative;
+    }
+    div#fundo4 #texto_fundo4{
+        position: relative;
+    }
+
+    div#fundo4 #titulo_texto_fundo4_p2{
+        display: none;
+    }
+    div#fundo4 #texto_fundo4_p2{
+        display: none;
+        
+    }
+
+    div#fundo4 #botao4{
+        display: none;
+    }
+    .containerMenu .itemMenu{
+        display: none;
+    }
+
+    div#fundo2 #botao2{
+        display: none;
+    }
+
+    div#fundo1 #botao1{
+        display: none;
+    }
+}
+
+
+
+

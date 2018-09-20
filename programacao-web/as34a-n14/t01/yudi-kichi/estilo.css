@@ -1,0 +1,523 @@
+@font-face{
+    font-family: AfterMidnite;
+    src: url(fonts/AfterMidnite.otf);
+}
+
+@font-face{
+    font-family: TrajanPro-Regular;
+    src: url(fonts/TrajanPro-Bold.otf);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+
+html {
+    font-size: 14px; }
+
+body {
+    margin: 0;
+    font-family: TrajanPro-Regular, serif;
+    font-size: 1rem;    
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    font-weight: 400;
+    text-align: left;
+}
+
+section {
+    padding-top: 7rem;
+    padding-bottom: 5rem; 
+}
+
+#logo-site{
+    background: url(imagens/geovanna-logo-nav.svg);
+    height: 70px;
+    width: 290px;
+    margin-right: 190px;
+    background-repeat: no-repeat;
+}
+
+#div-cabecalho{
+    max-width: 100%;
+    height: 70px;
+    position: relative;
+    background-color: #22223B;
+    z-index: 999;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container{
+    width: 100%;
+    height: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display:flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.menu-cabecalho{
+    position:relative;
+    float:right;
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    margin-bottom:0;
+    padding-left:0;
+    flex-wrap: wrap;
+}
+
+.menu-item{
+    justify-content: space-between;
+    position: relative;
+    float:right;
+    list-style:none;
+    font-size: 1.2em;
+    font-family: AfterMidnite, sans-serif; 
+    color: #f2e9e4; 
+}
+
+.menu-item a
+{
+    justify-content: space-around;
+    position: relative;
+    float:right;
+    padding: 1em;
+    text-decoration:none;
+    cursor:pointer;
+    font-family: TrajanPro-Regular, sans-serif; 
+    color: #f2e9e4; 
+}
+
+section#home-site{     
+    height: 600px;
+    background-image: linear-gradient(rgba(34,34,59, .84), rgba(34,34,59, .99)), url(imagens/geovanna-bg-home.jpg);
+    background-position: 0 0;
+}
+
+.conteudo-home h1{
+    font-family: AfterMidnite, sans-serif;
+    font-size: 6.5rem;
+    text-align: center;
+    color: #F2E9E4;   
+    font-weight: 500;    
+    margin-bottom: .5rem;
+}
+
+.conteudo-home h2{
+    font-family: AfterMidnite, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #F2E9E4;    
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.conteudo-home h3{
+    font-family: TrajanPro-Regular, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F2E9E4;    
+    line-height: 1.2;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.conteudo-home h3 .h1{
+    color: #9a8c98;
+}
+
+.botao{
+	padding: 10px;
+	border: 1px solid #f2e9e4;
+    text-align: center;;
+	border-radius: 40px;
+	color: #f2e9e4;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 260px;
+    line-height: 38px;
+    left: 50%;
+    position: relative; 
+    transform: translate(-50%) !important;
+    margin-top: 4rem;
+    font-family: Montserrat;
+}
+
+.botao:hover{
+	background-color: #f2e9e4;
+	color: #000000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+a{
+    text-decoration: none;
+}
+
+section#apresentacao{    
+    background-image: linear-gradient(rgba(74, 74, 105, 0.8), rgba(74, 74, 105, 0.8)), url(imagens/geovanna-bg-presentation.jpg);
+    background-position: 0 0;
+}
+
+.conteudo-apresentacao img{
+    height: 80px;
+    margin-bottom: 2.5rem;
+    opacity: 1;
+    margin: 2.5rem 0;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%) !important;
+}
+.conteudo-apresentacao h3{
+    color: #F2E9E4;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;    
+}
+
+.conteudo-apresentacao h4{
+    color: #F2E9E4;
+    font-size: 1rem;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    outline: none !important;
+}
+
+.botao-contato{
+	padding: 10px;
+	border: 1px solid #f2e9e4;
+    text-align: center;;
+	border-radius: 40px;
+	color: #4a4e69;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 260px;
+    line-height: 38px;
+    left: 50%;
+    position: relative; 
+    transform: translate(-50%) !important;
+    margin-top: 4rem;
+    font-family: Montserrat;
+    background-color: #f2e9e4;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.botao-contato:hover{
+	background-color: transparent;
+	color: #f2e9e4;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+section#sobre{
+    background-color: #f2e9e4;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: -15px;
+    margin-left: 97.5px;
+}
+
+.conteudo-sobre h1{
+    font-size: 6rem;
+    color: #22223b;
+    margin-bottom: 3rem;
+    font-family: AfterMidnite,sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.conteudo-sobre h2{
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+}
+
+.conteudo-sobre p{
+    font-family: Montserrat;
+    color: #9a8c98;
+    font-size: 1em;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.conteudo-sobre img{
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+section#servicos{    
+    background-position: 0 0;
+    background-image: linear-gradient(rgba(34, 34, 59, 0.84), rgba(34, 34, 59, 0.98)), url(imagens/geovanna-bg-services.jpg);
+}
+
+.secao-servicos h1{
+    font-family: TrajanPro-Regular,serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #f2e9e4;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.secao-servicos img{
+    margin-left: 50%;
+    transform: translate(-50%)!important;
+    height: 120px;
+    margin-bottom: 3rem;
+}
+
+.secao-servicos .esquerda h2{
+    font-family: TrajanPro-Regular,serif;
+    font-size: 2rem !important;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    text-align: center
+}
+
+.secao-servicos .completa{
+    font-size: 3rem;
+}
+
+.esquerda{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center
+}
+
+.direita{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.secao-servicos p{
+    font-family: Montserrat,serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color: #F2E9E4;
+    text-align: center;
+}
+
+.secao-servicos h2{
+    font-family: TrajanPro-Regular,serif;
+    font-size: 2rem !important;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#depoimentos{
+    overflow: auto;
+}
+
+section#depoimentos{
+    background-color: #f2e9e4;
+}
+
+.agrupamento h1{
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.agrupamento #imgCentral{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 3rem;
+    margin-left: 50%;
+    transform: translate(-50%)!important;
+    position: relative;
+}
+
+.agrupamento h2{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    text-align: center;
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
+}
+
+.agrupamento p{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 15;
+    margin-bottom: 2rem;
+    font-family: TrajanPro-Regular,serif;
+    color: #4a4e69;
+    font-weight: 400;
+}
+
+.agrupamento h3{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    text-align: center
+}
+
+.agrupamento h4{
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #c9ada7;
+    text-align: center;
+}
+
+.agrupamento #imgCasal{
+    height: 120px;
+    width: 120;
+    margin-bottom: 3rem;
+    left: 10%;
+    position: relative;
+    transform: translate(-50%)!important;
+}
+
+.alinhamento{
+    height: 515.78px;
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+section#contato{
+    background-image: linear-gradient(rgba(34, 34, 59, 0.8), rgba(34, 34, 59, 0.9)), url(imagens/geovanna-bg-contact.jpg);
+    background-position: 0 0;
+}
+
+.secao-contatos h1{
+    font-family: AfterMidnite,sans-serif;
+    color: #f2e9e4;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.secao-contatos .img-central{
+    height: 120px;
+    transform: translate(-50%)!important;
+    position: relative;
+    margin-left: 50%;
+}
+
+.secao-contatos h2{
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.secao-contatos h3{
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.secao-contatos p a{
+    color: #f2e9e4;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.secao-contatos p small{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+.secao-contatos p{
+    text-align: center;
+}
+
+.secao-contatos h4{
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.secao-contatos #email{
+    color: #f2e9e4;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.secao-contatos ul{
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.secao-contatos ul li{
+    border: 2px solid #f2e9e4;
+    padding: 15px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+.secao-contatos ul li:first-child{
+    margin-right: 15px;
+}
+
+.secao-contatos ul li img{
+    height: 35px;
+    width: 35px;
+}

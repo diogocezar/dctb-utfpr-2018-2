@@ -1,0 +1,26 @@
+body{
+    background-color: #F2E9E4;   
+}
+p{
+    color: #4a4e69;
+    font-weight: 500;    
+}
+h2,h3{
+    color:#f2e9e4;
+    text-align:center;
+    font-family: TrajanPro-Regular,serif;
+    line-height: 2rem;
+}
+a{
+    text-decoration:none;
+    border: 1px solid #f2e9e4;
+    border-radius: 35px;
+    padding: 10px;
+    padding-left:30px;
+    padding-right:30px;
+    color:#f2e9e4;
+    font-family:Montserrat,sans-serif;
+    font-weight: 100;
+    line-height: 40px;
+    text-transform: uppercase;    
+}

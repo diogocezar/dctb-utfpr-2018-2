@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+header {
+    margin-bottom: 75px;
+}
+form {
+    font-size: 15px;
+}
+#form input{
+	width: 50%;
+}
+h1 {
+    margin: 30px 0 20px;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.border {
+    padding: 20px;
+}
+input {
+    margin: 8px;
+}
+#products img{
+	max-width: 100%;
+}

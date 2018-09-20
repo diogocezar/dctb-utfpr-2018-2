@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url("../fonts/Montserrat-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+}

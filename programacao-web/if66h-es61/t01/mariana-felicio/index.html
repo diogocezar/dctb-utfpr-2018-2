@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <style>
+  @font-face {
+   font-family: trajanPro-Regular;
+   src: url(TrajanPro-Regular.woff);
+  }
+  @font-face {
+   font-family: AfterMidnite;
+   src: url(./fonts/AfterMidnite.woff);
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   background-color: #f2e9e4;
+   font-family: trajanPro-Regular, serif;
+   color:#4a4e69;
+   font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .navbar {
+   background-color: #22223b;
+   display: flex;
+   flex-direction: row;
+   align-content: space-between;
+  }
+  img {
+   width: 38%;
+   margin: 5px;
+   height: 60px;
+  }
+  a {
+    font-size: 1.05rem;
+    color: #f2e9e4;
+    font-weight: 400;
+    text-transform:capitalize;
+    text-decoration: none;
+    padding: 0px 18px 0 18px;
+  }
+  .navigation {
+   width: 55%;
+   align-self: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 8px;
+   margin-left: 65px;
+  }
+
+  .presentation {
+    background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url(./images/geovanna-bg-presentation.jpg);
+    background-position: 50%;
+  }
+  .services {
+    background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(./images/geovanna-bg-services.jpg);
+    background-position: 50%;
+  }
+  .depositions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .depositions h2 {  
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  .depositions h3 {
+    
+    font-weight: 500;
+    line-height: 1.2;
+    color:#9a8c98;
+    font-size: 1.5rem;
+  }
+  .depositions img {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 3rem;
+  }
+  .contacts {
+    /* background-image: url(./images/geovanna-bg-services.jpg); */
+    background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(./images/geovanna-bg-contact.jpg);
+    background-position: 50%;
+  }
+  .content-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+  }
+  .content-contacts h4 {
+    font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+  .content-contacts h3 {
+    font-family: trajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .content-contacts h2 {
+    font-family: AfterMidnite, serif;
+    color: #f2e9e4;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .some-depositions h3 {
+    padding: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 4rem;
+    font-size: 1.2rem;
+  }
+  .content-contacts img {
+    height: 120px;
+  }
+  .email {
+    display: flex;
+  }
+  .social-page {
+    display: flex;
+    flex-direction: row;
+  }
+  ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  .phone-number p a {
+    font-size: 1.8rem;
+  }
+  .phone-number p {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-number p small {
+    font-size:  0.8rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 2rem;
+    color:#f2e9e4;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+  }
+  .email p a {
+    font-size: 0.8rem;
+  }
+  
+  .social-page {
+   margin: 0 auto;
+   width: 25%; 
+  }
+  .social-page li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    height: 65px;
+    width: 65px;
+    margin: 0 5px 0 5px;
+  }
+  .social-page li img {
+    margin: 2px 0;
+    height: 35px;
+    width: 35px;
+  }
+  .gg {
+    color: #9a8c98;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(./images/geovanna-bg-home.jpg);
+    background-position: 50%;
+  }
+  .content-home {
+   display: flex;
+   flex-direction: column;
+   color: white;
+  }
+  .content-home h2,
+  .content-home h3 {
+    font-family: AfterMidnite;
+    color: #f2e9e4;
+    font-weight: 500;
+    line-height: 1.2;
+  }  
+  .content-home h2 {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+  .content-home h3 {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  .who-am h4 {
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .btn-contact {
+    margin-top: 4rem;
+    border: 1px solid #f2e9e4;
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #f2e9e4;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  }
+  .btn-presentation {
+    margin-top: 4rem;
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    border: 1px solid #f2e9e4;
+    color: gray;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .content-presentation h2{
+    margin-top: 4rem;
+    color: #f2e9e4;
+    font-weight: 400;
+  }
+  .content-presentation h3 {
+    color: #f2e9e4;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: Montserrat,sans-serif;
+    line-height: 1.2;
+  }
+  .content-presentation img {
+    margin: 2.5rem 0;
+    height: 80px;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align:left;
+  }
+  .content-about-us {
+    padding: 0 100px;
+    margin-bottom: 4rem;
+  }
+  .content-about-us h2{
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+  }
+  .content-about-us h3 {
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+
+  }
+  .content-about-us img {
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  .content-about-us p {
+    width: 50%;
+    font-family: Montserrat,sans-serif;
+    color: #22223b;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1em;
+    color: #9a8c98;
+    margin-top: 2rem;
+  }
+  .advisory {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-content: space-around;  
+  }
+  .absolute-advisory, .middle-advisory {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  .advisory p {
+    font-family: Montserrat,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  .absolute-advisory h3,
+  .middle-advisory h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    color:  #9a8c98;
+    font-weight: 400;
+
+    text-align: center;
+    line-height: 2.4rem;
+  }
+  .c {
+    font-size: 3rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .content-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-services h2 {
+    color: #f2e9e4;
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    line-height: 1.2;
+  }
+  .content-services img {
+    height: 120px;
+    margin-bottom: 3rem;
+  }
+ </style>
+</head>
+<body>
+ <div class="navbar">
+  <img src="download.svg" alt="icone">
+  <div class="navigation">
+   <a href="#home">Apresentação</a>
+   <a href="#sobre">Sobre</a>
+   <a href="#servico">Serviços</a>
+   <a href="#depoimentos">Depoimentos</a>
+   <a href="#contatos">Contato</a>
+  </div>
+ </div>
+ <div class="home">
+  <div class="content-home">
+    <h2>O grande momento está chegando?</h2>
+    <h3>Vocês vão se casar? Não se preocupe!</h3>
+    <div class="who-am">
+      <h4>
+        sou a <span class="gg">geovanna garcia</span>
+        ,
+      </h4>
+      <h4>estou aqui para lhe ajudar</h4>
+      <button class="btn-contact">Entre em contato</button>
+    </div>
+  </div>
+ </div>
+ <div class="presentation">
+  <div class="content-presentation">
+   <h2>Preparamos uma apresentação <br> especial para vocês!</h2>
+    <img src="./images/geovanna-icon-presentation.svg" alt="">
+    <h3>conheça detalhadamente os nossos serviços</h3>
+    <button class="btn-presentation">baixar apresentação</button>
+  </div>
+ </div>
+ <div class="about-us">
+  <div class="content-about-us">
+   <h2>sobre nós</h2>
+   <h3>Oi, sou a Geovanna Garcia</h3>
+   <p>Nosso objetivo é proporcionar segurança e despreocupação no planejamento 
+    e no dia do casamento, por isso, contamos com uma consultoria especializada que visa orientar
+     as necessidades dos noivos, através de uma análise completa do seu perfil
+      para oferecer o melhor custo-benefício e a certeza de um planejamento tranquilo.</p>
+   <p>
+     No site é possível solicitar cotações, tirar dúvidas 
+     e compreender em detalhes tudo sobre nossa assessoria. Conheça nossos serviços!
+   </p>
+   <img src="./images/geovanna-icon-heart.svg" alt="">
+   <h3>A nossa missão</h3>
+   <p>é planejar com total dedicação o momento mais importante na vida de um casal,
+     acompanhando todo processo com muito profissionalismo transmitindo tranquilidade
+      e confiança para que os noivos possam desfrutar ao máximo esse momento único e especial.</p>
+  </div>
+ </div>
+ <div class="services">
+  <div class="content-services">
+   <h2>Tipos de serviços</h2>
+   <img src="./images/geovanna-icon-ring.svg" alt="">
+   <div class="advisory">
+    <div class="absolute-advisory">
+      <h3>
+        Assessoria
+        <br>
+        <span class="c">Completa</span>
+      </h3>
+      <p>Nessa modalidade, 
+        iniciamos com a consultoria e seguimos acompanhando o
+         casal durante todo o processo: elaboração do 
+        <i>layout</i>
+        , estilo do casamento, busca por fornecedores, 
+        visitas técnicas, contratações e organização de planilhas para o controle de orçamento.
+        </p>
+    </div>
+    <div class="middle-advisory">
+      <h3>
+        Assessoria
+        <br>
+        <span class="c">Intermediária</span>
+      </h3>
+      <p>Essa modalidade é para o casal que já contratou alguns serviços, porém, 
+        encontraram dificuldades em organizar o casamento no meio do processo. Teremos reuniões em 
+        que os noivos nos contam como será o grande dia, e então preparamos todo o suporte daqui pra frente.</p>
+    </div>
+   </div>
+   <button class="btn-presentation">baixar apresentação</button>
+  </div>
+ </div>
+ <div class="depositions">
+   <h2>depoimentos</h2>
+   <img src="./images/geovanna-icon-ballons.svg" alt="">
+   <div class="some-depositions">
+    <h3>Aqui estão os depoimentos de alguns casais que contrataram os nossos serviços</h3>
+    <div class="slide-depositions">
+       
+    </div>
+   </div>
+   
+ </div>
+ <div class="contacts">
+   <div class="content-contacts">
+     <h2>entrem em contato</h2>
+     <img src="./images/geovanna-icon-rings.svg" alt="">
+     <h3>
+       Será um prazer
+      <br/>
+      Conversar com vocês!
+     </h3>
+     <div class="phone-number">
+        <h4>Whatsapp e Telefone</h4>
+        <p>
+          <a href="">(43) 996 923 296</a>
+          <small>clique no número!</small>
+        </p>
+     </div>
+     <div class="email">
+        <h4>E-mail</h4>
+        <p>
+          <a href="mailto:geovannagarcia.assesoria@gmail.com">
+             geovannagarcia.assesoria@gmail.com
+          </a>
+        </p>
+     </div>
+     <ul class="social-page">
+       <li>
+         <a href="https://www.instagram.com/geovannagarcia/">
+          <img src="./images/geovanna-icon-instagram.svg" alt=""> 
+         </a>
+       </li>
+       <li>
+         <a href="https://www.facebook.com/geovannagarciaeventos/">
+          <img src="./images/geovanna-icon-facebook.svg" alt="Ícone Facebook">
+        </a>
+       </li>
+     </ul>
+   </div>
+ </div>
+</body>
+</html>

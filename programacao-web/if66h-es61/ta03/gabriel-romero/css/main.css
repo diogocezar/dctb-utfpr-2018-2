@@ -1,0 +1,114 @@
+html, body{
+    width: 100%;
+    font-size: 14px;
+    height: 100%;
+    background-color: papayawhip;
+    font-family: 'Roboto', sans-serif;
+}
+/* -------------------HEADER-------------- */
+#header{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box
+}
+
+#header h1{
+    font-size: 2rem;
+    color: cadetblue;
+    padding-top: 25px;
+    padding-bottom: 9px;
+    font-weight: 1000;
+}
+
+#header h2{
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#header p{
+    font-size: 1.15rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+/* -------------------FIM DO HEADER-------------- */
+/* -------------------CONTEUDO-------------- */
+#conteudo{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 0 1rem;
+    box-sizing: border-box;
+}
+
+.itensConteudo{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.tituloItem{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 1000;
+}
+
+.itensConteudo img{
+    height: 50%;
+    width: 50%;
+    margin: 2rem 0 2rem 0;
+}
+
+.itensConteudo p {
+    letter-spacing: 3px;
+    margin-top: 0.5rem;
+}
+
+.itensConteudo h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 1000;
+}
+
+.money{
+    font-weight: 1000;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.vendido{
+    background: red;
+}
+
+.vendidoEscrita{
+    padding-bottom: 1rem;
+    font-weight: 1000;
+    font-size: 3rem;
+}
+
+.btn-comprar{
+    padding: 2rem 2rem 2rem 2rem; 
+    border-radius: 5%;
+    background-color: gray;
+    border: 0 solid gray;
+    margin-bottom: 1rem;
+}
+
+/* -------------------FIM DO CONTEUDO-------------- */

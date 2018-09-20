@@ -1,0 +1,585 @@
+/*Home section*/
+
+#home {
+    margin-top: 50px;
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)), url(../../img/geovanna-bg-home.jpg);
+    background-position: left top;
+}
+
+#home h2,
+#home h3 {
+    font-family: AfterMidnite, sans-serif;
+    color: var(--light-color);
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 6.5rem;
+}
+
+@media only screen and (max-width:1200px) {
+    #home h2 {
+        font-size: 5.5rem;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #home h2 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #home h2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #home h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #home h2 {
+        font-size: 2.5rem;
+    }
+}
+
+#home h3 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width:1200px) {
+    #home h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #home h3 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #home h3 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #home h3 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+#home h4 {
+    font-family: TrajanPro-Regular, serif;
+    color: var(--light-color);
+    text-align: center;
+}
+
+#home h4 span {
+    color: var(--light-purple-color);
+}
+
+#home button {
+    margin-top: 4rem;
+    align-self: center;
+}
+
+/*End home section*/
+
+/*Show section*/
+
+#show {
+    background: linear-gradient(rgba(74, 74, 105, .8), rgba(74, 74, 105, .8)), url(../../img/geovanna-bg-presentation.jpg);
+    background-position: center center;
+}
+
+#show h2,
+#show h3 {
+    font-family: TrajanPro-Regular, serif;
+    color: var(--light-color);
+    text-align: center;
+}
+
+#show h2 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:768px) {
+    #show h2 {
+        font-size: 1.4rem;
+    }
+}
+
+#show h3 {
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+}
+
+#show img {
+    margin: 2.5rem 0;
+    height: 80px;
+}
+
+#show button {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    align-self: center;
+}
+
+/*End show section*/
+
+/* About section*/
+
+#about {
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#about .container{
+    width: 45%;
+}
+
+#about img {
+    height: 120px;
+}
+
+#about h2 {
+    margin-bottom: 3rem;
+}
+
+#about h3,
+#about p {
+    margin-bottom: 2rem;
+}
+
+#about h2 {
+    font-family: AfterMidnite, sans-serif;
+    color: var(--dark-purple-color);
+    font-size: 6rem;
+}
+
+#about h3 {
+    color: var(--light-purple-color);
+    font-size: 1.5rem;
+}
+
+#about p {
+    font-family: Montserrat, sans-serif;
+    color: var(--dark-purple-color);
+    line-height: 2rem;
+}
+
+#about img {
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    #about h3 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    #about h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    #about p {
+        text-align: center;
+    }
+    #about img {
+        height: 100px;
+        left: 50%;
+        position: relative;
+        -webkit-transform: translate(-50%, 0) !important;
+        -moz-transform: translate(-50%, 0) !important;
+        -ms-transform: translate(-50%, 0) !important;
+        transform: translate(-50%, 0) !important;
+    }
+}
+
+/*End about section*/
+
+
+/*Services section*/
+#services {
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)), url(../../img/geovanna-bg-services.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#services .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services img{
+    height: 120px;
+    margin-bottom: 3rem;
+}
+
+#services h2{
+    margin-bottom: 3rem;
+}
+
+#services h3{
+    margin-bottom: 2rem;
+}
+
+#services h2,
+#services h3 {
+    font-family: TrajanPro-Regular, serif;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 3rem;
+    color: var(--light-color);
+}
+
+@media only screen and (max-width:768px) {
+    #services h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #services img {
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #services h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #services img {
+        height: 80px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+#services h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--light-purple-color);
+}
+
+#services h3 .hl {
+    font-size: 3rem;
+}
+
+@media only screen and (max-width:768px) {
+    #services h3 .hl {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    #services h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #services h3 .hl {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #services h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+#services p {
+    font-family: Montserrat, sans-serif;
+    color: var(--light-color);
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    line-height: 2rem
+}
+
+#services button {
+    margin-top: 3rem;
+    align-self: center;
+}
+
+@media only screen and (max-width:768px) {
+    #services p {
+        padding: 0;
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+    #services button {
+        margin-top: 1.5rem;
+    }
+}
+
+/*End services section*/
+
+/*Depositions section*/
+
+#depositions h2 {
+    font-family: AfterMidnite, sans-serif;
+    text-align: center;
+    color: var(--dark-purple-color);
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width:768px) {
+    #depositions h2 {
+        font-size: 5rem;
+    }
+}
+
+#depositions img {
+    height: 120px;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width:768px) {
+    #depositions img {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #depositions h2 {
+        font-size: 4rem
+    }
+    #depositions img {
+        height: 80px;
+    }
+}
+
+#depositions h3 {
+    color: var(--light-purple-color);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: 7rem;
+}
+
+@media only screen and (max-width:992px) {
+    #depositions h3 {
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #depositions h3 {
+        font-size: 1.1rem;
+    }
+}
+
+#depositions .container div{
+    display: flex;
+    flex-direction: column;
+}
+
+#depositions .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#depositions .container p {
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#depositions .container p:after {
+    content: '';
+    display: flex;
+    margin: 0 auto;
+    width: 8em;
+    height: 3px;
+    background-color: var(--light-pink-color);
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:992px) {
+    #depositions .container p {
+        padding: 0;
+    }
+}
+
+#depositions .container img {
+    margin-top: 3.2rem;
+    align-self: center;
+}
+
+#depositions .container h5 {
+    color: var(--light-pink-color)
+}
+
+#depositions .container h4,
+#depositions .container h5 {
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    #depositions .container p {
+        font-size: .9rem;
+    }
+    #depositions .container h5 {
+        margin-bottom: 4rem;
+    }
+    #depositions .container h4,
+    #depositions .container h5 {
+        font-size: 1rem;
+    }
+}
+
+/*End depositions section*/
+
+/*Contact section*/
+#contact {
+    background: linear-gradient(rgba(34, 34, 59, .8), rgba(34, 34, 59, .9)), url(../../img/geovanna-bg-contact.jpg);
+    background-position: center center;
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: AfterMidnite, sans-serif;
+    text-align: center;
+    color: var(--light-color);
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+#contact h3,
+#contact h4 {
+    font-family: TrajanPro-Regular, serif;
+    color: var(--light-pink-color);
+}
+
+@media only screen and (max-width:768px) {
+    #contact h2 {
+        font-size: 4rem;
+    }
+}
+
+#contact img {
+    height: 120px;
+}
+
+@media only screen and (max-width:768px) {
+    #contact img {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #contact h2 {
+        font-size: 3rem;
+    }
+    #contact img {
+        height: 80px;
+    }
+}
+
+#contact h3 {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+@media only screen and (max-width:768px) {
+    #contact h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #contact h3 {
+        font-size: 1.2rem;
+    }
+}
+
+#contact h4 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:768px) {
+    #contact h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #contact h4 {
+        font-size: 1.2rem;
+    }
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: var(--light-color)
+}
+
+#contact h4:first-of-type + p{
+    font-size: 2rem;
+}
+
+#contact span {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 2rem;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+#contact ul {
+    padding: 0;
+    margin: 2.5rem 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contact ul li {
+    border: 2px solid var(--light-color);
+    padding: 13px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+#contact ul li:first-child {
+    margin-right: 15px;
+}
+
+#contact ul li a img {
+    height: 35px;
+    width: 35px;
+}
+
+@media only screen and (max-width:768px) {
+    #contact p {
+        font-size: .9rem;
+    }
+    #contact ul li a img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/*End contact section*/

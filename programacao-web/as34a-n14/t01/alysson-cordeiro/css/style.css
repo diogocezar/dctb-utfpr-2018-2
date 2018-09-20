@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300);
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url(../fonts/TrajanPro-Regular.eot?) format("eot"), url(../fonts/TrajanPro-Regular.woff) format("woff"), url(../fonts/TrajanPro-Regular.ttf) format("truetype"), url(../fonts/TrajanPro-Regular.svg#TrajanPro-Regular) format("svg")
+}
+
+@font-face {
+    font-family: AfterMidnite;
+    src: url(../fonts/AfterMidnite.eot?) format("eot"), url(../fonts/AfterMidnite.woff) format("woff"), url(../fonts/AfterMidnite.ttf) format("truetype"), url(../fonts/AfterMidnite.svg#AfterMidnite) format("svg")
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-size: 14px;
+    font-family: "TrajanPro-Regular", serif;
+    background-color: #F2E9E4;
+    color: #4A4E69;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 85px 15px 85px 15px;
+	width: 100%;
+	flex-direction: column;
+}
+
+.sr-1,
+.sr-2,
+.sr-3,
+.sr-4{
+	margin-top: 0;
+	margin-bottom: .5rem;
+	font-weight: 500;
+    line-height: 1.2;
+}
+
+.sr-1 {
+    font-size: 6rem
+}
+
+.sr-2 {
+    font-size: 4rem
+}
+
+.sr-3 {
+    font-size: 1.5rem
+}
+
+.sr-4 {
+    font-size: 1rem
+}
+
+.button-trp {
+    border: 1px solid #f2e9e4;
+    background-color: transparent;
+    color: #f2e9e4;
+}
+
+button {
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat,sans-serif;
+	font-size: 1rem;
+	margin-top: 15px;
+}
+
+header .menu {
+	display: flex;
+    justify-content: center;
+    padding: 5px 0;
+	width: 100%;
+	flex-direction: column;
+}
+
+
+header .menu img {
+	height: 60px;
+}
+
+header .menu{
+    top: 0;
+	position: fixed;
+    align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+    width: 100%;
+    background-color: #22223B;
+    box-shadow: -2px -3px 20px 3px rgba(34, 34, 59, .5);
+	transition: all .3s ease-in-out 0s;
+	min-width: 992px !important
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin: 0 7px;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.18em;
+    padding-top: 16px;
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+#parte-cima .container {
+    height: 500px;
+    margin-top: 70px;
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)), url(../images/geovanna-bg-home.jpg);
+	background-position: left top;
+	color: #f2e9e4;
+	font-family: AfterMidnite,sans-serif;
+}
+
+#parte-cima .container .sr-2{
+	margin-bottom: 30px;
+}
+
+#parte-cima .container .sr-3{
+	font-family: TrajanPro-Regular,serif;
+}
+
+#apresentacao .container{
+    background: linear-gradient(rgba(74, 74, 105, .8), rgba(74, 74, 105, .8)), url(../images/geovanna-bg-presentation.jpg);
+	background-position: center center;
+	color: #f2e9e4;
+}
+
+#apresentacao .container img{
+    margin: 2.5rem 0;
+    height: 80px;
+}
+
+#sobre .container {
+    color: #22223B;
+    width: 40%;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+#sobre .container p{
+    font-family: Montserrat,sans-serif;
+    color: #22223b;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sobre .container .sr-2 {
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+#sobre .container .sr-3 {
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#sobre .container img{
+    height: 80px;
+}
+
+#servicos .container {
+    background: linear-gradient(rgba(34, 34, 59, .84), rgba(34, 34, 59, .98)) , url(../images/geovanna-bg-services.jpg);
+    background-position: center center;
+	color: #f2e9e4;
+}
+
+#servicos .container img {
+    height: 105px;
+}
+
+#servicos .container .sr-2 {
+    margin-bottom: 3rem;
+}
+
+#servicos .container .sr-3 {
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#servicos .container .row{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    text-align:  center;
+}
+
+
+#servicos .container .row .colunas {
+    width: 50%;
+    flex: 50%;
+}
+
+#depoimentos .container .sr-1{
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#depoimentos .container img {
+    height: 95px;
+}
+
+#depoimentos .container .row{
+    display: flex;
+    flex-direction: row;
+    text-align:  center;
+    width: 100%;
+}
+
+
+#depoimentos .container .row .colunas {
+    width: 50%;
+    flex: 50%;
+}
+
+#contato .container {
+    background: linear-gradient(rgba(74, 74, 105, .8), rgba(74, 74, 105, .8)), url(../images/geovanna-bg-contact.jpg);
+	background-position: center center;
+	color: #f2e9e4;
+}
+
+#contato .container img{
+    height: 85px;
+}
+
+#contato ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#contato ul li {
+    border: 2px solid #f2e9e4;
+    padding: 13px;
+    border-radius: 50%;
+    list-style-type: none;
+    margin: 15px;
+}
+

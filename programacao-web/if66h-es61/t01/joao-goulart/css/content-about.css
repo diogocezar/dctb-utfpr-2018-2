@@ -1,0 +1,97 @@
+#about {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.content-about h2 {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.content-about {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+   
+}
+
+.content-about h2 {
+    font-family: 'AfterMidnite', sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.content-about img {
+    height: 80px;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    width: 120px;
+}
+
+.content-about p {
+    font-family: 'Montserrat', sans-serif;
+    color: #22223b;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content-about h3 {
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .content-about h3 {
+        color: #9a8c98;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .content-about h2 {
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    #about {
+        padding-top: 30rem;
+        padding-bottom: 30rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .content-about h3 {
+        color: #9a8c98;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .content-about h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    #about {
+        padding-top: 30rem;
+        padding-bottom: 30rem;
+    }
+   
+}

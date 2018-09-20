@@ -1,0 +1,11 @@
+@mixin m-border-box($property){
+    -webkit-box-sizing: $property;
+    -moz-box-sizing: $property;
+    box-sizing: $property;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include m-border-box(border-box);
+  }
