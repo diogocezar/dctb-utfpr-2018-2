@@ -1,0 +1,102 @@
+
+#products{
+    color: #303030;
+}
+div{
+    color: black;
+    margin: 10px 20px;
+}
+
+.title{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+    font-weight: bold;
+	padding-top: 20px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.subtitle{
+	margin-left: 0px;
+}
+
+.content {
+	background-color: black;
+	margin: 40px;
+	font-family: Montserrat Light;
+	color: #303030;
+	text-align: left;
+	width: 27%;
+    float: right;
+    align-content: center;
+    
+}
+
+.btn{
+    font-size: 15px;
+    font-weight: lighter;
+    background: transparent;
+    height: 60px;
+    color: #262626;
+    border-color: #262626;
+    border-width: 2px;
+    border-style: solid;
+	cursor: pointer;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+	background-color: #e0e0e0;
+	border-color: #e0e0e0;
+	color: #22223B;
+}
+
+.inactive{
+	opacity: 0.5;
+}
+img{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+}
+
+h1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Montserrat Medium;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	color: #3d3737;
+}
+
+h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+
+h5{
+	font-size: 2rem;
+	font-family: Montserrat Medium;
+}
+.p{
+	color: #333131;
+	
+}
+div{
+    color: #333131;
+}
