@@ -6,24 +6,24 @@
     <title>Bazar TA03</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
 </head>
 <body>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+        <script>
         $(document).ready(function(){
-            const data = 'http://diogocezar.github.io/bazar/json/database.json';
-            fetch(data).then(function(response){
-                console.log(response);
-            }).catch(function(e){
-                console.error(e);
+            $.ajax({
+                type: 'GET',
+                url: 'https://diogocezar.github.io/bazar/json/database.json',
+                success: function(result){
+                    console.log(result);
+                },
             });
         });
     </script>
-    <div id="config"></div>
-    <div id="products"></div>
-
 
 </body>
 </html>
