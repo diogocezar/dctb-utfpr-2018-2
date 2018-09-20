@@ -28,9 +28,13 @@ function aboutContent(config) {
 }
 
 function productsContent(products){
-    var content='<div class="products">';
+    var content='';
     products.forEach(p =>{
-        content+='<h2>'+p.name+'</h2>';
+        var disabled ='';        
+        if(!p.active){
+            disabled = 'disabled';
+        }
+        content+='<div class="products '+disabled+'"><h2>'+p.name+'</h2>';
         content+='<img src="'+p.image+'"</img>';
         p.description.forEach(d =>{
             $.each(d, function(key, value){
@@ -38,7 +42,9 @@ function productsContent(products){
             });
         });    
         content+='<h2>R$ '+p.price+',00</h2>';
+        content+='<a class="button"><h3>Comprar</h3></a>';
+        content+='</div>'
     });
-    content+='</div>'
+    debugger;
     return content;
 }
