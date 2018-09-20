@@ -6,25 +6,24 @@
     <title>Bazar TA03</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
 </head>
 <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $.ajax({
-                url: "/ep-dados.php",
-                data : JSON.stringify(data),
-                dataType: 'JSON',
-                success: success,
-                type: 'get',
-                error: function (errorStatus, xhr) {
-                    alert("Error"+JSON.stringify(errorStatus));
-                }
+            const data = 'http://diogocezar.github.io/bazar/json/database.json';
+            fetch(data).then(function(response){
+                console.log(response);
+            }).catch(function(e){
+                console.error(e);
             });
-            function success(data,status){
-                console.log(data);
-            }
-        })
+        });
     </script>
-    
+    <div id="config"></div>
+    <div id="products"></div>
+
+
 </body>
 </html>
