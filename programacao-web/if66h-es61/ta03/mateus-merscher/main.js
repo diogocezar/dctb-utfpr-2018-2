@@ -35,6 +35,8 @@ xhttp.onreadystatechange = () => {
                       </div>
                       <div class="content">`+content+`
                       </div>`;
+                      head.innerHTML+=`"  <link rel="stylesheet" type="text/css" href="style.css">`
+                      
     }
 };
 xhttp.open("GET", "https://diogocezar.github.io/bazar/json/database.json", true);
