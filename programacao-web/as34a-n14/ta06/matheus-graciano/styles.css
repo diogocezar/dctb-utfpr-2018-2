@@ -3,6 +3,8 @@ h4{
 }
 
 #item{
+    max-width: 300px;
+    padding: 5px;
     margin: 5px;
 }
 
@@ -15,6 +17,7 @@ h4{
     height: 256px;
     background-image: url(assets/images/spiderweb_doily.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .poli{
