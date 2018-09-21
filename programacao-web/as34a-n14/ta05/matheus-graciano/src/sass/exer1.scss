@@ -1,36 +1,5 @@
-//Fontes Size
-$font-size1: 16px;
-$zero: 0;
-$h1: 28px;
-$h2: 24px;
-
-//Fontes
-
-//Cores
-$primary-color: #fafafa;
-$button-color: #3897f0;
-$second-color: #fff;
-$third-color: rgba(0, 0, 0, 0.3);
-
-//Width
-$w-main: 90%;
-$mw-main: 935px;
-$w-full: 100%;
-$w-sm: 768px;
-$w-30: 30%;
-
-//Height
-$h-full: 100%;
-
-//Margin
-$standard: 0 auto;
-$margin1: 30px 0;
-$margin-h: 10px 0;
-$margin-li: 0 20px 0 0;
-$margin-button: 0 20px;
-$margin-img: 20px 0;
-$margin-med: 0 40px;
-
+@import 'exer2'; //Import de Variáveis
+@import 'exer4'; //Função pixel to rem
 
 @mixin border-radius($radius){
     -webkit-border-radius: $radius;
@@ -124,12 +93,7 @@ header{
 
 }
 
-.style-btn{
-    padding: (6px/16px)rem (14px/16px)rem;
-    border-width: (1px/16px)rem;
-    border-style: solid;
-    @include border-radius((4px/16px)rem);
-}
+@import 'exer3'; //Style for button
 
 .button-follow{
     @extend .style-btn;
