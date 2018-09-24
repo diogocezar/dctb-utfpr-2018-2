@@ -1,0 +1,13 @@
+.bg{
+    background: url(images/Skeleton\ Linocut\ Astronaut.svg);
+    height: 50vh;
+}
+
+.pol{
+    fill: black;
+    stroke: red;
+}
+
+.change-color:hover{
+    fill: black;
+}
