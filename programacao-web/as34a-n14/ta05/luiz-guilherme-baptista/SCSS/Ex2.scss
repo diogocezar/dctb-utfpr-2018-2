@@ -1,0 +1,22 @@
+$color1: #fafafa;
+$color2: #3897f0;
+$color3: #fff;
+$color4: rgba(0, 0, 0, 0.3);
+$border-radius: 4px;
+
+.btn-follow {
+    margin: 0 20px;
+    padding: 6px 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color1;
+    color: $color1;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    border-radius: $border-radius;
+  }
+  
+  .btn-follow:hover {
+    background: $color1;
+    color: $color2;
+  }
