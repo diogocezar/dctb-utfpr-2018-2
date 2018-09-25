@@ -1,0 +1,136 @@
+@import 'class_2', 'class_4';
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-sizing($box-sizing...) {
+    -moz-box-sizing: $box-sizing;
+    -webkit-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}
+
+@mixin mg-pd-reset {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    @include mg-pd-reset;
+    @include box-sizing(border-box);
+}
+
+html {
+    font-size: 16px;
+}
+
+ul {
+    @include mg-pd-reset;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: $alabaster-color;
+}
+
+main {
+    width: 90%;
+    max-width: 935px;
+    margin: $margin-at;
+}
+
+header {
+    display: flex;
+    margin: $margin-md;
+    flex-flow: column;
+    .avatar {
+        @include border-radius(50%);
+        margin: $margin-at;
+        @media (min-width: $screen-sm-min) {
+            margin: $margin-lg;
+        }
+    }
+    .desc {
+        text-align: center;
+        @media (min-width: $screen-sm-min) {
+            text-align: left;
+        }
+    }
+    h1,
+    h2 {
+        display: inline-block;
+        margin: $margin-xs;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .links {
+        list-style: none;
+        margin: $margin-xs;
+        li {
+            list-style: none;
+            margin: 0 $margin-sm 0;
+            display: inline-block;
+        }
+    }
+    @media (min-width: $screen-sm-min) {
+        flex-flow: row;
+    }
+}
+
+@import 'class_3';
+
+.btn-follow {
+    @extend %white-btn;
+    margin: $margin-sx;
+    color: $picton-blue-color;
+    &:hover {
+        background: $picton-blue-color;
+        color: $white-color;
+    }
+}
+
+.photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    li {
+        width: 100%;
+        margin: $margin-sm;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .img-hover {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $translucent-black;
+            transition: all 0.3s linear;
+        }
+        &:hover {
+            .img-hover {
+                opacity: 1;
+            }
+        }
+        @media (min-width: $screen-sm-min) {
+            width: 30%;
+        }
+    }
+}

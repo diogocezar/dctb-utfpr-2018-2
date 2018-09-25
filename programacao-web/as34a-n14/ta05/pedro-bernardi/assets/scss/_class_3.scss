@@ -1,0 +1,11 @@
+%white-btn {
+    @include border-radius(px-to-rem(15));
+    padding: px-to-rem(10) px-to-rem(15);
+    border-width: px-to-rem(1);
+    border-style: solid;
+    border-color: $picton-blue-color;
+    font-size: px-to-rem(16);
+    background-color: $alabaster-color;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
