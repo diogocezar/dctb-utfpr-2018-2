@@ -1,0 +1,19 @@
+uma inserção de SVG como se fosse uma imagem;
+
+uma inserção de SVG como background;
+
+uma inserção de SVG com o código inline;
+
+crie uma seção com:
+
+um retângulo, feito com SVG;
+
+um círculo, feito com SVG;
+
+uma linha, feita com SVG;
+
+um polígono feito com SVG;
+
+para o polígono utilize classes para definir suas cores;
+
+na inserção inline de um ícone SVG que ao receber o houver do mouse, troque a cor de algum dos seus elementos;
