@@ -1,0 +1,20 @@
+.svg-background {
+    background-image: url(svgs/geovanna-icon-instagram.svg);
+    color: black;
+    width: 250px;
+    height: 250px;    
+}
+
+.polyg {
+    fill:lime;
+    stroke:purple;
+    stroke-width:10;
+}
+
+#Layer_1 {
+    width: 100px;
+    height: 100px;
+}
+#Layer_1:hover path {
+    fill: red;
+}
