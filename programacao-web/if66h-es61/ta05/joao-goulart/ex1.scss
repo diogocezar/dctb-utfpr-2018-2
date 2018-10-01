@@ -86,16 +86,7 @@ header {
     color: #fff;
 }
 
-.img-hover {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  transition: all 0.3s linear;
-}
+
 
 
 .photos {
@@ -111,6 +102,16 @@ header {
         img {
             width: 100%;
         }
+        .img-hover {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            transition: all 0.3s linear;
+          }
     }
 
     li:hover .img-hover {
