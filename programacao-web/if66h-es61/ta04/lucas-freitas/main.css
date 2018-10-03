@@ -1,0 +1,27 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    
+    align-items: center;
+    text-align: center;
+}
+
+.container div{
+    
+    padding: 20px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+h2, h3, a{
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}
