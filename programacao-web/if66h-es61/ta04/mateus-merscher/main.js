@@ -82,7 +82,7 @@ function load() {
     list.forEach((e) => {
         products.innerHTML +=
             `
-    <div class="card border-dark col-sm-12 mb-3" style="max-width: 25rem;">
+    <div class="card border-dark col-sm-12 col-lg-3">
     <img class="card-img-top " src="`+ e.img + `"/>
     
         <div class="card-body text-dark">
