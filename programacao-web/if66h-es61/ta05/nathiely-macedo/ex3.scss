@@ -1,0 +1,170 @@
+$cor-bg: #fafafa;
+$btn-color: #3897f0;
+$btn-hover: #fff;
+$img-hover:  rgba(0, 0, 0, 0.3);
+$html-font-size: 16px;
+$zero: 0;
+$w90: 90%;
+$mw935: 935px;
+$auto: auto;
+$p30: 30px;
+$w50: 50%;
+$w30: 30%;
+$w100: 100%;
+$p10: 10px;
+$p20: 20px;
+$p6: 6px;
+$p14: 14px;
+$p4: 4px;
+$p40: 40px;
+$p1: 1px;
+$p768: 768px;
+$h1-font-size: 28px;
+$h2-font-size: 24px;
+$tempo: 0.3s;
+
+@mixin bb($bs) {
+  -webkit-box-sizing: $bs;
+    -moz-box-sizing: $bs;
+          box-sizing: $bs;
+  
+}
+* {
+  margin: $zero;
+  padding: $zero;
+  @include bb(border-box);
+
+}
+
+@mixin br($bor) {
+  -webkit-border-radius: $bor;
+    -moz-border-radius: $bor;
+         border-radius: $bor;
+}
+
+html{
+  font-size: $html-font-size;
+}
+
+ul {
+  padding: $zero;
+  margin: $zero;
+}
+
+img {
+  border: $zero;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+    background: $cor-bg;
+}
+
+main {
+  width: $w90;
+  max-width: $mw935;
+  margin: $zero $auto;
+}
+
+header {
+  display: flex;
+  margin: $p30 $zero;
+  flex-flow: column;
+  .avatar { @include br($w50); 
+      margin: $zero $auto;
+  }
+  .desc {
+    text-align: center;
+  }
+  h1, h2 {
+    display: inline-block;
+    margin: $p10 $zero;
+  }
+  h1{
+    font-size: $h1-font-size;
+  }
+  
+  h2 {
+    font-size: $h2-font-size;
+  }
+  
+  .links {
+    list-style: none;
+    margin: $p10 $zero;
+    li {
+      list-style: none;
+      margin: $zero $p20 $zero $zero;
+      display: inline-block;
+    }
+  }
+}  
+
+.btn-follow {
+  margin: $zero $p20;
+  padding: $p6 $p14;
+  border-width: $p1;
+  border-style: solid;
+  border-color: $btn-color;
+  color: $btn-color;
+  @include br($p4);
+  :hover{
+    background: $btn-color;
+    color: $btn-hover;
+  }
+}
+
+.photos {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  li {
+    width: $w100;
+    margin: $p20 $zero;
+    position: relative;
+    img {
+      width: $w100;
+    }
+    .img-hover {
+      opacity: $zero;
+      position: absolute;
+      top: $zero;
+      left: $zero;
+      width: $w100;
+      height: $w100;
+      background: $img-hover;
+      transition: all $tempo linear;
+    }
+    :hover .img-hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $p768 ) {
+
+  header {
+    flex-flow: row;
+    .avatar {
+      margin: $zero $p40;
+    }
+    .desc {
+      text-align: left;
+    }
+  }
+  .photos {
+      li {
+  	  width: $w30;
+    }
+  }
+}
+.botao{
+    @extend .btn-follow;
+    padding: 1px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+}
