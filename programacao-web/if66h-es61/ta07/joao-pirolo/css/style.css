@@ -1,0 +1,97 @@
+body{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #f2f2f2;
+	padding: 30px;
+	background: #3c2357;
+	background: -webkit-linear-gradient(#5e42a5, #32254f);
+	background: -o-linear-gradient(#4db852, #32254f);
+	background: -moz-linear-gradient(#4db852, #32254f);
+	background: linear-gradient(#4db852, #32254f);
+}
+h2{
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: black;
+	
+}
+.flex {
+	display: flex;
+}
+
+
+.container {
+	background-color: white;
+	max-width: 250px;
+	margin: 0 auto;
+	border: 4px solid rgb(25, 24, 49);
+	align-content: center
+}
+#icon {
+	background-image: url(assets/snapchat.svg) ;
+	width: 200px;
+	height: 200px;
+}
+
+h1{
+	text-align:center;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+	}
+
+.column {
+		flex-direction: column;
+	}
+	/* Flex Container */
+.container1 {
+		background-color: rgb(103, 208, 216);
+		max-width: 250px;
+		margin: 0 auto;
+		display: flex;
+		border: white;
+	}
+	
+	.circle{
+		 stroke: white;
+		 stroke-width: 5;
+		 transition: 1s;
+	}
+	.circle:hover {
+		fill: #fff;
+		stroke: red;
+	}
+	.rect{
+		stroke: white;
+		stroke-width: 8;
+		transition: 1s;
+	}
+	.rect:hover{
+		fill: yellow;
+		stroke: purple;
+	}
+	.line{
+	stroke:white;
+	 stroke-width:7;
+	 transition: 1s;
+	}
+	.line:hover{
+		stroke: lightcoral;
+	}
+	.polygon{
+	fill: lawngreen;
+    stroke:red;
+	stroke-width:10;
+	transition: 1s;
+	}
+	.polygon:hover{
+		fill: red;
+		stroke:lawngreen;	
+	}
