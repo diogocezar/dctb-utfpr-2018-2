@@ -1,0 +1,45 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.menu{
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+}
+
+.produtos, .contato{
+    background-color: whitesmoke;
+}
+
+.produtos{
+    margin-bottom: 1rem;
+}
+
+.conteudo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.cont{
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.conteudo h2{
+    color: red;
+    font-family: 'K2D', sans-serif;
+}
+
+.conteudo p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+#contato{
+    padding-bottom: 1rem;
+}

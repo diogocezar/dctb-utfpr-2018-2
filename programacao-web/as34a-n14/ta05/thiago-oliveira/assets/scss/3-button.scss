@@ -1,0 +1,9 @@
+.my-button{
+  margin: 0 20px;
+  padding: 6px 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $blue;
+  color: $blue;
+  @include border-radius(4px);
+}

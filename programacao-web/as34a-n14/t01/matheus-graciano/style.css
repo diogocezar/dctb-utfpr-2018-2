@@ -1,0 +1,991 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+.container{
+  width: calc(100%-70px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px; 
+  padding-left: 15px;
+}
+
+div{
+  display: block;
+}
+
+@media screen and (max-width: 1200px){
+  .container{
+    max-width: 1140px;;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .container{
+    max-width: 960px;;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    max-width: 720px;;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .container{
+    max-width: 540px;;
+  }
+}
+/* Menu */
+
+header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #22223b;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1008px){
+  header{
+    justify-content: flex-start;
+  }
+}
+
+input#control-nav {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+header #logo{
+  width: 313px;
+  height: 70px;
+  margin-right: 140px;
+}
+
+@media screen and (max-width: 1160px){
+  header #logo{
+    margin-right: auto;
+  }
+}
+
+
+.menu-item{
+  position: relative;
+  float: left;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+
+.menu-item a{
+  position: relative;
+  float: left;
+  padding: 1em;
+  text-decoration: none;
+  color: #f2e9e4;
+  cursor: pointer;
+}
+
+
+.menu-item a:hover{
+  color:rgba(255,255,255,0.7);
+}
+
+@media screen and (max-width: 1008px) {
+  header .control-nav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 30px;
+    padding: 5px 0;
+    border: solid #fff;
+    border-width: 3px 0;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  header .control-nav:before {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #333;
+  }
+
+  header .control-nav-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    border-left: 1px solid #ccc;
+    background: #22223b;
+    overflow-x: auto;
+    z-index: 999;
+    transition: all 500ms ease;
+    transform: translate(100%, 0);
+  }
+}
+
+#control-nav:checked ~ .control-nav-close {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#control-nav:checked ~ nav {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* Home */
+
+section#home{
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(assets/images/geovanna-bg-home.jpg);
+  background-position: 0 0;
+}
+
+.content-home{
+  font-size: 1.5em;
+  font-family: AfterMidnite,sans-serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+.content-home h2{
+  font-size: 6.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-home h2 {
+    font-size: 5.5rem; }
+}
+@media screen and (max-width: 992px) {
+  .content-home h2 {
+    font-size: 5rem; } 
+}
+@media screen and (max-width: 768px) {
+  .content-home h2 {
+    font-size: 4rem; } 
+}
+@media screen and (max-width: 480px) {
+  .content-home h2 {
+    font-size: 3rem; } 
+}
+@media screen and (max-width: 320px) {
+  .content-home h2 {
+    font-size: 2.5rem; } 
+}
+
+.content-home h3{
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-home h3 {
+    font-size: 3.5rem; } 
+}
+@media screen and (max-width: 992px) {
+  .content-home h3 {
+    font-size: 3rem; } 
+}
+@media screen and (max-width: 768px) {
+  .content-home h3 {
+    font-size: 2rem;
+    margin-top: 2rem; } 
+}
+@media screen and (max-width: 320px) {
+  .content-home h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem; } 
+}
+
+.content-home h4{
+  font-family: TrajanPro-Regular,serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+.content-home h4 .h1{
+  color: #9a8c98;
+} 
+
+.content-home button{
+  margin-top: 4rem;
+}
+
+#button{
+    border: 1px solid #f2e9e4;
+    background-color: transparent;
+    color: #f2e9e4;
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+
+}
+
+#button:hover{
+  transition: all 0.3s;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+}
+
+
+@media screen and(max-width:1200px){
+  .content-home h2{font-size: 5.5rem;}
+}
+
+
+/* Presentation */
+
+section#presentation{
+  background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)), url(assets/images/geovanna-bg-presentation.jpg);
+  background-position: 50%;
+}
+
+.content-presentation button{
+  margin-top: 4rem;
+}
+
+#button-p{
+  border: 1px solid #f2e9e4;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+  cursor: pointer;
+  width: 260px;
+  border-radius: 40px;
+  height: 60px;
+  line-height: 38px;
+  font-family: Montserrat,sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+#button-p:hover{
+transition: all 0.3s;
+background-color: transparent;
+color: #f2e9e4;
+}
+
+.content-presentation{
+  text-align: center;
+}
+
+.content-presentation h2{
+  font-size: 2rem;
+}
+
+.content-presentation h2, .content-presentation h3{
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+.content-presentation h3{
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+}
+
+.content-presentation img{
+  margin: 2.5rem 0;
+  height: 80px;
+}
+
+.content-presentation img{
+  left: 50%;
+  position: center;
+}
+
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+a{
+  color: #f2e9e4;
+  text-decoration: none;
+}
+
+/* About */
+
+.config{
+  position: relative;
+  max-width: 58.333333%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 992px){
+  .config {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+}
+
+@media screen and (max-width: 768px){
+.config {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+@media screen and(max-width: 576px){
+.config {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+.content-about{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+}
+
+#content-about{
+  margin-left: 18.5vw;
+}
+@media screen and (max-width: 480px){
+  #content-about{
+    margin-left: auto;
+  }
+}
+  
+
+#content-about h2{
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-about h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem; 
+  } 
+}
+
+#content-about h3{
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-about h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem; 
+  } 
+}
+
+#content-about p {
+  font-family: Montserrat,sans-serif;
+  color: #22223b;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-about p {
+    text-align: center; } }
+
+.p {
+  font-size: 1em;
+}
+.p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#content-about img{
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-about img {
+    height: 100px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0) !important;
+  } 
+}
+@media screen and (max-width: 480px) {
+  #content-about img {
+    height: 80px; 
+  } 
+}
+
+/* Services */
+
+section#services{
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)),url(assets/images/geovanna-bg-services.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#content-services h2 {
+  font-family: TrajanPro-Regular,serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #f2e9e4;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; } 
+}
+
+#content-services img{
+  height: 120px;
+  margin-bottom: 3rem;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%)!important;
+}
+
+@media screen and (max-width: 768px) {
+  #content-services img {
+    height: 100px;
+    margin-bottom: 2rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-services img {
+    height: 80px;
+    margin-bottom: 1.5rem; } 
+}
+
+.divisao{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.um{
+  position: relative;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.dois{
+  position:relative;
+  float:left;
+  width: 50%;
+  text-align:center;
+}
+
+@media screen and (max-width: 992px){
+  .um, .dois{
+      width: 50%;
+  }
+}
+
+@media screen and(max-width: 768px){
+  .um, .dois{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .um, .dois{
+      width: 100%;
+  }
+}
+
+#content-services h3 {
+  font-family: TrajanPro-Regular,serif;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #9a8c98;
+  margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #content-services h3 .hl {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem; } 
+}
+
+@media only screen and (max-width: 480px) {
+    #content-services h3 .hl {
+      font-size: 2rem;
+      margin-bottom: 2rem; } 
+}
+
+@media only screen and (max-width: 768px) {
+  #content-services h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem; } 
+}
+
+@media only screen and (max-width: 480px) {
+  #content-services h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; } 
+}
+
+#content-services p {
+  font-family: Montserrat,sans-serif;
+  color: #f2e9e4;
+  text-align: center;
+  padding: 0 15%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-services p {
+    padding: 0;
+    margin-bottom: 4rem;
+    font-size: 1rem; } 
+}
+
+#content-services button{
+  margin-top: 4rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%)!important;
+}
+
+/* Depositions */
+
+#content-depositions h2 {
+  font-family: AfterMidnite,sans-serif;
+  color: #22223b;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  #content-depositions h2{
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 480px){
+  #content-depositions h2{
+    font-size: 4rem;
+  }
+}
+
+#content-depositions img{
+  height: 120px;
+  width: 120px;
+  margin-bottom: 3rem;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%)!important;
+}
+
+@media screen and (max-width: 768px) {
+  #content-depositions img {
+    height: 100px;
+    width: 100px; } }
+@media screen and (max-width: 480px) {
+  #content-depositions img {
+    height: 80px;
+    width: 80px; } }
+
+#content-depositions h3{
+  color: #9a8c98;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0 30%;
+  margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 992px){
+  #content-depositions h3{
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 768px){
+  #content-depositions h3{
+    font-size: 1.1rem;
+  }
+}
+
+/* Contacts */
+
+section#contacts{
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)), url(assets/images/geovanna-bg-contact.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#content-contacts{
+  text-align: center;
+}
+
+#content-contacts h2 {
+  font-family: AfterMidnite,sans-serif;
+  color: #f2e9e4;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts h2 {
+    font-size: 4rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts h2 {
+    font-size: 3rem; } 
+}
+
+#content-contacts img{
+  height: 120px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts img {
+    height: 100px; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts img {
+    height: 80px; } 
+}
+
+#content-contacts h3{
+  font-family: TrajanPro-Regular, serif;
+  color: #c9ada7;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts h3 {
+    font-size: 1.2rem; } 
+}
+
+#content-contacts h4{
+  font-family: TrajanPro-Regular,serif;
+  color: #c9ada7;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts h4 {
+    font-size: 1.3rem; } 
+}
+
+@media screen and (max-width: 480px) {
+  #content-contacts h4 {
+    font-size: 1.2rem; } 
+}
+
+#content-contacts p.bigger{
+  font-size: 2rem;
+}
+
+#content-contacts p{
+  font-size: 1.2em;
+  color: #f2e9e4;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts p {
+    font-size: 0.9rem; } 
+}
+
+p{
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+#content-contacts p small {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+small{
+  font-size: 80%;
+  font-weight: 400;
+}
+
+#content-contacts ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#content-contacts ul li {
+  border: 2px solid #F2E9E4;
+  padding: 13px;
+  border-radius: 50%;
+  list-style-type: none; 
+}
+
+#content-contacts ul li:first-child {
+  margin-right: 15px; 
+}
+
+#content-contacts ul li a img {
+  height: 35px;
+  width: 35px; 
+}
+
+#content-contacts ul li a img {
+  height: 35px;
+  width: 35px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #content-contacts ul li a img {
+    height: 20px;
+    width: 20px; 
+  } 
+}
+
+
+
+/* Section */
+
+section {
+  padding-top: 7rem;
+  padding-bottom: 5rem; }
+  @media only screen and (max-width: 768px) {
+    section {
+      padding-top: 6rem;
+      padding-bottom: 4rem; } }
+  @media only screen and (max-width: 480px) {
+    section {
+      padding-top: 5rem;
+      padding-bottom: 3rem; } }
+
+/*  */
+
+
+body{
+  font-family: TrajanPro-Regular, serif;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+body{
+  display: block;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h3, h3{
+  font-size: 1.5rem;
+}
+
+.h4, h4{
+  font-size: 1.5rem;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+body,html{
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: TrajanPro-Regular;
+  src: url('assets/fonts/TrajanPro-Regular.otf');
+}
+
+@font-face {
+  font-family: AfterMidnite;
+  src: url('assets/fonts/AfterMidnite.otf');
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: url("http://haloxp.com/codepen/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-next{
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.arrow-prev{
+  left: 0;
+}
+
+  &.light {
+    color: white;
+    .arrow {
+      background: url("http://haloxp.com/codepen/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
+    }
+  }
+
+ 
+  @media (max-width: 480px) {
+    .arrow, &.light .arrow {
+      background-size: 10px;
+      background-position: 10px 50%;
+    }
+  }
+  
+
+  [id^="target-item"] {
+    display: none;
+  }
+
+
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+
+
+  *:target ~ .item-1 {
+    opacity: 0;
+  }
+
+
+  #target-item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+
+  #target-item-2:target ~ .item-2, #target-item-3:target ~ .item-3, #target-item-4:target ~ .item-4, #target-item-5:target ~ .item-5{
+    z-index: 3;
+    opacity: 1;
+  }
+
+  /* Config Carrossel */
+
+.carousel-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-wrapper p{
+  text-align: center;
+  color: #4a4e69;
+}
+
+.carousel-wrapper img{
+  height: 120px;
+  width: 120px;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.carousel-wrapper h4{
+  color: #4a4e69;
+}
+
+.carousel-wrapper h5{
+  color: #c9ada7;
+  font-size: 1.25rem;
+}

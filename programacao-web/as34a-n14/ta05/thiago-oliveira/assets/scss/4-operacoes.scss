@@ -1,0 +1,10 @@
+//conversion to rem
+@function convertToRem($pixel){
+    $rem: $pixel / 16px;
+    @return #{$rem}rem;
+}
+//call the function and input default size if the conversion fails
+@mixin apply-font($size){
+    font-size: $size;
+    font-size: convertToRem($size);
+}

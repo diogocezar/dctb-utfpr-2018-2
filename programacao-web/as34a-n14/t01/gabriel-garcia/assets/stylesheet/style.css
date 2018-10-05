@@ -1,0 +1,710 @@
+body{
+    margin: 0px;
+    cursor: grab;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    margin: 0px;
+    font-weight: normal;
+}
+
+h2{
+    margin: 0px;
+    font-weight: normal;
+}
+
+h3{
+    margin: 0px;
+    font-weight: normal;
+}
+
+h4{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+h5{
+    margin: 0px;
+}
+
+p{
+    font-weight: lighter;
+    padding-top: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: rgb(106, 106, 143); 
+    z-index: 99999;
+}
+
+/* -------------------------------- navbar -------------------------------- */
+
+#navbar{
+    background-color: #22223B;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 999;
+}
+
+#navbar-container{
+    width: 1110px;
+    margin: 0 auto
+}
+
+#navbar-item-container{
+    display: flex;
+    float: right;
+    height: 70px;
+    width: 645px;
+}
+
+.navbar-item{
+    text-align: center;
+    font-family: Trajan Pro;
+    font-size: 16.5px;
+    text-decoration: none;
+    color: #e6e6e6;
+    float: right;
+    margin: 18px;
+    margin-top: 30px;
+}
+
+.navbar-content{
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navlogo{
+    margin-top: 5px;
+    float: left;
+    height: 60px;
+    width: auto;
+}
+
+.underline {
+  display: inline-block;
+  vertical-align: left;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  right: 102%;
+  bottom: 10px;
+  background: #9A8C98;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.underline:hover:before, .underline:focus:before, .underline:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* -------------------------------- home -------------------------------- */
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(46, 46, 78);
+}
+
+#home::before{
+    content: '';
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/geovanna-bg-home.jpg");
+    background-size: 145%;
+    opacity: 0.15;
+}
+
+#home-container{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    top: 50%;
+    margin-top: -275px;
+}
+
+#home-title{
+    padding-top: 70px;
+    font-family: After Midnight;
+    font-size: 3.8em;
+    color: white;
+    height: 120px;
+}
+
+#home-subtitle{
+    font-family: After Midnight;
+    font-size: 2.35em;
+    color: white;
+    height: 120px;
+    margin-top: 12px;
+}
+
+#home-description{
+    margin-top: 30px;
+    font-family: Trajan Pro;
+    font-size: 21px;
+    color: white;
+}
+
+#home-span{
+    color: #9A8C98;
+}
+
+#home-contact-btn{
+    font-size: 15px;
+    margin-top: 55px;
+    font-family: Arial;
+    font-weight: lighter;
+    background: transparent;
+    width: 260px;
+    height: 60px;
+    color: white;
+    border-radius: 30px;
+    border-color: white;
+    border-width: 1.0px;
+    border-style: solid;
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+    transition: 0.5s;
+}
+
+#home-contact-btn:hover{
+    background-color: white;
+    color: #22223B;
+}
+
+/* -------------------------------- presentation -------------------------------- */
+
+#presentation{
+    width: 100%;
+    height: 520px;
+    background-color: #3b415e;
+}
+
+#presentation::before{
+    content: '';
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 520px;
+    background: url("../images/geovanna-bg-presentation.jpg");
+    background-size: 140%;
+    background-position: center;
+    opacity: 0.18;
+}
+
+#presentation-container{
+    width: 100%;
+    height: 70%;
+    margin-top: 40px;
+    text-align: center;
+    position: absolute;
+}
+
+#presentation-description{
+    color: white;
+    font-family: Trajan Pro;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 1.155rem;
+    margin-top: 57px;
+}
+
+#presentation-icon{
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 60px;
+    height: 60px;
+}
+
+#presentation-details{
+    color: white;
+    margin-top: 55px;
+    font-family: Montserrat;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#presentation-btn{
+    font-size: 15px;
+    margin-top: 30px;
+    font-family: Montserrat Light;
+    font-weight: lighter;
+    background: white;
+    width: 260px;
+    height: 60px;
+    color: rgb(120, 102, 131);
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+    transition: 0.5s;
+}
+
+#presentation-btn:hover{
+    background: transparent;
+    color: white;
+}
+
+/* -------------------------------- about-us -------------------------------- */
+
+#about-us{
+    width: 100%;
+    height: 950px;
+    background-color: #F2E9E4;
+    position: relative;
+}
+
+#about-us-external-container{
+    width: 1110px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+#about-us-container{
+    width: 700px;
+    height: 900px;
+}
+
+#about-us-title{
+    font-family: After Midnight;
+    color: rgb(41, 44, 58);
+    font-size: 3.4em;
+    padding-top: 65px;
+}
+
+.about-us-subtitle{
+    font-family: Trajan Pro;
+    color: #9a8c98;
+}
+
+.about-us-description{
+    color: #22223b;
+    font-family: Montserrat Light;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#about-us-icon{
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 60px;
+}
+
+/* -------------------------------- services -------------------------------- */
+
+#services{
+    width: 100%;
+    height: 820px;
+    background-color: #272b3b;
+}
+
+#services::before{
+    content: '';
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 820px;
+    background: url("../images/geovanna-bg-services.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.12;
+}
+
+#services-container{
+    width: 1000px;
+    height: 760px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+}
+
+#services-title-container{
+    width: 800px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+#services-title{
+    text-align: center;
+    font-family: Trajan Pro;
+    font-size: 1.75em;
+    color: white;
+    padding-top: 95px;
+}
+
+#services-icon{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.services-internal-container{
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.services-internal-title{
+    margin: 0 auto;
+    width: 350px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Trajan Pro;
+    font-size: 28px;
+    color: #9a8c98;
+}
+
+.services-internal-subtitle{
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-family: Trajan Pro;
+    color: #9a8c98;
+}
+
+.services-internal-description{
+    width: 360px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    text-align: center;
+}
+
+#services-btn{
+    position: relative;
+    left: 50%;
+    margin-left: -130px;
+    font-size: 15px;
+    margin-top: 30px;
+    font-family: Montserrat Light;
+    font-weight: lighter;
+    background: white;
+    width: 260px;
+    height: 60px;
+    color: rgb(120, 102, 131);
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+#services-btn:hover{
+    background: transparent;
+    color: white;
+}
+
+/* -------------------------------- depoiments -------------------------------- */
+
+#depoiments{
+    width: 100%;
+    height: 1100px;
+    background-color: #F2E9E4;
+}
+
+#depoiments-title-container{
+    width: 420px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#depoiments-title{
+    font-family: After Midnight;
+    text-align: center;
+    color: rgb(41, 44, 58);
+    font-size: 84px;
+    padding-top: 65px;
+}
+
+#depoiments-icon{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+
+#depoiments-description{
+    font-family: Trajan Pro;
+    color: #9a8c98;
+    font-size: 21px;
+    text-align: center;
+    line-height: 26px;
+    padding-top: 45px;
+}
+
+#depoiments-container{
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.depoiments-internal-container{
+    float: left;
+    width: 550px;
+    height: 500px;
+}
+
+.depoiments-messages{
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 400px;
+    font-family: Trajan Pro;
+    font-size: 17px;
+    color: #595d61;
+    text-align: center;
+}
+
+.depoiments-perfil-image{
+    width: 120px;
+    height: 120px;
+    padding-top: 20px;
+    border-top: 4px solid;
+    border-top-color: #c9ada7;
+    margin: 0 auto;
+}
+
+.depoiments-name{
+    font-family: Trajan Pro;
+    color: #3e4042;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.depoiments-date{
+    font-family: Montserrat;
+    color: #c9ada7;
+    font-size: 18px;
+    text-align: center;
+}
+
+#depoiments-radio-content{
+    margin: 0 auto;
+    width: 71px;
+    height: 60px;
+    margin-top: 25px;
+}
+
+/* -------------------------------- Contact -------------------------------- */
+
+#contact{
+    width: 100%;
+    height: 910px;
+    background-color: rgb(46, 46, 78);
+}
+
+#contact::before{
+    content: '';
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 910px;
+    background: url("../images/geovanna-bg-contact.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+}
+
+#contact-container{
+    width: 100%;
+    height: 780px;
+    bottom: 0px;
+    margin-bottom: 45px;
+    padding-top: 85px;
+}
+
+#contact-title{
+    font-family: After Midnight;
+    font-size: 84px;
+    color: white;
+    text-align: center;
+    height: 100px;
+    margin-bottom: 50px;
+    line-height: 120px;
+}
+
+#contact-subtitle{
+    font-family: Trajan Pro;
+    color: #c9ada7;
+    width: 350px;
+    margin: 0 auto;
+    line-height: 1.2;
+    font-size: 24.5px;
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 84px;
+}
+
+#contact-items-01{
+    font-family: Trajan Pro;
+    color: #c9ada7;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+#contact-items-02{
+    font-family: Trajan Pro;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+#contact-items-03{
+    font-family: Trajan Pro;
+    color: white;
+    font-size: 12.5px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 35px;
+}
+
+#contact-items-04{
+    font-family: Trajan Pro;
+    color: #c9ada7;
+    text-align: center;
+    font-size: 20.5px;
+    margin-bottom: 7px;
+}
+
+#contact-items-05{
+    font-family: Trajan Pro;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+#contact-icons-container{
+    width: 162px;
+    height: 78px;
+    margin: 0 auto;
+}
+
+#contact-image{
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+}
+
+.contact-btn{
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 13px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    margin: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+
+    #navbar-container{
+        width: 930px;
+    }
+
+    .navbar-item{
+        font-size: 14px;
+    }
+
+    #navbar-item-container{
+        width: 545px;
+    }
+
+    /* -------------------------------- home -------------------------------- */
+
+    #home-title{
+        font-size: 52px;;
+    }
+
+    #home-subtitle{
+        font-size: 32px;
+        margin-top: 0px;
+    }
+
+    /* -------------------------------- about-us -------------------------------- */
+
+    #about-us-external-container{
+        width: 900px;
+    }
+
+    #about-us-container{
+        width: 570px;
+    }
+
+    /* -------------------------------- services -------------------------------- */
+
+    #services-btn{
+        margin-top: 60px;
+    }
+
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sidenav.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="grid grid-area">
+        <div class="nav">
+            <header>
+                <h1>
+                    Programação Web - Flexbox usage
+                </h1>
+            </header>
+        </div>
+
+        <div class="sidenav">
+            <div>
+                <h2 class="side-title">Flex Container</h2>
+                <ul>
+                    <li>
+                        <a href="#display">
+                            display
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flex-direction">
+                            flex-direction
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flex-wrap">
+                            flex-wrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flex-flow">
+                            flex-flow
+                        </a>
+                    </li>
+                    <li> <a href="#flex-content">
+                            justify-content
+                        </a>
+                    </li>
+                    <li> <a href="#align-items">
+                            align-items
+                        </a></li>
+                    <li>
+                        <a href="#align-content">
+                            align-content
+                        </a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="side-title">Flex Item</h2>
+                <ul>
+                    <li>
+                        <a href="#flex-grow">
+                            flex-grow
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flex-basis">
+                            flex-basis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flex-shrink">
+                            flex-shrink
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#flex">
+                            flex
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#order">
+                            order
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#align-self">
+                            align-self
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="main-content">
+                <h1>Flex Container</h1>
+            </div>
+            <section id="display" class="content-style">
+                <h2> 1 • display </h2>
+                <p>
+                    Tendo seus filhos como flex-itens os elementos vão se manter inline e se ajustar automaticamente por padrão. </p>
+                <p>
+                    exemplo do mundo real: Galeria de Fotos
+                </p>
+                <div class="container flex">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </section>
+
+            <section id="flex-direction" class="content-style">
+                <h2> 2 • flex-direction </h2>
+                <p>
+                    Define a direção em que os itens serão exibidos. </p>
+                <p>
+                    exemplo do mundo real: Exibição de itens
+                </p>
+                <div class="container column-reverse">
+                    <div class="item-direction">Item 1</div>
+                    <div class="item-direction">Item 2</div>
+                    <div class="item-direction">Item 3</div>
+                </div>
+                <div class="container row">
+                    <div class="item-direction">Item 1</div>
+                    <div class="item-direction">Item 2</div>
+                    <div class="item-direction">Item 3</div>
+                </div>
+            </section>
+
+            <section id="flex-wrap" class="content-style">
+                <h2> 3 • flex-wrap </h2>
+                <p>
+                    Define se os itens flex vão quebrar a linha ou não</p>
+                <p>
+                    exemplo do mundo real: Galeria de Fotos
+                </p>
+                <div class="container wrap">
+                    <div class="item-wrap"><img src="https://picsum.photos/350/350/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/350/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/350/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/350/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/350/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/350/?random"></div>
+                </div>
+            </section>
+
+            </section>
+            <section id="flex-flow" class="content-style">
+                <h2> 4 • flex-flow </h2>
+                <p>
+                    Esse cara é um atalho pro flex-direction e flex-wrap, para os preguiçosos</p>
+                <p>
+                    exemplo do mundo real: Exibição de itens
+                </p>
+                <div class="container column-nowrap">
+                    <div class="item-direction">Item 1</div>
+                    <div class="item-direction">Item 2</div>
+                    <div class="item-direction">Item 3</div>
+                    <div class="item-direction">Item 4</div>
+                    <div class="item-direction">Item 5</div>
+                    <div class="item-direction">Item 6</div>
+
+
+                </div>
+            </section>
+            <section id="justify-content" class="content-style">
+                <h2> 5 • justify-content </h2>
+                <p>
+                    Esse carinha aqui alinhas os itens de acordo com a direcao, serve em casos que voc"e deseja alinhar um item na ponta e outro
+                    na esquerda</p>
+                <p>
+                    exemplo do mundo real: navigation bar com itens alinhado no final
+                </p>
+                <div>
+                    <ul class="nav-example">
+                        <li class="li-example"><a class="active" href="#home">Home</a></li>
+                        <li class="li-example"><a href="#news">News</a></li>
+                        <li class="li-example"><a href="#contact">Contact</a></li>
+                        <li class="li-example"><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+            </section>
+            <section id="align-items" class="content-style">
+                <h2> 6 • align-items </h2>
+                <p>
+                    O align-items alinha os flex itens de acordo com o eixo do container. Ok, mas que merda isso significa? Bom, ele só alinha
+                    o item em relação ao container rsrsrsrsrs
+                </p>
+                <p>
+                    exemplo do mundo real: Galeria de fotos pq to sem criatividade
+                </p>
+
+                <div class="container flex-start">
+                    <div class="item-wrap"><img src="https://picsum.photos/350/200/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/450/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/550/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/300/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/650/?random"></div>
+                </div>
+            </section>
+            <section id="align-content" class="content-style">
+                <h2> 7 • align-content </h2>
+                <p>
+                    O align-content alinha os flex itens de acordo com o eixo vertical. Ok, mas que merda isso significa? Bom, ele só alinha
+                    o item em relação ao eixo vertical ora bolas, mas precisa existir mais de uma linha, então tem que ter
+                    wrap
+                </p>
+                <p>
+                    exemplo do mundo real: Galeria de fotos pq to sem criatividade e já to no ctrl c e ctrl v
+                </p>
+
+                <div class="container wrap align-content-end">
+                    <div class="item-wrap"><img src="https://picsum.photos/350/200/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/450/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/550/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/300/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/650/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/550/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/500/?random"></div>
+                    <div class="item-wrap"><img src="https://picsum.photos/350/750/?random"></div>
+                </div>
+            </section>
+            <div class="main-content">
+                <h1>Flex Item</h1>
+            </div>
+            <section id="flex-grow" class="content-style">
+                <h2> 8 • flex-grow </h2>
+                <p>
+                    Define a habilidade de um flex item crescer. Por padrão o valor é zero, assim os flex itens ocupam um tamanho máximo relacionado
+                    o conteúdo interno deles ou ao width definido.
+                </p>
+                <p>
+                    Sim, eu copiei essa explicação do origamid, eu já estou há 4 horas nisso
+                </p>
+                <p>
+                    exemplo do mundo real: Exibição de itens, onde 1 item pode ser maior que os outros e ele se expande conforme o tamanho do
+                    conteúdo
+                </p>
+
+                <div class="container ">
+                    <div class="item-grow grow1">1</div>
+                    <div class="item-grow grow1">TestandoTestando2TestandoTestando2TestandoTestando2</div>
+                    <div class="item-grow grow1">3</div>
+                </div>
+            </section>
+            <section id="flex-basis" class="content-style">
+                <h2> 9 • flex-basis </h2>
+                <p>
+                    Indica o tamanho inicial do flex item antes da distribuição do espaço restante.
+                </p>
+
+                <p>
+                    exemplo do mundo real: Exibição de itens
+                </p>
+
+                <div class="container-box basis-numero-container ">
+                    <div class="item-grow basis-110-grow-1">sem inspiração</div>
+                    <div class="item-grow basis-110-grow-1">sem motivação</div>
+                    <div class="item-grow basis-110-grow-1">quero dormir</div>
+                    <div class="item-grow basis-110-grow-1">Pq eu não fiz um layout simples como todo mundo?</div>
+                    <div class="item-grow basis-600-grow-1">5 horas e contando</div>
+                </div>
+            </section>
+            <section id="flex-shrink" class="content-style">
+                <h2> 10 • flex-shrink </h2>
+                <p>
+                    Define a capacidade de redução de tamanho do item. </p>
+
+                <p>
+                    exemplo do mundo real: Exibição de fotos
+                </p>
+
+                <div class="container-box flex">
+                    <div class="item shrink-1"></div>
+                    <div class="item shrink-1"></div>
+                    <div class="item shrink-1"></div>
+                    <div class="item shrink-1"></div>
+                    <div class="item shrink-1"></div>
+                </div>
+            </section>
+            <section id="flex" class="content-style">
+                <h2> 11 • flex </h2>
+                <p>
+                    Aquele atalho maroto pra garotada preguiçosa, dessa vez para as propriedades flex-grow, flex-shrink e flex-basis </p>
+
+                <p>
+                    exemplo do mundo real: Exibição de itens
+                </p>
+
+                <div class="container-box">
+                    <div class="item-grow basis-auto">Palavra 1</div>
+                    <div class="item-grow basis-auto">2</div>
+                    <div class="item-grow basis-auto-grow-2">3</div>
+                    <div class="item-grow basis-auto-width">4</div>
+                    <div class="item-grow basis-auto-grow-0">5</div>
+                </div>
+            </section>
+            <section id="order" class="content-style">
+                <h2> 12 • order </h2>
+                <p>
+                    Modifica a ordem dos flex itens. Sempre do menor para o maior, assim order: 1, aparece na frente de order: 5.
+
+                    <p>
+                        exemplo do mundo real: Exibição de itens
+                    </p>
+
+                    <div class="container-box">
+                        <div class="item-grow order3 flex-grow">1 - eae</div>
+                        <div class="item-grow order2 flex-grow">2 - professor</div>
+                        <div class="item-grow order-1 flex-grow">3 - kk</div>
+                        <div class="item-grow order1 flex-grow">4 - manera nessas tarefa</div>
+                    </div>
+            </section>
+            <section id="align-self" class="content-style">
+                <h2> 13 • align-self </h2>
+                <p>
+                    O align-self serve para definirmos o alinhamento específico de um único flex item dentro do nosso container. Caso um valor
+                    seja atribuído, ele passara por cima do que for atribuído no align-items do container.
+                    <p>
+                        exemplo do mundo real: Exibição de itens
+                    </p>
+
+                    <div class="container-self">
+                        <div class="item-self self-end">1 - to</div>
+                        <div class="item-self self-start">2 - mó</div>
+                        <div class="item-self">3 - bugado</div>
+                        <div class="item-self center">4 - vou dormir agora</div>
+                    </div>
+            </section>
+
+        </div>
+        <div class="footer">
+            <p>Goulart © 2018 - Programação Web</p>
+            <p>Baseado no layout do site <a href="https://origamid.com/projetos/flexbox-guia-completo/" target="_blank">origamid</a></p>
+            <p>TA02 mais trabalhosa que T01 :(</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+body{
+	height: auto;
+	width: auto;
+	background-color: orange;
+}
+
+
+.P1item{
+	height: 100px;
+	width: 250px;
+	background-color: white;
+	margin: 5px;
+}
+
+.P2item{
+	height: 100px;
+	width: 250px;
+	background-color: white;
+	margin: 5px;
+}
+
+.P3item{
+	height: 100px;
+	width: 250px;
+	background-color: white;
+	margin: 5px;
+}
+
+.P4item{
+	height: 100px;
+	width: 250px;
+	background-color: white;
+	margin: 5px;
+}
+
+.P5item{
+	height: 100px;
+	width: 250px;
+	background-color: white;
+	margin: 5px;
+}
+
+.P6item{
+	height: 100px;
+	width: 250px;
+	background-color: white;
+	margin: 5px;
+}
+/*                         */
+/*Utilizando FLEX-DIRECTION*/
+/*                         */
+#propriedade1{
+	border: 2px solid black;
+	margin: 2px 0;
+    height:150px;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+/*                         */
+/*Utilizando FLEX-WRAP     */
+/*                         */
+#propriedade2{
+	border: 2px solid black;
+	margin: 2px 0;
+	height:150px;
+	width: auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/*                         */
+/*Utilizando FLEX-FLOW     */
+/*                         */
+#propriedade3{
+	border: 2px solid black;
+	margin: 2px 0;
+	height:150px;
+	width: auto;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+/*                          */
+/*Utilizando JUSTIFY-CONTENT*/
+/*                          */
+#propriedade4{
+	border: 2px solid black;
+	margin: 2px 0;
+	height:150px;
+	width: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*                         */
+/*Utilizando ALIGN-ITEMS   */
+/*                         */
+#propriedade5{
+	border: 2px solid black;
+	margin: 2px 0;
+	height:150px;
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+
+/*                           */
+/*Utilizando ALIGN-CONTENT   */
+/*                           */
+#propriedade6{
+	border: 2px solid black;
+	margin: 2px 0;
+	height:150px;
+	width:auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+/*                           */
+/*Utilizando FLEX-GROW       */
+/*                           */
+.P1item:nth-child(1){
+	flex-grow: 1;
+}
+ 
+.P1item:nth-child(2){
+	flex-grow: 0;
+}
+
+.P1item:nth-child(3){
+	flex-grow: 0;
+}
+
+/*                           */
+/*Utilizando FLEX-BASIS      */
+/*                           */
+.P2item:nth-child(1){
+	flex-basis: : 1;
+}
+
+/*                           */
+/*Utilizando FLEX-SHRINK     */
+/*                           */
+.P3item:nth-child(2){
+	flex-shrink: 3;
+}
+
+/*                           */
+/*Utilizando FLEX            */
+/*                           */
+.P4item:nth-child(3){
+	flex: 0 1 2;
+}
+
+/*                           */
+/*Utilizando ORDER           */
+/*                           */
+.P5item:nth-child(1){
+	order:  2;
+}
+
+.P5item:nth-child(2){
+	order: 3;
+}
+
+.P5item:nth-child(3){
+	order: 1;
+}
+
+/*                           */
+/*Utilizando ALIGN-SELF      */
+/*                           */
+.P6item:nth-child(1){
+	align-self: flex-end;
+}
+
+.P6item:nth-child(2){
+	align-self: center;
+}
+
+.P6item:nth-child(3){
+	align-self: center;
+}
+

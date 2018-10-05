@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Shojumaru');
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+
+body{
+    background: url("../_imagens/fundo.jpg");
+}
+.container{
+    margin-top: 50px;
+}
+.linha{
+    background: #ccc;
+    padding: 50px;
+}
+
+.descricoes{
+    max-width: 400px;
+    font-family: 'Ruslan Display', cursive;
+    color: white;
+    font-size: 12pt;
+
+}
+h1{
+    text-align: center;
+    font-family: 'Shojumaru', cursive;
+    color: #F2F2F2;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Ruslan Display', cursive;
+    color: #F2F2F2;
+}
+
+
+
+

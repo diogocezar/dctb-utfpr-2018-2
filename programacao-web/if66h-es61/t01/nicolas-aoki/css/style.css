@@ -1,0 +1,433 @@
+@font-face{
+    font-family: midnight;
+    src: url(../fonts/AfterMidnite.woff);
+}
+@font-face{
+    font-family: trojan;
+    src: url("../fonts/TrajanPro-Bold.woff");
+}
+@font-face{
+    font-family: mont;
+    src:url("../fonts/Montserrat-Light.ttf")
+}
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+}
+#navbar{
+    display: flex;
+    background-color:#29213e;
+    height: 75px;
+    align-content: center;
+}
+
+.logo{
+    display:flex;
+    margin-left:100px;
+    align-self: center;
+    height:60px;
+}
+.flex-inicio{
+    align-self: flex-start;
+}
+.flex-fim{
+    align-self: flex-end;
+}
+.navbarColuna{
+    display: flex;
+    margin:auto;
+    list-style-type: none;
+    flex-wrap: row;
+    justify-content: space-around;
+}
+.navItens{
+    margin:15px;
+    text-decoration: none;
+    font-family: trojan;
+    font-size:1em;
+    color:#d4c9c9;
+}
+#home{
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-home.jpg");
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	align-items: center;
+}
+.conteudo-home{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.frase-home-1{
+    font-family: midnight,sans-serif;
+    color:white;
+    font-size:5.5rem;
+    font-weight: lighter;
+    margin:0;
+}
+.frase-home-2{
+    font-family: midnight,sans-serif;
+    color:white;
+    font-size:3.5rem;
+    font-weight: lighter;
+    margin:0;
+    margin-top:-70px;
+}
+.frase-home-3{
+    font-family: trojan;
+    color:#d4c9c9;
+    font-size:1.2rem;
+    margin:0;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.nome-frase-3{
+    color:gray;
+}
+.frase-home-4{
+    font-family: trojan;
+    color:#d4c9c9;
+    font-weight: lighter;
+    font-size:1.1rem;
+    margin:0;
+}
+.home-btn{
+    text-transform: uppercase;
+    font-size:0.8rem;
+    font-family: mont;
+    color:white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    border:1px solid #d4c9c9;
+    background-color: Transparent;
+    margin-top:3rem;
+    padding:20px 60px 20px 60px;
+}
+.home-btn:hover{
+    background-color: white;
+    transition-duration:0.4s;
+    color:rgb(39, 38, 38);
+}
+#apresentacao{
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-presentation.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-top:98px;
+    padding-bottom:70px
+}
+.img-apresentacao{
+    margin:2.5rem 0;
+    height: 80px;
+}
+.apresentacao-btn{
+    text-transform: uppercase;
+    font-size:1rem;
+    font-family: mont;
+    color:black;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    border:1.5px solid #d4c9c9;
+    background-color: white;
+    margin-top:4rem;
+    padding:30px 70px 30px 70px;
+}
+.apresentacao-btn:hover{
+    background-color: Transparent;
+    transition-duration:0.4s;
+    color:white;
+}
+.conteudo-apresentacao{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.frase-apresentacao-1{
+    font-family: trojan;
+    color:#d4c9c9;
+    font-size:1.5rem;
+    margin:0;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.frase-apresentacao-2{
+    font-family: mont;
+    color:white;
+    text-decoration: none;
+    font-size:0.9rem;
+}
+#sobre{
+    background-color: #f3e8e3;
+    display: flex;
+    padding-top:98px;
+    padding-bottom:70px;
+}
+.conteudo-sobre{
+    width: 50%;
+    margin-left:90px;
+}
+.frase-sobre-1{
+    font-family: midnight,sans-serif;
+    color:#29213e;
+    font-size:5.5rem;
+    font-weight: lighter;
+    margin:0;
+}
+
+.frase-sobre-2{
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: trojan;
+}
+.frase-sobre-3{
+    font-family: mont;
+    color:#22223b;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+.img-sobre{
+    width:10%;
+}
+.frase-sobre-4{
+    font-family: mont;
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.img-servico{
+    width:10%;
+}
+#servicos{
+    background: linear-gradient(rgba(25, 6, 48, 0.562),#29223e),
+    url("../img/geovanna-bg-services.jpg");
+    background-position: 50%;
+    background-size: cover;
+    padding-top:98px;
+    padding-bottom:70px;
+}
+.tipo-servico{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.assessoria-servicos{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+.assessoria-servico-1{
+    display: flex;
+    flex-flow: column wrap;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    margin:60px;
+}
+.frase-servico-1{
+    font-family: trojan;
+    color:white;
+}
+.frase-servico-2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: trojan;
+    color: #9a8c98;
+}
+.frase-servico-3{
+    font-family: mont;
+    text-align: center;
+    color:#f2e9e4;
+    padding:0 30px 0px 30px;
+}
+.servico-btn{
+    text-transform: uppercase;
+    font-size:0.8rem;
+    font-family: mont;
+    color:black;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    border:1.5px solid #d4c9c9;
+    background-color: white;
+    padding:20px 50px 20px 50px;
+}
+.servico-btn:hover{
+    background-color: Transparent;
+    transition-duration:0.4s;
+    color:white;
+}
+.div-btn-servicos{
+    display:flex;
+    justify-content: center;
+}
+#depoimentos{
+    background-color: #f3e8e3;
+}
+.topo-depoimento-1{
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.topo-depoimento{   
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.frase-depo-3{
+    text-align: center;
+    font-family: trojan;
+    color:#d4c9c9;
+    font-size:1.2rem;
+    margin:0;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    margin:0 30%;
+}
+.img-depoimento{
+    width:10%;
+    margin-bottom:30px;
+}
+.baixo-depoimento{
+    display: flex;
+    flex-wrap: row;
+}
+.depoimento-relato{
+    text-align: center;
+}
+.depoimento-relato-1{
+    margin:30px;
+    padding:0 30px;
+    font-size:1.2rem;
+    font-family: trojan;
+    color:#29213e;
+    font-weight: lighter;
+}
+.depoimento-frase-3{
+    font-family: trojan;
+    color:#29213e;
+    font-weight: lighter;
+}
+
+.depoimento-frase-4{
+    font-weight: lighter;
+    color:#d4c9c9;
+    font-family: trojan;
+}
+#contato{
+    background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(../img/geovanna-bg-contact.jpg);
+    background-position: 50%;
+    text-align: center;
+    padding-top:88px;
+    padding-bottom:88px;
+}
+.contato-frase-1{
+    font-family: trojan;
+    color: #c9ada7;
+    margin:60px 0;
+    font-size: 24px;
+}
+.contato-frase-2{
+    font-family: trojan;
+    color: #c9ada7;
+    font-size: 18px;
+}
+.contato-frase-3{
+    font-family: trojan;
+    color: white;
+    font-size: 28px;
+}
+.contato-frase-4{
+    font-family: trojan;
+    color: white;
+}
+.img-contato{
+    width:10%;
+}
+.instagram-logo{
+    width:10%;
+}
+.facebook-logo{
+    width:10%;
+}
+ul{
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0; padding: 0;
+}
+li{
+    margin-left:0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0; padding: 0;
+}
+@media only screen and (max-width: 1000px) {
+    #home{
+        height:100%;
+    }
+    .navbarColuna {
+        visibility: hidden;
+    }
+    .frase-home-1{
+        font-size: 4vh;
+    }
+
+    .frase-home-2{
+        font-size: 3vh;
+    }
+    .assessoria-servicos{
+        flex-flow: column wrap;
+    }
+    .topo-depoimento{
+        margin-top:90px;
+    }
+    .baixo-depoimento{
+        flex-flow: column wrap;    
+    }
+    #sobre{
+        justify-content: center;
+        align-content: center;
+    }
+    .frase-sobre-1{
+        line-height: 2rem;
+        text-align: center;
+    }
+    .frase-sobre-2{
+        font-size: 0.7vh;
+        margin-top: 40px;
+        text-align: center;  
+    }
+    .frase-sobre-3{
+        line-height: 2rem;
+        text-align: center;
+        font-size: 0.7vh
+    }
+    .img-sobre{
+        width:auto;
+    }
+    .frase-sobre-4{
+        font-size: 0.7vh;
+        margin-top: 40px;
+        text-align: center;  
+    }
+}

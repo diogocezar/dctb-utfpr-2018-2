@@ -1,7 +1,7 @@
-/* Exemplo básico de if
+/* Exemplo bÃ¡sico de if
 
-   Uma péssima solução para este problema, pois sempre é feito dois testes,
-   mesmo quando já se sabe que o número é par */
+   Uma pÃ©ssima soluÃ§Ëœo para este problema, pois sempre Ã© feito dois testes,
+   mesmo quando j;a se sabe que o nÃºmero Ã© par */
 
 #include<conio.h>
 #include<stdio.h>

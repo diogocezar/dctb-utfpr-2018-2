@@ -1,0 +1,18 @@
+@import 'ex2';
+
+$rem: "rem";
+
+%html_font_size {
+    $result: $html_font_size / 16 #{$rem};
+    font-size: #{$result};
+}
+
+%h1_font_size {
+    $result: $h1_font_size / 16 #{$rem};
+    font-size: #{$result};
+}
+
+%h2_font_size {
+    $result: $h2_font_size / 16 #{$rem};
+    font-size: #{$result};
+}

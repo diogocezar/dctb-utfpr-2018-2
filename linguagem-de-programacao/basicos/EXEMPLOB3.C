@@ -1,4 +1,4 @@
-// Exemplo de uso da funcao scanf b·sico
+// Exemplo de uso da funcao scanf b√°sico
 
 #include<stdio.h>
 

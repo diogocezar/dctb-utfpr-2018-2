@@ -1,0 +1,176 @@
+nav {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7rem 1rem 6rem 1rem;
+    width: 100%;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    color: #F2E9E4;
+    text-decoration: none;
+}
+
+nav,
+ol,
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: 14px;
+    font-family: "TrajanPro-Regular", serif;
+    background-color: #F2E9E4;
+    color: #4A4E69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    border-radius: 0px;
+}
+
+::-moz-selection{
+    color: #F2E9E4;
+    background: #4A4E69;
+}
+
+::selection{
+    color: #F2E9E4;
+    background: #4A4E69;
+}
+
+p {
+    font-size: 1em;
+}
+
+* {
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+h2 {
+    font-size: 2rem
+}
+
+h3 {
+    font-size: 1.75rem
+}
+
+h4 {
+    font-size: 1.5rem
+}
+
+h5 {
+    font-size: 1.25rem
+}
+
+h6 {
+    font-size: 1rem
+}
+
+button {
+    cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 38px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.btn-transparent {
+    border: 1px solid #F2E9E4;
+    background-color: transparent;
+    color: #F2E9E4;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-transparent:hover {
+    background-color: #F2E9E4;
+    color: var(--dark-purple-color);
+}
+
+.btn-white {
+    border: 1px solid #F2E9E4;
+    background-color: #F2E9E4;
+    color: #4A4E69;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-white:hover {
+    background-color: transparent;
+    color: #F2E9E4;
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        height: 50px;
+        width: 200px !important;
+        font-size: .9rem;
+    }
+}
+
+/* Size flex*/
+
+@media (min-width:576px) {
+    .fl-lg {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .fl-md {
+        flex: 50%;
+        max-width: 50%;
+    }
+}

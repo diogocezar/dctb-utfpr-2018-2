@@ -1,0 +1,14 @@
+#products{
+    max-width: 100%;
+}
+
+#contact{
+    max-width:100%;
+}
+body{
+    padding:auto;
+}
+
+.navbar{
+    margin-bottom: 15px;
+}

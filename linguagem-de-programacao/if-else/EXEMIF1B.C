@@ -1,6 +1,6 @@
 /* Exemplo basico de if e else
 
-   Esta solução é bem melhor, pois o teste é feito apenas uma vez. */
+   Esta soluÃ§Ã£o Ã© bem melhor, pois o teste Ã© feito apenas uma vez. */
 
 #include<conio.h>
 #include<stdio.h>

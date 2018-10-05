@@ -1,0 +1,54 @@
+body{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: monospace;
+    background-color: yellow;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top:40px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Montserrat', cursive;
+    color: black;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Montserrat', cursive;
+    color: darkgreen;
+}
+
+p {
+    font-family: 'Montserrat', cursive;
+    color: gray;
+}
+
+.item1{
+    font-family: 'Montserrat', cursive;
+    color: black;
+}
+
+.border {
+    padding: 8px;
+    border: 0.5px solid black !important;
+    border-radius: 20px;
+}
+
+a {
+    color: white;
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

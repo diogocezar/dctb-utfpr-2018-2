@@ -1,0 +1,176 @@
+//CORES
+$back-fafa: #fafafa;
+$btn-follow-color: #3897f0;
+$btn-follow-color-hover: #fff;
+$img-hover: rgba(0, 0, 0, 0.3);
+//MEDIDAS
+$zero: 0;
+$um: 1;
+$seg: 0.3s;
+$width30: 30%;
+$width90: 90%;
+$width100: 100%;
+$max-width: 935px;
+$porc50: 50%;
+$px1: 1px;
+$px4: 4px;
+$px6: 6px;
+$px10: 10px;
+$px14: 14px;
+$px16: 16px;
+$px20: 20px;
+$px24: 24px;
+$px28: 28px;
+$px30: 30px;
+$px40: 40px;
+
+* {
+  margin: $zero;
+  padding: $zero;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $px16;
+}
+
+ul {
+  padding: $zero;
+  margin: $zero;
+}
+
+img {
+  border: $zero;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: $back-fafa;
+}
+
+main {
+  width: $width90;
+  max-width: $max-width;
+  margin: $zero auto;
+}
+
+header {
+  display: flex;
+  margin: $px30 $zero;
+  flex-flow: column;
+
+  .avatar {
+    -webkit-border-radius: $porc50;
+    -moz-border-radius: $porc50;
+    border-radius: $porc50;
+    margin: $zero auto;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    display: inline-block;
+    margin: $px10 $zero;
+  }
+
+  h1 {
+    font-size: $px28;
+  }
+
+  h2 {
+    font-size: $px24;
+  }
+
+  .links {
+    list-style: none;
+    margin: $px10 $zero;
+
+    li {
+      list-style: none;
+      margin: $zero $px20 $zero $zero;
+      display: inline-block;
+    }
+  }
+}
+
+.btn-follow {
+  margin: $zero $px20;
+  padding: $px6 $px14;
+  border-width: $px1;
+  border-style: solid;
+  border-color: $btn-follow-color;
+  color: $btn-follow-color;
+  -webkit-border-radius: $px4;
+  -moz-border-radius: $px4;
+  border-radius: $px4;
+
+  &:hover {
+    background: $btn-follow-color;
+    color: $btn-follow-color-hover;
+  }
+}
+
+.btn-red{
+  @extend .btn-follow;
+  padding: $px6;
+  border-style: solid;
+  border-radius: $px1;
+  border-width: $px1;
+}
+
+.photos {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+
+  li {
+    width: $width100;
+    margin: $px20 $zero;
+    position: relative;
+
+    img {
+      width: $width100;
+    }
+
+    .img-hover {
+      opacity: $zero;
+      position: absolute;
+      top: $zero;
+      left: $zero;
+      width: $width100;
+      height: $width100;
+      background: $img-hover;
+      transition: all $seg linear;
+    }
+    &:hover .img-hover {
+      opacity: $um;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-flow: row;
+
+    .avatar {
+      margin: $zero $px40;
+    }
+
+    .desc {
+      text-align: left;
+    }
+  }
+
+  .photos li {
+    width: $width30;
+  }
+}

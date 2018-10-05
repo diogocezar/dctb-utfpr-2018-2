@@ -1,0 +1,160 @@
+#home {
+    background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(../img/geovanna-bg-home.jpg);
+    background-position: 0 0;
+}
+
+
+
+#home {
+    height: calc(100vh - 70px);
+    padding-top: 60px;
+}
+
+#content-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    text-align: center;
+    color: #f2e9e4;
+
+}
+
+#content-home h2, #content-home h3, #content-home h4 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#content-home h2 {
+    font-size: 6.5rem;
+    margin-bottom: 1%;
+
+}
+
+#content-home h3 {
+    font-size: 4rem;
+    width: 100%;
+    margin-top: 0;
+
+
+}
+
+#content-home h4 {
+    font-size: 1.5rem;
+
+
+}
+
+#content-home button{
+    margin-top: 4rem;
+}
+
+.content-apresentation {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) and (min-width: 480px){ 
+    #content-about h2 {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    #home {
+        height: calc(100vh - 70px);
+        padding-top: 60px;
+    }
+
+    #content-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30%;
+        text-align: center;
+        color: #f2e9e4;
+    
+    }
+    
+    #content-home h2, #content-home h3, #content-home h4 {
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+    #content-home h2 {
+        font-size: 4rem;
+       
+    
+    }
+    
+    #content-home h3 {
+        font-size: 2rem;
+        width: 100%;
+
+
+    }
+    
+    #content-home h4 {
+        font-size: 1.2rem;
+
+    
+    }
+    
+    #content-home button{
+        margin-top: 4rem;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    #content-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        color: #f2e9e4;
+    
+    }
+    
+    #content-home h2, #content-home h3, #content-home h4 {
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+    #content-home h2 {
+        font-size: 3rem;
+        margin-top: 5px;
+        margin-bottom: 0;
+       
+    
+    }
+    
+    #content-home h3 {
+        font-size: 2rem;
+        margin-bottom: 15%; 
+    }
+
+    #content-home h4 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-bottom: 0;
+    
+    }
+    
+    #content-home button{
+        margin-top: 4rem;
+    }
+
+
+}
+
+
+
+
+

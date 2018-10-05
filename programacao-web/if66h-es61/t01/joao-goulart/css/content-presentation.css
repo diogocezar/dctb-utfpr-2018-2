@@ -1,0 +1,59 @@
+
+#presentation {
+    background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url(../img/geovanna-bg-presentation.jpg);
+    background-position: 50%;
+    padding-top: 1%;
+    font-family: 'TrajanPro-Regular',serif;
+    color: #f2e9e4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+#presentation h2, #presentation h3 {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.content-presentation img {
+    margin: 2.5rem 0;
+    height: 80px;
+}
+
+.content-presentation h3 {
+    font-size: 1rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+.name-apresentation {
+    color: #9a8c98;
+}
+
+#presentation h2 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px){
+
+
+.content-apresentation {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#presentation h2 {
+    font-size: 1.4rem;
+}
+
+}
+
+@media (max-width: 480px) {
+    #presentation h2 {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,371 @@
+.menu {
+	top: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: #22223b;
+    display: flex;
+}
+.row {
+	flex-direction: row;
+}
+.column {
+	flex-direction: column;
+}
+.grow1 {
+	flex-grow: 1;
+	margin-right: -85px;
+}
+.grow2 {
+	flex-grow: 2;
+}
+.image {
+	flex: 1;
+	margin-left: 125px;
+}
+.container {
+	flex: 0.14;
+	text-align: center;
+	padding-top: 16px;
+	font-size: 1.1em;
+}
+.menu ul{
+	list-style-type: none;
+}
+.m {
+	display: flex;
+}
+li a{
+	color: #f2e9e4;
+	text-decoration: none;
+	font-family: TrajanPro-Regular, serif;
+}
+#home{
+	background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("assets/images/geovanna-bg-home.jpg");
+	margin-top: 70px;
+	height: calc(100vh - 238px);
+	padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+.conteudo-home{
+	margin-top: 1px;
+    color: #f2e9e4;
+    text-align: center;
+}
+#home h2{
+	font-family: AfterMidnite,sans-serif;
+	font-size: 6.5rem;
+	margin-bottom: -4rem;
+    margin-top: -37px;
+}
+#home h3{
+	font-family: AfterMidnite,sans-serif;
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+#home h4{
+	font-family: TrajanPro-Regular, serif;
+	font-size: 1.5rem;
+	margin-bottom: 0rem;
+}
+#home h4 a{
+	color: #9a8c98;
+}
+#home button{
+	cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    font-size: 0.9rem;
+    border: 1px solid #f2e9e4;
+    background-color: transparent;
+    color: #f2e9e4;
+    left: 40%;
+    position: relative;
+    margin-top: 4.5rem;
+}
+#apresentacao{
+	background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)), url("assets/images/geovanna-bg-presentation.jpg");
+	background-position: 48%;
+	margin-top: -24px;
+	height: 554px;
+}
+.conteudo-apresentacao{
+	color: #f2e9e4;
+    text-align: center;
+    font-size: 2rem;
+    font-family: TrajanPro-Regular, serif;
+}
+#apresentacao h2{
+	padding-top: 100px;
+}
+#apresentacao img{
+	margin: 2.5rem 0;
+    height: 80px;
+    position: relative;
+	left: 47%;
+}
+#apresentacao p{
+	text-align: center;
+	color: #f2e9e4;
+	font-size: 1rem;
+    font-family: Montserrat,sans-serif;
+}
+#apresentacao button{
+	cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    font-size: 1rem;
+    border: 1px solid #f2e9e4;
+    background-color: #f2e9e4;
+    color: #4a4e69;
+    left: 40%;
+    position: relative;
+    margin-top: 2.5rem;
+}
+#sobre{
+    margin-right: 600px;
+    margin-left: 130px;
+}
+#sobre h2{
+	font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: -15px;
+    margin-top: 48px;
+}
+#sobre h3{
+	font-family: TrajanPro-Regular, serif;
+	color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+#sobre p{
+	font-family: Montserrat,sans-serif;
+    color: #4a4e69;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+	font-size: 1.11em;
+}
+#sobre img{
+	height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+#servico{
+	background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(assets/images/geovanna-bg-services.jpg);
+    background-position-x: 52%;
+    background-size: 122%;
+    height: 782px;    
+    margin-top: 86px;
+}
+#servico h2{
+	font-family: TrajanPro-Regular,serif;
+    text-align: center;
+    font-size: 3rem;
+    color: #f2e9e4;
+    margin-bottom: 0rem;
+	padding-top: 7rem;
+}
+#servico img{
+	margin: 2.5rem 0;
+    height: 80px;
+    position: relative;
+	left: 47%;
+}
+#servico div{
+	display: flex;
+}
+#servico button{
+	cursor: pointer;
+    width: 260px;
+    border-radius: 40px;
+    height: 60px;
+    font-family: Montserrat,sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid #f2e9e4;
+    left: 40%;
+    position: relative;
+    margin-top: 0.5rem;
+}
+.coluna-servico{
+	padding-left: 65px;
+}
+.coluna-servico h3{
+	font-family: TrajanPro-Regular,serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #9a8c98;
+    margin-bottom: 2rem;
+}
+.coluna-servico h3 span{
+	font-size: 3rem;
+}
+.coluna-servico h3 p{
+	font-family: Montserrat,sans-serif;
+    color: #f2e9e4;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 400px;
+    margin-top: 28px;
+}
+#depoimento{
+
+}
+#depoimento div{
+
+}
+#depoimento div h2{
+	font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+#depoimento div img{
+	height: 120px;
+    width: 120px;
+    margin-bottom: 3rem;
+    margin-top: -4rem;
+    left: 45%;
+    position: relative;
+}
+#depoimento div h3{
+	font-family: TrajanPro-Regular, serif;
+    color: #9a8c98;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 18%;
+    margin-bottom: 7rem;
+}
+.coluna-depoimento{
+
+}
+.coluna-depoimento h3{
+	font-family: TrajanPro-Regular, serif;
+	text-align: center;
+    padding: 0 15%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 400px;
+}
+.coluna-depoimento h4{
+	font-family: TrajanPro-Regular, serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(74, 78, 105);
+    margin-top: -1rem;
+}
+.coluna-depoimento h5{
+    text-align: center;
+    color: #c9ada7;
+    font-size: 1.25rem;
+}
+.t{
+	display: flex;
+}
+#contato{
+	background: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url(assets/images/geovanna-bg-contact.jpg);
+	text-align: center;
+	padding-top: 1px;
+	background-position: 50%;
+	padding-bottom: 1px;
+}
+#contato h2{
+	font-family: AfterMidnite,sans-serif;
+    color: #f2e9e4;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+#contato img{
+	height: 120px;
+}
+#contato h3{
+	font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1.75rem;
+}
+#contato h4{
+	font-family: TrajanPro-Regular,serif;
+    color: #c9ada7;
+    font-size: 1.9rem
+}
+#contato a{
+	color: #f2e9e4;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: TrajanPro-Regular, serif;
+}
+#contato p{
+	color: #f2e9e4;
+    text-decoration: none;
+    font-size: 16.8px;
+    font-family: TrajanPro-Regular, serif;
+}
+#contato small{
+	font-size: 16px;
+	color: rgb(242, 233, 228);
+	font-family: TrajanPro-Regular, serif;
+}
+#contato ul{
+	padding: 0;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contato ul li{
+	border: 2px solid #f2e9e4;
+    padding: 13px;
+    border-radius: 50%;
+}
+#contato ul li img{
+	height: 35px;
+    width: 35px;
+}
+
+@media (max-width: 900px){
+	.home h2{
+		font-size: 3rem;
+		margin-bottom: -1rem;
+	}
+	.home h3{
+		font-size: 2rem;
+	}
+	#sobre{
+		margin-right: 118px;
+	}
+	.t{
+		display: inline;
+	}
+	#servico div {
+		display: inlne;
+	}
+}
+
+body{
+	background-color: #f2e9e4;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+body, html {
+    font-size: 14px;
+}
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url(assets/fonts/TrajanPro-Regular.woff);
+}
+@font-face {
+    font-family: AfterMidnite;
+    src: url(assets/fonts/AfterMidnite.woff);
+}

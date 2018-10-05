@@ -1,0 +1,8 @@
+h4{
+    width: 12em;
+    margin-top: 3em;
+}
+
+p:first-child{
+    padding-top: 1em;
+}

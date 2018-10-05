@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+     
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My page</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplos de Flex Container e Flex Item</h1>
+    </header>
+
+    <h2>Galeria de fotos com Justify-Content e Flex-wrap</h2>
+    <p>Utilizando os dois a galeria se torna responsiva!</p>
+    <section class="container flex_justifyC">
+        <img src="assets/r2.jpg" alt="imagem de exemplo">
+        <img src="assets/r3.jpg" alt="imagem de exemplo">
+        <img src="assets/r1.jpg" alt="imagem de exemplo">
+        <img src="assets/r4.jpg_large" alt="imagem de exemplo">
+    </section>
+
+    <h2>Galeria de fotos com flex-direction e align-items</h2>
+    
+    <section class="container flex_direction">
+        <img src="assets/r2.jpg" alt="imagem de exemplo">
+        <img src="assets/r3.jpg" alt="imagem de exemplo">
+        <img src="assets/r1.jpg" alt="imagem de exemplo">
+        <img src="assets/r4.jpg_large" alt="imagem de exemplo">
+    </section>
+
+    <h2>Menu utilizando flex-flow</h2>
+    
+    <section class="container flex_flow">
+        <div class="item">Item1 do Menu</div>
+        <div class="item">Item2 do Menu</div>
+        <div class="item">Item3 do Menu</div>
+        <div class="item">Item4 do Menu</div>
+        <div class="item">Item5 do Menu</div>
+    </section>
+
+    <h2>Menu utilizando flex grow</h2>
+    <p>Passe o mouse!</p>
+    
+    <section class="container flex_grow">
+        <div class="item2">Item1 do Menu</div>
+        <div class="item2">Item2 do Menu</div>
+        <div class="item2">Item3 do Menu</div>
+        <div class="item2">Item4 do Menu</div>
+        <div class="item2">Item5 do Menu</div>
+    </section>
+
+    <h2>Container com textos utilizando align-items</h2>
+    <p>Utilizado order para ordenar os itens do menor ao maior</p>
+    <section class="container align_items">
+        <div class="item item1">Item1 do Menu para testar</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3 do Menu</div>
+        <div class="item">Item4 do Menu de teste</div>
+        <div class="item item5">Item5 do Menu com texto maior para exemplificar.</div>
+    </section>
+
+    <h2>Contyainer de texto com align-content e align-self</h2>
+    
+    <section class="container align_content">
+        
+            <img class="imgt" src="assets/r1.jpg" alt="imagem de exemplo">
+            <img class="imgt" src="assets/r2.jpg" alt="imagem de exemplo">
+            <img class="imgt" src="assets/r3.jpg" alt="imagem de exemplo">
+            <img class="imgt2" src="assets/r4.jpg_large" alt="imagem de exemplo">
+            <img class="imgt end" src="assets/r1.jpg" alt="imagem de exemplo">
+        
+    </section>
+
+    <h2>Container com textos utilizando flex-basis</h2>
+    
+    <section class="container">
+        <div class="item basis_auto">Item1</div>
+        <div class="item">Item2 do Menu</div>
+        <div class="item basis_grow">Item3 do Menu para testar</div>
+        <div class="item">Item4 do Menu</div>
+        <div class="item">Item5 do Menu para exemplificar melhor com seu tamanho</div>
+    </section>
+
+</section>
+
+<h2>Galeria de fotos utilizando flex-shrink (com flex)</h2>
+
+<section class="container flex_shrink">
+    <img class="imgEx" src="assets/r1.jpg" alt="imagem para exemplo">
+    <img class="imgEx" src="assets/r2.jpg" alt="imagem para exemplo">
+    <img class="imgEx" src="assets/r3.jpg" alt="imagem para exemplo">
+    <img class="imgEx" src="assets/r1.jpg" alt="imagem para exemplo">
+</section>
+</body>
+</html>

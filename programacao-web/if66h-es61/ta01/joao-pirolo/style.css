@@ -1,0 +1,36 @@
+
+body{
+	font-family: 'Courier New', Courier, monospace;
+	background-color: #000000;
+	font-size: 20px;
+	color: forestgreen;
+	padding: 30px;
+}
+
+.container{
+	padding: 10px;
+	background-color: #424040 ;
+	border-radius: 15px;
+}
+box{
+    border: 2px solid green;
+	margin: 20px;
+	border-radius: 15px;
+	padding: 15px;
+ }
+
+a:link, a:visited, a:active {
+	text-decoration: #000000;
+	}
+a:hover {text-decoration: underline;  
+	color: green; 
+	font-size:100%; 
+    }
+
+img{
+    background-color: #ddd;
+    border-radius: 80%;
+    height: 300px;
+    object-fit: cover;
+    width: 300px;  
+  }

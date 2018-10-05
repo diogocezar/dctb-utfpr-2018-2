@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url('assets/fonts/TrajanPro-Regular.otf');
+}
+@font-face {
+    font-family: AfterMidnite;
+    src: url('assets/fonts/AfterMidnite.otf');
+  }
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+div{
+  display: block;
+}
+
+.header-menu{
+  background-color: #22223b;
+  width: 100%;
+  height: 70px;
+  position: fixed;  
+  z-index: 999;  
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.cont{
+  display: flex;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-content: center;
+}
+
+.menu-container{
+  position: relative;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+
+.menu-item{
+  position: relative;
+  float: left;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+
+.menu-item a{
+  position: relative;
+  float: left;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+.logo{
+  width: 315px;
+  height: 70px;
+  margin-right: 150px;
+  background: url(assets/images/geovanna-logo-nav.svg);
+}
+
+
+.home {
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  padding-top: 25px;
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url(assets/images/geovanna-bg-home.jpg);
+  background-position: left top;
+}
+
+.content-home{
+  font-size: 1.5em;
+  font-family: AfterMidnite,sans-serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+.content-home h2{
+  font-size: 6.5rem;
+}
+
+.content-home h3{
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.content-home h4{
+  font-family: TrajanPro-Regular,serif;
+  color: #f2e9e4;
+  text-align: center;
+}
+
+.content-home h4 .h1{
+  color: #9a8c98;
+} 
+
+.content-home button{
+  margin-top: 4rem;
+}
+
+#button{    
+    background-color: transparent;
+    color: #f2e9e4;
+    width: 260px;    
+    height: 60px;
+    line-height: 38px;
+    font-family: Montserrat,sans-serif;
+    font-size: 1rem;
+    border: 1px solid #f2e9e4;
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.presentation{
+  height: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url(assets/images/geovanna-bg-presentation.jpg);
+  background-position: 50%;
+}
+
+.content-presentation button{
+  margin-top: 4rem;
+}
+
+#button-p{
+  border: 1px solid #f2e9e4;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+  width: 260px;
+  height: 60px;
+  line-height: 38px;
+  font-family: Montserrat,sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.content-presentation{
+  text-align: center;
+}
+
+.content-presentation h2{
+  font-size: 2rem;
+}
+
+.content-presentation h2, .content-presentation h3{
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+.content-presentation h3{
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+}
+
+.content-presentation img{
+  height: 80px;
+  margin: 2.5rem 0;
+}
+
+.content-presentation img{
+  left: 50%;
+  position: center;
+}
+
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+a{
+  color: #f2e9e4;
+  text-decoration: none;
+}
+
+.about{
+  width: 80px;
+  margin-left: 97px;
+}
+
+.content-about{
+  width: 600px;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-about h2{
+    font-family: AfterMidnite,sans-serif;
+    color: #22223b;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.content-about h3{
+    color: #9a8c98;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.content-about p {
+  font-family: Montserrat,sans-serif;
+  color: #22223b;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.p {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.content-about img{
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+section#services{
+  background: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)),url(assets/images/geovanna-bg-services.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#content-services h2 {
+  font-family: TrajanPro-Regular,serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #f2e9e4;
+  margin-bottom: 3rem;
+}
+
+#content-services img{
+  height: 120px;
+  margin-bottom: 3rem;
+  left: 50%;
+  position: relative;
+
+}
+.consulting{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.consultingpart{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#content-services h3 {
+  font-family: TrajanPro-Regular,serif;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #9a8c98;
+  margin-bottom: 2rem;
+}
+
+#content-services p {
+  font-family: Montserrat,sans-serif;
+  color: #f2e9e4;
+  text-align: center;
+  padding: 0 15%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+#content-services button{
+  margin-top: 4rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%)!important;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+
+body{
+  font-family: TrajanPro-Regular, serif;
+  background-color: #f2e9e4;
+  color: #4a4e69;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+body{
+  display: block;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h3, h3{
+  font-size: 1.5rem;
+}
+
+.h4, h4{
+  font-size: 1.5rem;
+}
+
+
+.h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+body,html{
+  font-size: 14px;
+}
+
+
+#briefing img,
+#contact img {
+    width: 100px;
+    height: 100px;
+}
+
+figure {
+    margin: 0 0 50px;
+}
+#briefing {
+    flex-direction: column;
+    background-color: white;
+    font-family: TrajanPro-Regular, sans-serif;
+    color: #22223b;
+    text-align: center;
+}
+
+#briefing h1 {
+    font-family: AfterMidnite, sans-serif;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+#briefing h2 {
+    display: block;
+    font-family: TrajanPro-Regular, sans-serif;
+    font-size: 1.3em;
+    color: #9a8c98;
+    width: 40%;
+    text-align: center;
+}
+
+#briefing p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+#briefing figure {
+    border-bottom: 1px solid #22223b;
+}
+
+#briefing div p:nth-child(2) {
+    border-bottom: 1px solid #22223b;
+}
+
+#briefing div:nth-child(1) {
+    align-items: center;
+}
+
+
+.background-contact {
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(34, 34, 59, 0.9)), url("assets/images/geovanna-bg-contact.jpg") no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    font-family: TrajanPro-Regular, sans-serif;
+    text-align: center;
+}
+
+#contact h1 {
+    font-family: AfterMidnite, sans-serif;
+    text-transform: lowercase;
+}
+#contact h1{
+    font-size: 7em;
+    color:white;
+}
+#contact h3,
+#contact h4 {
+    color: #c9ada7;
+}
+
+#contact h4 {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+#contact p {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+    color:white;
+}
+
+#contact div img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+}

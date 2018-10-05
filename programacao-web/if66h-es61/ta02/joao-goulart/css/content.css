@@ -1,0 +1,222 @@
+
+.content {
+    grid-area: content;
+}
+
+.main-content {
+    padding: 20px;
+    background: #8844ee;
+    color: white;
+
+}
+
+
+.content-style {
+    background: #26353e;
+    color: #C2C6D3;
+    padding: 20px 20px;
+}
+
+.content-style h2 {
+    font-size: 3em;
+    margin: 0px;
+    li-examplene-height: 1;
+    color: #C2C6D3;
+}
+
+
+.container {
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.item {
+    flex: 1;
+	margin: 5px;
+    text-ali-examplegn: center;
+    font-size: 1.5em;
+    height: 350px;
+    width: 350px;
+    background-image: url(https://picsum.photos/350/350/?random);
+
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.item-direction {
+    flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-ali-examplegn: center;
+    font-size: 1.5em;
+}
+
+.flex {
+	display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+
+}
+
+.item-wrap {
+    flex: 1;
+    text-ali-examplegn: center;
+    font-size: 1.5em;
+    height: 350px;
+    width: 350px;
+}
+.item-wrap > img {
+    max-height: 100%;
+}
+
+.column-nowrap {
+	flex-flow: row nowrap;
+}
+
+.nav-example{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.li-example {
+    float: left;
+}
+
+.li-example a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li-example a:hover {
+    background-color: #111;
+}
+
+.flex-start {
+	align-items: flex-start;
+}
+
+.align-content-end{
+    align-content: flex-end;
+}
+
+.grow1 {
+	flex-grow: 1;
+}
+
+.item-grow {
+    margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.basis-110-grow-1 {
+	flex-grow: 1;
+	flex-basis: 110px;
+}
+
+/* O Flex-basis não ultrapassa o tamanho do container. Pois por padrão o flex-shrink é 1, ou seja, ele permite que o item se ajuste para caber no container. */
+.basis-600-grow-1 {
+	flex-grow: 1;
+	flex-basis: 600px;
+}
+.basis-numero-container {
+	flex-wrap: wrap;
+}
+
+.container-box {
+    max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.shrink-1 {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.basis-auto {
+	flex: 1 1 auto;
+}
+
+.basis-auto-grow-2 {
+	flex: 2 1 auto;
+}
+
+.basis-auto-width {
+	flex: 1 1 auto;
+	width: 60px;
+}
+
+.basis-auto-grow-0 {
+	flex: 0 1 auto;
+}
+
+.order1 {
+	order: 1;
+}
+
+.order2 {
+	order: 2;
+}
+
+.order3 {
+	order: 3;
+}
+
+.order4 {
+	order: 4;
+}
+
+.order-1 {
+	order: -1;
+}
+.flex-grow {
+	flex-grow: 1;
+}
+
+.center {
+	align-self: center;
+}
+
+.self-start {
+	align-self: flex-start;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
+.container-self{
+    max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.item-self {
+    flex: 1;
+	margin: 5px;
+	padding: 0 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;   
+}

@@ -1,0 +1,181 @@
+@font-face {
+    font-family: AfterMidnite;
+    src: url('../assets/fonts/AfterMidnite.eot');
+    src: url('../assets/fonts/AfterMidnite.woff');
+}
+@font-face {
+    font-family: TrajanProBold;
+    src: url('../assets/fonts/TrajanProBold.eot');
+    src: url('../assets/fonts/TrajanProBold.woff');
+}
+@font-face {
+    font-family: TrajanPro-Regular;
+    src: url('../assets/fonts/TrajanPro-Regular.eot');
+    src: url('../assets/fonts/TrajanPro-Regular.woff');
+}
+section{
+    background-size: 100%;
+    display:flex;
+    align-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#principal{
+    display: block;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cabecalho{
+    display: flex;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: #22223B;
+    justify-content: center;
+    font-family: TrajanPro-Regular,serif;
+    color: #f2e9e4;
+    font-weight: 400;
+    margin-top: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#apresentacao{
+    display: flex;
+    background-image:linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("../assets/images/geovanna-bg-home.jpg");
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    color:#f2e9e4;
+}
+#subt{
+    font-family: AfterMidnite, sans-serif;
+    color: #f2e9e4;
+    font-size: 3rem;
+    text-transform: lowercase;
+}
+#sobre h2{
+    font-family: TrajanPro-Regular;
+    font-size: 2.5rem;
+}
+#con{
+    border-radius: 45px;
+    text-transform: uppercase;
+    padding: 12px;
+    background:transparent;
+    color: #f2e9e4;
+}
+.apr{
+    border-radius: 45px;
+    text-transform: uppercase;
+    padding: 12px;
+    background:#f2e9e4;
+}
+#sobre{
+    display: flex;
+    background-image: linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url("../assets/images/geovanna-bg-presentation.jpg");
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    text-transform: uppercase;
+    align-items: center;
+}
+#depoimentos h3{
+    color: #4a4e69;;
+}
+#missao{
+    display: flex;
+    background-color: #f2e9e4;
+    color: #4a4e69;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#servicos{
+    display: flex;
+    background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)),url("../assets/images/geovanna-bg-services.jpg");
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#f2e9e4;
+}
+#sobre p{
+    justify-content: flex-start;
+    
+}
+#servicos h2{
+    font-family: TrajanPro-Regular;
+    font-size: 2.5rem;
+}
+#depoimentos{
+    display: flex;
+    background-color: #f2e9e4;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#contato{
+    display: flex;
+    background-image: linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)),url("../assets/images/geovanna-bg-contact.jpg");
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color:#f2e9e4;
+}
+#contato h2{
+    text-transform: lowercase;
+}
+#menu{
+    display: block;
+    
+}
+
+#menu lu{
+    list-style-type: none;
+    float: right;
+}
+
+#menu li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px;
+}
+.media{
+    height: 120px;
+}
+.peq{
+    height: 40px;
+    border: solid;
+    border-radius: 100px;
+    border-color:  #f2e9e4;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: inherit;
+}
+h2{
+    font-family: AfterMidnite, sans-serif;
+    color: #f2e9e4;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.azul{
+    color: #4a4e69;
+}

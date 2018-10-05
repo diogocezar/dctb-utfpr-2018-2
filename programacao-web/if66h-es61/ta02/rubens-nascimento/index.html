@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href= "css/style.css">
+    <title>TA: Flex</title>
+</head>
+<body>
+    <p>Exemplo de um menu vertical usando <span class ="bold"> flex-direction: column</span>, e um menu horizontal 
+        usando  <span class="bold">justify content: flex-start</span> e <span class ="bold">align-items: flex-start</span>. 
+        Ambos estão numa section alinhadas por <span class ="bold">flex-flow: row</span></p>
+
+    <section class="menu">
+        <section class="verticalMenu">
+
+            <div class="item">Quem somos </div>
+            <div class="item">Eventos </div>
+            <div class="item">Contato </div>
+            <div class="item">Parceiros </div>
+
+            </div>
+        </section>
+        <section class="horizontalMenu">
+
+            <div class="item">Quem somos </div>
+            <div class="item">Eventos </div>
+            <div class="item">Contato </div>
+            <div class="item">Parceiros </div>
+
+        </section>
+    </section>
+
+    <section class="gallery">
+        <p>Uma galeria de personagens, devido a frequencia de adição de novos personagens 
+            eles são alinhados utilizando <span class="bold"> flex-wrap: wrap</span> e 
+            <span class="bold">align-content: space-around</span> </p>
+        <section class="heroGallery">
+            <img src="imagens/dva.PNG">
+            <img src="imagens/Orisa.PNG">
+            <img src="imagens/Reinhardt.PNG">
+            <img src="imagens/Reaper.PNG">
+            <img src="imagens/Bastion.PNG">
+            <img src="imagens/Doomfist.PNG">
+            <img src="imagens/Genji.PNG">
+            <img src="imagens/Hanzo.PNG">
+            <img src="imagens/Junkrat.PNG">
+            <img src="imagens/Mcgree.PNG">
+            <img src="imagens/Mei.PNG">
+            <img src="imagens/Pharah.PNG">
+            <img src="imagens/Roadhog.PNG">
+            <img src="imagens/Soldado36.PNG">
+            <img src="imagens/Sombra.PNG">
+            <img src="imagens/Symmetra.PNG">
+            <img src="imagens/Torbjorn.PNG">
+            <img src="imagens/Tracer.PNG">
+            <img src="imagens/Winston.PNG">
+            <img src="imagens/WrekcingBall.PNG">
+            <img src="imagens/Zarya.PNG">
+        </section>
+
+            <p>Aqui tem a opção de entrar em quatro setores do site, para ajeitar as divs
+                dessa forma eu utilizo <span class="bold">flex-grow: 1</span> e para alinhar
+                o textos<span class="bold">align-self: flex-end</span> nos três textos de cima</p>
+            <section class="areas">
+            <div class="area1">
+                <a href="#">Setor de Qualidade</a>
+                <div class="text1">Veja os membros do setor de Qualidade</div>
+            </div>
+            <div class="area2">
+                <a href="#">Setor de Finanças</a>
+                <div class="text2">Veja os membros do setor de Finanças</div>
+            </div>
+            <div class="area3">
+                <a href="#">Setor de Gestão</a>
+                <div class="text3">Veja os membros do setor de Gestão</div>
+            </div>
+            <div class="area4">
+                <a href="#">Setor de RH</a>
+                <div class="text4">Veja os membros do setor de RH</div>
+            </div>
+        </section>
+        <p>Uma tabela de times, utilizo o <span class="bold">Order</span> para definir a ordem dos times,
+            para definir os tamanhos uso: <span class="bold">flex: 1 1 100%</span> para o primeiro colocado,
+            <span class="bold">flex: 1 1 40%</span> para o segundo, <span class="bold">flex: 2 1 20%;</span>
+            para o terceiro e <span class="bold">flex: 1 1 20%</span> para o ultimo</p>
+        <section class="group">
+
+            <div class="team1">Time 1</div>
+            <div class="team2">Time 2</div>
+            <div class="team3">Time 3</div>
+            <div class="team4">Time 4</div>
+
+        </section>
+
+    </section>
+</body>
+</html>

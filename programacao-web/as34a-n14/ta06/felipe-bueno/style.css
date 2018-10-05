@@ -1,0 +1,36 @@
+body {
+    background: #7b7d82;
+    text-align: center;
+}
+
+img {
+    width: 330px;
+    height: 330px;
+}
+
+div{
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+}
+
+#icon {
+    background-image: url(assets/football.svg);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poligon {
+    fill: #000;
+    stroke: #fff;
+    transition: 1s;
+}
+
+.poligon:hover {
+    fill: #fff;
+    stroke: #000;
+}

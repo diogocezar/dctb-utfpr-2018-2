@@ -1,0 +1,365 @@
+body {
+    background: black;
+    color: #FFFFFF;
+}
+
+.container{
+    max-width: 1100px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.container_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-menu{
+    width: 100vw;
+    height: 70px;
+    background-color: #22213d;
+    font-size: 1.10em;
+}
+
+
+#logo_header{
+    height: 85%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    padding: 18px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+#home {
+    height: calc(100vh - 70px);
+    background:linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("../images/geovanna-bg-home.jpg");
+}
+
+#presentation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:linear-gradient(rgba(74,74,105,.8),rgba(74,74,105,.8)),url("../images/geovanna-bg-presentation.jpg") top center;
+}
+
+#about {
+    color:#22213d;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f2e9e4;
+}
+
+#content-about{
+    width: 50%;
+}
+
+.title {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.sub_title{
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about_geovanna {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.presentation_title {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_presentation {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 16px;
+}
+
+.about_title {
+    font-size: 56px;
+    margin-bottom: 3rem;
+}
+
+.sub_title_about {
+    color: #a0929d;
+    font-family: inherit;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.text_about {
+    font-size: 14px;
+    line-height: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+
+#img_heart {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background:linear-gradient(rgba(34,34,59,.84),rgba(34,34,59,.98)), url("../images/geovanna-bg-services.jpg") top center;
+}
+
+.services_title {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.services-container .service {
+    text-align: center;
+    flex: 1;
+}
+
+.services-container h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #f2e9e4;
+}
+
+.services-container h3 .h1 {
+    font-size: 2.2rem;
+    color: #f2e9e4;
+}
+
+.services-container p {
+    line-height: 1.8rem;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#testmonials {
+    color:#22213d;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f2e9e4;
+}
+
+.testmonials_title {
+    margin: 0px;
+    padding: 5px;
+    line-height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.testmonials_desc {
+    width: 500px;
+    margin-top: 42px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    color: #9a8c98;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.testmonials-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.testmonials-container .testmonial {
+    text-align: center;
+    flex: 1;
+}
+
+
+.testmonials-container .testmonial p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    color: #4a4a69;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+.testmonials-container .testmonial h4{
+    margin: 0px;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    color: #212529;
+    font-weight: 500;
+}
+
+.testmonials-container .testmonial h5{
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #c9ada7;
+}
+
+#contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background:linear-gradient(rgba(34,34,59,.8),rgba(34,34,59,.9)), url("../images/geovanna-bg-contact.jpg");
+}
+
+
+#contact h1 {
+    margin: 0px;
+    padding: 5px;
+    line-height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#contact h3 {
+    margin: 0px;
+    padding: 60px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #c9ada7;
+    font-size: 1.4rem;
+}
+
+#contact h4 {
+    margin: 0px;
+    font-weight: 500;
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #c9ada7;
+    font-size: 1.2rem;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact .telefone {
+    margin: 0px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#contact .email {
+    margin: 0px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.h1 {
+    font-size: 32px;
+}
+
+
+.btn {
+    min-width: 250px;
+    height: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.btn_default {
+    color:white;
+    background-color: transparent;
+}
+
+.btn_white {
+    color:#4a4e69;
+    background-color: white;
+}
+
+.btn_default:hover {
+    background-color: white;
+    color:#4a4e69;
+    transition: 0.5s;
+}
+
+.btn_white:hover {
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    #content-about{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+}

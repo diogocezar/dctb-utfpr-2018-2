@@ -1,0 +1,4 @@
+@function convPixelParaRem($tam){
+    $calc: $tam/16;
+    @return #{$calc}rem;
+}
