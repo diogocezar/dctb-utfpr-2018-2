@@ -1,0 +1,187 @@
+$width: (
+  small: 30%,
+  bigger: 90%
+);
+
+$max-width: (
+  default: 935px
+);
+
+$colors: (
+  light: #fafafa,
+  white: #fff,
+  blue: #3897f0,
+  bg-dark: rgba(0, 0, 0, 0.3)
+);
+
+$transitions: (
+  medium: 0.3s
+);
+
+$font-size: (
+  small: 16px,
+  medium: 24px,
+  big: 28px
+);
+
+$border-width: (
+  small: 1px
+);
+
+$border-radius: (
+  default: 4px
+);
+
+$margin: (
+  top-bottom-small: 10px 0,
+  top-bottom-medium: 20px 0,
+  top-bottom-default: 30px 0,
+  right-left-medium: 0 20px 0 0,
+  right-left-big: 0 40px,
+  right-medium: 0 20px 0 0
+);
+
+$padding: (
+  default: 6px 14px
+);
+
+$md-and-up: "(min-width: 768px)";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: map-get( $font-size, small );
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: map-get( $colors, light );
+}
+
+main {
+  width: map-get( $width, bigger );
+  max-width: map-get( $max-width, default );
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  margin: map-get( $margin, top-bottom-default );
+  flex-flow: column;
+
+  h1 {
+    font-size: map-get( $font-size, big );
+  }
+  h2 {
+    font-size: map-get( $font-size, medium );
+  }
+  .avatar {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .desc {
+    text-align: center;
+  }
+  .links {
+    list-style: none;
+    margin: map-get( $margin, top-bottom-small );
+
+    li {
+      list-style: none;
+      margin: map-get( $margin, right-medium );
+      display: inline-block;
+    }
+  }
+}
+
+header h1,
+h2 {
+  display: inline-block;
+  margin: map-get( $margin, top-bottom-small );
+}
+
+.btn-follow {
+  margin: map-get( $margin, right-left-medium );
+  padding: map-get( $padding, default );
+  border-width: map-get( $border-width, small );
+  border-style: solid;
+  border-color: map-get( $colors, blue );
+  color: map-get( $colors, blue );
+  -webkit-border-radius: map-get( $border-radius, default );
+  -moz-border-radius: map-get( $border-radius, default );
+  border-radius: map-get( $border-radius, default );
+
+  &:hover {
+    background: map-get( $colors, blue );
+    color: map-get( $colors, white );
+  }
+}
+
+.photos {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+
+  li {
+    width: 100%;
+    margin: map-get( $margin, top-bottom-medium );
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+    .img-hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: map-get( $colors, bg-dark );
+      transition: all map-get( $transitions, medium ) linear;
+    }
+    &:hover {
+      .img-hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media #{ $md-and-up } {
+
+  header {
+    flex-flow: row;
+
+    .avatar {
+      margin: map-get( $margin, right-left-big );
+    }
+    .desc {
+      text-align: left;
+    }
+  }
+  .photos li {
+    width: map-get( $width, small );
+  }
+}
