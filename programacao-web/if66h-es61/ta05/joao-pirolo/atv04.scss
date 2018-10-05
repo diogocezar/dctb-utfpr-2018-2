@@ -1,0 +1,9 @@
+@function convert($var) {
+  @return ($var/16) + rem;
+}
+$font-size: convert(32);
+html {
+  .p {
+    font: #{font-size};
+  }
+}
