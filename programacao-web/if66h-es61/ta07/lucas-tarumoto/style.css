@@ -1,0 +1,24 @@
+#img2{
+	background-image: url(images/img_ex2.svg);
+	border: 1px solid black;
+	height: 450px;
+	width: 100%;
+	margin-bottom: -350px;
+	margin-top: -150px;
+}
+
+#formas{
+	margin-top: -650px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hexagon:hover{
+	fill: #e60000;
+	stroke: #000000;
+}
+
+.triangle:hover{
+	fill: #cc00cc;
+	stroke: #000000;
+}
