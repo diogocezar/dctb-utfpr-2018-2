@@ -1,0 +1,267 @@
+﻿
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    background-color: #22223b;
+   
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+#main-nav {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
+    #main-nav li {
+        text-align: center;
+        margin: 15px auto;
+    }
+
+.nav-links,
+#logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+    #logo:hover,
+    .nav-links:hover {
+        text-decoration:underline;
+        color: rgba(255, 255, 255, 1);
+    }
+
+#logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+    #navbar-toggle:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    #main-nav {
+        display: flex !important;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+        #main-nav li {
+            margin: 0;
+        }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    #logo {
+        margin-top: 0;
+    }
+
+    #navbar-toggle {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: AfterMidnite,sans-serif;
+    src: url('AfterMidnite.eot');
+    src: url(C:\Users\gabrielli\Desktop\UTFPR\font);
+}
+@font-face {
+    font-family: AfterMidnite;
+    src: url('AfterMidnite.eot');
+    src: url('AfterMidnite?#iefix') format('embedded-opentype'), url('AfterMidnite.svg#Locaweb-Icons') format('svg'), url('AfterMidnite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#Home {
+    background-image: URL(geovanna-bg-home.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+    #Home:after {
+        background-color: rgb(34, 34, 59);
+    }
+
+#Apresentation {
+    background-image: URL(geovanna-bg-presentation.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    font-family: AfterMidnite,sans-serif;
+}
+
+#About {
+    background-color: #f2e9e4;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+#Services {
+    background-image: URL(geovanna-bg-services.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+#Testmonials {
+    background-color: #f2e9e4;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+#Contact {
+    background-image: URL(geovanna-bg-contact.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    
+}
+
+
+#testecor {
+    font-family: serif;
+    background-color: #22223b;
+    opacity: 0.8;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Contact1 div {
+  
+}
+
+
+#testecorPrincipal {
+    font-family: serif;
+    background-color: #22223b;
+    opacity: 0.8;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#HomePrincipal {
+color: white;
+}
+
+
+    .button div {
+        padding: 30px;
+        border: 2px solid #32254f;
+        text-align: center;
+        border-color:white;
+        border-radius: 90px;
+        color: black;
+        font-size: 1.3em;
+    }
+
+        .button div:hover {
+            background-color: #f2f2f2;
+            color: black;
+            cursor: pointer;
+        }
+
+#testecorApresentation {
+    font-family: serif;
+    background-color: #22223b;
+    opacity: 0.8;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonApresentation div {
+    padding: 30px;
+    border: 2px solid #32254f;
+    text-align: center;
+    border-color: white;
+    border-radius: 90px;
+    color: black;
+    font-size: 1.3em;
+}
+
+.buttonApresentation div:hover {
+    background-color: #f2f2f2;
+    color: black;
+    cursor: pointer;
+}
+#About1 {
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#testecorServices {
+    font-family: serif;
+    background-color: #22223b;
+    opacity: 0.8;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Services1 {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+}
+
+#depo1 {
+    display: flex;
+}
+.depo {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+}

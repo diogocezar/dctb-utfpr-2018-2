@@ -1,0 +1,13 @@
+h4{
+    width: 15em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+p:first-child{
+    padding-top: 1em;
+}
+
+.jumbotron{
+    background-color: aliceblue;
+}

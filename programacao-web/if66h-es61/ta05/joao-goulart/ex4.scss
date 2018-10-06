@@ -1,0 +1,155 @@
+$background: #fafafa;
+$primary: #3897f0;
+$img-backfround: rgba(0, 0, 0, 0.3);
+$btn-hover: #fff;
+
+$rem-cons: 0.0625;
+$font-html: ($rem-cons * 16) rem;
+$sm-device: 768px;
+$max-width: 935px;
+$main-width: 90%;
+$header-h1: ($rem-cons * 28) rem;
+$header-h2: ($rem-cons * 24) rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-html;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: $background;
+}
+
+main {
+    width: $main-width;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    margin: 30px 0;
+    flex-flow: column;
+    .avatar {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .desc {
+        text-align: center;
+    }
+    h1,
+    h2 {
+        display: inline-block;
+        margin: 10px 0;
+    }
+    h1 {
+        font-size: $header-h1;
+    }
+    h2 {
+        font-size: $header-h2;
+    }
+    .links {
+        list-style: none;
+        margin: 10px 0;
+        li {
+            list-style: none;
+            margin: 0 20px 0 0;
+            display: inline-block;
+        }
+    }
+}
+
+.btn-follow {
+    margin: 0 20px;
+    padding: 6px 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $primary;
+    color: $primary;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.btn-follow:hover {
+    background: $primary;
+    color: $btn-hover;
+}
+
+
+.photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    li {
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+        @extend .img-hover;
+        img {
+            width: 100%;
+        }
+        .img-hover {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            transition: all 0.3s linear;
+          }
+    }
+    li:hover .img-hover {
+        opacity: 1;
+    }
+}
+
+@media (min-width: $sm-device) {
+    header {
+        flex-flow: row;
+        .avatar {
+            margin: 0 40px;
+        }
+        .desc {
+            text-align: left;
+        }
+    }
+    .photos li {
+        width: 30%;
+    }
+}
+
+
+.btn-custom {
+    @extend .btn-follow;
+    padding: 10px;
+    border-width: thick;
+    border-style: dotted;
+    border-radius: 50px 20px;
+
+}
+

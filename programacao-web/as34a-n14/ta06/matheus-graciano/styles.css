@@ -1,0 +1,31 @@
+h4{
+    text-align: center;
+}
+
+#item{
+    max-width: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.row{
+    margin: 10px;
+}
+
+.back{
+    width: 100%;
+    height: 256px;
+    background-image: url(assets/images/spiderweb_doily.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.poli{
+    stroke: #000;
+    fill: #333;
+    stroke-width: 10;
+}
+
+.st0:hover{
+    fill: red;
+}

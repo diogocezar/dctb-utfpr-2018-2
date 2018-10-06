@@ -1,0 +1,16 @@
+
+
+.nav {
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav h1 {
+    color: white;
+}

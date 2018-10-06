@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: 'AfterMidnite';
+    src: url('../fonts/After_Midnite/After Midnite Webfont Kit/AfterMidnite.eot') 
+    format('eot'), url('../fonts/After_Midnite/After Midnite Webfont Kit/AfterMidnite.woff') 
+    format('woff'), url('../fonts/After_Midnite/After Midnite Webfont Kit/AfterMidnite.ttf') 
+    format('truetype'); }
+.about{
+    margin-top: 0px;
+    background: linear-gradient(rgba(34,34,59,.84),
+    rgba(34,34,59,.98)),
+        url("../imgs/geovanna-bg-home.jpg");
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 1px;
+}
+.about p{
+    text-transform: uppercase;
+}
+.about p,h2,h3{
+    color:#f2e9e4;
+    text-align:center;
+    font-family: TrajanPro-Regular,serif;
+    font-weight: 500;
+}
+stronger{
+    color: #9a8c98;
+}
+
+.about h2,h3{
+    font-family: AfterMidnite,sans-serif;
+}
+.about h2{
+    line-height: 3rem;    
+}
+
+
+
+@media only screen and (max-width: 720px){
+    .about{
+        height:80%;
+    }
+    h2{
+        font-size: 3rem;
+    }
+
+    .about h3{
+        font-size: 1.8rem;
+        text-transform: none;
+    }
+    .about p{
+        font-size: 1.3rem;
+    }
+    a{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px){
+    .about{
+        
+    }
+    .about h2{
+        font-size: 4.8rem;
+        margin-bottom: 10px;
+        line-height: 100%;
+        text-align:center;
+    }
+
+    .about h3{
+        font-size: 3rem;
+        text-transform: none;
+    }
+
+    .about p{
+        font-size: 1.5rem;
+        margin-bottom: 70px;
+    }
+
+}
+
+@media (min-width: 1025px){
+    .about h2{
+        font-size: 6rem;
+        margin-bottom: 0px;
+        text-align:center;
+        line-height: 100%;        
+    }
+
+    .about h3{
+        font-size: 3.5rem;
+        text-transform: none;
+    }
+
+    .about p{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+}

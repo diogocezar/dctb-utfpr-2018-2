@@ -1,0 +1,69 @@
+.testimonials{
+	background-color: rgb(242,233,228);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: rgb(162, 148, 159);
+    padding-top: 70px;
+    font-family: "Trajan Pro", serif;
+	text-align: center;
+}
+
+.testimonials h2{
+    font-family: "afterMidnite", sans-serif;
+    font-size: 100px;
+    color: #22223b;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.testimonials h3{
+    color: #9a8c98;
+    width: 30%;
+    font-size: 24px;
+    margin-bottom: 32px;;
+    text-align: center;
+    padding: 0 30%;
+    margin-bottom: 120px;
+}
+
+.testimonials img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 50px;
+}
+
+.testimonials .box{
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.testimonials .relatos{
+    width: 30%;
+    text-align: center;
+    padding: 0 15%;
+    font-size: 20px;
+    margin-bottom: 34px;
+}
+
+.testimonials .relatos p{
+    
+    margin-bottom: 34px;
+}
+
+.testimonials h5{
+   color: #c9ada7;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+	  	align-self: center;
+	  	padding-left: 2vw;
+	  }
+}

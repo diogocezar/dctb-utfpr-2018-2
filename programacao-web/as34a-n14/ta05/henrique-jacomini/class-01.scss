@@ -1,0 +1,158 @@
+@import 'class-02';
+@import 'class-04';
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin margin-padding($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin zero-mp(){
+    margin: 0;
+    padding: 0;
+}
+
+@mixin box-sizing($box){
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    box-sizing: $box;
+}
+
+* {
+    @include zero-mp;
+    @include box-sizing(border-box);
+}
+
+html {
+    font-size: $font-size;
+}
+
+ul{
+    @include zero-mp;
+}
+
+img{
+    border: $font-zero;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: $color-01;
+}
+
+main {
+    width: $width-main;
+    max-width: $width-max;
+    margin: $margin-all;
+}
+
+header{
+    display: flex;
+    margin: $margin-header;
+    flex-flow: column;
+
+    .avatar{
+        @include border-radius(50%);
+        margin: $margin-all;
+    }
+
+    .desc{
+        text-align: center;
+    }
+
+    h1, h2{
+        display: inline-block;
+        margin: $margin-h1;
+    }
+
+    h1{
+        font-size: $font-h1;
+    }
+
+    h2{
+        font-size: $font-h2;
+    }
+
+    .links{
+        list-style: none;
+        margin: $margin-all;
+        li{
+            list-style: none;
+            margin: $margin-li;
+            display: inline-block;
+        }
+    }
+
+}
+
+@import 'class-03'; //Style for button
+
+.button-follow{
+    @extend .style-btn;
+    margin: $margin-button;
+    border-color: $color-button;
+    color: $color-button;
+    :hover{
+            background-color: $color-button;
+            color: $color-button;
+    }
+}
+
+.photos{
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    li{
+        width: $width-all;
+        margin: $margin-img;
+        position: relative;
+
+        img{
+            width: $width-all;
+        }
+        .img-hover{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width-all;
+            height: $height-all;
+            background: $color-04;
+            transition: all 0.3s linear;
+        }
+        :hover{
+            .img-hover{
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: $width-min){
+    header{
+        flex-flow: row;
+        
+        .avatar{
+            margin: $margin-min;
+        }
+
+        .desc{
+            text-align: left;
+        }
+    }    
+        .photos{
+            li{
+                width: $width-ph;
+            }
+        }
+}

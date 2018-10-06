@@ -4,7 +4,7 @@
    No Console do Windows.
      cls   - limpa a tela
      color - altera a cor de fundo e da fonte do console.
-     pause - dá uma mensagem de texto e espera o usuário digitar uma tecla */
+     pause - dÃ¡ uma mensagem de texto e espera o usuÃ¡rio digitar uma tecla */
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -25,11 +25,11 @@ int main(){
 
   system("cls");
   printf("\n\aO novo salario eh %lf\n\n",novoSalario);
-  system("pause"); // Quem define a mensagem é o sistema operacional.
+  system("pause"); // Quem define a mensagem ï¿½ o sistema operacional.
 
   system("color 07");
   return 0;
 }
 
-/* color sem parametros volta as cores padroes - não funciona via system,
+/* color sem parametros volta as cores padroes - nï¿½o funciona via system,
    so no console do Sistem Operacional Windows                           */

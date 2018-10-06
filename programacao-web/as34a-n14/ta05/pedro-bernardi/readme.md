@@ -1,0 +1,1 @@
+Atividades dentro de ./assets

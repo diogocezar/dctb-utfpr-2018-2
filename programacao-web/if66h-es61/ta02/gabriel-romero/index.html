@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TA-02 FLEX CONTAINER</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu-item"><a href="#">HOME</a></div>
+            <div class="menu-item"><a href="#">ITEM</a></div>
+            <div class="menu-item"><a href="#">ITENS EM ROW</a></div>
+            <div class="menu-item"><a href="#">WRAP</a></div>
+            <div class="menu-item sub">ORDEM COLUMN HOVER
+                <div class="sub-menu">
+                    <div class="sub-menu-item p3"><a href="#">ITEM 1 com align-items, flex-basis</a></div>
+                    <div class="sub-menu-item p1"><a href="#">ITEM 2 com align-items, flex-basis</a></div>
+                    <div class="sub-menu-item p2"><a href="#">ITEM 3 com align-items, flex-basis</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="conteudo-principal">
+            <div class="principal-item">
+                <div class="caixa">
+                    <img alt="Imagem Iron Maiden" src="./img/iron.png">
+                    <p class="texto">AQUI TEM display: flex; flex-direction: row; flex-wrap: wrap; align-items: stretch;
+                         justify-content: center;<br>
+                         PARA OS ITENS: flex-grow: 1; flex-shrink: 2;<br> 
+                    </p>
+                </div>
+            </div>
+            <div class="principal-item">
+                <div class="caixa">
+                    <img alt="Imagem Iron Maiden" src="./img/corinthians.png">
+                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque faucibus felis rutrum odio malesuada, a accumsan risus ultrices. 
+                    Nulla non pretium massa, sit amet pellentesque eros. Nullam quam quam, euismod.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Quisque faucibus felis rutrum odio malesuada, a accumsan risus ultrices. 
+                    Nulla non pretium massa, sit amet pellentesque eros. Nullam quam quam, euismod.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="conteudo-alternativo">
+            <div class="alternativo-item">
+                <p>
+                    AQUI TEM: display: flex; flex-flow: row wrap; align-items: stretch;<br>
+                    Pesca é a extração de organismos aquáticos, do meio onde se desenvolveram
+                    para diversos fins, alimentação, a recreação (pesca recreativa ou pesca desportiva),
+                     a ornamentação (captura de espécies ornamentais), ou para fins Comestíveis 
+                     industriais, incluindo o fabrico de rações para o alimento de animais em 
+                     criação e a produção de substâncias com interesse para a saúde - como o "famoso" 
+                     óleo de fígado de peixe (especialmente o óleo de fígado de bacalhau).</p>
+            </div>
+            <div class="alternativo-item">
+                <p class="esq">
+                    AQUI TEM PARA OS ITENS: flex: 1 1 1; align-self: stretch;<br>
+                    Física quântica é um ramo teórico da ciência que estuda todos os 
+                    fenômenos que acontecem com as partículas atômicas e subatômicas, ou seja, 
+                    que são iguais ou menores que os átomos, como os elétrons, os prótons,  
+                    as moléculas e os fótons, por exemplo.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

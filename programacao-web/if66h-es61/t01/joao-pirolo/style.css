@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'TrajanPro-Regular';
+    src: url(assets/fonts/TrajanPro-Regular.ttf);}
+@font-face {
+    font-family: 'AfterMidnite';
+    src: url(assets/fonts/AfterMidnite.ttf);}
+@media screen and (max-width: 1170px){
+#header-menu{
+        padding-bottom: 80px;}
+#div-flex{
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left:-150px;}
+#div-itens{
+        margin-top: 10px;
+        flex-direction: column;} }
+html{
+    scroll-behavior: smooth;
+}

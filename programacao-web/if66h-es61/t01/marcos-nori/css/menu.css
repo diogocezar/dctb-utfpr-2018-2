@@ -1,0 +1,55 @@
+.menu{
+	padding: 5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 1;
+	font-family:"Trajan Pro", serif;
+	font-family: 1vw;
+	background: linear-gradient(
+	    to bottom,
+	    rgba(34,34,60, 0.6),
+	    rgba(34,34,60, 0.7)
+	  ),url("../images/geovanna-bg-home.jpg");
+	color: rgb(242,233,228);
+}
+
+.menu button{
+	font-family: "Trajan Pro", serif;
+	border-radius: 90px;
+	background-color: transparent;
+	color: rgb(242,233,228);
+	padding: 15px 30px;
+	transition: all 0.2s linear;
+	margin: 50px;
+	border-style: solid;
+	border-color: rgb(242,233,228);
+	cursor: pointer;
+}
+
+.menu button:hover{
+	background-color: rgb(242,233,228);
+	color: black;
+}
+
+.menu h2{
+	font-family: AfterMidnite;
+	font-size: 6vw;
+	font-weight: 100;
+}
+
+.menu h3{
+	font-family: AfterMidnite;
+	font-size: 4vw;
+	font-weight: 100;
+}
+
+.menu p{
+	font-family: "Trajan Pro", serif;
+	font-size: 1vw;
+}
+
+.nome{
+	color: rgb(154,140,129);
+}

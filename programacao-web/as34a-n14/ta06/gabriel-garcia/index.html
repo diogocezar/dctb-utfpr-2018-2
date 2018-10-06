@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+
+<head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Gabriel Garcia - SVG</title>
+</head>
+
+<body>
+    <section id="svg-image">
+        <div id="svg-image-container">
+            <h1 id="title">SVG Image</h1>
+            <img id="image" src="./assets/images/image-01.svg" />
+        </div>
+    </section>
+    <section id="svg-background">
+        <h1 id="title">SVG Background</h1>
+    </section>
+    <section id="svg-inline">
+        <div id="svg-inline-container">
+            <p id="text">Lorem ipsum dolor sit amet, consectetur
+                <svg id="inline-image" style="width: 35px; height: 30px; display: inline;">
+                    <circle r="10" cx="20" cy="20" />
+                </svg>
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+    <section id="svg-natives">
+        <svg>
+            <rect x="50" y="20" width="300" height="100" />
+        </svg>
+        <svg>
+            <circle r="50" cx="150" cy="70" />
+        </svg>
+        <svg>
+            <rect x="5" y="110" width="300" height="5" />
+        </svg>
+        <svg id="polygon-colors">
+            <polygon points="50,5 100,5 125,30 125,80 100,105 50,105 25,80 25,30" stroke-width="5" />
+        </svg>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background: linear-gradient(rgba(34,34,59,.84),
+    rgba(34,34,59,.98)),
+        url("../imgs/geovanna-bg-contact.jpg");
+    height: 90%;
+    background-position: 50%;    
+    justify-content: space-between; 
+    padding-bottom: 50px;
+}
+
+.contact p,h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact h2{
+    color:#f2e9e4;
+    margin-bottom: 40px;
+    font-family: AfterMidnite,sans-serif;   
+}
+
+.contact h3{
+    font-family: TrajanPro-Regular,serif;     
+    color: #f2e9e4;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 5px;    
+}
+.contact p{
+    color: #c9ada7;
+    font-family: TrajanPro-Regular,serif;     
+}
+
+
+#small{
+    margin-top: 0;
+    color: #f2e9e4;   
+}
+.social{
+    display:flex;
+}
+.socialImg{
+    border: 3px solid #f2e9e4; 
+    line-height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 720px){
+    .contact img{
+        height: 13%
+    }
+
+    .contact p{
+        font-size: 1.2rem;
+    }
+    
+    .contact h3{
+      font-size: 2.3rem;  
+    }
+
+    #white{
+        font-size: 1.0rem;
+    }
+
+    #small{
+        font-size: 0.8rem;
+    }
+    
+    .socialImg img{
+        height: 100%
+    }
+}
+
+
+@media (min-width: 721px) and (max-width: 1024px){
+    .contact h2{
+        font-size: 5rem;
+    }
+    
+    .contact img{
+        height: 17%;
+    }
+
+    .contact p{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+
+    .contact h3{
+        font-size: 2.3rem;
+    }
+    
+    #small{
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+    .socialImg img{
+        height: 100%
+    }
+}
+
+@media (min-width: 1025px){
+    .contact{
+        height: 100%
+    }
+    .contact h2{
+        font-size: 5rem;
+    }
+    
+    .contact img{
+        height: 17%;
+    }
+
+    .contact p{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+
+    .contact h3{
+        font-size: 2.3rem;
+        margin-bottom: 0px;
+    }
+    
+    #small{
+        font-size: 0.8rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        color: #f2e9e4;   
+        
+    }
+    #white{
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+        color: #f2e9e4;           
+    }
+    .socialImg img{
+        height: 100%
+    }
+}

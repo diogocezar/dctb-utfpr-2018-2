@@ -1,0 +1,126 @@
+.services{
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(34,34,59,.84),
+    rgba(34,34,59,.98)),
+        url("../imgs/geovanna-bg-services.jpg");
+    height:130%;
+    background-position: 50%;
+    background-position-y: 0%;
+    padding-top:50px;   
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center
+}
+
+.services h2{
+
+    font-weight: 20px;
+    text-transform: uppercase;
+}
+.services h3{
+    color:#9a8c98;    
+    font-family: TrajanPro-Regular,serif;
+    margin-bottom:0;      
+    text-transform: uppercase;
+    letter-spacing: 0.5px;     
+}
+.services h4{
+    color:#9a8c98;    
+    font-weight: 500;
+    font-family: TrajanPro-Regular,serif;
+    margin-top:0;      
+    text-transform: uppercase;
+    letter-spacing: 1.8px; 
+    text-align: center;   
+}
+.services p{
+    color:#f2e9e4;
+    font-family:Montserrat,sans-serif;
+    line-height: 25px;
+    text-align:center;
+    font-weight: 100;
+}
+
+.services a{
+    border: 1px solid #f2e9e4;
+    background-color: #f2e9e4;
+    color: #4a4e69;
+    font-weight: 500;
+    text-transform: uppercase; 
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-self: center;
+}
+
+.services img{
+    height: 12%;
+}
+@media only screen and (max-width: 720px){
+    .services h2{
+        font-size: 1.4rem;
+        
+    }
+    .services h3{
+        font-size: 1.4rem;   
+    }
+    .services h4{
+        font-size: 1.7rem;    
+    }
+    .services p{
+        font-size: 0.8rem;        
+    }
+    .services a{
+        width: 70%
+    }
+}    
+
+
+@media (min-width: 721px) and (max-width: 1024px){
+    .services{
+        padding-right: 20%;
+        padding-left: 20%;        
+    }
+    .services h2{
+        font-size: 1.8rem;
+        text-align:center;
+    }
+    .services h3{
+        font-size: 1.8rem;   
+    }
+    .services h4{
+        font-size: 2.3rem;    
+    }
+    .services p{
+        font-size: 0.9rem;        
+    }
+    .services a{
+        width: 70%
+    }
+}
+
+@media (min-width: 1025px){
+    .services{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+    .services h2{
+        font-size: 2rem;
+        text-align:center;
+    }
+    .services h3{
+        font-size: 2rem;   
+    }
+    .services h4{
+        font-size: 2.7rem;    
+    }
+    .services p{
+        font-size: 0.9rem;        
+    }
+    .services a{
+        margin-top: 50px;
+        width: 70%
+    }
+}

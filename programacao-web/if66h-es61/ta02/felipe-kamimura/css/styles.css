@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+    font-size: 8px;
+}
+
+.flex-flow{
+    flex-flow: row wrap;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    align-content: flex-end;
+}
+.col{
+    background-color: #ffd3ea;
+    margin: 10px;
+    flex-grow: 1;
+}
+.shrink{
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 150px;
+    background-color: #43a8e8;
+}
+
+.shrink2{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
+    background-color: #43a8e8;
+}
+
+.shrink3{
+    flex-grow: 1;
+    flex-shrink: 3;
+    flex-basis: 10px;
+    background-color: #43a8e8;
+}
+
+.basis-1{
+    flex: 0 1 110px;
+    background-color: #8ab6fc;
+}
+.row-wrap{
+    flex-flow: row wrap;
+    background-color: #ff5689;;
+}
+.column{
+    flex-direction: column;
+
+}
+
+.order0{
+    order:0;
+    align-self: center;
+}
+.order1{
+    order:1;
+    align-self: center;
+}
+.order2{
+    order:2;
+    align-self: flex-end;
+}
+.order-1{
+    order:-1;
+    align-self: flex-start;
+}
+.flex-grow{
+    flex-grow:1;
+}
+.container{
+    max-width: width auto;
+    margin: 0 auto;
+    border:0px solid #000000;
+}
+
+.container2{
+    max-width: width auto;
+    height: 150px;
+    margin: 0 auto;
+    border:1px solid #000000;
+}
+
+header{
+    height: auto;
+    width: auto;
+    background-color: #ff99b7;
+    color: white;
+}
+
+.align-self1{
+    align-self: center;
+}
+.align-self2{
+    align-self: flex-end;
+}
+
+footer{
+    height: auto;
+    background-color: #ff5689;
+    font-size: 0.8em;
+    color: white;
+}
+h3{
+    color: #f56666;
+}
+.menu_item{
+    flex: 1;
+    text-align: center;
+    background-color: #ff306d;
+    padding: 5px;
+    font-weight: bold;
+}
+.menu_item2{
+    flex: 1;
+    text-align: left;
+    background-color: #ff306d;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.menu_item:hover{
+    background-color: #ffd7e3;
+    color: #ff306d;
+}
+.item{
+    margin: 5px;
+    padding: 1px;
+    text-align: center; 
+}
+.tag{
+    flex-grow: 1;
+    background: #43a8e8;
+    font-size: 1.5em;   
+}
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}

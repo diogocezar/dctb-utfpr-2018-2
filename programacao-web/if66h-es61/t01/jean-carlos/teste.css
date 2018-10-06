@@ -1,0 +1,168 @@
+body{
+    background-color:9BC4EE;
+    margin: 0;
+    display:flex;
+    flex-direction:column;   
+    align-items: center;    
+}
+
+h1,h2, h3, p{
+    color:#074584;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#2982DB;
+    text-align: center;
+    text-decoration: none;
+}
+h1{
+    width: 100%    
+}
+
+.container-menu{
+    display: flex;
+    background-color: #074584; 
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.men{
+    border-radius: 20%;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.big{
+    border: 2px solid black;
+    background-color: #074584;  
+    display:flex;  
+    width:90%;
+}
+.container{
+    width: 50%;
+    border: 2px solid black;
+    background-color: #074584;  
+    display:flex;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 2%
+}
+.item{
+    border: 2px solid #9BC4EE;
+    background-color: #2982DB;
+    margin: 10px;
+    text-align: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.column-reverse{
+    flex-direction:column-reverse;
+}
+
+.wrap{
+    max-width:30%;
+    flex-wrap: wrap;
+}
+
+.btn{
+    border-radius: 20%;
+    min-width: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: black;    
+}
+
+.justify-content{
+    width:90%;
+    justify-content:space-between;
+    background-color: none;
+}
+
+.align-itens{
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.align-itens img{
+    width: 50%;
+    height: 50%
+}
+
+.align-content{
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.align-content .item{
+    margin: 1px;    
+    width: 18%;
+    height: 40%
+}
+
+.grow1{
+    flex-grow: 1;
+}
+
+.grow2{
+    flex-grow: 2;
+}
+
+.grow3{
+    flex-grow: 3;
+}
+
+.bas{
+    height: 50%;
+    width: 90%;
+    justify-content: space-between;
+}
+.basis{
+    flex-basis: 30%;
+    max-height: 90%;
+}
+
+.order1{
+    order: 3;
+}
+
+.order2{
+    order: 1;
+}
+
+.order3{
+    order: 2;
+}
+
+.links{
+    width:90%
+}
+.self{
+    height: 60%;
+}
+.flexit{
+    flex: 3 1 30%;
+    align-self: baseline;
+}
+
+.flexit2{
+    flex: 2 1 150px;
+    align-self:center;   
+}
+
+.flexit3{
+    flex: 2 1 150px;
+    align-self: flex-end    
+}

@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'AfterMidnite';
+    src: url("./fontes/AfterMidnite.otf");
+      
+}
+@font-face{
+    font-family: 'TrajanPro-Regular';
+    src: url("./fontes/TrajanPro-Regular.otf");
+}
+@font-face{
+    font-family: "Montserrat Light";
+    src: url("./fontes/Montserrat-Light.otf");
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/*fonts*/
+
+p{
+    color: rgb(34,34,59);
+    position: relative;
+    left: 130px;
+    top: 40px;
+    font-family: 'Montserrat Light';
+}
+
+a{
+    font-family: 'TrajanPro-Regular';
+}
+
+p::selection{
+    background: rgba(34,34,59,.7);
+    color: rgb(242, 233, 228);
+}
+
+h1{
+    font-family: 'AfterMidnite';
+    font-weight: lighter;
+}
+
+h1#maior{
+    color: rgb(242, 233, 228);
+    text-align: center;
+    font-size: 90px;
+    padding-top: 70px;
+}
+
+h1#menor{
+    color: rgb(242, 233, 228);
+    position: absolute;
+    top: 220px;
+    left: 290px;
+    font-size: 55px;
+    
+}
+
+h1#center{
+    color: rgb(242, 233, 228);
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 80px;
+}
+
+h1#azullateral{
+    color: rgb(34,34,59);
+    font-size: 80px;
+    position: relative;
+    top: 70px;
+    text-indent: 130px;
+}
+
+h1#azulcenter{
+    color: rgb(34,34,59);
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    top: 70px;
+}
+
+h1::selection{
+    background: rgba(34,34,59,.7);
+    color: rgb(242, 233, 228);
+}
+
+h2{
+    font-family: 'TrajanPro-Regular';
+    font-weight: lighter;
+}
+
+h2#normal{
+    color: rgb(242, 233, 228);
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-size: 22px;
+}
+
+h2#center{
+    color: rgb(242, 233, 228);
+    text-align: center;
+    position: relative;
+    top: 80px;
+    font-size: 30px;
+}
+
+h2#lateral{
+    color: rgb(154, 140, 152);
+    position: relative;
+    top: 30px;
+    text-indent: 130px;
+}
+
+h2#title{
+    color: rgb(242, 233, 228);
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+}
+
+h2#rosa{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(193, 173, 167)
+}
+h2#rosamenor{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 17px;
+    color:rgb(242, 233, 228);
+}
+
+h2#wpp{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(242, 233, 228);
+}
+h2#wpp2{
+    text-align: center;
+    font-size: 10px;
+    color: rgb(242, 233, 228);
+}
+
+h2::selection{
+    background: rgba(34,34,59,.7);
+    color: rgb(242, 233, 228);
+}
+
+h3{
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(242, 233, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h3::selection{
+    background: rgba(34,34,59,.7);
+    color: rgb(242, 233, 228);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(209, 185, 179);
+}
+
+/*menu*/
+
+#topo{
+    display: block;
+    background-color: rgb(34,34,59);
+    height: 50px;
+}
+
+#menu ul {
+    position: absolute;
+    z-index: 99999;
+    padding:0px;
+    margin:0px;
+    width: 100%;
+    float: right;
+    background-color: rgb(34,34,59);
+    list-style: none;
+}
+
+#menu li {
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
+}
+
+#menu ul li {
+    text-decoration: none;
+    color: rgb(242, 233, 228);
+    float: right;
+
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: rgb(242, 233, 228);
+    float: right;
+}
+
+#menu ul li a:hover{
+
+    text-decoration: underline;
+    float: right;
+
+}
+
+/*interface*/
+
+#homefoto{
+    background-image: url("./imagens/home.jpg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+
+#home{
+    background-color: rgba(34,34,59,.9);
+    height: 615px;
+    margin-top: -55px;
+}
+
+#apresentacaofoto{
+    background-image: url("./imagens/presentation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#apresentacao{
+    background-color: rgba(34,34,59,.7);
+    height: 550px;
+    margin-top: -30px;
+}
+
+#sobre{
+    background-color: rgb(242, 233, 228);
+    height: 900px;
+    margin-top: -70px;
+}
+
+aside#lateral{
+    width: 600px;
+}
+
+#servicofoto{
+    background-image: url("./imagens/servico.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#servico{
+    background-color: rgba(34,34,59,.9);
+    height: 615px;
+    margin-top: -30px;
+}
+
+#contatofoto{
+    background-image: url("./imagens/contato.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#contato{
+    background-color: rgba(34,34,59,.9);
+    height: 800px;
+    margin-top: -55px;
+}
+
+/*imagens*/
+
+.coracao{
+    padding: 70px 90px 0px 90px;
+    width: 120px;
+    height: 120px;
+}
+
+.presentation{
+    padding: 90px 640px 50px;
+    width: 60px;
+    height: 60px;
+}
+
+.ring{
+    padding: 100px 640px 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.ballons{
+    padding: 15px 640px 50px;
+    width: 90px;
+    height: 90px;
+}
+
+.rings{
+    padding: 10px 600px 30px;
+    width: 150px;
+    height: 150px;
+}
+
+
+/*botões*/
+
+#primeirobotao{
+    position: absolute;
+    left: 50%;
+    margin-left:-120px;
+    bottom: 150px;
+    border-radius: 30px;
+    padding: 15px;
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    color: rgb(242, 233, 228);
+    border: 1px solid;
+    border-color: rgb(242, 233, 228);
+}
+
+#primeirobotao:hover{
+    background-color: rgb(242, 233, 228);
+    color: rgb(34,34,59);
+    transition: 1s;
+}
+
+#segundobotao{
+    position: absolute;
+    left: 50%;
+    margin-left:-120px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    width: 250px;
+    height: 60px;
+    background-color: rgb(242, 233, 228);
+    color: rgb(34,34,59);
+}
+
+
+#segundobotao:hover{
+    background-color: transparent;
+    color: rgb(242, 233, 228);
+    border: 1px solid;
+    border-color: rgb(242, 233, 228);
+    transition: 1s;
+}
+
+#terceirobotao{
+    position: absolute;
+    left: 50%;
+    margin-left:-120px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    width: 250px;
+    height: 60px;
+    background-color: rgb(242, 233, 228);
+    color: rgb(34,34,59);
+}
+
+#terceirobotao:hover{
+    background-color: transparent;
+    color: rgb(242, 233, 228);
+    border: 1px solid;
+    border-color: rgb(242, 233, 228);
+    transition: 1s;
+}

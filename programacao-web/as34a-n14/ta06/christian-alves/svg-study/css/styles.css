@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+h2 {
+    color: #2e1d5f;
+}
+img {
+    width: 20%;
+}
+.container {
+    margin: 0 auto;
+    padding: 40px 100px;
+    border: 1px solid steelblue;
+}
+.bg {
+    background-image: url("../img/guitar.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+.bg h2 {
+    text-align: left;
+}
+.svg-inline {
+    fill: darkgrey;
+    stroke: firebrick;
+}
+.svg-inline:hover {
+    cursor: pointer;
+    fill: blue;
+    stroke: darkgrey;
+}

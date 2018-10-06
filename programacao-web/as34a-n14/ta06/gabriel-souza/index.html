@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>TA06</title>
+</head>
+<center>
+
+    <body>
+
+        <h2>Inserção de SVG como se fosse uma imagem:</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/NewTux.svg" width="150px" height="150px" alt="Linux" />
+
+        <h2>Inserção de SVG como background:</h2>
+        <div class="icon"></div>
+        <style>
+            .icon {
+                width: 250px;
+                height: 250px;
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/de/Fluegelrad.svg)
+            }
+        </style>
+
+        <h2>Inserção de SVG com o código inline:</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="150px" height="150px" viewBox="0 0 47.25 38.25">
+            <path d="M33.762 13.17c-.036-5.59-4.613-10.107-10.201-10.071-5.59.036-10.108 4.612-10.072 10.202.009 1.455.33 2.837.892 4.084h-.002l9.407 20.57 9.14-20.689h-.002c.546-1.255.847-2.641.838-4.096zm-10.086 7.844c-4.289.027-7.801-3.439-7.829-7.729-.027-4.288 3.439-7.801 7.729-7.829 4.289-.027 7.801 3.44 7.829 7.729.027 4.29-3.441 7.801-7.729 7.829"></path>
+        </svg>
+
+        <h2>Retângulo:</h2>
+        <svg>
+            <rect x="75" y="10" width="150" height="150"/>
+        </svg>
+
+        <h2><br>Círculo:</h2>
+        <svg>
+            <circle r="50" cx="150" cy="50"/>
+        </svg>
+
+        <h2>Polígono/Hexágono:</h2>
+        <svg>
+            <polygon points="90,15 150,15 190,75 150,135 90,135 50,75" fill="orange" stroke="black" stroke-width="5"/>
+        </svg>
+
+        <h2><br>Linha:</h2>
+        <svg>
+            <line x1="1000" y1="10" x2="10" y2="10" stroke="black" stroke-width="4"/>
+        </svg>
+
+        <h2>Trocando a cor:</h2>
+        <svg height="150" width="150" viewBox="0 0 220 220">
+            <polygon class="troca-cor" points="100,10 40,198 190,78 10,78 160,198"/> </div>
+        </svg>
+
+        <style>
+            .troca-cor:hover {
+                fill: blue;
+                cursor: pointer;
+            }
+        </style>
+    </body>
+</center>
+
+</html>

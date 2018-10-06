@@ -1,0 +1,28 @@
+$six-fourteen: 6px 14px;
+$one: 1px;
+$four: 4px;
+$zero: 0;
+$twenty: 20px;
+$cor2: #3897f0;
+$cor3: #fff;
+
+.btn-style{
+  padding: $six-fourteen;
+  border-width: $one;
+  border-style: solid;
+  border-radius: $four;
+}
+
+.btn-follow {
+  @extend .btn-style;
+  margin: $zero $twenty;
+  border-color: $cor2;
+  color: $cor2;
+  -webkit-border-radius: $four;
+  -moz-border-radius: $four;
+ 
+  :hover{
+    background: $cor2;
+    color: $cor3;
+  }
+}

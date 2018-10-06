@@ -1,0 +1,48 @@
+body{
+    background-color: #f3f3f3;
+    font-family: "Montserrat", sans-serif;
+}
+main {
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: lightcoral;
+}
+h2 {
+    margin-top: 10px;
+}
+.row{
+    padding: 30px 0;
+}
+.translate-to-center{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img-default {
+    padding: 20px;
+    max-width: 50%;
+    border: 1px solid lightgray;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+}
+
+.bg-crow {
+    max-width: 50%;
+    height: 281px;
+    margin: 0 auto;
+    background-image: url('../images/crow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tell {
+    transition: 0.2s;
+}
+.tell:hover{
+    cursor: pointer;
+    fill: #3eb060;
+}

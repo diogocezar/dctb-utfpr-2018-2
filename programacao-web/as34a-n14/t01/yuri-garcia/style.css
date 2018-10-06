@@ -1,0 +1,470 @@
+/*Imports fontes*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+
+
+@font-face 
+{
+    font-family: TrajanPro-Regular;
+    src: url('assets/fonts/TrajanPro-Regular.otf');
+}
+
+@font-face 
+{
+    font-family: AfterMidnite;
+    src: url('assets/fonts/AfterMidnite.otf');
+}
+
+/*Decoração para link*/
+a
+{ 
+    text-decoration: none;
+} 
+
+/* Botão 1 */
+.btn{
+    margin-top: 10vh;
+	padding: 10px;
+}
+
+.btn div{
+	padding: 20px;
+    border: 1px solid #f2e9e4;
+    font-family: Montserrat;
+    text-align: center;
+    margin-right: 38%;
+    margin-left: 38%;
+	border-radius: 30px;
+	color: #f2e9e4;
+	font-size: 1rem;
+}
+
+.btn div:hover{
+	background-color: #f2e9e4;
+	color: #000000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* Botão 2 */
+.btn2{
+    margin-top: 5vh;
+	padding: 10px;
+}
+
+.btn2 div{
+    background-color:#f2e9e4;
+    color: #22223b;
+	padding: 20px;
+    border: 1px solid #f2e9e4;
+    font-family: Montserrat;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: 40%;
+	border-radius: 30px;
+	font-size: 1em;
+}
+
+.btn2 div:hover{
+	background-color: transparent;
+	color: #f2e9e4;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/*Ícone Facebook e Instagram*/
+.icon
+{
+    border: 2px solid #f2e9e4;
+    padding: 13px;
+    border-radius: 40%;
+}
+
+/*Texto a esquerda*/
+.text1
+{
+    text-align: center;   
+    display:block;
+    float:left;
+    width: 50%;
+}
+
+/*Texto a direita*/
+.text2
+{
+    text-align: center;
+    display:block;
+    float: left;
+    width: 50%;
+}
+
+/*Configuração Section geral*/
+section
+{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+/*Section home*/
+section#home
+{
+    margin-top: 70px;
+    line-height: 1.0rem;
+    height: calc(100vh - 70px);
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(rgba(34,34,59, .84), rgba(34,34,59, .99)), url(assets/images/geovanna-bg-home.jpg);
+    max-height: 61vh;
+}
+
+/*Section presentation*/
+section#presentation
+{
+    background-position: 50%;
+    background-image: linear-gradient(rgba(74,74,105, 0.8), rgba(74,74,105, 0.8)), url(assets/images/geovanna-bg-presentation.jpg);
+}
+
+/*Section about*/
+section#about
+{
+    background-color: #f2e9e4;
+}
+
+/*Section services*/
+section#services
+{
+    background-position: 50%;
+    background-image: linear-gradient(rgba(34,34,59, .84), rgba(34,34,59, 0.98)), url(assets/images/geovanna-bg-services.jpg);
+}
+
+/*Section testmorials*/
+section#testmorials
+{
+    height: calc(120vh);
+    background-color: #f2e9e4;
+}
+
+/*Section contact*/
+section#contact
+{
+    height:calc(120vh);
+    background-position: 50%;
+    background-image: linear-gradient(rgba(34,34,59, .8), rgba(34,34,59, 0.9)), url(assets/images/geovanna-bg-contact.jpg);
+}
+
+/*Header*/
+.header-menu
+{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index:999;
+    background-color:#22223b;
+    display:block;
+}
+
+.container 
+{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display:flex;
+    justify-content: center;
+}
+
+.logoTopo
+{
+    background: url(assets/images/geovanna-logo-nav.svg);
+    height:70px;
+    width:290px;
+    margin-right:150px;
+    background-repeat: no-repeat;
+}
+
+.menu-container
+{
+    position:relative;
+    float:right;
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    margin-bottom:0;
+    padding-left:0;
+    flex-wrap: wrap;
+}
+
+.menu-item
+{
+    justify-content: space-between;
+    position: relative;
+    float:right;
+    list-style:none;
+    font-size: 1.2em;
+    color: #f2e9e4; 
+}
+
+.menu-item a
+{
+    justify-content: space-between;
+    position: relative;
+    float:right;
+    padding: 0.9em;
+    text-decoration:none;
+    cursor:pointer;
+    color: #f2e9e4; 
+}
+
+/*Home*/
+.classHome
+{
+    text-align: center; 
+    color: #f2e9e4; 
+    font-family: AfterMidnite, sans-serif;
+} 
+
+.classHome h2
+{
+    transform: translateX(0) scale(1);
+    transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s;   
+    font-weight: 100;
+    font-size: 5.8rem;
+}
+
+.classHome h3
+{
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.classHome h4
+{
+    font-family: TrajanPro-Regular;
+    line-height: 0.5;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.classHome h4 .h1
+{
+    color: #9a8c98;
+}
+
+/*Presentation*/
+.classPresentation img
+{
+    margin-top: 5vh;
+    margin-left: 50%;
+    height: 80px;
+    transform: translate(-50%)!important;
+}
+
+.classPresentation
+{
+    color: #f2e9e4;
+}
+
+.classPresentation h2
+{
+    margin-top: 1vh;
+    font-family: TrajanPro-Regular;
+    font-weight: 100;
+    line-height: 0.5;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.classPresentation h4
+{
+    font-family: Montserrat, sans-serif;
+    margin-top: 5vh;
+    font-weight: 100;
+    line-height: 0.5;
+    font-size: 1rem;
+    color: #f2e9e4;
+    text-align: center;
+}
+
+/*About*/
+.classAbout img
+{
+    margin-left: 10%;
+    height: 120px;
+    width: 120px;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.classAbout h2
+{
+    font-family: AfterMidnite;
+    font-weight: 100;
+    font-size: 5rem;
+    color:#22223b;
+    margin-left:10%;
+    margin-top: 0;
+}
+
+.classAbout h3
+{
+    font-family: TrajanPro-Regular;
+    font-weight: 100;
+    font-size: 1.2rem;
+    color:#9a8c98;
+    margin-left:10%;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.classAbout h4
+{
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 0;
+    font-size: 1rem;
+    color:#22223b;
+    margin-left:10%;
+    margin-bottom: 2rem;
+}
+
+
+/*Services*/
+.classServices img
+{
+    height: 120px;
+    margin-bottom: 3rem;
+    transform: translate(-50%)!important;
+    margin-left: 50%;
+}
+
+.classServices h2
+{
+    font-family: TrajanPro-Regular, serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 2rem;
+    color:#9a8c98;
+}
+
+.classServices h3
+{
+    font-family: Montserrat;
+    font-weight: 100;
+    font-size: 1rem;
+    color:#f2e9e4;
+    line-height: 2rem;
+    margin-bottom:1rem;
+}
+
+/*Testmorials*/
+.classTestmorials img
+{
+    height: 120px;
+    margin-left: 50%;
+    width: 120px;
+    margin-bottom: 3rem;
+    transform: translate(-50%)!important;
+}
+
+.classTestmorials h2
+{
+    margin-top: 0;
+    font-family: AfterMidnite, sans-serif;
+    color: #22223b;
+    text-align: center;
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+.classTestmorials h3
+{
+    
+    margin-top: 0;
+    font-family: TrajanPro-Regular;
+    color: #9a8c98;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2rem;
+    
+}
+
+.classTestmorials h4
+{
+    margin-top: 0;
+    font-family: TrajanPro-Regular;
+    color: #c9ada7;
+    line-height: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+
+/*Contact*/
+.classContact img
+{
+    height:120px;
+    transform: translate(-50%)!important;
+    margin-left: 50%;
+}
+
+.classContact h2
+{
+    margin-top: 0;
+    font-family: AfterMidnite;
+    text-align: center;
+    font-weight: 100;
+    font-size: 5rem;
+    line-height: 4rem;
+    color:#f2e9e4;
+}
+
+.classContact h3
+{
+    margin-top: 4rem;
+    font-family: TrajanPro-regular, serif;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color:#c9ada7;
+}
+
+.classContact h4
+{
+    font-family: TrajanPro-regular, serif;
+    text-align: center;
+    line-height: 1;
+    font-weight: 100;
+    font-size: 2rem;
+    color:#f2e9e4;
+}
+
+/*Body*/
+body 
+{
+    margin: 0;
+    font-family: TrajanPro-Regular, serif;
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+body::-webkit-scrollbar{
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track
+{
+    background: #22223b;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: #d1b9b3;
+}

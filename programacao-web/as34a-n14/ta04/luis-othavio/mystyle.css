@@ -1,0 +1,18 @@
+.memoria{
+    height: 250px;
+    width: 250px;
+}
+
+.processador{
+    height: 250px;
+    width: 250px;
+}
+
+h1, h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+input{
+    display: block;
+}

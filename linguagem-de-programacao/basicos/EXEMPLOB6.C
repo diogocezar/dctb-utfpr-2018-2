@@ -1,5 +1,5 @@
-/* Exemplo 1 de uso avançado da funcao printf
-   Números inteiros, caracter, e reais        */
+/* Exemplo 1 de uso avanÃ§ado da funcao printf
+   NÃºmeros inteiros, caracter, e reais        */
 
 #include<stdio.h>
 #include<stdlib.h>

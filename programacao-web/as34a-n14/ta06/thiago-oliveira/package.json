@@ -1,0 +1,15 @@
+{
+  "name": "ta06-svg",
+  "version": "1.0.0",
+  "description": "building simple geometric shapes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "svg"
+  ],
+  "author": "thiago oliveira",
+  "license": "ISC"
+}
