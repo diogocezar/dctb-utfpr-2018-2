@@ -1,0 +1,14 @@
+.icon{ 
+    width: 496px;
+    height: 288px;;
+    background-image: url(./horse.svg); 
+}
+
+.poligono{
+    stroke: lime;
+    fill: yellow;
+}
+
+.git:hover{
+    fill:red;
+}
