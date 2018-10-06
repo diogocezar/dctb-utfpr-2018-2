@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+}
+
+.image-svg {
+    width: 100px;
+    height: 100px;
+}
+
+.background-svg {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg)
+}
+
+.polygon-svg {
+    fill: lime;
+    stroke: purple;
+    stroke-width: 2;
+}
+
+.inline-svg {
+    fill: lime;
+    stroke: black;
+    stroke-width: 2;
+}
+
+.inline-svg :hover {
+    fill: pink;
+    stroke: purple;
+    stroke-width: 2;
+}
