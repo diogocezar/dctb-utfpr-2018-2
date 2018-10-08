@@ -1,0 +1,13 @@
+section {
+    padding: 20px;
+    background-color: rgb(175, 111, 111);
+}
+#products{
+    align-content: center;
+}
+.card-body{
+    background-color: blueviolet;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
