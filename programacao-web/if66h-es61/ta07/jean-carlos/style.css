@@ -1,0 +1,23 @@
+img{
+    height: 30%;
+}
+
+#svgBack{
+    background-image: url(imgs/geovanna-icon-instagram.svg);
+    width: 25%;
+    height: 25%;
+    background-repeat: no-repeat;
+}
+
+.poligon{
+    fill:blue;
+    stroke:lime;
+}
+
+#wtfImg:hover{
+    fill:grey;
+}
+
+circle:hover{
+    fill:green;
+}
