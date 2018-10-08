@@ -1,0 +1,142 @@
+//colors
+
+$white_1: #fafafa;
+$blue: #3897f0;
+$white_2: #fff;
+$black: rgba(0, 0, 0, 0.3);
+
+//measures
+$zero: 0;
+$total:100%;
+$half: 50%;
+$four: 4px;
+$six: 6px;
+$ten:10px;
+$fourteen:14px;
+$sixteen:16px;
+$twenty:20px;
+$thirty: 30px;
+$forty: 40px;
+$ninety: 90%;
+$one: 1px;
+$twenty_four: 24%;
+$min-width: 768px;
+$max-width: 935px;
+
+* {
+	margin: $zero;
+	padding: $zero;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: $sixteen;
+}
+ul {
+	padding: $zero;
+	margin:  $zero;
+}
+img {
+	border:  $zero;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background: $white_1;
+}
+main {
+	width: $ninety;
+	max-width: $max-width;
+	margin: $zero auto;
+}
+header {
+	display: flex;
+	margin: $thirty $zero;
+	flex-flow: column;
+	.avatar {
+		-webkit-border-radius: $half;
+        -moz-border-radius: $half;
+		border-radius: $half;
+		margin: $zero auto;
+	}
+	.desc {
+		text-align: center;
+	}
+	h1, h2 {
+		display: inline-block;
+		margin: $ten  $zero;
+    }
+    h1{
+		margin: $ten  $zero;
+    }
+	h2 {
+		font-size: $twenty_four;
+  	}
+	.links {
+		list-style: none;
+		margin: $ten  $zero;
+		li {
+			list-style: none;
+			margin:  $zero $twenty  $zero $zero;
+			display: inline-block;
+		}
+	}
+}
+.btn-follow {
+    margin:  $zero $twenty;
+    padding: $six $fourteen;
+    border-width: $one;
+    border-style: solid;
+    border-color: $blue;
+    color: $blue;
+    -webkit-border-radius: $four;
+    -moz-border-radius: $four;
+    border-radius: $four;
+        &:hover {
+            background: $blue;
+            color: $white_2;
+	}
+}
+.photos {
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	display: flex;
+	li {
+		width: $total;
+		margin: $twenty  $zero;
+		position: relative;
+		img {
+			width: $total;
+		}
+		.img-hover {
+			opacity:  $zero;
+			position: absolute;
+			top:  $zero;
+			left:  $zero;
+			width: $total;
+			height: $total;
+			background: $black;
+			transition: all 0.3s linear;
+		}
+		&:hover .img-hover {
+			opacity: 1;
+		}
+	}
+}
+@media(min-width: $min-width) {
+	header {
+		flex-flow: row;
+		.avatar {
+			margin:  $zero $forty;
+		}
+		.desc {
+			text-align: left;
+		}
+	}
+	.photos li {
+		width: $thirty;
+	}
+}
