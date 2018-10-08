@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loja do Zé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="load()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Loja do Zé</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <section id="products" class="products">
+            <h1 class="col-12">Produtos</h1>
+        <div id="content" class="row">
+
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contato</h1>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+                    <label for="name">Nome:</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Nome">
+                </div>
+                <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                    <label for="subject">Assunto:</label>
+                    <input class="form-control" type="text" name="subject" id="subject" placeholder="Assunto">
+                </div>
+                <div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+                    <label for="email">E-mail:</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                    <label for="mensage">Mensagem:</label>
+                    <input class="form-control" type="text" name="mensage" id="mensage" placeholder="Mensagem">
+                </div>
+                <a href="#" class="btn btn-primary">Enviar</a>
+
+            </div>
+        </form>
+    </section>
+    <footer style="background: black; text-align:right; color:beige">
+        Mateus Merscher Baltazar
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

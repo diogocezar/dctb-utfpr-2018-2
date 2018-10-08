@@ -1,0 +1,9 @@
+.back{
+    background-image: url(svg.svg);
+}
+.color:hover{
+    fill: black;
+}
+.hexa{
+    fill:#50ba1d
+}
