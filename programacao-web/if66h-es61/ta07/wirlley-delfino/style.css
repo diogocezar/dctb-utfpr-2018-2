@@ -1,0 +1,24 @@
+body{
+	width: auto;
+}
+#balao1{
+	display: flex;
+	align-self: center;
+	border-style: groove;
+}
+
+#balao2{
+	padding-top: 500px;
+	background-image: url(baloes.svg);
+	display: flex;
+	align-self: center;
+	border-style: groove;
+    background-repeat: inherit;
+}
+#imagem1{
+	padding-left: 550px;
+}
+
+ img{
+    height: 400px;
+}
