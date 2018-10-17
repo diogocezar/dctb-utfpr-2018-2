@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './Geral.css';
 
 const Skills = () => {
     return (
-        <div className="skills">
+        <Fragment>
+            <div className="skills">
             <h2>Skills</h2>
+            
             <p>Conheça algumas das minhas habilidades profissionais:</p>
             <ul>
                 <li>CSS3</li>
@@ -17,8 +19,13 @@ const Skills = () => {
                 <li>Programação Paralela</li>
                 <li>Linguagem Cuda</li>
                 <li>Inteligência Artificial</li>
-            </ul>
+                </ul>
+            
+            
+            
         </div>
+        </Fragment>
+        
     );
 }
 

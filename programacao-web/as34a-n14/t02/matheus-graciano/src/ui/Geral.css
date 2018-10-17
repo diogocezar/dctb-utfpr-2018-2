@@ -31,6 +31,7 @@ button:hover{
     background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)),url(assets/background.jpg);
     background-size: cover;
     margin-top: 50px;
+    min-height: 300px;
     color: #f2e9e4;
     text-align: center;
 }
@@ -43,24 +44,18 @@ button:hover{
     padding-bottom: 30px;
 }
 
-
 .skills ul{
-	margin-top: 60px;
-	margin-bottom: 40px;
-	position: relative;
-    float: left;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    list-style: none;
 }
 
-
-
-
-.skills ul li {
-	list-style: none;
-    background-color: rgba(0,0,0,0.4);
-    color: #fff;
-    position: relative;
+.skills ul li{
+    position: center;
     float: left;
     padding: 3px 10px;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
     margin: 4px;
     cursor: pointer;
     transition: all .4s!important;
@@ -68,9 +63,11 @@ button:hover{
     text-transform: uppercase;
     min-width: 60px;
     font-size: 10pt;
+    
 }
 
 .skills ul li:hover{
     background-color: rgba(255,255,255,1);
     color: #000;
-}
+} 
+
