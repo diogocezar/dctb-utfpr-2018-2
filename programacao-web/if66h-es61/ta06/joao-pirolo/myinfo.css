@@ -1,0 +1,40 @@
+#myinfo{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(assets/images/topo.jpg);
+    margin-top: 0px;
+	margin-bottom: 30px;
+    padding-top: 50px;
+    padding: 1% 10%;
+}
+
+section h2{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+section h3{
+    color: white;
+    font-size: 2em;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+section p{
+    color: aliceblue;
+    text-align: center;
+    padding: .1em;
+    font-size: 15px;
+    line-height:1;
+}
+section a{
+    margin-bottom: .1em;
+    color: aliceblue;
+    font-size: 15px;
+    line-height: 1;
+    
+}
