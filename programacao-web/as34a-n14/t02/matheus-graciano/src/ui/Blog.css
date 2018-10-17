@@ -1,0 +1,12 @@
+#blog{
+    background-color: black;
+    background-size: cover;
+}
+
+.card-body p{
+    color: black;
+}
+
+.card-header h4{
+    color: black;
+}

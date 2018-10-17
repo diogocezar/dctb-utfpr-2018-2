@@ -1,0 +1,5 @@
+#portifolio{
+    background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)),url(assets/back2.jpg);
+    background-position: 50%;
+    background-size: cover;
+}

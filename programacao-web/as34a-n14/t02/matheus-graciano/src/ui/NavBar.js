@@ -15,25 +15,22 @@ const NavBar = () => {
                         <a className="nav-link" href="#">HOME <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">PERFIL <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#perfil">PERFIL <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">SKILLS <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#skills">SKILLS <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">SERVIÇOS <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#blog">BLOG <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">BLOG <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#portifolio">PORTFÓLIO<span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">PORTFÓLIO<span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#infos">INFOS <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">INFOS <span className="sr-only">(current)</span></a>
-                    </li>
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">CONTATO <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#contact">CONTATO <span className="sr-only">(current)</span></a>
                     </li>
                     </ul>
                 </div>

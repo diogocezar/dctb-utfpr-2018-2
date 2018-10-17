@@ -10,15 +10,15 @@ import { relative } from 'path';
 
 const Perfil = () => {
     return(
-
+        <section id="perfil">
         <div className="container" style={{marginTop: 100}}>
             <div className="row">
-                <div className="col-xl-6 col-md-12 col-sm-12">
-                    <img src={foto}  width="540" height="540"/>
+                <div id="col" className="col-xl-6 col-md-12 col-sm-12">
+                    <img src={foto} width="500" height="500"/>
                     <p style={{paddingTop: 50}}>Olá, sou <strong>Matheus Silvano Graciano</strong>. Estudante de Engenharia da Computação, nascido em Angatuba-SP, atualmente morando em Cornélio Procópio-PR.</p>
                     <a href={curriculo} target="_blank" download="Currículo-K.pdf"><button>CURRÍCULO COMPLETO</button></a>
                 </div>
-                <div className="col-xl-6 col-md-12 col-sm-12">
+                <div id="col" className="col-xl-6 col-md-12 col-sm-12">
                     <h1 style={{paddingBottom:"50px"}}>MATHEUS SILVANO GRACIANO</h1>
                     <div className="interesses" style={{paddingTop:"10px"}}>
                         <span style={{position:relative}}><img src={lamp}  style={{position:relative, paddingRight:"10px"}} />INTERESSES</span>
@@ -53,6 +53,7 @@ const Perfil = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 }
 

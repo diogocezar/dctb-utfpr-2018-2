@@ -1,13 +1,13 @@
 import React, {Fragment} from 'react';
 import './Geral.css';
+import Intro from './Intro';
 
 const Skills = () => {
     return (
         <Fragment>
-            <div className="skills">
-            <h2>Skills</h2>
             
-            <p>Conheça algumas das minhas habilidades profissionais:</p>
+            <section id="skills">
+            <Intro value="Skills" value2="Tecnologias e Conhecimentos" value3="Conheça algumas das minhas habilidades profissionais:"/>
             <ul>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -19,11 +19,9 @@ const Skills = () => {
                 <li>Programação Paralela</li>
                 <li>Linguagem Cuda</li>
                 <li>Inteligência Artificial</li>
-                </ul>
-            
-            
-            
-        </div>
+            </ul>
+
+        </section>
         </Fragment>
         
     );

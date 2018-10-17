@@ -16,6 +16,15 @@ button{
     position: relative;
 }
 
+#home{
+    padding: 10px;
+}
+
+
+.row p{
+    color: black;
+}
+
 button:hover{
     transition: all 0.3s;
     background-color: #f2e9e4;
@@ -27,30 +36,31 @@ button:hover{
     text-align: left;
 }
 
-.skills{
+#skills{
     background-image: linear-gradient(rgba(34,34,59,.84),rgba(34,34,58,.94)),url(assets/background.jpg);
+    background-position: 50%;
     background-size: cover;
     margin-top: 50px;
-    min-height: 300px;
+    min-height: 400px;
     color: #f2e9e4;
     text-align: center;
 }
 
-.skills h2{
+#skills h2{
     padding: 30px;
 }
 
-.skills p{
+#skills p{
     padding-bottom: 30px;
 }
 
-.skills ul{
+#skills ul{
     padding-bottom: 30px;
     margin-bottom: 30px;
     list-style: none;
 }
 
-.skills ul li{
+#skills ul li{
     position: center;
     float: left;
     padding: 3px 10px;
@@ -66,8 +76,60 @@ button:hover{
     
 }
 
-.skills ul li:hover{
+#skills ul li:hover{
     background-color: rgba(255,255,255,1);
     color: #000;
 } 
+
+#main-footer {
+    background-color: #222;
+    text-align: center;
+}
+
+#footer-info {
+    padding-bottom: 10px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-bottom {
+	padding: 15px 0 5px;
+	background-color: #1f1f1f;
+	background-color: rgba(0, 0, 0, 0.32);
+}
+
+#footer-bottom a {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+#footer-info p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* #footer-info {
+	float: left;
+	padding-bottom: 10px;
+	color: #666;
+	text-align: left;
+}
+
+#footer-info a {
+	color: #666;
+	font-weight: 700;
+}
+
+#footer-info a:hover {
+    opacity: 0.7; 
+}
+    */
+
 
