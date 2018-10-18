@@ -1,0 +1,26 @@
+﻿{
+  
+	"configs":{
+		"title": "Pokemon 01 02 03",
+		"subtitle": "Site básico de exemplo para ta06"
+	},	
+
+    "pkms": [{
+		"div": "container",
+		"img": "https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png",
+		"num": 1,
+	    "name": "Bulbasaur"             
+	},
+	{
+		"div": "container",
+		"img": "https://cdn.bulbagarden.net/upload/thumb/7/73/002Ivysaur.png/250px-002Ivysaur.png",
+		"num": 2,
+        "name": "Ivysaur"             
+	},
+	{
+		"div": "container",
+		"img": "https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png",
+		"num": 3,
+		 "name": "Venusaur"
+	}]
+}
