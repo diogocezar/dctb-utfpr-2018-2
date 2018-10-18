@@ -1,0 +1,2 @@
+*{padding:0;margin:0}@font-face{font-family:Mono;src:url(../font/mono.ttf)}main{align-items:center;width:100%;height:100vh;background-color:#0d0d1a}.clock{font-family:Mono;color:#fff}.date,.time,main{display:flex;justify-content:center}.time{align-items:center;margin-bottom:22px;font-size:10em}.time span{margin-left:0 16px}.date{font-size:6em}.date div{margin:0 16px}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+{
+  "name": "@renanbatel/ta06",
+  "version": "1.0.0",
+  "author": "Renan Batel <renanbatel@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx gulp build",
+    "watch": "npx gulp watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  }
+}
