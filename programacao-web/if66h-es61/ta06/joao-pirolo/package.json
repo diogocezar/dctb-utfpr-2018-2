@@ -1,0 +1,21 @@
+{
+  "name": "joao-pirolo",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joao-pirolo",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^3.10.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-terser": "^1.1.5"
+  }
+}
