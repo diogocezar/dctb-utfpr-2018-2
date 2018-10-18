@@ -7,7 +7,8 @@ const Skills = () => {
         <Fragment>
             
             <section id="skills">
-            <Intro value="Skills" value2="Tecnologias e Conhecimentos" value3="Conheça algumas das minhas habilidades profissionais:"/>
+            <Intro value="SKILLS" value2="TECNOLOGIAS E CONHECIMENTOS" value3="Conheça algumas das minhas habilidades profissionais:"/>
+            <div className="container">
             <ul>
                 <li>CSS3</li>
                 <li>JavaScript</li>
@@ -20,6 +21,8 @@ const Skills = () => {
                 <li>Linguagem Cuda</li>
                 <li>Inteligência Artificial</li>
             </ul>
+            </div>
+            
 
         </section>
         </Fragment>

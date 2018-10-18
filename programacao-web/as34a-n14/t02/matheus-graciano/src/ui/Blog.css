@@ -1,6 +1,7 @@
 #blog{
     background-color: black;
     background-size: cover;
+    margin: 0;
 }
 
 .card-body p{

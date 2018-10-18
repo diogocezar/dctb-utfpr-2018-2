@@ -5,9 +5,9 @@ import './Blog.css';
 
 const Blog = () => {
     return (
-        <div>
+        <Fragment>
             <section id="blog">
-                <Intro value="Blog" value2="Tecnologia" value3="Algumas notícias sobre tecnologia:" />
+                <Intro value="BLOG" value2="TECNOLOGIA" value3="Algumas notícias sobre tecnologia:" />
                 <div className="Container">
                     <div className="card-deck mb-3 text-center" style={{paddingLeft:"30px", paddingRight:"30px"}}>
                         <News title="Twitter" date="17/10/2018" author="Daniel Junqueira" description="Twitter libera arquivo com 10 milhões de posts usados para manupulação política"/>
@@ -17,7 +17,7 @@ const Blog = () => {
                 </div>
                 
             </section>
-        </div>
+        </Fragment>
     );
 }
 

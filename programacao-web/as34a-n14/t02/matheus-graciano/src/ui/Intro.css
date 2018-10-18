@@ -4,9 +4,17 @@ h2, h4{
     text-align: center;
 }
 
-h2{
-    text-decoration: underline;
+h2:after {
+    content: ' ';
+    display: block;
+    border: 2px solid #f2e9e4;
+    width: 100px;
+    margin: 15px auto;
 }
+
+/* h2{
+    text-decoration: underline;
+} */
 
 p{
     padding-bottom: 30px;

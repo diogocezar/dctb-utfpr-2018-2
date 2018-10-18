@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 const News = (props) => {
     return (
         <Fragment>
-            <div className="card mb-4 shadow-sm" >
+            <div style={{margin:"5px"}} className="card mb-4 shadow-sm" >
                 <div className="card-header">
                     <h4 className="my-0 font-weight-normal">{props.title}</h4>
                 </div>

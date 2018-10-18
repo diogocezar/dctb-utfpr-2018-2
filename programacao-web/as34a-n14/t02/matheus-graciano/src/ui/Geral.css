@@ -14,6 +14,7 @@ button{
     font-size: 1rem;
     text-align: center;
     position: relative;
+    padding: 10px;
 }
 
 #home{
@@ -44,6 +45,7 @@ button:hover{
     min-height: 400px;
     color: #f2e9e4;
     text-align: center;
+    margin: 0;
 }
 
 #skills h2{
@@ -115,21 +117,6 @@ button:hover{
     vertical-align: baseline;
 }
 
-/* #footer-info {
-	float: left;
-	padding-bottom: 10px;
-	color: #666;
-	text-align: left;
-}
 
-#footer-info a {
-	color: #666;
-	font-weight: 700;
-}
-
-#footer-info a:hover {
-    opacity: 0.7; 
-}
-    */
 
 
