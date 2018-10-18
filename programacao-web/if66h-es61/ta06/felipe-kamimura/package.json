@@ -1,0 +1,28 @@
+{
+  "name": "ta06",
+  "version": "1.0.0",
+  "description": "Utilizar o gulp",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "felipe kamimura",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.0",
+    "clean-css": "^4.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgo": "^1.5.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "pump": "^3.0.0"
+  }
+}
