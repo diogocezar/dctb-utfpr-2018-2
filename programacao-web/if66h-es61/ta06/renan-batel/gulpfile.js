@@ -32,11 +32,12 @@ gulp.task( "css", () => {
 gulp.task( "font", () => {
   gulp.src( src.font )
     .pipe( gulp.dest( "./app/dist/font" ) );
-} )
+} );
 
 gulp.task( "build", [ "js", "css", "font" ] );
 
 gulp.task( "watch", () => {
   gulp.watch( src.js, [ "js" ] );
-  gulp.watch( src.css, [ "css" ] )
+  gulp.watch( src.css, [ "css" ] );
+  gulp.watch( src.font, [ "font" ] );
 } );
