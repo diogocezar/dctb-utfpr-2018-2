@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Mono;
+  src: url('../font/mono.ttf');
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(13, 13, 26);
+  
+}
+
+.clock {
+  font-family: Mono;
+  color: #fff;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  margin-bottom: 22px;
+}
+
+.time span{
+  margin-left: 0 16px;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  font-size: 6em;
+}
+
+.date div {
+  margin: 0 16px;
+}
