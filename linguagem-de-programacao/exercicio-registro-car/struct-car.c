@@ -2,7 +2,6 @@
  * Diogo Cezar
  * <diogo@diogocezar.com>
  * Exercício de Exemplo de Registros com Carros
- *
 */
 
 #include <stdio.h>
