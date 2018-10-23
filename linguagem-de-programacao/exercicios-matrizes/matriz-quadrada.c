@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define DEBUG 0
+#define DEBUG 1
 
 void print(int mat[100][100], int n){
     int i, j;
@@ -53,7 +53,7 @@ void generate(int mat[100][100], int n){
 }
 
 int main(){
-    int n, i, j, mat[100][100], debug = 0;
+    int n, i, j, mat[100][100];
     while(scanf("%d", &n)){
         if(n <= 0 || n > 100){
             printf("Você digitou um número fora do limite (0 <= n <= 100). Adeus!\n");

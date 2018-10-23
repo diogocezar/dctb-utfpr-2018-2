@@ -22,11 +22,11 @@ void generate(int mat[70][70], int n){
     k = n-1;
     for(i=0; i<n; i++){
         for(j=0; j<n; j++){
-            if(i==j){
-                mat[i][j] = 1;
-            }
-            else if(j == (k)){
+            if(j == k){
                 mat[i][j] = 2;
+            }
+            else if(i==j){
+                mat[i][j] = 1;
             }
             else{
                 mat[i][j] = 3;
