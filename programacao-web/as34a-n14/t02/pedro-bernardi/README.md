@@ -1,4 +1,4 @@
-# Pedro Bernardi - T02 (Front-End)
+# Pedro Bernardi - T02 (Front-End) 
 
 > [Link Repositório](https://github.com/PedroTreck/portfolio)
 
