@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const routes = require('./routes')
 
 const mongoConfig =
-  "mongodb://..."
+  "mongodb://...";
 
 mongoose.connect(
   mongoConfig,
