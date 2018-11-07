@@ -1,0 +1,43 @@
+#social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #e6e6e6;
+}
+
+#facebook{
+    background-image: url("./img/facebook_logo.png");
+}
+
+#instagram{
+    background-image: url("./img/instagram_logo.png");
+}
+
+#github{
+    background-image: url("./img/logo_github.png");
+}
+
+#mail{
+    background-image: url("./img/mail_logo.png");
+}
+
+.social-btn{
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.social-btn:hover{
+    background-size: 90%;
+}
