@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+#info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: #e6e6e6;
+}
+
+.info-column {
+    width: 45%;
+    height: 250px;
+}
+
+.info-column h2 {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.info-column p{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #e6e6e6;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-family: Ubuntu;
+    margin: 0px;
+    padding: 0px;
+}

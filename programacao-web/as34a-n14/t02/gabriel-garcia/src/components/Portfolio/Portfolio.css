@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+#portfolio {
+    width: 100%;
+    background-color: #262626;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-family: Ubuntu;
+    line-height: 5vh;
+    color: white;
+    font-weight: 100;
+}
+
+#portfolio-container {
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-proj {
+    width: 30%;
+    height: 280px;
+    cursor: pointer;
+    background-color: #2ba8e2;
+}
+
+.portfolio-proj a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-proj h2 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 24px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 85%;
+    background-size: 120%;
+    background-position: center;
+    transition: 0.25s all ease;
+}
+
+.img-01{
+    background-image: url("./img/img-01.jpg");
+}
+
+.img-02{
+    background-image: url("./img/img-02.jpg");
+}
+
+.img-03{
+    background-image: url("./img/img-03.jpg");
+}
+
+.portfolio-proj:hover .portfolio-img{
+    background-size: 113%;
+}
