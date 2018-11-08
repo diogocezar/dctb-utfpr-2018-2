@@ -1,0 +1,178 @@
+$zero: 0;
+$one: 1;
+$seconds: 0.3s; 
+$wdt30: 30%;
+$wdt90: 90%;
+$wdt100: 100%;
+$mxWdt: 935px;
+$perc50: 50%;
+$p1: 1px;
+$p4: 4px;
+$p6: 6px;
+$p10: 10px;
+$p14: 14px;
+$p15: 15px;
+$p16: 16px;
+$p20: 20px;
+$p24: 24px;
+$p28: 28px;
+$p30: 30px;
+$p40: 40px;
+$p45: 45px;
+$backFafa: #fafafa;
+$btnFollowColor: #3897f0;
+$btnFollowColorHover: #fff;
+$imgHover: rgba(0, 0, 0, 0.3);
+
+* {
+    margin: $zero;
+    padding: $zero;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: $p16;
+  }
+  
+  ul {
+    padding: $zero;
+    margin: $zero;
+  }
+  
+  img {
+    border: $zero;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    background: $backFafa;
+  }
+  
+  main {
+    width: $wdt90;
+    max-width: $mxWdt;
+    margin: $zero auto;
+  }
+  
+  header {
+    display: flex;
+    margin: $p30 $zero;
+    flex-flow: column;
+  
+    .avatar {
+      -webkit-border-radius: $perc50;
+      -moz-border-radius: $perc50;
+      border-radius: $perc50;
+      margin: $zero auto;
+    }
+    
+    .desc {
+      text-align: center;
+    }
+    
+    h1, h2 {
+      display: inline-block;
+      margin: $p10 $zero;
+    }
+    
+    h1 {
+      font-size: $p28;
+    }
+    
+    h2 {
+      font-size: $p24;
+    }
+    
+    .links {
+      list-style: none;
+      margin: $p10 $zero;
+  
+      li {
+        list-style: none;
+        margin: $zero $p20 $zero $zero;
+        display: inline-block;
+      }
+    }
+  }
+  
+  .btn-follow {
+    margin: $zero $p20;
+    padding: $p6 $p14;
+    border-width: $p1;
+    border-style: solid;
+    border-color: $btnFollowColor;
+    color: $btnFollowColor;
+    -webkit-border-radius: $p4;
+    -moz-border-radius: $p4;
+    border-radius: $p4;
+  
+    &:hover {
+      background: $btnFollowColor;
+      color: $btnFollowColorHover;
+    }
+  }
+  
+  
+  
+  .photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+  
+    li {
+      width: $wdt100;
+      margin: $p20 $zero;
+      position: relative;
+      
+      img {
+        width: $wdt100;
+      }
+  
+      .img-hover {
+        opacity: $zero;
+        position: absolute;
+        top: $zero;
+        left: $zero;
+        width: $wdt100;
+        height: $wdt100;
+        background: $imgHover;
+        transition: all $seconds linear;
+      }
+      &:hover .img-hover{
+        opacity: $one;
+      }
+    }
+  }
+
+.btn-new{
+  @extend .btn-follow;
+  padding: $p15;
+  border-style: dotted;
+  border-radius: $p45 $p30;
+  border-width: thick;
+}
+  
+  @media (min-width: 768px ) {
+  
+    header {
+      flex-flow: row;
+  
+      .avatar {
+        margin: $zero $p40;
+      }
+    
+      .desc {
+        text-align: left;
+      }
+    }
+    
+    .photos li {
+          width: $wdt30;
+    }
+}

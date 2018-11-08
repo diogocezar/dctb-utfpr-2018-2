@@ -1,0 +1,36 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.header *{
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 35px;
+}
+.header{
+    width: 100%;
+    background-color:#333;
+}
+#products{
+    background-color:lightgrey;
+    margin-top: 70px;
+    text-align: center;
+}
+#products img{
+    max-width: 25rem;
+    min-width: 320px;
+    height: 400px;
+}
+#products h1{
+    font-size: 35px;
+}
+#contact{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#contact h1{
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+.btn-style{
+$btn-follow-color: #3897f0;
+$btn-follow-color-hover: #fff;
+$img-hover: rgba(0, 0, 0, 0.3);
+}
+//MEDIDAS
+$zero: 0;
+$um: 1;
+$seg: 0.3s;
+$width-30: 30%;
+$width-90: 90%;
+$width-100: 100%;
+$max-width: 935px;
+$percent-50: 50%;
+$pixel-1: 1px;
+$pixel-4: 4px;
+$pixel-6: 6px;
+$pixel-10: 10px;
+$pixel-14: 14px;
+$pixel-16: 16px;
+$pixel-20: 20px;
+$pixel-24: 24px;
+$pixel-28: 28px;
+$pixel-30: 30px;
+$pixel-40: 40px;
+
+.btn-follow {
+  @extend .btn-style;  
+  margin: $zero $pixel-20;
+  padding: $pixel-6 $pixel-14;
+  border-width: $pixel-1;
+  border-style: solid;
+  border-color: $btn-follow-color;
+  color: $btn-follow-color;
+  -webkit-border-radius: $pixel-4;
+  -moz-border-radius: $pixel-4;
+  border-radius: $pixel-4;
+
+  &:hover {
+    background: $btn-follow-color;
+    color: $btn-follow-color-hover;
+  }
+}
+
+.btn-red{
+  @extend .btn-style;  
+  @extend .btn-follow;
+  padding: $pixel-6;
+  border-style: solid;
+  border-radius: $pixel-1;
+  border-width: $pixel-1;
+}

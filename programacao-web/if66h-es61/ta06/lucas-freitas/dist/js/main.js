@@ -1,0 +1,1 @@
+function act(){"Vamos la gulp!"==document.getElementById("gulp").innerHTML?document.getElementById("gulp").innerHTML="A Falta de Criatividade é prejudicial à Felicidade":document.getElementById("gulp").innerHTML="Vamos la gulp!"}

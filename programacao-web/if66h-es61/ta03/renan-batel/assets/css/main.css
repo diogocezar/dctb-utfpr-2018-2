@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ *  Common
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #141414;
+	color: #333;
+}
+
+.container {
+	margin: 0 auto;
+	width: 92%;
+}
+
+img.responsive {
+	width: 100%;
+	height: auto;
+}
+
+.button {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+}
+
+.button.buy {
+	padding: .6rem 1.8rem;
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.button.buy:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.button.more {
+	padding: .8rem 0;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+}
+
+.button.whatsapp {
+	margin-top: .8rem;
+}
+.button.whatsapp > i {
+	margin-right: .4rem;
+}
+
+@media screen and ( min-width: 768px ) {
+	.container {
+		width: 84%;
+	}
+	.button.whatsapp {
+		display: none;
+	}
+}
+
+@media screen and ( min-width: 992px ) {
+	.container {
+		width: 76%;
+	}
+}
+
+/**
+ *	Top
+ */
+
+.top-side {
+	background-color: #fff;
+}
+
+header {
+	padding: 2.6rem 0 1.6rem 0;
+}
+
+header h1 {
+	margin-bottom: .6rem;
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #141414;
+}
+
+header p {
+	font-size: 1em;
+}
+
+.app-description {
+	padding-bottom: 1.2rem;
+}
+
+.app-description p {
+	margin-bottom: .4rem;
+	line-height: 1.2em;
+	font-size: .94em;
+	color: #666;
+}
+
+.app-description > h2 {
+	font-size: 1.6em;
+	margin: 1.6rem 0 .4rem 0;
+}
+
+.contact {
+	padding-bottom: 1.2rem;
+}
+
+.contact > h2 {
+	font-size: 1.26em;
+	font-weight: 600;
+	margin-bottom: .8rem;
+}
+
+.contact > a {
+	font-size: 2.2em;
+	color: #666;
+}
+
+.contact > a:hover {
+	color: #333;
+}
+
+.contact > a:not( :last-of-type ) {
+	margin-right: .8rem;
+}
+
+@media screen and ( min-width: 768px ) {
+	header {
+		padding: 3.2rem 0 2.2rem 0;
+	}
+	header h1 {
+		margin-bottom: .9rem;
+		font-size: 2.1em;
+	}
+	.app-description > h2 {
+		font-size: 1.7em;
+		margin: 1.8rem 0 .6rem 0;
+	}
+	.contact {
+		padding-bottom: 1.6rem;
+	}
+	.contact > h2 {
+		font-size: 1.32em;
+	}
+}
+
+@media screen and ( min-width: 992px ) {
+	header {
+		padding: 3.8rem 0 2.8rem 0;
+	}
+	header h1 {
+		margin-bottom: 1rem;
+		font-size: 2.2em;
+	}
+	.app-description > h2 {
+		font-size: 1.8em;
+		margin: 1.9rem 0 .8rem 0;
+	}
+	.contact {
+		padding-bottom: 2.4rem;
+	}
+	.contact > h2 {
+		font-size: 1.42em;
+	}
+}
+
+/**
+ *	Products
+ */
+
+.products {
+	padding: 2.6rem 0;
+}
+
+.products > li {
+	padding: 1.8rem 1.4rem;
+	-webkit-column-break-inside: avoid;
+	margin-bottom: 1.8rem;
+	background-color: #242424;
+	color: #fff;
+	box-shadow: 0 2px 16px 1px rgba( 0, 0, 0, .28 );
+}
+
+.product_item-title {
+	font-size: .94em;
+	margin: 1.2rem 0 1rem 0;
+}
+
+.product_item-price {
+	font-size: 1.44em;
+	margin-bottom: 1.2rem;
+}
+
+.product_item > .description {
+	display: none;
+}
+.product_item > .description > * {
+	margin-bottom: .4rem;
+	line-height: 1.2em;
+	font-size: .88em;
+	color: #ddd;
+}
+
+.product_item > .description.show {
+	display: block;
+}
+
+.product_item > .button {
+	width: 100%;
+}
+
+@media screen and ( min-width: 768px ) {
+	.products {
+		column-count: 2;
+	}
+} 
+
+@media screen and ( min-width: 992px ) {
+	.products {
+		column-count: 3;
+	}
+}

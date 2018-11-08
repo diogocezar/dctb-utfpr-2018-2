@@ -1,0 +1,17 @@
+#div-row{
+    margin-top: 15px; 
+}
+
+.produto{ 
+    padding: 20px;
+    color: red;
+    border: 1px solid black;
+}
+
+#formulario{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+}

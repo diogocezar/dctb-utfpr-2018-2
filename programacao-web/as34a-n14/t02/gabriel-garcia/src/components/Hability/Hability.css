@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+#hability {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background-color: #e6e6e6;
+}
+
+#hability h2 {
+    font-family: Ubuntu;
+    text-align: center;
+    width: 100%;
+}
+
+#hability-container {
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#hability-container p{
+    margin: 5px;
+    padding: 3px;
+    flex: 1 1 auto;
+}
+
+.skill{
+    font-family: Ubuntu;
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3b3b3b;
+    transition: 0.25s all ease;
+}
+
+.skill:hover{
+    color: white;
+    background-color: #00f1dd;
+    border-color: #00f1dd;
+}

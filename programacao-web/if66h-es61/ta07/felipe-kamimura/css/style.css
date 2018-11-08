@@ -1,0 +1,62 @@
+div{
+    width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid black;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid black;
+}
+
+div img{
+    width: 200px;
+    height: 200px;
+}
+
+.bck{
+    background-image: url("../svg/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.st0:hover{
+    fill-opacity: 1;
+    fill:rgb(179, 70, 242);
+    stroke: #00d9ff;
+     stroke-dasharray: 10;
+}
+.st0:hover{
+fill-opacity: 1;
+
+  stroke: #ff0000;
+  stroke-dasharray: 10;
+  stroke-width: 4;
+}
+.st2:hover{
+    fill:rgb(208, 235, 112);
+}
+
+.s1{
+    fill: #ee95d0;
+}
+
+.s2{
+    fill:#ffb888;
+}
+
+.s3{
+    stroke:#8894ff;
+}
+
+.s4{
+    fill:#fdff88;
+    stroke: #e69f07;
+    stroke-width: 4;
+}

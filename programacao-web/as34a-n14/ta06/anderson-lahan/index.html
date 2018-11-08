@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="style.css" rel="stylesheet">
+	<title>Atividade SVG</title>
+</head>
+
+<body>
+
+	<section id="insercao">
+		<h1>Inserção de SVG como imagem</h1>
+		<div class="container">
+			<img class="resolucao" src="img/car.svg" alt="Logo" />
+		</div>
+
+		<h1>Inserção de SVG como background</h1>
+		<div class="container element" background="img/car.svg">
+			
+		</div>
+		
+	</section>
+
+	<section id="desenhos">
+		<div class="container">
+			<h1>Retângulo</h2>
+			<svg>
+    			<rect x="50" y="20" width="200" height="100" fill="cyan" stroke="black"/>
+			</svg>
+		</div>
+		<div class="container">
+			<h1>Círculo</h1>
+				<svg>
+				    <circle r="50" cx="150" cy="70" fill="cyan" stroke="black"/>
+		</div>
+		<div class="container">
+			<h1>Linha</h1>
+			<svg>
+			    <line x1="20" y1="20" x2="220" y2="120" stroke="cyan" stroke-width="5"/>
+			</svg>
+		</div>
+		<div class="container">
+			<h1>Polígono</h1>
+			<svg height="210" width="500">
+			  <polygon id="poli1" points="100,10 40,198 190,78 10,78 160,198"/>
+			</svg>
+		</div>		
+	</section>
+
+	<section id="animacao">
+		<div class="container">
+			<h1>Animação</h1>
+			<svg id="moeda" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.755 212.755" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 212.755 212.755">
+			  <g>
+			    <path id="moeda1" d="M106.377,0C47.721,0,0,47.721,0,106.377s47.721,106.377,106.377,106.377s106.377-47.721,106.377-106.377   S165.034,0,106.377,0z M106.377,198.755C55.44,198.755,14,157.314,14,106.377S55.44,14,106.377,14s92.377,41.44,92.377,92.377   S157.314,198.755,106.377,198.755z"/>
+			    <path id="moeda2" d="m113.377,100.096v-39.744c3.961,1.471 7.417,4.17 9.82,7.82 2.127,3.229 6.468,4.123 9.696,1.997 3.229-2.126 4.123-6.467 1.996-9.696-5.029-7.636-12.778-12.82-21.512-14.647v-11.12c0-3.866-3.134-7-7-7s-7,3.134-7,7v11.099c-15.493,3.23-27.168,16.989-27.168,33.426 0,16.437 11.676,30.198 27.168,33.428v39.744c-3.961-1.471-7.417-4.17-9.82-7.82-2.127-3.229-6.468-4.124-9.696-1.997-3.229,2.126-4.123,6.467-1.996,9.696 5.029,7.636 12.778,12.82 21.512,14.647v11.119c0,3.866 3.134,7 7,7s7-3.134 7-7v-11.098c15.493-3.23 27.168-16.989 27.168-33.426-2.84217e-14-16.437-11.675-30.198-27.168-33.428zm-27.168-20.865c0-8.653 5.494-16.027 13.168-18.874v37.748c-7.674-2.847-13.168-10.221-13.168-18.874zm27.168,73.166v-37.748c7.674,2.847 13.168,10.221 13.168,18.874s-5.493,16.027-13.168,18.874z"/>
+			  </g>
+			</svg>
+		</div>
+	</section>
+
+
+
+
+
+
+</body>

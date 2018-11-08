@@ -1,0 +1,6 @@
+.style-button{
+    padding: convert-to-rem(15px) convert-to-rem(32px);
+    border-width: convert-to-rem(1px);
+    border-style: solid;
+    @include border-radius (convert-rem(10px));
+}

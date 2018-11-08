@@ -1,0 +1,19 @@
+Utilizando bootstrap, crie um layout com 3 seções:
+
+menu → utilize o componente nav para a criação de um menu responsivo no header fixo, com os seguintes ítens: home, produtos, contato;
+
+produtos → crie uma grid com 4 colunas e 2 linhas; cada produtos deverá ter um título de uma descrição;
+
+nos dispositivos abaixo de sm deve possuir 12 colunas;
+
+contato → crie um form de contato em 2 colunas de tamanhos:
+
+8 e 4 para lg;
+
+7 e 5 para md;
+
+6 e 6 para sm;
+
+12 para xs;
+
+a coluna primeira deverá conter: nome e email. A segunda deverá conter: assunto e mensagem;

@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300");
+
+body{
+    font-size: 14px;
+    color: black;
+    font-family: Montserrat;
+    background-color: gray;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+section{
+    padding-top: 2em;
+}

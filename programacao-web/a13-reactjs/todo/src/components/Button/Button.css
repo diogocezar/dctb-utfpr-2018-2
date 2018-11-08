@@ -1,0 +1,6 @@
+.button-component{
+    border-radius: 30px;
+    border:none;
+    background-color: green;
+    padding: 10px 20px;
+}

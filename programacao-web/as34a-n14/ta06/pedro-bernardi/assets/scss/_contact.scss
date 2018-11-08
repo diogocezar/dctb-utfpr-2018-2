@@ -1,0 +1,40 @@
+// Styling for the download section
+section.contact {
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        i {
+            color: $brand-google-plus;
+        }
+    }
+    ul.list-social {
+        margin-bottom: 0;
+        li {
+            a {
+                font-size: 40px;
+                line-height: 80px;
+                display: block;
+                width: 80px;
+                height: 80px;
+                color: white;
+                border-radius: 100%;
+            }
+            &.social-twitter {
+                a {
+                    background-image: url(../svg/twitter.svg);
+                }
+            }
+            &.social-facebook {
+                a {
+                    background-image: url(../svg/facebook.svg);
+                }
+            }
+            &.social-instagram {
+                a {
+                    background-image: url(../svg/instagram.svg);
+                }
+            }
+        }
+    }
+}

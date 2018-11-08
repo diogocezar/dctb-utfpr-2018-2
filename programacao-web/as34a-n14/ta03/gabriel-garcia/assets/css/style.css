@@ -1,0 +1,112 @@
+body{
+	background-color: #e6e6e6;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+img{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+}
+
+h1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Montserrat Medium;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: center;
+	color: #303030;
+}
+
+h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+
+h5{
+	font-size: 2rem;
+	font-family: Montserrat Medium;
+}
+
+p{
+	font-size: 14px;
+}
+
+div{
+    margin: 10px 20px;
+}
+
+
+#configs-container{
+	background-color: #fff;
+	text-align: center;
+	font-family: Montserrat Light;
+	color: #303030;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 50px;
+}
+
+.title{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+    font-weight: bold;
+	padding-top: 20px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.subtitle{
+	margin-left: 0px;
+}
+
+.content{
+	background-color: #fff;
+	margin: 40px;
+	font-family: Montserrat Light;
+	color: #303030;
+	text-align: left;
+	width: 27%;
+	float: right;
+}
+
+.btn{
+    font-size: 15px;
+    font-weight: lighter;
+    background: transparent;
+    height: 60px;
+    color: #262626;
+    border-color: #262626;
+    border-width: 2px;
+    border-style: solid;
+	cursor: pointer;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+	background-color: #e0e0e0;
+	border-color: #e0e0e0;
+	color: #22223B;
+}
+
+.inactive{
+	opacity: 0.5;
+}

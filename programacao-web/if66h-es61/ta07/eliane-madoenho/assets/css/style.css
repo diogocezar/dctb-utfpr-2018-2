@@ -1,0 +1,27 @@
+.img_svg{
+    width: 30%;
+}
+.img-background{ 
+    background-image: url(../images/Dapper_Jack.svg); 
+}
+
+body{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.poligono{
+    fill: rgb(252, 10, 191);
+    stroke: black;
+    stroke-width:"5";
+
+}
+.poligono :hover{
+    transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+    fill: pink;
+    stroke: red;
+    cursor: pointer;
+
+}

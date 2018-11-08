@@ -1,0 +1,14 @@
+.btn{
+    padding: 20px;
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.btn-follow{
+    @extend .btn;
+    margin: 20 20px;
+    border-color: preto;
+    color: azul;
+}

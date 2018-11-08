@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(./assets/back.svg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+#inline{
+    width: 300px;
+    height: 300px;
+}
+
+#inline:hover path {
+    fill: purple;
+    stroke: yellow;
+}
+
+.poli{
+    fill:yellow;
+    stroke:purple;
+    stroke-width:5;
+}

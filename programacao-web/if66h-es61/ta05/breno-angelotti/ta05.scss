@@ -1,0 +1,169 @@
+$buttonBorderRadius: 4px;
+$fontSize: 16;
+
+$colors: (
+    primary: #3897f0,
+    onPrimary: #ffffff,
+    bg: #fafafa
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+@mixin box-sizing($sizing){
+    -webkit-box-sizing: $sizing;
+    -moz-box-sizing: $sizing;
+    box-sizing: $sizing;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@function px-to-rem($value){
+    @return $value / 16 + 0rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+}
+  
+html {
+    font-size: px-to-rem($fontSize);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: color(bg);
+}
+
+main {
+    width: 90%;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    margin: 30px 0;
+    flex-flow: column;
+
+    .avatar {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        @media (min-width: 768px ) {
+            margin: 0 40px;
+        }
+    }
+
+    .desc {
+        text-align: center;
+
+        @media (min-width: 768px ){
+            text-align: left;
+        }
+    }
+
+    h1 {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: px-to-rem(28);
+    }
+
+    h2 {
+        @extend h1;
+        font-size: px-to-rem(24);
+    }
+
+    .links {
+        list-style: none;
+        margin: 10px 0;
+
+        li {
+            list-style: none;
+            margin: 0 20px 0 0;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: 768px ) {
+        flex-flow: row;
+    }
+}
+
+.style-button{
+    @include border-radius($buttonBorderRadius);
+    padding: 6px 14px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.btn-follow {
+    @extend .style-button;
+    margin: 0 20px;
+    border-color: color(primary);
+    color: color(primary);
+
+    :hover {
+        background: color(primary);
+        color: color(onPrimary);
+    }
+}
+
+.photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+
+    li {
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .img-hover {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            transition: all 0.3s linear;
+        }
+
+        :hover {
+            .img-hover {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 768px ) {
+            width: 30%;
+        }
+    }
+}

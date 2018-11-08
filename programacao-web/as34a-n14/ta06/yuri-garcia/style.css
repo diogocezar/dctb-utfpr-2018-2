@@ -1,0 +1,31 @@
+.bio
+{
+  width: 525px;
+  height: 500px;
+  background-image: url("bh.svg");
+}
+a svg:hover #facebook
+{ 
+    fill: blue;
+}
+
+article 
+{ 
+    width: 100%; 
+    margin: 60px auto; 
+    text-align: center;
+    zoom: 2;
+}
+
+.poly
+{
+    fill: #3399ff;
+    stroke-width: 5;
+    stroke: #000000;
+}
+    
+body
+{
+    position: relative;
+}
+  

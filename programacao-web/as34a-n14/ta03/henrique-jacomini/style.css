@@ -1,0 +1,18 @@
+.container-info{
+	text-align: center;
+	font-size: 14px;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.container{
+	display: flex;
+}
+.imagem img{
+	width: 50%;
+}
+.produt{
+	flex 1;
+	margin: 6px;
+	background-color: rgba(0, 0, 0, 0.05);
+}

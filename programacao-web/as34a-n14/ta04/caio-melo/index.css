@@ -1,0 +1,16 @@
+.navbar{
+    height: 70px;
+}
+
+section{
+    border: 1px solid black;
+    margin-top: 70px;
+}
+
+.row{
+    margin-top: 1.5rem;
+}
+
+.produto{
+    margin-bottom: 2rem;
+}
