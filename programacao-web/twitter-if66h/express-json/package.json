@@ -1,0 +1,13 @@
+{
+  "name": "express-json",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.6"
+  },
+  "scripts" : {
+    "start" : "nodemon"
+  }
+}
