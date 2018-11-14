@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" id="name" placeholder="nome" />
+        <input type="text" id="age" placeholder="idade" />
+        <button id="teste" class="btn">Vai</button>
+    </div>
+    <script>
+        var $name = document.querySelector('#name')
+        var $age = document.querySelector('#age')
+        var $all = document.querySelectorAll('input')
+        var $button = document.querySelector('.btn')
+        console.log($all)
+        $button.addEventListener('click', function () {
+            alert(`Nome: ${$name.value}, Idade: ${$age.value}`)
+        })
+    </script>
+</body>
+
+</html>

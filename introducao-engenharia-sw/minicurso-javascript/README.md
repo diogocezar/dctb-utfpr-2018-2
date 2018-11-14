@@ -19,16 +19,16 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Curso JavaScript</title>
-</head>
-<body>
-    <script>
-        // javascript
-        console.log('Hello World')
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+            // javascript
+            console.log('Hello World')
+        </script>
+    </body>
 </html>
 ```
 
@@ -54,13 +54,25 @@ var age = 32
 var weight = 80.5
 var human = true
 var students = ['Diogo', 'Pedro', 'Gabriel']
+var vet = ['Diogo', 10, [20,40, ["pow"]]]
 var student = {
     name: 'José',
     age: 32,
-    human: true
+    human: true,
+    hey : function(){
+        alert('hey')
+    }
 }
+var json = [
+    {content : 'teste1', id: 1},
+    {content : 'teste2', id: 2},
+    {content : 'teste3', id: 3},
+    {content : 'teste4', id: 4},
+]
+console.log(json[3].content, json[3].id)
 console.log(students)
-console.log(student)
+console.log(student.name)
+student.hey()
 ```
 
 ### Operações matemáticas
@@ -76,7 +88,7 @@ var result = x + y
 ```js
 var x = "10"
 var y = 5
-var result = x + y
+var result = parseInt(x) + y
 ```
 
 ### Funções
@@ -86,6 +98,7 @@ function sum(n1, n2){
     return n1 + n2
 }
 console.log(sum(5,4))
+console.log(sum("Diogo ","Cezar"))
 ```
 
 ### Condicionais
@@ -139,7 +152,7 @@ console.log("1" === 1)
         console.log('NOT OK!')
     }
     // Ou...
-    (genre === 'M') ? 'OK' : 'NOT OK!'
+    console.log((genre === 'M') ? 'OK' : 'NOT OK!')
 ```
 
 ### Estruturas de Repetição
@@ -162,6 +175,7 @@ Utilizado quando não sabemos quantos passos serão executados.
     var j = 0
     while(j <= 100){
         console.log('Passou em ' + j)
+        j++
     }
 ```
 
@@ -184,6 +198,9 @@ Utilizado quando não sabemos quantos passos serão executados.
         console.log('Hello World')
     }
     setInterval(show, 1000)
+    setInterval(function (){
+        console.log('Hello World')
+    }, 1000)
 ```
 
 A cada 1 segundo a função será chamada.
@@ -274,9 +291,11 @@ Podemos criar novos elementos com o JS
 </head>
 <body>
     <div id="app">
-        <input id="name" placeholder="nome"/>
-        <input id="age" placeholder="idade"/>
+        <input type="text"id="name" placeholder="nome"/>
+        <input type="text" id="age" placeholder="idade"/>
         <button class="btn">Vai</button>
+        <!-- vai inserir aqui! -->
+        <a href="http://www.google.com">Acessar o google</a>
     </div>
     <script>
         var $app = document.querySelector("#app")

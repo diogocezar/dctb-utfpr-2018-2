@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" id="name" placeholder="nome" />
+        <input type="text" id="age" placeholder="idade" />
+        <button class="btn">Vai</button>
+        <!-- vai inserir aqui! -->
+    </div>
+    <script>
+        var $app = document.querySelector("#app")
+        var linkElement = document.createElement('a')
+        var textElement = document.createTextNode('Acessar o google')
+        linkElement.setAttribute('href', 'http://www.google.com')
+        linkElement.appendChild(textElement)
+        $app.appendChild(linkElement)
+    </script>
+</body>
+
+</html>
