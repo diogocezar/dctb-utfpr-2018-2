@@ -11,6 +11,7 @@ ourRequest.onload = function(){
 ourRequest.send();
 
 
+
 function renderHTML(data){
     var htmlHeader = "";
     var htmlProducts = "";
